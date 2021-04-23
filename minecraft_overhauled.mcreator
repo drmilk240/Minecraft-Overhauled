@@ -410,7 +410,7 @@
       "name": "ShoreaLog",
       "type": "block",
       "sortid": 47,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "shorea_log"
@@ -428,7 +428,7 @@
       "name": "ShoreaLeaves",
       "type": "block",
       "sortid": 49,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "shorea_leaves"
@@ -455,7 +455,7 @@
       "name": "ShoreaFence",
       "type": "block",
       "sortid": 52,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "shorea_fence"
@@ -464,7 +464,7 @@
       "name": "ShoreaFenceGate",
       "type": "block",
       "sortid": 53,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "shorea_fence_gate"
@@ -554,7 +554,7 @@
       "name": "Regfruit",
       "type": "block",
       "sortid": 63,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "regfruit"
@@ -607,7 +607,7 @@
       "name": "BaobabDoor",
       "type": "block",
       "sortid": 66,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "baobab_door"
@@ -616,7 +616,7 @@
       "name": "BaobabTrapdoor",
       "type": "block",
       "sortid": 46,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "baobab_trapdoor"
