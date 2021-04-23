@@ -162,21 +162,31 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "baobab_stick_recipe"
+    },
+    {
+      "name": "SpearThrowable",
+      "type": "gun",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spear_throwable"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "itemGroup.tabsavanna": "Savanna",
       "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
-      "block.minecraft_overhauled.anthill_block": "Anthill Block",
+      "item.minecraft_overhauled.spear_throwable": "Spear",
       "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "block.minecraft_overhauled.baobab_log": "Baobab Log",
       "block.minecraft_overhauled.baobab_slab": "Baobab Slab",
       "block.minecraft_overhauled.baobab_stairs": "Baobab Stairs",
-      "block.minecraft_overhauled.baobab_leaves": "Baobab Leaves",
       "block.minecraft_overhauled.baobab_fence": "Baobab Fence",
+      "itemGroup.tabsavanna": "Savanna",
+      "block.minecraft_overhauled.anthill_block": "Anthill Block",
+      "block.minecraft_overhauled.baobab_leaves": "Baobab Leaves",
       "block.minecraft_overhauled.baobab_fence_gate": "Baobab Fence Gate"
     }
   },
