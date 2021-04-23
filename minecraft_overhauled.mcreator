@@ -360,6 +360,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "toad"
+    },
+    {
+      "name": "Bush",
+      "type": "plant",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bush"
     }
   ],
   "variable_elements": [],
@@ -368,6 +377,7 @@
     "en_us": {
       "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
       "block.minecraft_overhauled.mud_block": "Mud Block",
+      "block.minecraft_overhauled.bush": "Bush",
       "block.minecraft_overhauled.bushthorn_wood": "Bushthorn Wood",
       "item.minecraft_overhauled.ant_spawn_egg": "Ant Spawn Egg",
       "item.minecraft_overhauled.spear_throwable": "Spear",
