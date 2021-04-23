@@ -10,6 +10,12 @@
       },
       {
         "value": "CUSTOM:BaobabLog"
+      },
+      {
+        "value": "Blocks.STONE#2"
+      },
+      {
+        "value": "Blocks.SMOOTH_RED_SANDSTONE_SLAB"
       }
     ],
     "functions": [],
