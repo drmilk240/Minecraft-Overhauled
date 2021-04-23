@@ -43,6 +43,7 @@ import net.minecraft.block.Block;
 
 import net.mcreator.minecraftoverhauled.block.ShoreaLogBlock;
 import net.mcreator.minecraftoverhauled.block.ShoreaLeavesBlock;
+import net.mcreator.minecraftoverhauled.block.RegfruitBlock;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 
 import java.util.Set;
@@ -249,7 +250,7 @@ public class RainforestBiome extends MinecraftOverhauledModElements.ModElement {
 									if (rand.nextInt(4 - hlevel) == 0) {
 										Direction dir = Direction.getOpposite();
 										setTreeBlockState(changedBlocks, world, position.add(dir.getXOffset(), height - 5 + hlevel, dir.getZOffset()),
-												ShoreaLeavesBlock.block.getDefaultState(), bbox);
+												RegfruitBlock.block.getDefaultState(), bbox);
 									}
 								}
 							}

@@ -2,12 +2,12 @@
   "_fv": 13,
   "_type": "block",
   "definition": {
-    "texture": "shorea_leaves",
-    "textureTop": "shorea_leaves",
-    "textureLeft": "shorea_leaves",
-    "textureFront": "shorea_leaves",
-    "textureRight": "shorea_leaves",
-    "textureBack": "shorea_leaves",
+    "texture": "regfruit",
+    "textureTop": "regfruit",
+    "textureLeft": "regfruitside",
+    "textureFront": "regfruitside",
+    "textureRight": "regfruitside",
+    "textureBack": "regfruitside",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -15,7 +15,6 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Leaves",
     "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
@@ -25,20 +24,20 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Shorea Leaves",
+    "name": "Regfruit",
     "specialInfo": [],
-    "hardness": 0.2,
-    "resistance": 0.2,
+    "hardness": 1.1500000000000001,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Savanna"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "axe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:RegfruitSlices"
     },
-    "dropAmount": 0,
+    "dropAmount": 4,
     "useLootTableForDrops": false,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
@@ -46,7 +45,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "LEAVES"
+      "value": "PLANTS"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -57,18 +56,18 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 30,
+    "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "PLANT"
+      "value": "BAMBOO"
     },
-    "luminance": 0.0,
+    "luminance": 0.19999999999999998,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

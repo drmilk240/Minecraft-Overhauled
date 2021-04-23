@@ -540,6 +540,50 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "shorea_stick_recipe"
+    },
+    {
+      "name": "Logs",
+      "type": "tag",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "logs"
+    },
+    {
+      "name": "Regfruit",
+      "type": "block",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "regfruit"
+    },
+    {
+      "name": "RegfruitSlicesFoodEaten",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "regfruit_slices_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RegfruitSlices",
+      "type": "food",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "regfruit_slices"
     }
   ],
   "variable_elements": [],
@@ -556,11 +600,13 @@
       "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "block.minecraft_overhauled.baobab_slab": "Baobab Slab",
       "block.minecraft_overhauled.bushthorn_log": "Bushthorn Log",
+      "item.minecraft_overhauled.regfruit_slices": "Regfruit Slice",
       "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
       "itemGroup.tabsavanna": "Savanna",
       "block.minecraft_overhauled.shorea_log": "Shorea Log",
       "block.minecraft_overhauled.bushthorn_stairs": "Bushthorn Stairs",
       "biome.minecraft_overhauled.rainforest": "Rainforest",
+      "block.minecraft_overhauled.regfruit": "Regfruit",
       "block.minecraft_overhauled.anthill_block": "Anthill Block",
       "block.minecraft_overhauled.shorea_stairs": "Shorea Stairs",
       "entity.minecraft_overhauled.toad": "Toad",
