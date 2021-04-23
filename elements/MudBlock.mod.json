@@ -92,7 +92,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "Surface"
+    ],
     "restrictionBiomes": [
       {
         "value": "savanna"
@@ -104,11 +106,14 @@
     "blocksToReplace": [
       {
         "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.DIRT#1"
       }
     ],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 45,
-    "maxGenerateHeight": 256
+    "maxGenerateHeight": 100
   }
 }
