@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "minecraft_overhauled:blocks/baobabplanks",
+    "particle": "minecraft_overhauled:blocks/baobabplanks"
+  }
+}

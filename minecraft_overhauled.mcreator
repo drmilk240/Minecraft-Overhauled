@@ -1,0 +1,200 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "AnthillBlock",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "anthill_block"
+    },
+    {
+      "name": "Savanna",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "savanna"
+    },
+    {
+      "name": "BaobabWood",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_wood"
+    },
+    {
+      "name": "BaobabLog",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_log"
+    },
+    {
+      "name": "BaobabPlanks",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_planks"
+    },
+    {
+      "name": "BaobabLeaves",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_leaves"
+    },
+    {
+      "name": "BaobabStairs",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_stairs"
+    },
+    {
+      "name": "BaobabSlab",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_slab"
+    },
+    {
+      "name": "BaobabFence",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_fence"
+    },
+    {
+      "name": "BaobabFenceGate",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_fence_gate"
+    },
+    {
+      "name": "BaobabItemsTag",
+      "type": "tag",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_items_tag"
+    },
+    {
+      "name": "BaobabWoodRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_wood_recipe"
+    },
+    {
+      "name": "BaobabPlanksRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_planks_recipe"
+    },
+    {
+      "name": "BaobabStairsRecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_stairs_recipe"
+    },
+    {
+      "name": "BaobabSlabRecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_slab_recipe"
+    },
+    {
+      "name": "BaobabFenceRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_fence_recipe"
+    },
+    {
+      "name": "BaobabFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_fence_gate_recipe"
+    },
+    {
+      "name": "BaobabStickRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_stick_recipe"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "itemGroup.tabsavanna": "Savanna",
+      "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
+      "block.minecraft_overhauled.anthill_block": "Anthill Block",
+      "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
+      "block.minecraft_overhauled.baobab_log": "Baobab Log",
+      "block.minecraft_overhauled.baobab_slab": "Baobab Slab",
+      "block.minecraft_overhauled.baobab_stairs": "Baobab Stairs",
+      "block.minecraft_overhauled.baobab_leaves": "Baobab Leaves",
+      "block.minecraft_overhauled.baobab_fence": "Baobab Fence",
+      "block.minecraft_overhauled.baobab_fence_gate": "Baobab Fence Gate"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "minecraft_overhauled",
+    "modName": "Minecraft_Overhauled",
+    "version": "1.0.0",
+    "author": "ThatThingTwo, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "modElementsPackage": "net.mcreator.minecraftoverhauled",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000547520
+}

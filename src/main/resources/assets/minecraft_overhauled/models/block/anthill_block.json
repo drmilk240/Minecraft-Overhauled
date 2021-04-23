@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_overhauled:blocks/anthillside",
+    "up": "minecraft_overhauled:blocks/anthilltop",
+    "north": "minecraft_overhauled:blocks/anthillside",
+    "east": "minecraft_overhauled:blocks/anthillside",
+    "south": "minecraft_overhauled:blocks/anthillside",
+    "west": "minecraft_overhauled:blocks/anthillside",
+    "particle": "minecraft_overhauled:blocks/anthillside"
+  }
+}

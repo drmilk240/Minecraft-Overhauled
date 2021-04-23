@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_overhauled:blocks/baobab_log_top",
+    "up": "minecraft_overhauled:blocks/baobab_log_top",
+    "north": "minecraft_overhauled:blocks/baobab_log_side",
+    "east": "minecraft_overhauled:blocks/baobab_log_side",
+    "south": "minecraft_overhauled:blocks/baobab_log_side",
+    "west": "minecraft_overhauled:blocks/baobab_log_side",
+    "particle": "minecraft_overhauled:blocks/baobab_log_top"
+  }
+}
