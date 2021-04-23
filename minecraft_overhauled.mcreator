@@ -342,6 +342,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "dried_mud"
+    },
+    {
+      "name": "Ant",
+      "type": "mob",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ant"
     }
   ],
   "variable_elements": [],
@@ -351,6 +360,7 @@
       "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
       "block.minecraft_overhauled.mud_block": "Mud Block",
       "block.minecraft_overhauled.bushthorn_wood": "Bushthorn Wood",
+      "item.minecraft_overhauled.ant_spawn_egg": "Ant Spawn Egg",
       "item.minecraft_overhauled.spear_throwable": "Spear",
       "block.minecraft_overhauled.bushthorn_fence_gate": "Bushthorn Fence Gate",
       "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
@@ -362,6 +372,7 @@
       "block.minecraft_overhauled.baobab_stairs": "Baobab Stairs",
       "block.minecraft_overhauled.bushthorn_planks": "Bushthorn Planks",
       "block.minecraft_overhauled.baobab_fence": "Baobab Fence",
+      "entity.minecraft_overhauled.ant": "Ant",
       "itemGroup.tabsavanna": "Savanna",
       "block.minecraft_overhauled.bushthorn_stairs": "Bushthorn Stairs",
       "block.minecraft_overhauled.anthill_block": "Anthill Block",
