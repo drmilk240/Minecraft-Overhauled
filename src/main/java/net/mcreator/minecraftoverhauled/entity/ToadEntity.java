@@ -25,7 +25,9 @@ import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
+import net.minecraft.entity.ai.goal.PanicGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
+import net.minecraft.entity.ai.goal.FollowMobGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
@@ -101,8 +103,10 @@ public class ToadEntity extends MinecraftOverhauledModElements.ModElement {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new SwimGoal(this));
 			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
-			this.goalSelector.addGoal(4, new RandomSwimmingGoal(this, 1, 40));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, AntEntity.CustomEntity.class, true, true));
+			this.goalSelector.addGoal(4, new FollowMobGoal(this, (float) 1, 10, 5));
+			this.goalSelector.addGoal(6, new PanicGoal(this, 1.2));
+			this.goalSelector.addGoal(7, new RandomSwimmingGoal(this, 1, 40));
 		}
 
 		@Override
@@ -160,7 +164,7 @@ public class ToadEntity extends MinecraftOverhauledModElements.ModElement {
 			rbacktoe_r1 = new ModelRenderer(this);
 			rbacktoe_r1.setRotationPoint(0.0F, 0.0F, 0.0F);
 			bb_main.addChild(rbacktoe_r1);
-			setRotationAngle(rbacktoe_r1, 0.0F, 1.5708F, 0.0F);
+			setRotationAngle(rbacktoe_r1, 0.0F, -1.5708F, 0.0F);
 			rbacktoe_r1.setTextureOffset(22, 14).addBox(1.75F, -2.0F, 4.0F, 2.0F, 2.0F, 2.0F, 0.0F, false);
 			rbacktoe_r1.setTextureOffset(12, 14).addBox(1.0F, -4.5F, 4.0F, 3.0F, 3.0F, 2.0F, 0.0F, false);
 			rbacktoe_r1.setTextureOffset(16, 24).addBox(1.75F, -2.0F, -6.0F, 2.0F, 2.0F, 2.0F, 0.0F, false);

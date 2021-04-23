@@ -16,7 +16,7 @@ public static class Modeltoad extends EntityModel<Entity> {
 		rbacktoe_r1 = new ModelRenderer(this);
 		rbacktoe_r1.setRotationPoint(0.0F, 0.0F, 0.0F);
 		bb_main.addChild(rbacktoe_r1);
-		setRotationAngle(rbacktoe_r1, 0.0F, 1.5708F, 0.0F);
+		setRotationAngle(rbacktoe_r1, 0.0F, -1.5708F, 0.0F);
 		rbacktoe_r1.setTextureOffset(22, 14).addBox(1.75F, -2.0F, 4.0F, 2.0F, 2.0F, 2.0F, 0.0F, false);
 		rbacktoe_r1.setTextureOffset(12, 14).addBox(1.0F, -4.5F, 4.0F, 3.0F, 3.0F, 2.0F, 0.0F, false);
 		rbacktoe_r1.setTextureOffset(16, 24).addBox(1.75F, -2.0F, -6.0F, 2.0F, 2.0F, 2.0F, 0.0F, false);
