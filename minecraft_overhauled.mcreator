@@ -171,6 +171,159 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "spear_throwable"
+    },
+    {
+      "name": "BushthornWood",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_wood"
+    },
+    {
+      "name": "BushthornLog",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_log"
+    },
+    {
+      "name": "BushthornPlanks",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_planks"
+    },
+    {
+      "name": "BushthornLeaves",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_leaves"
+    },
+    {
+      "name": "BushthornStairs",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_stairs"
+    },
+    {
+      "name": "BushthornSlab",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_slab"
+    },
+    {
+      "name": "BushthornFence",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_fence"
+    },
+    {
+      "name": "BushthornFenceGate",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_fence_gate"
+    },
+    {
+      "name": "BushthornItemsTag",
+      "type": "tag",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_items_tag"
+    },
+    {
+      "name": "BushthornWoodRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_wood_recipe"
+    },
+    {
+      "name": "BushthornPlanksRecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_planks_recipe"
+    },
+    {
+      "name": "BushthornStairsRecipe",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_stairs_recipe"
+    },
+    {
+      "name": "BushthornSlabRecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_slab_recipe"
+    },
+    {
+      "name": "BushthornFenceRecipe",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_fence_recipe"
+    },
+    {
+      "name": "BushthornFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_fence_gate_recipe"
+    },
+    {
+      "name": "BushthornStickRecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bushthorn_stick_recipe"
+    },
+    {
+      "name": "MudBlock",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mud_block"
     }
   ],
   "variable_elements": [],
@@ -178,14 +331,23 @@
   "language_map": {
     "en_us": {
       "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
+      "block.minecraft_overhauled.mud_block": "Mud Block",
+      "block.minecraft_overhauled.bushthorn_wood": "Bushthorn Wood",
       "item.minecraft_overhauled.spear_throwable": "Spear",
+      "block.minecraft_overhauled.bushthorn_fence_gate": "Bushthorn Fence Gate",
       "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "block.minecraft_overhauled.baobab_log": "Baobab Log",
       "block.minecraft_overhauled.baobab_slab": "Baobab Slab",
+      "block.minecraft_overhauled.bushthorn_log": "Bushthorn Log",
+      "block.minecraft_overhauled.bushthorn_slab": "Bushthorn Slab",
+      "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
       "block.minecraft_overhauled.baobab_stairs": "Baobab Stairs",
+      "block.minecraft_overhauled.bushthorn_planks": "Bushthorn Planks",
       "block.minecraft_overhauled.baobab_fence": "Baobab Fence",
       "itemGroup.tabsavanna": "Savanna",
+      "block.minecraft_overhauled.bushthorn_stairs": "Bushthorn Stairs",
       "block.minecraft_overhauled.anthill_block": "Anthill Block",
+      "block.minecraft_overhauled.bushthorn_leaves": "Bushthorn Leaves",
       "block.minecraft_overhauled.baobab_leaves": "Baobab Leaves",
       "block.minecraft_overhauled.baobab_fence_gate": "Baobab Fence Gate"
     }

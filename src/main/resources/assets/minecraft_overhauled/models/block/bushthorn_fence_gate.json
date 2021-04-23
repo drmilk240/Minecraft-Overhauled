@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_fence_gate",
+  "textures": {
+    "texture": "minecraft_overhauled:blocks/bushthorn_planks2"
+  }
+}

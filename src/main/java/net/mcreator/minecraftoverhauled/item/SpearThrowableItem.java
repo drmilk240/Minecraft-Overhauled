@@ -125,7 +125,7 @@ public class SpearThrowableItem extends MinecraftOverhauledModElements.ModElemen
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(SpearItem.block, (int) (1));
+			return new ItemStack(SpearThrowableItem.block, (int) (1));
 		}
 
 		@Override

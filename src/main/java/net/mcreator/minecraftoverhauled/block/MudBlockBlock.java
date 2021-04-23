@@ -3,11 +3,16 @@ package net.mcreator.minecraftoverhauled.block;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.common.IPlantable;
 
 import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Direction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
+import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
@@ -20,11 +25,11 @@ import java.util.List;
 import java.util.Collections;
 
 @MinecraftOverhauledModElements.ModElement.Tag
-public class AnthillBlockBlock extends MinecraftOverhauledModElements.ModElement {
-	@ObjectHolder("minecraft_overhauled:anthill_block")
+public class MudBlockBlock extends MinecraftOverhauledModElements.ModElement {
+	@ObjectHolder("minecraft_overhauled:mud_block")
 	public static final Block block = null;
-	public AnthillBlockBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 1);
+	public MudBlockBlock(MinecraftOverhauledModElements instance) {
+		super(instance, 37);
 	}
 
 	@Override
@@ -34,9 +39,19 @@ public class AnthillBlockBlock extends MinecraftOverhauledModElements.ModElement
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.NETHER_WART).hardnessAndResistance(3f, 10f).lightValue(0).harvestLevel(1)
-					.harvestTool(ToolType.PICKAXE));
-			setRegistryName("anthill_block");
+			super(Block.Properties.create(Material.EARTH).sound(SoundType.SLIME).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(1)
+					.harvestTool(ToolType.SHOVEL).slipperiness(1f));
+			setRegistryName("mud_block");
+		}
+
+		@Override
+		public boolean canSustainPlant(BlockState state, IBlockReader world, BlockPos pos, Direction direction, IPlantable plantable) {
+			return true;
+		}
+
+		@Override
+		public PushReaction getPushReaction(BlockState state) {
+			return PushReaction.DESTROY;
 		}
 
 		@Override

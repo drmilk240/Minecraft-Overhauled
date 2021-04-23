@@ -3,7 +3,7 @@
   "_type": "gun",
   "definition": {
     "renderType": 0,
-    "texture": "spear",
+    "texture": "spear2",
     "customModelName": "Normal",
     "name": "Spear",
     "specialInfo": [],
@@ -29,7 +29,7 @@
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
-      "value": "CUSTOM:Spear"
+      "value": "CUSTOM:SpearThrowable"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": ""

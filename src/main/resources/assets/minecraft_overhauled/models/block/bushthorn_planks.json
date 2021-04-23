@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "minecraft_overhauled:blocks/bushthorn_planks2",
+    "particle": "minecraft_overhauled:blocks/bushthorn_planks2"
+  }
+}

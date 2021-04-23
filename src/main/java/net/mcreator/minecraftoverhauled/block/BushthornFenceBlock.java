@@ -2,14 +2,18 @@
 package net.mcreator.minecraftoverhauled.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.common.ToolType;
 
 import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Direction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.FenceGateBlock;
+import net.minecraft.block.FenceBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -20,11 +24,11 @@ import java.util.List;
 import java.util.Collections;
 
 @MinecraftOverhauledModElements.ModElement.Tag
-public class AnthillBlockBlock extends MinecraftOverhauledModElements.ModElement {
-	@ObjectHolder("minecraft_overhauled:anthill_block")
+public class BushthornFenceBlock extends MinecraftOverhauledModElements.ModElement {
+	@ObjectHolder("minecraft_overhauled:bushthorn_fence")
 	public static final Block block = null;
-	public AnthillBlockBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 1);
+	public BushthornFenceBlock(MinecraftOverhauledModElements instance) {
+		super(instance, 27);
 	}
 
 	@Override
@@ -32,11 +36,22 @@ public class AnthillBlockBlock extends MinecraftOverhauledModElements.ModElement
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(SavannaItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
-	public static class CustomBlock extends Block {
+	public static class CustomBlock extends FenceBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.NETHER_WART).hardnessAndResistance(3f, 10f).lightValue(0).harvestLevel(1)
-					.harvestTool(ToolType.PICKAXE));
-			setRegistryName("anthill_block");
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).lightValue(0));
+			setRegistryName("bushthorn_fence");
+		}
+
+		@Override
+		public boolean canConnect(BlockState state, boolean checkattach, Direction face) {
+			boolean flag = state.getBlock() instanceof FenceBlock && state.getMaterial() == this.material;
+			boolean flag1 = state.getBlock() instanceof FenceGateBlock && FenceGateBlock.isParallel(state, face);
+			return !cannotAttach(state.getBlock()) && checkattach || flag || flag1;
+		}
+
+		@Override
+		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+			return 5;
 		}
 
 		@Override

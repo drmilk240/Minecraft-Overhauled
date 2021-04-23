@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "minecraft_overhauled:blocks/bushthorn_planks2",
+    "particle": "minecraft_overhauled:blocks/bushthorn_planks2"
+  }
+}

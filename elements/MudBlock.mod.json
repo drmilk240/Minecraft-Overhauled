@@ -2,14 +2,14 @@
   "_fv": 13,
   "_type": "block",
   "definition": {
-    "texture": "anthillside",
-    "textureTop": "anthilltop",
-    "textureLeft": "anthillside",
-    "textureFront": "anthillside",
-    "textureRight": "anthillside",
-    "textureBack": "anthillside",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "mud",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -24,16 +24,16 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Anthill Block",
+    "name": "Mud Block",
     "specialInfo": [],
-    "hardness": 3.0,
+    "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Savanna"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "shovel",
     "customDrop": {
       "value": ""
     },
@@ -41,11 +41,11 @@
     "useLootTableForDrops": false,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
-    "plantsGrowOn": false,
+    "plantsGrowOn": true,
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "ROCK"
+      "value": "EARTH"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -59,11 +59,11 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.6,
-    "reactionToPushing": "NORMAL",
+    "slipperiness": 1.0,
+    "reactionToPushing": "DESTROY",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "NETHER_WART"
+      "value": "SLIME"
     },
     "luminance": 0.0,
     "unbreakable": false,
@@ -93,8 +93,19 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "spawnWorldTypes": [],
-    "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "restrictionBiomes": [
+      {
+        "value": "savanna"
+      },
+      {
+        "value": "savanna_rock"
+      }
+    ],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.GRASS"
+      }
+    ],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
