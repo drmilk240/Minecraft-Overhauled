@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_glass_pane_side",
+  "textures": {
+    "edge": "minecraft_overhauled:blocks/bushthorn_log_side",
+    "pane": "minecraft_overhauled:blocks/bushthorn_log_side"
+  }
+}
