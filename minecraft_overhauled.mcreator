@@ -398,55 +398,37 @@
       "registry_name": "passion_flower"
     },
     {
-      "name": "BaobabTrapdoor",
+      "name": "ShoreaWood",
       "type": "block",
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_trapdoor"
+      "registry_name": "shorea_wood"
     },
     {
-      "name": "BaobabTrapdoorR",
-      "type": "recipe",
+      "name": "ShoreaLog",
+      "type": "block",
       "sortid": 47,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_trapdoor_r"
+      "registry_name": "shorea_log"
     },
     {
-      "name": "ShoreaSlabRecipe",
-      "type": "recipe",
-      "sortid": 58,
+      "name": "ShoreaPlanks",
+      "type": "block",
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_slab_recipe"
-    },
-    {
-      "name": "ShoreaWoodRecipe",
-      "type": "recipe",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shorea_wood_recipe"
-    },
-    {
-      "name": "RegfruitSlices",
-      "type": "food",
-      "sortid": 64,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "regfruit_slices"
+      "registry_name": "shorea_planks"
     },
     {
       "name": "ShoreaLeaves",
       "type": "block",
       "sortid": 49,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "shorea_leaves"
@@ -459,6 +441,123 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "shorea_stairs"
+    },
+    {
+      "name": "ShoreaSlab",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shorea_slab"
+    },
+    {
+      "name": "ShoreaFence",
+      "type": "block",
+      "sortid": 52,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shorea_fence"
+    },
+    {
+      "name": "ShoreaFenceGate",
+      "type": "block",
+      "sortid": 53,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shorea_fence_gate"
+    },
+    {
+      "name": "ShoreaItemsTag",
+      "type": "tag",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shorea_items_tag"
+    },
+    {
+      "name": "ShoreaWoodRecipe",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shorea_wood_recipe"
+    },
+    {
+      "name": "ShoreaPlanksRecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shorea_planks_recipe"
+    },
+    {
+      "name": "ShoreaStairsRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shorea_stairs_recipe"
+    },
+    {
+      "name": "ShoreaSlabRecipe",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shorea_slab_recipe"
+    },
+    {
+      "name": "ShoreaFenceRecipe",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shorea_fence_recipe"
+    },
+    {
+      "name": "ShoreaFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shorea_fence_gate_recipe"
+    },
+    {
+      "name": "ShoreaStickRecipe",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shorea_stick_recipe"
+    },
+    {
+      "name": "Logs",
+      "type": "tag",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "logs"
+    },
+    {
+      "name": "Regfruit",
+      "type": "block",
+      "sortid": 63,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "regfruit"
     },
     {
       "name": "RegfruitSlicesFoodEaten",
@@ -478,130 +577,13 @@
       }
     },
     {
-      "name": "ShoreaStairsRecipe",
-      "type": "recipe",
-      "sortid": 57,
+      "name": "RegfruitSlices",
+      "type": "food",
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_stairs_recipe"
-    },
-    {
-      "name": "ShoreaPlanksRecipe",
-      "type": "recipe",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shorea_planks_recipe"
-    },
-    {
-      "name": "Logs",
-      "type": "tag",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "logs"
-    },
-    {
-      "name": "Regfruit",
-      "type": "block",
-      "sortid": 63,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "regfruit"
-    },
-    {
-      "name": "ShoreaPlanks",
-      "type": "block",
-      "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shorea_planks"
-    },
-    {
-      "name": "ShoreaFence",
-      "type": "block",
-      "sortid": 52,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shorea_fence"
-    },
-    {
-      "name": "ShoreaItemsTag",
-      "type": "tag",
-      "sortid": 54,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shorea_items_tag"
-    },
-    {
-      "name": "ShoreaFenceGateRecipe",
-      "type": "recipe",
-      "sortid": 60,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shorea_fence_gate_recipe"
-    },
-    {
-      "name": "ShoreaLog",
-      "type": "block",
-      "sortid": 47,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shorea_log"
-    },
-    {
-      "name": "ShoreaSlab",
-      "type": "block",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shorea_slab"
-    },
-    {
-      "name": "ShoreaFenceRecipe",
-      "type": "recipe",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shorea_fence_recipe"
-    },
-    {
-      "name": "ShoreaFenceGate",
-      "type": "block",
-      "sortid": 53,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shorea_fence_gate"
-    },
-    {
-      "name": "ShoreaStickRecipe",
-      "type": "recipe",
-      "sortid": 61,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shorea_stick_recipe"
-    },
-    {
-      "name": "ShoreaWood",
-      "type": "block",
-      "sortid": 46,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shorea_wood"
+      "registry_name": "regfruit_slices"
     },
     {
       "name": "BaobabDoorRecipe",
@@ -629,6 +611,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "baobab_door"
+    },
+    {
+      "name": "BaobabTrapdoor",
+      "type": "block",
+      "sortid": 46,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_trapdoor"
+    },
+    {
+      "name": "BaobabTrapdoorR",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobab_trapdoor_r"
     }
   ],
   "variable_elements": [],
