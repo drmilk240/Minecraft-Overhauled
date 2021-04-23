@@ -1,7 +1,7 @@
 {
   "parent": "block/door_bottom_rh",
   "textures": {
-    "bottom": "minecraft_overhauled:blocks/baobabplanks",
-    "top": "minecraft_overhauled:blocks/baobabplanks"
+    "bottom": "minecraft_overhauled:blocks/baobabdoorbottom",
+    "top": "minecraft_overhauled:blocks/baobabdoortop"
   }
 }
