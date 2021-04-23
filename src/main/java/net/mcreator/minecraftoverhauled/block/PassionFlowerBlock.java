@@ -28,18 +28,17 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Direction;
 import net.minecraft.potion.Effects;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.minecraftoverhauled.itemgroup.SavannaItemGroup;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 
 import java.util.Random;
@@ -47,17 +46,17 @@ import java.util.List;
 import java.util.Collections;
 
 @MinecraftOverhauledModElements.ModElement.Tag
-public class BushBlock extends MinecraftOverhauledModElements.ModElement {
-	@ObjectHolder("minecraft_overhauled:bush")
+public class PassionFlowerBlock extends MinecraftOverhauledModElements.ModElement {
+	@ObjectHolder("minecraft_overhauled:passion_flower")
 	public static final Block block = null;
-	public BushBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 42);
+	public PassionFlowerBlock(MinecraftOverhauledModElements instance) {
+		super(instance, 45);
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new BlockCustomFlower());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(SavannaItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
@@ -87,10 +86,6 @@ public class BushBlock extends MinecraftOverhauledModElements.ModElement {
 		};
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
 			boolean biomeCriteria = false;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("savanna")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("savanna_plateau")))
-				biomeCriteria = true;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("minecraft_overhauled:rainforest")))
 				biomeCriteria = true;
 			if (!biomeCriteria)
@@ -99,14 +94,14 @@ public class BushBlock extends MinecraftOverhauledModElements.ModElement {
 					feature.withConfiguration(
 							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
 									.tries(64).build())
-							.withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(5))));
+							.withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(15))));
 		}
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS, MaterialColor.GRASS).doesNotBlockMovement().sound(SoundType.PLANT)
+			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).lightValue(0));
-			setRegistryName("bush");
+			setRegistryName("passion_flower");
 		}
 
 		@Override

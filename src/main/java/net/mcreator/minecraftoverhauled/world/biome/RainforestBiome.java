@@ -34,6 +34,8 @@ import net.minecraft.util.math.MutableBoundingBox;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EntityClassification;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
@@ -67,7 +69,7 @@ public class RainforestBiome extends MinecraftOverhauledModElements.ModElement {
 	}
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
-			super(new Biome.Builder().downfall(1f).depth(0.1f).scale(0.4f).temperature(0.5f).precipitation(Biome.RainType.RAIN)
+			super(new Biome.Builder().downfall(1f).depth(0.1f).scale(0.7f).temperature(0.5f).precipitation(Biome.RainType.RAIN)
 					.category(Biome.Category.JUNGLE).waterColor(-11911131).waterFogColor(-11911131).parent("jungle")
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
 							Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState())));
@@ -81,24 +83,35 @@ public class RainforestBiome extends MinecraftOverhauledModElements.ModElement {
 			this.addStructure(Feature.VILLAGE.withConfiguration(new VillageConfig("village/savanna/town_centers", 6)));
 			this.addStructure(Feature.JUNGLE_TEMPLE.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.FLOWER.withConfiguration(DefaultBiomeFeatures.DEFAULT_FLOWER_CONFIG)
-					.withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(1))));
+					.withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(14))));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.GRASS_CONFIG)
-					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(10))));
-			this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS.withConfiguration(new SeaGrassConfig(20, 0.3D))
+					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(33))));
+			this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS.withConfiguration(new SeaGrassConfig(49, 0.3D))
 					.withPlacement(Placement.TOP_SOLID_HEIGHTMAP.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 					new CustomTreeFeature()
 							.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.JUNGLE_LOG.getDefaultState()),
-									new SimpleBlockStateProvider(Blocks.ACACIA_LEAVES.getDefaultState()))).baseHeight(10)
+									new SimpleBlockStateProvider(Blocks.ACACIA_LEAVES.getDefaultState()))).baseHeight(8)
 											.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
 							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(14, 0.1F, 1))));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.SUGAR_CANE_CONFIG)
+					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(24))));
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.CACTUS_CONFIG)
 					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(3))));
+			addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
+					Feature.DISK
+							.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), 7, 2,
+									Lists.newArrayList(Blocks.GRASS_BLOCK.getDefaultState(), Blocks.DIRT.getDefaultState())))
+							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(8))));
 			addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
 					Feature.DISK
 							.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), 6, 2,
 									Lists.newArrayList(Blocks.GRASS_BLOCK.getDefaultState(), Blocks.DIRT.getDefaultState())))
 							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(1))));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.DOLPHIN, 20, 4, 4));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.PARROT, 20, 4, 4));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.OCELOT, 20, 4, 4));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.TROPICAL_FISH, 20, 4, 4));
 		}
 
 		@OnlyIn(Dist.CLIENT)
@@ -131,7 +144,7 @@ public class RainforestBiome extends MinecraftOverhauledModElements.ModElement {
 			if (!(worldgen instanceof IWorld))
 				return false;
 			IWorld world = (IWorld) worldgen;
-			int height = rand.nextInt(5) + 10;
+			int height = rand.nextInt(5) + 8;
 			boolean spawnTree = true;
 			if (position.getY() >= 1 && position.getY() + height + 1 <= world.getHeight()) {
 				for (int j = position.getY(); j <= position.getY() + 1 + height; j++) {

@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "bush",
+    "texture": "passionflower",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",
@@ -13,10 +13,10 @@
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
-    "name": "Bush",
+    "name": "Passion Flower",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:Savanna"
+      "value": "DECORATIONS"
     },
     "hardness": 0.0,
     "resistance": 0.0,
@@ -34,7 +34,7 @@
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,
-    "colorOnMap": "GRASS",
+    "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
     },
@@ -42,17 +42,11 @@
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,
-    "frequencyOnChunks": 5,
+    "frequencyOnChunks": 15,
     "spawnWorldTypes": [
       "Surface"
     ],
     "restrictionBiomes": [
-      {
-        "value": "savanna"
-      },
-      {
-        "value": "savanna_rock"
-      },
       {
         "value": "CUSTOM:Rainforest"
       }

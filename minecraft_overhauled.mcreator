@@ -378,6 +378,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "rainforest"
+    },
+    {
+      "name": "Orchid",
+      "type": "plant",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orchid"
+    },
+    {
+      "name": "PassionFlower",
+      "type": "plant",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "passion_flower"
     }
   ],
   "variable_elements": [],
@@ -402,6 +420,7 @@
       "entity.minecraft_overhauled.toad": "Toad",
       "block.minecraft_overhauled.bushthorn_leaves": "Bushthorn Leaves",
       "block.minecraft_overhauled.baobab_leaves": "Baobab Leaves",
+      "block.minecraft_overhauled.orchid": "Orchid",
       "item.minecraft_overhauled.toad_spawn_egg": "Toad Spawn Egg",
       "block.minecraft_overhauled.baobab_log": "Baobab Log",
       "block.minecraft_overhauled.bushthorn_slab": "Bushthorn Slab",
@@ -409,6 +428,7 @@
       "block.minecraft_overhauled.bushthorn_planks": "Bushthorn Planks",
       "block.minecraft_overhauled.baobab_fence": "Baobab Fence",
       "entity.minecraft_overhauled.ant": "Ant",
+      "block.minecraft_overhauled.passion_flower": "Passion Flower",
       "block.minecraft_overhauled.dried_mud_block": "Dried Mud Block",
       "block.minecraft_overhauled.baobab_fence_gate": "Baobab Fence Gate"
     }
