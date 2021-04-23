@@ -3,7 +3,7 @@
   "_type": "gun",
   "definition": {
     "renderType": 0,
-    "texture": "spear2",
+    "texture": "spear3",
     "customModelName": "Normal",
     "name": "Spear",
     "specialInfo": [],
