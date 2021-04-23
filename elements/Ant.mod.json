@@ -4,8 +4,8 @@
   "definition": {
     "mobName": "Ant",
     "mobLabel": "",
-    "mobModelName": "Silverfish",
-    "mobModelTexture": "ant_bug.png",
+    "mobModelName": "Modelant",
+    "mobModelTexture": "ant.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.4,
     "modelHeight": 0.3,
