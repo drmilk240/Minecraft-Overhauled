@@ -14,16 +14,16 @@
     "minHeight": 16,
     "spawnVines": true,
     "treeVines": {
-      "value": "Blocks.LEAVES2#1"
+      "value": "CUSTOM:ShoreaLeaves"
     },
     "treeStem": {
-      "value": "Blocks.LOG#3"
+      "value": "CUSTOM:ShoreaLog"
     },
     "treeBranch": {
-      "value": "Blocks.LEAVES2#1"
+      "value": "CUSTOM:ShoreaLeaves"
     },
     "treeFruits": {
-      "value": "Blocks.LEAVES2#1"
+      "value": "CUSTOM:ShoreaLeaves"
     },
     "airColor": {
       "value": -6881315,
