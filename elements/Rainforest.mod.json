@@ -14,16 +14,16 @@
     "minHeight": 8,
     "spawnVines": true,
     "treeVines": {
-      "value": "Blocks.LEAVES2"
+      "value": "Blocks.LEAVES2#1"
     },
     "treeStem": {
       "value": "Blocks.LOG#3"
     },
     "treeBranch": {
-      "value": "Blocks.LEAVES2"
+      "value": "Blocks.LEAVES2#1"
     },
     "treeFruits": {
-      "value": "Blocks.LEAVES2"
+      "value": "Blocks.LEAVES2#1"
     },
     "airColor": {
       "value": -10048106,
@@ -58,7 +58,7 @@
     "rainingPossibility": 1.0,
     "temperature": 0.5,
     "baseHeight": 0.1,
-    "heightVariation": 0.7,
+    "heightVariation": 0.4,
     "spawnBiome": true,
     "biomeWeight": 10,
     "biomeType": "WARM",
@@ -94,26 +94,26 @@
           "value": "EntityDolphin"
         },
         "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
+        "maxGroup": 7,
+        "weight": 50,
         "spawnType": "creature"
       },
       {
         "entity": {
           "value": "EntityParrot"
         },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 50,
         "spawnType": "creature"
       },
       {
         "entity": {
           "value": "EntityOcelot"
         },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 50,
         "spawnType": "creature"
       },
       {
@@ -121,8 +121,8 @@
           "value": "EntityTropicalFish"
         },
         "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
+        "maxGroup": 17,
+        "weight": 50,
         "spawnType": "creature"
       }
     ]
