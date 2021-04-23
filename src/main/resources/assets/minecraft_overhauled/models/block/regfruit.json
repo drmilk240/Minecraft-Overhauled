@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_overhauled:blocks/regfruit",
+    "up": "minecraft_overhauled:blocks/regfruit",
+    "north": "minecraft_overhauled:blocks/regfruitside",
+    "east": "minecraft_overhauled:blocks/regfruitside",
+    "south": "minecraft_overhauled:blocks/regfruitside",
+    "west": "minecraft_overhauled:blocks/regfruitside",
+    "particle": "minecraft_overhauled:blocks/regfruit"
+  }
+}

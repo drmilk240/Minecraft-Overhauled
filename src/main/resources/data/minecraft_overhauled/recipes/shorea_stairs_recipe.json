@@ -1,0 +1,33 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_overhauled:unknown_element"
+    },
+    "3": {
+      "item": "minecraft_overhauled:unknown_element"
+    },
+    "4": {
+      "item": "minecraft_overhauled:unknown_element"
+    },
+    "6": {
+      "item": "minecraft_overhauled:unknown_element"
+    },
+    "7": {
+      "item": "minecraft_overhauled:unknown_element"
+    },
+    "8": {
+      "item": "minecraft_overhauled:unknown_element"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:shorea_stairs",
+    "count": 4
+  }
+}

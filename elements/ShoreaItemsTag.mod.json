@@ -1,0 +1,19 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:ShoreaWood"
+      },
+      {
+        "value": "CUSTOM:ShoreaLog"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "shorea_log",
+    "namespace": "forge"
+  }
+}

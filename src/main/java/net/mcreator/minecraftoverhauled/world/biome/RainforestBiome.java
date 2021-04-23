@@ -41,6 +41,9 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.minecraftoverhauled.block.ShoreaLogBlock;
+import net.mcreator.minecraftoverhauled.block.ShoreaLeavesBlock;
+import net.mcreator.minecraftoverhauled.block.RegfruitBlock;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 
 import java.util.Set;
@@ -88,12 +91,11 @@ public class RainforestBiome extends MinecraftOverhauledModElements.ModElement {
 					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(33))));
 			this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS.withConfiguration(new SeaGrassConfig(49, 0.3D))
 					.withPlacement(Placement.TOP_SOLID_HEIGHTMAP.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-					new CustomTreeFeature()
-							.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.JUNGLE_LOG.getDefaultState()),
-									new SimpleBlockStateProvider(Blocks.DARK_OAK_LEAVES.getDefaultState()))).baseHeight(16)
-											.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
-							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(14, 0.1F, 1))));
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, new CustomTreeFeature()
+					.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(ShoreaLogBlock.block.getDefaultState()),
+							new SimpleBlockStateProvider(ShoreaLeavesBlock.block.getDefaultState()))).baseHeight(16)
+									.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
+					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(14, 0.1F, 1))));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.SUGAR_CANE_CONFIG)
 					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(24))));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.CACTUS_CONFIG)
@@ -108,11 +110,11 @@ public class RainforestBiome extends MinecraftOverhauledModElements.ModElement {
 							.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), 6, 2,
 									Lists.newArrayList(Blocks.GRASS_BLOCK.getDefaultState(), Blocks.DIRT.getDefaultState())))
 							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(1))));
-			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.DOLPHIN, 100, 4, 7));
-			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.PARROT, 100, 1, 2));
-			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.OCELOT, 100, 1, 1));
-			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.TROPICAL_FISH, 100, 4, 17));
-			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.RAVAGER, 50, 1, 1));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.DOLPHIN, 1000, 4, 7));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.PARROT, 500, 1, 2));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.OCELOT, 500, 1, 1));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.TROPICAL_FISH, 1000, 4, 17));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.RAVAGER, 100, 1, 1));
 		}
 
 		@OnlyIn(Dist.CLIENT)
@@ -188,9 +190,9 @@ public class RainforestBiome extends MinecraftOverhauledModElements.ModElement {
 										state = world.getBlockState(blockpos);
 										if (state.getBlock().isAir(state, world, blockpos) || state.getMaterial().blocksMovement()
 												|| state.isIn(BlockTags.LEAVES)
-												|| state.getBlock() == Blocks.DARK_OAK_LEAVES.getDefaultState().getBlock()
-												|| state.getBlock() == Blocks.DARK_OAK_LEAVES.getDefaultState().getBlock()) {
-											setTreeBlockState(changedBlocks, world, blockpos, Blocks.DARK_OAK_LEAVES.getDefaultState(), bbox);
+												|| state.getBlock() == ShoreaLeavesBlock.block.getDefaultState().getBlock()
+												|| state.getBlock() == ShoreaLeavesBlock.block.getDefaultState().getBlock()) {
+											setTreeBlockState(changedBlocks, world, blockpos, ShoreaLeavesBlock.block.getDefaultState(), bbox);
 										}
 									}
 								}
@@ -199,22 +201,22 @@ public class RainforestBiome extends MinecraftOverhauledModElements.ModElement {
 						for (int genh = 0; genh < height; genh++) {
 							BlockPos genhPos = position.up(genh);
 							state = world.getBlockState(genhPos);
-							setTreeBlockState(changedBlocks, world, genhPos, Blocks.JUNGLE_LOG.getDefaultState(), bbox);
+							setTreeBlockState(changedBlocks, world, genhPos, ShoreaLogBlock.block.getDefaultState(), bbox);
 							if (state.getBlock().isAir(state, world, genhPos) || state.getMaterial().blocksMovement() || state.isIn(BlockTags.LEAVES)
-									|| state.getBlock() == Blocks.DARK_OAK_LEAVES.getDefaultState().getBlock()
-									|| state.getBlock() == Blocks.DARK_OAK_LEAVES.getDefaultState().getBlock()) {
+									|| state.getBlock() == ShoreaLeavesBlock.block.getDefaultState().getBlock()
+									|| state.getBlock() == ShoreaLeavesBlock.block.getDefaultState().getBlock()) {
 								if (genh > 0) {
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), Blocks.DARK_OAK_LEAVES.getDefaultState(),
+										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), ShoreaLeavesBlock.block.getDefaultState(),
 												bbox);
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(1, genh, 0), Blocks.DARK_OAK_LEAVES.getDefaultState(),
+										setTreeBlockState(changedBlocks, world, position.add(1, genh, 0), ShoreaLeavesBlock.block.getDefaultState(),
 												bbox);
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, -1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, -1), Blocks.DARK_OAK_LEAVES.getDefaultState(),
+										setTreeBlockState(changedBlocks, world, position.add(0, genh, -1), ShoreaLeavesBlock.block.getDefaultState(),
 												bbox);
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, 1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, 1), Blocks.DARK_OAK_LEAVES.getDefaultState(),
+										setTreeBlockState(changedBlocks, world, position.add(0, genh, 1), ShoreaLeavesBlock.block.getDefaultState(),
 												bbox);
 								}
 							}
@@ -225,7 +227,7 @@ public class RainforestBiome extends MinecraftOverhauledModElements.ModElement {
 								for (int genz = position.getZ() - k4; genz <= position.getZ() + k4; genz++) {
 									BlockPos bpos = new BlockPos(genx, genh, genz);
 									state = world.getBlockState(bpos);
-									if (state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.DARK_OAK_LEAVES.getDefaultState().getBlock()) {
+									if (state.isIn(BlockTags.LEAVES) || state.getBlock() == ShoreaLeavesBlock.block.getDefaultState().getBlock()) {
 										BlockPos blockpos1 = bpos.south();
 										BlockPos blockpos2 = bpos.west();
 										BlockPos blockpos3 = bpos.east();
@@ -248,7 +250,7 @@ public class RainforestBiome extends MinecraftOverhauledModElements.ModElement {
 									if (rand.nextInt(4 - hlevel) == 0) {
 										Direction dir = Direction.getOpposite();
 										setTreeBlockState(changedBlocks, world, position.add(dir.getXOffset(), height - 5 + hlevel, dir.getZOffset()),
-												Blocks.DARK_OAK_LEAVES.getDefaultState(), bbox);
+												RegfruitBlock.block.getDefaultState(), bbox);
 									}
 								}
 							}
@@ -264,17 +266,17 @@ public class RainforestBiome extends MinecraftOverhauledModElements.ModElement {
 		}
 
 		private void addVines(IWorld world, BlockPos pos, Set<BlockPos> changedBlocks, MutableBoundingBox bbox) {
-			setTreeBlockState(changedBlocks, world, pos, Blocks.DARK_OAK_LEAVES.getDefaultState(), bbox);
+			setTreeBlockState(changedBlocks, world, pos, ShoreaLeavesBlock.block.getDefaultState(), bbox);
 			int i = 5;
 			for (BlockPos blockpos = pos.down(); world.isAirBlock(blockpos) && i > 0; --i) {
-				setTreeBlockState(changedBlocks, world, blockpos, Blocks.DARK_OAK_LEAVES.getDefaultState(), bbox);
+				setTreeBlockState(changedBlocks, world, blockpos, ShoreaLeavesBlock.block.getDefaultState(), bbox);
 				blockpos = blockpos.down();
 			}
 		}
 
 		private boolean canGrowInto(Block blockType) {
-			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == Blocks.JUNGLE_LOG.getDefaultState().getBlock()
-					|| blockType == Blocks.DARK_OAK_LEAVES.getDefaultState().getBlock()
+			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == ShoreaLogBlock.block.getDefaultState().getBlock()
+					|| blockType == ShoreaLeavesBlock.block.getDefaultState().getBlock()
 					|| blockType == Blocks.GRASS_BLOCK.getDefaultState().getBlock() || blockType == Blocks.DIRT.getDefaultState().getBlock();
 		}
 

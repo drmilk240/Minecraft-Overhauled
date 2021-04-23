@@ -4,12 +4,12 @@ package net.mcreator.minecraftoverhauled.block;
 import net.minecraft.block.material.Material;
 
 @MinecraftOverhauledModElements.ModElement.Tag
-public class BaobabTrapdoorBlock extends MinecraftOverhauledModElements.ModElement {
+public class ShoreaWoodBlock extends MinecraftOverhauledModElements.ModElement {
 
-	@ObjectHolder("minecraft_overhauled:baobab_trapdoor")
+	@ObjectHolder("minecraft_overhauled:shorea_wood")
 	public static final Block block = null;
 
-	public BaobabTrapdoorBlock(MinecraftOverhauledModElements instance) {
+	public ShoreaWoodBlock(MinecraftOverhauledModElements instance) {
 		super(instance, 46);
 
 	}
@@ -20,29 +20,24 @@ public class BaobabTrapdoorBlock extends MinecraftOverhauledModElements.ModEleme
 		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(SavannaItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
-	@Override
-	@OnlyIn(Dist.CLIENT)
-	public void clientLoad(FMLClientSetupEvent event) {
-		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
-	}
-
-	public static class CustomBlock extends TrapDoorBlock {
+	public static class CustomBlock extends Block {
 
 		public CustomBlock() {
 			super(
 
-					Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
+					Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 2f).lightValue(0).harvestLevel(0)
+							.harvestTool(ToolType.AXE));
 
-			setRegistryName("baobab_trapdoor");
+			setRegistryName("shorea_wood");
 		}
 
 		@Override
-		public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return false;
+		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+			return 5;
 		}
 
 		@Override
-		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
+		public boolean canSustainPlant(BlockState state, IBlockReader world, BlockPos pos, Direction direction, IPlantable plantable) {
 			return true;
 		}
 

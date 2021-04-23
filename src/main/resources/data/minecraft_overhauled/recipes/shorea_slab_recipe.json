@@ -1,0 +1,22 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_overhauled:unknown_element"
+    },
+    "1": {
+      "item": "minecraft_overhauled:unknown_element"
+    },
+    "2": {
+      "item": "minecraft_overhauled:unknown_element"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:unknown_element",
+    "count": 6
+  }
+}
