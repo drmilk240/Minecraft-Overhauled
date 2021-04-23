@@ -1,0 +1,12 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "minecraft_overhauled:mud_block"
+  },
+  "result": {
+    "item": "minecraft_overhauled:dried_mud_block"
+  }
+}
