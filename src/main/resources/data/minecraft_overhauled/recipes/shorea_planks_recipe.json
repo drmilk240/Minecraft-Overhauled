@@ -1,0 +1,13 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:shorea_log"
+    }
+  ],
+  "result": {
+    "item": "minecraft_overhauled:shorea_planks",
+    "count": 4
+  }
+}

@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "minecraft_overhauled:items/spear3"
+    "layer0": "minecraft_overhauled:items/spear2"
   },
   "display": {
     "thirdperson_righthand": {

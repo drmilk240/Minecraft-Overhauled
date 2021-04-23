@@ -95,7 +95,7 @@
         },
         "minGroup": 4,
         "maxGroup": 7,
-        "weight": 100,
+        "weight": 1000,
         "spawnType": "creature"
       },
       {
@@ -104,7 +104,7 @@
         },
         "minGroup": 1,
         "maxGroup": 2,
-        "weight": 100,
+        "weight": 500,
         "spawnType": "creature"
       },
       {
@@ -113,7 +113,7 @@
         },
         "minGroup": 1,
         "maxGroup": 1,
-        "weight": 100,
+        "weight": 500,
         "spawnType": "creature"
       },
       {
@@ -122,7 +122,7 @@
         },
         "minGroup": 4,
         "maxGroup": 17,
-        "weight": 100,
+        "weight": 1000,
         "spawnType": "creature"
       },
       {
@@ -131,7 +131,7 @@
         },
         "minGroup": 1,
         "maxGroup": 1,
-        "weight": 50,
+        "weight": 100,
         "spawnType": "creature"
       }
     ]
