@@ -96,7 +96,7 @@ public class MudBlockBlock extends MinecraftOverhauledModElements.ModElement {
 				if (blockAt.getBlock() == Blocks.COARSE_DIRT.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 26)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(7, 45, 45, 100))));
+			}), block.getDefaultState(), 32)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(1, 45, 45, 100))));
 		}
 	}
 }
