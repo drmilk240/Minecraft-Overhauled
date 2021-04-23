@@ -1,0 +1,93 @@
+{
+  "_fv": 13,
+  "_type": "biome",
+  "definition": {
+    "name": "Rainforest",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "treeType": 1,
+    "vanillaTreeType": "Default",
+    "minHeight": 10,
+    "spawnVines": true,
+    "treeVines": {
+      "value": "Blocks.LEAVES2"
+    },
+    "treeStem": {
+      "value": "Blocks.LOG#3"
+    },
+    "treeBranch": {
+      "value": "Blocks.LEAVES2"
+    },
+    "treeFruits": {
+      "value": "Blocks.LEAVES2"
+    },
+    "airColor": {
+      "value": -10048106,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -14384350,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -14384350,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -11911131,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -11911131,
+      "falpha": 0.0
+    },
+    "treesPerChunk": 14,
+    "grassPerChunk": 10,
+    "seagrassPerChunk": 20,
+    "flowersPerChunk": 1,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPathcesPerChunk": 0,
+    "gravelPatchesPerChunk": 1,
+    "reedsPerChunk": 3,
+    "cactiPerChunk": 0,
+    "rainingPossibility": 1.0,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.4,
+    "spawnBiome": true,
+    "biomeWeight": 10,
+    "biomeType": "WARM",
+    "biomeCategory": "JUNGLE",
+    "parent": {
+      "value": "jungle"
+    },
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnPillagerOutpost": false,
+    "villageType": "savanna",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": true,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "biomeDictionaryTypes": [
+      "JUNGLE",
+      "WET",
+      "LUSH"
+    ],
+    "defaultFeatures": [
+      "Caves",
+      "MonsterRooms",
+      "Structures",
+      "Ores"
+    ],
+    "spawnEntries": []
+  }
+}
