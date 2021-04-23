@@ -37,6 +37,7 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.block.material.Material;
 
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 
@@ -53,7 +54,7 @@ public class ToadEntity extends MinecraftOverhauledModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
+		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("toad")
 						.setRegistryName("toad");
 		elements.entities.add(() -> entity);
@@ -64,10 +65,18 @@ public class ToadEntity extends MinecraftOverhauledModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-			biome.getSpawns(EntityClassification.MONSTER).add(new Biome.SpawnListEntry(entity, 20, 4, 4));
+			boolean biomeCriteria = false;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("savanna")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("savanna_plateau")))
+				biomeCriteria = true;
+			if (!biomeCriteria)
+				continue;
+			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 6, 1, 4));
 		}
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				MonsterEntity::canMonsterSpawn);
+				(entityType, world, reason, pos,
+						random) -> (world.getBlockState(pos.down()).getMaterial() == Material.ORGANIC && world.getLightSubtracted(pos, 0) > 8));
 	}
 
 	@SubscribeEvent

@@ -106,11 +106,18 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
-    "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "spawningProbability": 15,
+    "mobSpawningType": "creature",
+    "minNumberOfMobsPerGroup": 11,
+    "maxNumberOfMobsPerGroup": 36,
+    "restrictionBiomes": [
+      {
+        "value": "savanna"
+      },
+      {
+        "value": "savanna_rock"
+      }
+    ],
     "spawnInDungeons": false
   }
 }
