@@ -1,7 +1,0 @@
-{
-  "parent": "block/fence_post",
-  "textures": {
-    "texture": "minecraft_overhauled:blocks/bushthorn_log_side",
-    "particle": "minecraft_overhauled:blocks/bushthorn_log_side"
-  }
-}

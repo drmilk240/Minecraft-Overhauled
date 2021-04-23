@@ -1,48 +1,7 @@
 {
-  "multipart": [
-    {
-      "apply": {
-        "model": "minecraft_overhauled:block/bushthorn_wood_post"
-      }
-    },
-    {
-      "when": {
-        "north": "true"
-      },
-      "apply": {
-        "model": "minecraft_overhauled:block/bushthorn_wood",
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "south": "true"
-      },
-      "apply": {
-        "model": "minecraft_overhauled:block/bushthorn_wood",
-        "y": 180,
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "west": "true"
-      },
-      "apply": {
-        "model": "minecraft_overhauled:block/bushthorn_wood",
-        "y": 270,
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "east": "true"
-      },
-      "apply": {
-        "model": "minecraft_overhauled:block/bushthorn_wood",
-        "y": 90,
-        "uvlock": true
-      }
+  "variants": {
+    "": {
+      "model": "minecraft_overhauled:block/bushthorn_wood"
     }
-  ]
+  }
 }
