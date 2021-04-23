@@ -41,7 +41,7 @@
     "useLootTableForDrops": false,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
-    "plantsGrowOn": true,
+    "plantsGrowOn": false,
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
@@ -111,8 +111,8 @@
         "value": "Blocks.DIRT#1"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "frequencyPerChunks": 7,
+    "frequencyOnChunk": 26,
     "minGenerateHeight": 45,
     "maxGenerateHeight": 100
   }

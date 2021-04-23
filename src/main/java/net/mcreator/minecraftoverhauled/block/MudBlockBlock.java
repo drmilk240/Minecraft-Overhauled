@@ -5,7 +5,6 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.common.ToolType;
-import net.minecraftforge.common.IPlantable;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.gen.placement.Placement;
@@ -17,10 +16,8 @@ import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.IWorld;
-import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Direction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -56,11 +53,6 @@ public class MudBlockBlock extends MinecraftOverhauledModElements.ModElement {
 			super(Block.Properties.create(Material.EARTH).sound(SoundType.SLIME).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(1)
 					.harvestTool(ToolType.SHOVEL).slipperiness(1f));
 			setRegistryName("mud_block");
-		}
-
-		@Override
-		public boolean canSustainPlant(BlockState state, IBlockReader world, BlockPos pos, Direction direction, IPlantable plantable) {
-			return true;
 		}
 
 		@Override
@@ -104,7 +96,7 @@ public class MudBlockBlock extends MinecraftOverhauledModElements.ModElement {
 				if (blockAt.getBlock() == Blocks.COARSE_DIRT.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 16)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 45, 45, 100))));
+			}), block.getDefaultState(), 26)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(7, 45, 45, 100))));
 		}
 	}
 }
