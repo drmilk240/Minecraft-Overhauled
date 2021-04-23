@@ -15,7 +15,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
@@ -23,14 +22,15 @@ import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.monster.MonsterEntity;
-import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.goal.SwimGoal;
+import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
+import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
@@ -42,21 +42,21 @@ import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @MinecraftOverhauledModElements.ModElement.Tag
-public class AntEntity extends MinecraftOverhauledModElements.ModElement {
+public class ToadEntity extends MinecraftOverhauledModElements.ModElement {
 	public static EntityType entity = null;
-	public AntEntity(MinecraftOverhauledModElements instance) {
-		super(instance, 40);
+	public ToadEntity(MinecraftOverhauledModElements instance) {
+		super(instance, 41);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.4f, 0.3f)).build("ant")
-						.setRegistryName("ant");
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("toad")
+						.setRegistryName("toad");
 		elements.entities.add(() -> entity);
 		elements.items.add(
-				() -> new SpawnEggItem(entity, -12779520, -15728640, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("ant_spawn_egg"));
+				() -> new SpawnEggItem(entity, -12622015, -9404865, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("toad_spawn_egg"));
 	}
 
 	@Override
@@ -72,15 +72,15 @@ public class AntEntity extends MinecraftOverhauledModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	public void registerModels(ModelRegistryEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> {
-			return new MobRenderer(renderManager, new Modelant(), 0.05f) {
+			return new MobRenderer(renderManager, new Modeltoad(), 0.5f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("minecraft_overhauled:textures/ant.png");
+					return new ResourceLocation("minecraft_overhauled:textures/toad.png");
 				}
 			};
 		});
 	}
-	public static class CustomEntity extends CreatureEntity {
+	public static class CustomEntity extends MonsterEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -99,8 +99,10 @@ public class AntEntity extends MinecraftOverhauledModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new WaterAvoidingRandomWalkingGoal(this, 0.8));
-			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(1, new SwimGoal(this));
+			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8));
+			this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.goalSelector.addGoal(4, new RandomSwimmingGoal(this, 1, 40));
 		}
 
 		@Override
@@ -122,6 +124,10 @@ public class AntEntity extends MinecraftOverhauledModElements.ModElement {
 		public boolean attackEntityFrom(DamageSource source, float amount) {
 			if (source == DamageSource.FALL)
 				return false;
+			if (source == DamageSource.CACTUS)
+				return false;
+			if (source == DamageSource.DROWN)
+				return false;
 			return super.attackEntityFrom(source, amount);
 		}
 
@@ -131,9 +137,9 @@ public class AntEntity extends MinecraftOverhauledModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
-				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(1);
+				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10);
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
-				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0);
+				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0.5);
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
@@ -143,30 +149,33 @@ public class AntEntity extends MinecraftOverhauledModElements.ModElement {
 	// Made with Blockbench 3.8.4
 	// Exported for Minecraft version 1.15 - 1.16
 	// Paste this class into your mod and generate all required imports
-	public static class Modelant extends EntityModel<Entity> {
+	public static class Modeltoad extends EntityModel<Entity> {
 		private final ModelRenderer bb_main;
-		private final ModelRenderer cube_r1;
-		private final ModelRenderer cube_r2;
-		public Modelant() {
-			textureWidth = 16;
-			textureHeight = 16;
+		private final ModelRenderer rbackthigh_r1;
+		public Modeltoad() {
+			textureWidth = 32;
+			textureHeight = 32;
 			bb_main = new ModelRenderer(this);
 			bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
-			bb_main.setTextureOffset(0, 0).addBox(-1.0F, -1.0F, -2.0F, 1.0F, 1.0F, 3.0F, 0.0F, false);
-			cube_r1 = new ModelRenderer(this);
-			cube_r1.setRotationPoint(0.0F, 0.0F, 0.0F);
-			bb_main.addChild(cube_r1);
-			setRotationAngle(cube_r1, 0.0F, 0.0F, -0.5236F);
-			cube_r1.setTextureOffset(0, 0).addBox(-1.25F, -1.25F, 0.5F, 1.0F, 1.0F, 0.0F, 0.0F, false);
-			cube_r1.setTextureOffset(0, 0).addBox(-1.25F, -1.25F, -0.5F, 1.0F, 1.0F, 0.0F, 0.0F, false);
-			cube_r1.setTextureOffset(0, 0).addBox(-1.25F, -1.25F, -1.5F, 1.0F, 1.0F, 0.0F, 0.0F, false);
-			cube_r2 = new ModelRenderer(this);
-			cube_r2.setRotationPoint(0.0F, 0.0F, 0.0F);
-			bb_main.addChild(cube_r2);
-			setRotationAngle(cube_r2, 0.0F, 0.0F, 0.5236F);
-			cube_r2.setTextureOffset(0, 0).addBox(-0.5F, -0.75F, -1.5F, 1.0F, 1.0F, 0.0F, 0.0F, false);
-			cube_r2.setTextureOffset(0, 0).addBox(-0.5F, -0.75F, -0.5F, 1.0F, 1.0F, 0.0F, 0.0F, false);
-			cube_r2.setTextureOffset(0, 0).addBox(-0.5F, -0.75F, 0.5F, 1.0F, 1.0F, 0.0F, 0.0F, false);
+			bb_main.setTextureOffset(0, 0).addBox(-4.0F, -7.0F, -4.0F, 8.0F, 6.0F, 8.0F, 0.0F, false);
+			bb_main.setTextureOffset(0, 14).addBox(-7.0F, -7.0F, -3.0F, 3.0F, 5.0F, 6.0F, 0.0F, false);
+			bb_main.setTextureOffset(0, 25).addBox(-6.0F, -8.0F, 1.0F, 2.0F, 1.0F, 2.0F, 0.0F, false);
+			bb_main.setTextureOffset(24, 24).addBox(-6.0F, -8.0F, -3.0F, 2.0F, 1.0F, 2.0F, 0.0F, false);
+			bb_main.setTextureOffset(24, 0).addBox(-4.0F, -4.0F, -6.0F, 2.0F, 4.0F, 2.0F, 0.0F, false);
+			bb_main.setTextureOffset(0, 0).addBox(-4.0F, -4.0F, 4.0F, 2.0F, 4.0F, 2.0F, 0.0F, false);
+			bb_main.setTextureOffset(16, 24).addBox(1.75F, -2.0F, -6.0F, 2.0F, 2.0F, 2.0F, 0.0F, false);
+			bb_main.setTextureOffset(22, 14).addBox(1.75F, -2.0F, 4.0F, 2.0F, 2.0F, 2.0F, 0.0F, false);
+			rbackthigh_r1 = new ModelRenderer(this);
+			rbackthigh_r1.setRotationPoint(0.0F, 0.0F, 0.0F);
+			bb_main.addChild(rbackthigh_r1);
+			setRotationAngle(rbackthigh_r1, 0.0F, 0.0F, -0.2618F);
+			rbackthigh_r1.setTextureOffset(12, 14).addBox(2.0F, -3.5F, 4.0F, 3.0F, 3.0F, 2.0F, 0.0F, false);
+			rbackthigh_r1.setTextureOffset(18, 19).addBox(2.0F, -3.5F, -6.0F, 3.0F, 3.0F, 2.0F, 0.0F, false);
+		}
+
+		@Override
+		public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+			// previously the render function, render code was moved to a method below
 		}
 
 		@Override
@@ -179,11 +188,6 @@ public class AntEntity extends MinecraftOverhauledModElements.ModElement {
 			modelRenderer.rotateAngleX = x;
 			modelRenderer.rotateAngleY = y;
 			modelRenderer.rotateAngleZ = z;
-		}
-
-		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
-			this.cube_r1.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
-			this.cube_r2.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
 		}
 	}
 }
