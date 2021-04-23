@@ -2,9 +2,8 @@
   "group": "minecraft_overhauled",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "01",
-    "23",
-    "45"
+    "012",
+    "345"
   ],
   "key": {
     "0": {
@@ -27,7 +26,7 @@
     }
   },
   "result": {
-    "item": "minecraft_overhauled:unknown_element",
-    "count": 1
+    "item": "minecraft_overhauled:baobab_trapdoor",
+    "count": 2
   }
 }

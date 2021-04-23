@@ -2,7 +2,7 @@
   "_fv": 13,
   "_type": "block",
   "definition": {
-    "texture": "bushthorn_log_side",
+    "texture": "baobabplanks",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -15,7 +15,8 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "hasTransparency": false,
+    "blockBase": "TrapDoor",
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
@@ -24,16 +25,16 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Bushthorn Wood",
+    "name": "Baobab Trapdoor",
     "specialInfo": [],
-    "hardness": 2.0,
-    "resistance": 2.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Savanna"
     },
-    "destroyTool": "axe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -41,7 +42,7 @@
     "useLootTableForDrops": false,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
-    "plantsGrowOn": true,
+    "plantsGrowOn": false,
     "canProvidePower": false,
     "lightOpacity": 0,
     "material": {
@@ -56,7 +57,7 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 5,
+    "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
@@ -67,7 +68,7 @@
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

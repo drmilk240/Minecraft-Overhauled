@@ -6,17 +6,17 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft_overhauled:shorea_planks"
+      "item": "minecraft_overhauled:unknown_element"
     },
     "1": {
-      "item": "minecraft_overhauled:shorea_planks"
+      "item": "minecraft_overhauled:unknown_element"
     },
     "2": {
-      "item": "minecraft_overhauled:shorea_planks"
+      "item": "minecraft_overhauled:unknown_element"
     }
   },
   "result": {
-    "item": "minecraft_overhauled:shorea_slab",
+    "item": "minecraft_overhauled:unknown_element",
     "count": 6
   }
 }

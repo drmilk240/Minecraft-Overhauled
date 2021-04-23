@@ -1,7 +1,7 @@
 {
-  "parent": "block/fence_side",
+  "parent": "block/cube_all",
   "textures": {
-    "texture": "minecraft_overhauled:blocks/bushthorn_log_side",
+    "all": "minecraft_overhauled:blocks/bushthorn_log_side",
     "particle": "minecraft_overhauled:blocks/bushthorn_log_side"
   }
 }

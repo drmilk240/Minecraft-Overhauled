@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft_overhauled:block/bushthorn_wood",
+  "parent": "minecraft_overhauled:block/baobab_trapdoor",
   "display": {
     "thirdperson": {
       "rotation": [

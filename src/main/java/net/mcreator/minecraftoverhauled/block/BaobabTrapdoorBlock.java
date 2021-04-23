@@ -4,13 +4,13 @@ package net.mcreator.minecraftoverhauled.block;
 import net.minecraft.block.material.Material;
 
 @MinecraftOverhauledModElements.ModElement.Tag
-public class BaobabDoorBlock extends MinecraftOverhauledModElements.ModElement {
+public class BaobabTrapdoorBlock extends MinecraftOverhauledModElements.ModElement {
 
-	@ObjectHolder("minecraft_overhauled:baobab_door")
+	@ObjectHolder("minecraft_overhauled:baobab_trapdoor")
 	public static final Block block = null;
 
-	public BaobabDoorBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 66);
+	public BaobabTrapdoorBlock(MinecraftOverhauledModElements instance) {
+		super(instance, 46);
 
 	}
 
@@ -26,14 +26,14 @@ public class BaobabDoorBlock extends MinecraftOverhauledModElements.ModElement {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
 
-	public static class CustomBlock extends DoorBlock {
+	public static class CustomBlock extends TrapDoorBlock {
 
 		public CustomBlock() {
 			super(
 
 					Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
 
-			setRegistryName("baobab_door");
+			setRegistryName("baobab_trapdoor");
 		}
 
 		@Override
@@ -48,8 +48,6 @@ public class BaobabDoorBlock extends MinecraftOverhauledModElements.ModElement {
 
 		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-			if (state.get(BlockStateProperties.DOUBLE_BLOCK_HALF) != DoubleBlockHalf.LOWER)
-				return Collections.emptyList();
 
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())

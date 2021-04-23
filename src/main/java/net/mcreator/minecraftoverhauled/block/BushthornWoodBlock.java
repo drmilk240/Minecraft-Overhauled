@@ -14,8 +14,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.FenceGateBlock;
-import net.minecraft.block.FenceBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -38,7 +36,7 @@ public class BushthornWoodBlock extends MinecraftOverhauledModElements.ModElemen
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(SavannaItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
-	public static class CustomBlock extends FenceBlock {
+	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 2f).lightValue(0).harvestLevel(0)
 					.harvestTool(ToolType.AXE));
@@ -46,10 +44,8 @@ public class BushthornWoodBlock extends MinecraftOverhauledModElements.ModElemen
 		}
 
 		@Override
-		public boolean canConnect(BlockState state, boolean checkattach, Direction face) {
-			boolean flag = state.getBlock() instanceof FenceBlock && state.getMaterial() == this.material;
-			boolean flag1 = state.getBlock() instanceof FenceGateBlock && FenceGateBlock.isParallel(state, face);
-			return !cannotAttach(state.getBlock()) && checkattach || flag || flag1;
+		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
+			return true;
 		}
 
 		@Override
