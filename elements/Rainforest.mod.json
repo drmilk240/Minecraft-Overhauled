@@ -11,7 +11,7 @@
     },
     "treeType": 1,
     "vanillaTreeType": "Default",
-    "minHeight": 8,
+    "minHeight": 16,
     "spawnVines": true,
     "treeVines": {
       "value": "Blocks.LEAVES2#1"
@@ -26,7 +26,7 @@
       "value": "Blocks.LEAVES2#1"
     },
     "airColor": {
-      "value": -10048106,
+      "value": -6881315,
       "falpha": 0.0
     },
     "grassColor": {
@@ -42,7 +42,7 @@
       "falpha": 0.0
     },
     "waterFogColor": {
-      "value": -11911131,
+      "value": -13423073,
       "falpha": 0.0
     },
     "treesPerChunk": 14,
@@ -95,7 +95,7 @@
         },
         "minGroup": 4,
         "maxGroup": 7,
-        "weight": 50,
+        "weight": 100,
         "spawnType": "creature"
       },
       {
@@ -104,7 +104,7 @@
         },
         "minGroup": 1,
         "maxGroup": 2,
-        "weight": 50,
+        "weight": 100,
         "spawnType": "creature"
       },
       {
@@ -113,7 +113,7 @@
         },
         "minGroup": 1,
         "maxGroup": 1,
-        "weight": 50,
+        "weight": 100,
         "spawnType": "creature"
       },
       {
@@ -122,6 +122,15 @@
         },
         "minGroup": 4,
         "maxGroup": 17,
+        "weight": 100,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityRavager"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
         "weight": 50,
         "spawnType": "creature"
       }
