@@ -1,7 +1,7 @@
 {
-  "parent": "block/fence_side",
+  "parent": "block/template_wall_side",
   "textures": {
-    "texture": "minecraft_overhauled:blocks/bushthorn_log_side",
+    "wall": "minecraft_overhauled:blocks/bushthorn_log_side",
     "particle": "minecraft_overhauled:blocks/bushthorn_log_side"
   }
 }

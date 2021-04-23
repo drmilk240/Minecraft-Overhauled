@@ -1,6 +1,9 @@
 {
   "multipart": [
     {
+      "when": {
+        "up": "true"
+      },
       "apply": {
         "model": "minecraft_overhauled:block/bushthorn_log_post"
       }
