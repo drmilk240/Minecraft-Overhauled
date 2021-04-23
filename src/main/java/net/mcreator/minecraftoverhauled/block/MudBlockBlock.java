@@ -16,12 +16,14 @@ import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.IWorld;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.PushReaction;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.Blocks;
@@ -50,9 +52,14 @@ public class MudBlockBlock extends MinecraftOverhauledModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.EARTH).sound(SoundType.SLIME).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(1)
-					.harvestTool(ToolType.SHOVEL).slipperiness(1f));
+			super(Block.Properties.create(Material.EARTH).sound(SoundType.field_226947_m_).hardnessAndResistance(1f, 10f).lightValue(0)
+					.harvestLevel(1).harvestTool(ToolType.SHOVEL).slipperiness(0.8f));
 			setRegistryName("mud_block");
+		}
+
+		@Override
+		public MaterialColor getMaterialColor(BlockState state, IBlockReader blockAccess, BlockPos pos) {
+			return MaterialColor.DIRT;
 		}
 
 		@Override

@@ -50,7 +50,7 @@
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "DIRT",
     "creativePickItem": {
       "value": ""
     },
@@ -59,11 +59,11 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 1.0,
+    "slipperiness": 0.8,
     "reactionToPushing": "DESTROY",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "SLIME"
+      "value": "HONEY"
     },
     "luminance": 0.0,
     "unbreakable": false,
