@@ -31,7 +31,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Savanna"
+      "value": "CUSTOM:RainforestTab"
     },
     "destroyTool": "axe",
     "customDrop": {
@@ -63,7 +63,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "BAMBOO"
+      "value": "WOOD"
     },
     "luminance": 0.19999999999999998,
     "unbreakable": false,

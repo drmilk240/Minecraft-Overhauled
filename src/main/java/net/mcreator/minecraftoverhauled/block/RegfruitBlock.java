@@ -13,7 +13,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.minecraftoverhauled.itemgroup.SavannaItemGroup;
+import net.mcreator.minecraftoverhauled.itemgroup.RainforestTabItemGroup;
 import net.mcreator.minecraftoverhauled.item.RegfruitSlicesItem;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 
@@ -31,11 +31,12 @@ public class RegfruitBlock extends MinecraftOverhauledModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(SavannaItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items
+				.add(() -> new BlockItem(block, new Item.Properties().group(RainforestTabItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.PLANTS).sound(SoundType.BAMBOO).hardnessAndResistance(1.1500000000000001f, 10f).lightValue(3)
+			super(Block.Properties.create(Material.PLANTS).sound(SoundType.WOOD).hardnessAndResistance(1.1500000000000001f, 10f).lightValue(3)
 					.harvestLevel(1).harvestTool(ToolType.AXE));
 			setRegistryName("regfruit");
 		}

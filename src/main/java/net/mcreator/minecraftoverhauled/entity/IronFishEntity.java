@@ -26,10 +26,12 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.passive.SquidEntity;
 import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.goal.PanicGoal;
 import net.minecraft.entity.ai.goal.FollowMobGoal;
+import net.minecraft.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.entity.ai.controller.MovementController;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityType;
@@ -48,10 +50,10 @@ import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @MinecraftOverhauledModElements.ModElement.Tag
-public class RiverDolphinEntity extends MinecraftOverhauledModElements.ModElement {
+public class IronFishEntity extends MinecraftOverhauledModElements.ModElement {
 	public static EntityType entity = null;
-	public RiverDolphinEntity(MinecraftOverhauledModElements instance) {
-		super(instance, 69);
+	public IronFishEntity(MinecraftOverhauledModElements instance) {
+		super(instance, 70);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -59,10 +61,10 @@ public class RiverDolphinEntity extends MinecraftOverhauledModElements.ModElemen
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.WATER_CREATURE)
 				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-				.size(0.6f, 1.8f)).build("river_dolphin").setRegistryName("river_dolphin");
+				.size(0.6f, 1.8f)).build("iron_fish").setRegistryName("iron_fish");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -16963, -4352876, new Item.Properties().group(ItemGroup.MISC))
-				.setRegistryName("river_dolphin_spawn_egg"));
+		elements.items.add(() -> new SpawnEggItem(entity, -11913931, -12313572, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("iron_fish_spawn_egg"));
 	}
 
 	@Override
@@ -73,7 +75,7 @@ public class RiverDolphinEntity extends MinecraftOverhauledModElements.ModElemen
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
-			biome.getSpawns(EntityClassification.WATER_CREATURE).add(new Biome.SpawnListEntry(entity, 10, 4, 11));
+			biome.getSpawns(EntityClassification.WATER_CREATURE).add(new Biome.SpawnListEntry(entity, 20, 1, 7));
 		}
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
 				SquidEntity::func_223365_b);
@@ -83,10 +85,10 @@ public class RiverDolphinEntity extends MinecraftOverhauledModElements.ModElemen
 	@OnlyIn(Dist.CLIENT)
 	public void registerModels(ModelRegistryEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> {
-			return new MobRenderer(renderManager, new Modelcustom_model(), 0.5f) {
+			return new MobRenderer(renderManager, new Modelironfish(), 0.5f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("minecraft_overhauled:textures/riverdolphin.png");
+					return new ResourceLocation("minecraft_overhauled:textures/ironfish.png");
 				}
 			};
 		});
@@ -132,9 +134,10 @@ public class RiverDolphinEntity extends MinecraftOverhauledModElements.ModElemen
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new FollowMobGoal(this, (float) 5, 20, 10));
-			this.goalSelector.addGoal(2, new RandomSwimmingGoal(this, 5, 40));
-			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 1, 40));
+			this.goalSelector.addGoal(2, new FollowMobGoal(this, (float) 1, 10, 5));
+			this.goalSelector.addGoal(3, new PanicGoal(this, 1.2));
+			this.goalSelector.addGoal(4, new AvoidEntityGoal(this, RiverDolphinEntity.CustomEntity.class, (float) 6, 1, 1.2));
 		}
 
 		@Override
@@ -143,18 +146,24 @@ public class RiverDolphinEntity extends MinecraftOverhauledModElements.ModElemen
 		}
 
 		@Override
-		public net.minecraft.util.SoundEvent getAmbientSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.dolphin.ambient"));
-		}
-
-		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.dolphin.hurt"));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 		}
 
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.dolphin.death"));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		}
+
+		@Override
+		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source.getImmediateSource() instanceof ArrowEntity)
+				return false;
+			if (source == DamageSource.FALL)
+				return false;
+			if (source == DamageSource.CACTUS)
+				return false;
+			return super.attackEntityFrom(source, amount);
 		}
 
 		@Override
@@ -163,7 +172,7 @@ public class RiverDolphinEntity extends MinecraftOverhauledModElements.ModElemen
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
-				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(20);
+				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10);
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
 				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0);
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
@@ -190,40 +199,31 @@ public class RiverDolphinEntity extends MinecraftOverhauledModElements.ModElemen
 	// Made with Blockbench 3.8.4
 	// Exported for Minecraft version 1.15 - 1.16
 	// Paste this class into your mod and generate all required imports
-	public static class Modelcustom_model extends EntityModel<Entity> {
+	public static class Modelironfish extends EntityModel<Entity> {
 		private final ModelRenderer bb_main;
 		private final ModelRenderer cube_r1;
 		private final ModelRenderer cube_r2;
-		private final ModelRenderer cube_r3;
-		public Modelcustom_model() {
-			textureWidth = 128;
-			textureHeight = 128;
+		public Modelironfish() {
+			textureWidth = 32;
+			textureHeight = 32;
 			bb_main = new ModelRenderer(this);
 			bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
-			bb_main.setTextureOffset(0, 0).addBox(-4.0F, -10.0F, -16.0F, 10.0F, 10.0F, 23.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 42).addBox(-2.0F, -8.0F, 7.0F, 6.0F, 7.0F, 12.0F, 0.0F, false);
-			bb_main.setTextureOffset(43, 0).addBox(-6.0F, -4.0F, 18.0F, 14.0F, 1.0F, 8.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 13).addBox(0.0F, -4.0F, -24.0F, 2.0F, 2.0F, 8.0F, 0.0F, false);
+			bb_main.setTextureOffset(0, 0).addBox(-2.0F, -3.0F, -6.0F, 4.0F, 3.0F, 7.0F, 0.0F, false);
+			bb_main.setTextureOffset(10, 12).addBox(-1.0F, -2.0F, 1.0F, 2.0F, 2.0F, 2.0F, 0.0F, false);
+			bb_main.setTextureOffset(0, 12).addBox(0.0F, -2.5F, 3.0F, 0.0F, 3.0F, 2.0F, 0.0F, false);
+			bb_main.setTextureOffset(0, 3).addBox(0.0F, -4.0F, -3.0F, 0.0F, 1.0F, 3.0F, 0.0F, false);
+			bb_main.setTextureOffset(0, 10).addBox(-2.0F, -2.25F, -8.0F, 4.0F, 2.0F, 2.0F, 0.0F, false);
+			bb_main.setTextureOffset(10, 10).addBox(-2.0F, -1.75F, -8.5F, 4.0F, 1.0F, 1.0F, 0.0F, false);
 			cube_r1 = new ModelRenderer(this);
 			cube_r1.setRotationPoint(0.0F, 0.0F, 0.0F);
 			bb_main.addChild(cube_r1);
-			setRotationAngle(cube_r1, 0.1745F, 0.3054F, -0.1745F);
-			cube_r1.setTextureOffset(0, 33).addBox(-16.0F, -4.0F, -10.0F, 16.0F, 1.0F, 8.0F, 0.0F, false);
+			setRotationAngle(cube_r1, 0.0F, -0.1745F, 0.0F);
+			cube_r1.setTextureOffset(0, 0).addBox(1.0F, -0.75F, -5.0F, 2.0F, 0.0F, 3.0F, 0.0F, false);
 			cube_r2 = new ModelRenderer(this);
 			cube_r2.setRotationPoint(0.0F, 0.0F, 0.0F);
 			bb_main.addChild(cube_r2);
-			setRotationAngle(cube_r2, 0.1745F, -0.3054F, 0.1745F);
-			cube_r2.setTextureOffset(40, 34).addBox(2.0F, -4.0F, -10.5F, 16.0F, 1.0F, 8.0F, 0.0F, false);
-			cube_r3 = new ModelRenderer(this);
-			cube_r3.setRotationPoint(0.0F, 0.0F, 0.0F);
-			bb_main.addChild(cube_r3);
-			setRotationAngle(cube_r3, -0.2618F, 0.0F, 0.0F);
-			cube_r3.setTextureOffset(0, 0).addBox(0.5F, -12.0F, -5.0F, 1.0F, 4.0F, 9.0F, 0.0F, false);
-		}
-
-		@Override
-		public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-			// previously the render function, render code was moved to a method below
+			setRotationAngle(cube_r2, 0.0F, 0.1745F, 0.0F);
+			cube_r2.setTextureOffset(0, 3).addBox(-3.0F, -0.75F, -5.0F, 2.0F, 0.0F, 3.0F, 0.0F, false);
 		}
 
 		@Override
@@ -236,6 +236,9 @@ public class RiverDolphinEntity extends MinecraftOverhauledModElements.ModElemen
 			modelRenderer.rotateAngleX = x;
 			modelRenderer.rotateAngleY = y;
 			modelRenderer.rotateAngleZ = z;
+		}
+
+		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
 		}
 	}
 }
