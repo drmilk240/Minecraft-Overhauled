@@ -631,6 +631,15 @@
       "registry_name": "flowers"
     },
     {
+      "name": "RiverDolphin",
+      "type": "mob",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "river_dolphin"
+    },
+    {
       "name": "LogsMinecraft",
       "type": "tag",
       "sortid": 69,
@@ -655,6 +664,7 @@
       "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "block.minecraft_overhauled.baobab_slab": "Baobab Slab",
       "block.minecraft_overhauled.bushthorn_log": "Bushthorn Log",
+      "item.minecraft_overhauled.river_dolphin_spawn_egg": "River Dolphin Spawn Egg",
       "item.minecraft_overhauled.regfruit_slices": "Regfruit Slice",
       "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
       "itemGroup.tabsavanna": "Savanna",
@@ -669,6 +679,7 @@
       "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
       "block.minecraft_overhauled.baobab_leaves": "Baobab Leaves",
       "block.minecraft_overhauled.shorea_planks": "Shorea Planks",
+      "entity.minecraft_overhauled.river_dolphin": "River Dolphin",
       "block.minecraft_overhauled.orchid": "Orchid",
       "block.minecraft_overhauled.shorea_fence_gate": "Shorea Fence Gate",
       "item.minecraft_overhauled.toad_spawn_egg": "Toad Spawn Egg",
