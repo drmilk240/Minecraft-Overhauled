@@ -765,6 +765,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "iron_fish_bucket"
+    },
+    {
+      "name": "LushZombie",
+      "type": "mob",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lush_zombie"
     }
   ],
   "variable_elements": [],
@@ -790,6 +799,8 @@
       "block.minecraft_overhauled.baobab_leaves": "Baobab Leaves",
       "block.minecraft_overhauled.shorea_planks": "Shorea Planks",
       "entity.minecraft_overhauled.river_dolphin": "River Dolphin",
+      "item.minecraft_overhauled.lush_zombie_spawn_egg": "Lush Zombie Spawn Egg",
+      "entity.minecraft_overhauled.lush_zombie": "Lush Zombie",
       "block.minecraft_overhauled.orchid": "Orchid",
       "block.minecraft_overhauled.shorea_fence_gate": "Shorea Fence Gate",
       "item.minecraft_overhauled.toad_spawn_egg": "Toad Spawn Egg",
