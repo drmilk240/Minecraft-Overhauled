@@ -647,6 +647,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "logs_minecraft"
+    },
+    {
+      "name": "BaobobTrees",
+      "type": "structure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobob_trees"
+    },
+    {
+      "name": "BaobobTrees2",
+      "type": "structure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobob_trees_2"
+    },
+    {
+      "name": "BaobobTrees3",
+      "type": "structure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobob_trees_3"
     }
   ],
   "variable_elements": [],

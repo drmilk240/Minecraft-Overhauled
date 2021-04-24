@@ -201,13 +201,13 @@ public class SpearThrowableItem extends MinecraftOverhauledModElements.ModElemen
 			cube_r1 = new ModelRenderer(this);
 			cube_r1.setRotationPoint(0.0F, 0.0F, 0.0F);
 			bb_main.addChild(cube_r1);
-			setRotationAngle(cube_r1, -0.7854F, 0.0F, -1.5708F);
-			cube_r1.setTextureOffset(0, 0).addBox(5.6F, -8.0F, -8.0F, 0.0F, 16.0F, 16.0F, 0.0F, true);
+			setRotationAngle(cube_r1, 0.7854F, -1.5708F, -1.5708F);
+			cube_r1.setTextureOffset(0, 0).addBox(-0.4F, -14.25F, -14.25F, 0.0F, 16.0F, 16.0F, 0.0F, true);
 			cube_r2 = new ModelRenderer(this);
 			cube_r2.setRotationPoint(0.0F, 0.0F, 0.0F);
 			bb_main.addChild(cube_r2);
-			setRotationAngle(cube_r2, 0.7854F, 1.5708F, 0.0F);
-			cube_r2.setTextureOffset(0, -16).addBox(0.0F, -12.0F, -4.0F, 0.0F, 16.0F, 16.0F, 0.0F, true);
+			setRotationAngle(cube_r2, -0.7854F, 0.0F, 0.0F);
+			cube_r2.setTextureOffset(0, -16).addBox(0.0F, -14.0F, -14.5F, 0.0F, 16.0F, 16.0F, 0.0F, true);
 		}
 
 		@Override
