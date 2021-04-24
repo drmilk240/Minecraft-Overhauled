@@ -28,6 +28,8 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.passive.SquidEntity;
 import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
+import net.minecraft.entity.ai.goal.PanicGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.FollowMobGoal;
 import net.minecraft.entity.ai.controller.MovementController;
@@ -133,8 +135,10 @@ public class RiverDolphinEntity extends MinecraftOverhauledModElements.ModElemen
 		protected void registerGoals() {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new FollowMobGoal(this, (float) 5, 20, 10));
-			this.goalSelector.addGoal(2, new RandomSwimmingGoal(this, 5, 40));
-			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, IronFishEntity.CustomEntity.class, false, false));
+			this.goalSelector.addGoal(3, new RandomSwimmingGoal(this, 5, 40));
+			this.goalSelector.addGoal(4, new PanicGoal(this, 1.2));
+			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
 		}
 
 		@Override
