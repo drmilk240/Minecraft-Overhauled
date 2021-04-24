@@ -107,7 +107,7 @@
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
-    "mobSpawningType": "monster",
+    "mobSpawningType": "waterCreature",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 11,
     "restrictionBiomes": [
