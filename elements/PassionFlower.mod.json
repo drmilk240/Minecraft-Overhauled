@@ -49,6 +49,12 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Rainforest"
+      },
+      {
+        "value": "jungle"
+      },
+      {
+        "value": "jungle_hills"
       }
     ]
   }
