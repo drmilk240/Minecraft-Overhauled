@@ -1,8 +1,11 @@
 {
   "replace": false,
   "values": [
-    "minecraft_overhauled:shorea_log",
     "minecraft_overhauled:baobab_log",
+    "minecraft_overhauled:baobab_wood",
+    "minecraft_overhauled:shorea_log",
+    "minecraft_overhauled:shorea_wood",
+    "minecraft_overhauled:bushthorn_wood",
     "minecraft_overhauled:bushthorn_log"
   ]
 }
