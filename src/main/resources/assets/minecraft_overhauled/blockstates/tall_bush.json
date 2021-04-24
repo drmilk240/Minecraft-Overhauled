@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "minecraft_overhauled:block/tall_bush"
+    },
+    "half=lower": {
+      "model": "minecraft_overhauled:block/tall_bush_bottom"
+    }
+  }
+}

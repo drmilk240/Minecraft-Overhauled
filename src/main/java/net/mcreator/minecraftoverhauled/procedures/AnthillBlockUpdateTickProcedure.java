@@ -1,28 +1,11 @@
 package net.mcreator.minecraftoverhauled.procedures;
 
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.entity.SpawnReason;
-import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.ILivingEntityData;
-import net.minecraft.entity.Entity;
-import net.minecraft.block.BlockState;
-
-import net.mcreator.minecraftoverhauled.entity.AntEntity;
-import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
-
-import java.util.function.Function;
-import java.util.Map;
-import java.util.Comparator;
-
 @MinecraftOverhauledModElements.ModElement.Tag
 public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModElements.ModElement {
+
 	public AnthillBlockUpdateTickProcedure(MinecraftOverhauledModElements instance) {
 		super(instance, 80);
+
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -46,10 +29,12 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 				System.err.println("Failed to load dependency world for procedure AnthillBlockUpdateTick!");
 			return;
 		}
+
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		if (((new Object() {
 			public boolean getValue(BlockPos pos, String tag) {
 				TileEntity tileEntity = world.getTileEntity(pos);
@@ -64,6 +49,7 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 				BlockState _bs = world.getBlockState(_bp);
 				if (_tileEntity != null)
 					_tileEntity.getTileData().putDouble("countAnts", (2 + Math.round((Math.random() * 3))));
+
 				world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
 			if (!world.getWorld().isRemote) {
@@ -72,6 +58,7 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 				BlockState _bs = world.getBlockState(_bp);
 				if (_tileEntity != null)
 					_tileEntity.getTileData().putDouble("timeTillAntRelease", 0);
+
 				world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
 			if (!world.getWorld().isRemote) {
@@ -80,6 +67,7 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 				BlockState _bs = world.getBlockState(_bp);
 				if (_tileEntity != null)
 					_tileEntity.getTileData().putBoolean("hasAnts", (true));
+
 				world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
 		}
@@ -96,6 +84,7 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 						return -1;
 					}
 				}.getValue(new BlockPos((int) x, (int) y, (int) z), "timeTillAntRelease")) - 1));
+
 			world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 		}
 		if (((new Object() {
@@ -118,9 +107,11 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 					if (world instanceof World && !world.getWorld().isRemote) {
 						Entity entityToSpawn = new AntEntity.CustomEntity(AntEntity.entity, world.getWorld());
 						entityToSpawn.setLocationAndAngles(x, (y + 1), z, world.getRandom().nextFloat() * 360F, 0);
+
 						if (entityToSpawn instanceof MobEntity)
 							((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 									SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+
 						world.addEntity(entityToSpawn);
 					}
 					((Entity) world.getEntitiesWithinAABB(AntEntity.CustomEntity.class, new AxisAlignedBB(x - (0.1 / 2d), (y + 1) - (0.1 / 2d),
@@ -146,9 +137,11 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 						if (world instanceof World && !world.getWorld().isRemote) {
 							Entity entityToSpawn = new AntEntity.CustomEntity(AntEntity.entity, world.getWorld());
 							entityToSpawn.setLocationAndAngles(x, y, (z + 1), world.getRandom().nextFloat() * 360F, 0);
+
 							if (entityToSpawn instanceof MobEntity)
 								((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 										SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+
 							world.addEntity(entityToSpawn);
 						}
 						((Entity) world
@@ -180,9 +173,11 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 							if (world instanceof World && !world.getWorld().isRemote) {
 								Entity entityToSpawn = new AntEntity.CustomEntity(AntEntity.entity, world.getWorld());
 								entityToSpawn.setLocationAndAngles((x + 1), y, z, world.getRandom().nextFloat() * 360F, 0);
+
 								if (entityToSpawn instanceof MobEntity)
 									((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 											SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+
 								world.addEntity(entityToSpawn);
 							}
 							((Entity) world
@@ -214,9 +209,11 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 								if (world instanceof World && !world.getWorld().isRemote) {
 									Entity entityToSpawn = new AntEntity.CustomEntity(AntEntity.entity, world.getWorld());
 									entityToSpawn.setLocationAndAngles(x, y, (z - 1), world.getRandom().nextFloat() * 360F, 0);
+
 									if (entityToSpawn instanceof MobEntity)
 										((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 												SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+
 									world.addEntity(entityToSpawn);
 								}
 								((Entity) world
@@ -251,10 +248,12 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 									if (world instanceof World && !world.getWorld().isRemote) {
 										Entity entityToSpawn = new AntEntity.CustomEntity(AntEntity.entity, world.getWorld());
 										entityToSpawn.setLocationAndAngles((x - 1), y, z, world.getRandom().nextFloat() * 360F, 0);
+
 										if (entityToSpawn instanceof MobEntity)
 											((MobEntity) entityToSpawn).onInitialSpawn(world,
 													world.getDifficultyForLocation(new BlockPos(entityToSpawn)), SpawnReason.MOB_SUMMONED,
 													(ILivingEntityData) null, (CompoundNBT) null);
+
 										world.addEntity(entityToSpawn);
 									}
 									((Entity) world
@@ -298,6 +297,7 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 													return -1;
 												}
 											}.getValue(new BlockPos((int) x, (int) y, (int) z), "countAnts")) + 1));
+
 										world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 									}
 								}
@@ -318,9 +318,12 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 								return -1;
 							}
 						}.getValue(new BlockPos((int) x, (int) y, (int) z), "countAnts")) - 1));
+
 					world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 				}
 			}
 		}
+
 	}
+
 }

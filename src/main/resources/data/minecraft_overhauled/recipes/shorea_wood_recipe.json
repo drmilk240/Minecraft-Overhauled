@@ -7,20 +7,20 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft_overhauled:unknown_element"
+      "item": "minecraft_overhauled:shorea_log"
     },
     "1": {
-      "item": "minecraft_overhauled:unknown_element"
+      "item": "minecraft_overhauled:shorea_log"
     },
     "2": {
-      "item": "minecraft_overhauled:unknown_element"
+      "item": "minecraft_overhauled:shorea_log"
     },
     "3": {
-      "item": "minecraft_overhauled:unknown_element"
+      "item": "minecraft_overhauled:shorea_log"
     }
   },
   "result": {
-    "item": "minecraft_overhauled:unknown_element",
+    "item": "minecraft_overhauled:shorea_wood",
     "count": 3
   }
 }
