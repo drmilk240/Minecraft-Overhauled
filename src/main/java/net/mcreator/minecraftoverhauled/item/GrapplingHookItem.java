@@ -67,7 +67,7 @@ public class GrapplingHookItem extends MinecraftOverhauledModElements.ModElement
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(ItemGroup.COMBAT).maxDamage(20));
+			super(new Item.Properties().group(ItemGroup.COMBAT).maxStackSize(16));
 			setRegistryName("grappling_hook");
 		}
 

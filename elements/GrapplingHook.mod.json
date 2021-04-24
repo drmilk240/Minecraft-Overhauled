@@ -10,12 +10,12 @@
     "creativeTab": {
       "value": "COMBAT"
     },
-    "stackSize": 1,
+    "stackSize": 16,
     "ammoItem": {
       "value": ""
     },
     "shootConstantly": false,
-    "usageCount": 20,
+    "usageCount": 0,
     "actionSound": {
       "value": "item.crossbow.shoot"
     },
