@@ -29,10 +29,10 @@
     "bulletParticles": true,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
-      "value": "Items.IRON_PICKAXE"
+      "value": ""
     },
-    "bulletModel": "Default",
-    "customBulletModelTexture": "",
+    "bulletModel": "Modelhook",
+    "customBulletModelTexture": "hook.png",
     "onBulletHitsBlock": {
       "name": "GrapplingHookBulletHitsBlock"
     }

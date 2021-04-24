@@ -19,7 +19,6 @@ import net.minecraft.util.ActionResultType;
 import net.minecraft.util.ActionResult;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.UseAction;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
@@ -31,8 +30,14 @@ import net.minecraft.entity.IRendersAsItem;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
-import net.minecraft.client.renderer.entity.SpriteRenderer;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.client.renderer.entity.model.EntityModel;
+import net.minecraft.client.renderer.entity.EntityRendererManager;
+import net.minecraft.client.renderer.entity.EntityRenderer;
+import net.minecraft.client.renderer.Vector3f;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.IRenderTypeBuffer;
 
 import net.mcreator.minecraftoverhauled.procedures.GrapplingHookBulletHitsBlockProcedure;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
@@ -40,6 +45,9 @@ import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
+
+import com.mojang.blaze3d.vertex.IVertexBuilder;
+import com.mojang.blaze3d.matrix.MatrixStack;
 
 @MinecraftOverhauledModElements.ModElement.Tag
 public class GrapplingHookItem extends MinecraftOverhauledModElements.ModElement {
@@ -62,8 +70,7 @@ public class GrapplingHookItem extends MinecraftOverhauledModElements.ModElement
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void init(FMLCommonSetupEvent event) {
-		RenderingRegistry.registerEntityRenderingHandler(arrow,
-				renderManager -> new SpriteRenderer(renderManager, Minecraft.getInstance().getItemRenderer()));
+		RenderingRegistry.registerEntityRenderingHandler(arrow, renderManager -> new CustomRender(renderManager));
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
@@ -129,7 +136,7 @@ public class GrapplingHookItem extends MinecraftOverhauledModElements.ModElement
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(Items.IRON_PICKAXE, (int) (1));
+			return null;
 		}
 
 		@Override
@@ -162,6 +169,78 @@ public class GrapplingHookItem extends MinecraftOverhauledModElements.ModElement
 				}
 				this.remove();
 			}
+		}
+	}
+
+	public static class CustomRender extends EntityRenderer<ArrowCustomEntity> {
+		private static final ResourceLocation texture = new ResourceLocation("minecraft_overhauled:textures/hook.png");
+		public CustomRender(EntityRendererManager renderManager) {
+			super(renderManager);
+		}
+
+		@Override
+		public void render(ArrowCustomEntity entityIn, float entityYaw, float partialTicks, MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn,
+				int packedLightIn) {
+			IVertexBuilder vb = bufferIn.getBuffer(RenderType.getEntityCutout(this.getEntityTexture(entityIn)));
+			matrixStackIn.push();
+			matrixStackIn.rotate(Vector3f.YP.rotationDegrees(MathHelper.lerp(partialTicks, entityIn.prevRotationYaw, entityIn.rotationYaw) - 90));
+			matrixStackIn.rotate(Vector3f.ZP.rotationDegrees(90 + MathHelper.lerp(partialTicks, entityIn.prevRotationPitch, entityIn.rotationPitch)));
+			EntityModel model = new Modelhook();
+			model.render(matrixStackIn, vb, packedLightIn, OverlayTexture.NO_OVERLAY, 1, 1, 1, 0.0625f);
+			matrixStackIn.pop();
+			super.render(entityIn, entityYaw, partialTicks, matrixStackIn, bufferIn, packedLightIn);
+		}
+
+		@Override
+		public ResourceLocation getEntityTexture(ArrowCustomEntity entity) {
+			return texture;
+		}
+	}
+
+	// Made with Blockbench 3.8.4
+	// Exported for Minecraft version 1.15 - 1.16
+	// Paste this class into your mod and generate all required imports
+	public static class Modelhook extends EntityModel<Entity> {
+		private final ModelRenderer bb_main;
+		private final ModelRenderer cube_r1;
+		private final ModelRenderer cube_r2;
+		private final ModelRenderer cube_r3;
+		public Modelhook() {
+			textureWidth = 16;
+			textureHeight = 16;
+			bb_main = new ModelRenderer(this);
+			bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
+			bb_main.setTextureOffset(0, 0).addBox(-0.5F, -4.0F, -5.0F, 1.0F, 1.0F, 5.0F, 0.0F, false);
+			cube_r1 = new ModelRenderer(this);
+			cube_r1.setRotationPoint(0.5F, -4.0F, -4.25F);
+			bb_main.addChild(cube_r1);
+			setRotationAngle(cube_r1, -0.5236F, 0.0F, 0.0F);
+			cube_r1.setTextureOffset(0, 2).addBox(-1.0F, -2.0F, 0.0F, 1.0F, 2.0F, 0.0F, 0.0F, false);
+			cube_r2 = new ModelRenderer(this);
+			cube_r2.setRotationPoint(2.25F, -1.5F, -3.5F);
+			bb_main.addChild(cube_r2);
+			setRotationAngle(cube_r2, 0.0F, -0.6109F, 0.6109F);
+			cube_r2.setTextureOffset(0, 0).addBox(-3.0F, -1.0F, 1.0F, 2.0F, 1.0F, 0.0F, 0.0F, false);
+			cube_r3 = new ModelRenderer(this);
+			cube_r3.setRotationPoint(-0.25F, -3.0F, -5.0F);
+			bb_main.addChild(cube_r3);
+			setRotationAngle(cube_r3, 0.0F, 0.48F, -0.6109F);
+			cube_r3.setTextureOffset(0, 1).addBox(-2.0F, -1.0F, 1.0F, 2.0F, 1.0F, 0.0F, 0.0F, false);
+		}
+
+		@Override
+		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
+				float alpha) {
+			bb_main.render(matrixStack, buffer, packedLight, packedOverlay);
+		}
+
+		public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+			modelRenderer.rotateAngleX = x;
+			modelRenderer.rotateAngleY = y;
+			modelRenderer.rotateAngleZ = z;
+		}
+
+		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
 		}
 	}
 	public static ArrowCustomEntity shoot(World world, LivingEntity entity, Random random, float power, double damage, int knockback) {
