@@ -23,6 +23,6 @@ public class ShoreaBushMobplayerCollidesWithPlantProcedure extends MinecraftOver
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 5, (int) 1, (false), (false)));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 5, (int) 3, (false), (false)));
 	}
 }

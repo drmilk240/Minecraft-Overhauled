@@ -81,7 +81,7 @@ public class ShoreaBushBlock extends MinecraftOverhauledModElements.ModElement {
 				if (!dimensionCriteria)
 					return false;
 				int generated = 0;
-				for (int j = 0; j < 16; ++j) {
+				for (int j = 0; j < 40; ++j) {
 					BlockPos blockpos = pos.add(random.nextInt(4) - random.nextInt(4), 0, random.nextInt(4) - random.nextInt(4));
 					if (world.isAirBlock(blockpos)) {
 						BlockPos blockpos1 = blockpos.down();
@@ -114,7 +114,7 @@ public class ShoreaBushBlock extends MinecraftOverhauledModElements.ModElement {
 					feature.withConfiguration(
 							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
 									.tries(64).build())
-							.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(16))));
+							.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(40))));
 		}
 	}
 	public static class BlockCustomFlower extends SugarCaneBlock {
