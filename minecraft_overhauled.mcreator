@@ -661,7 +661,7 @@
       "name": "RainforestTab",
       "type": "tab",
       "sortid": 71,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "rainforest_tab"
@@ -670,7 +670,7 @@
       "name": "RawIronFish",
       "type": "food",
       "sortid": 72,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "raw_iron_fish"
@@ -679,7 +679,7 @@
       "name": "CookedIronFishFoodEaten",
       "type": "procedure",
       "sortid": 73,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "cooked_iron_fish_food_eaten",
@@ -759,7 +759,7 @@
       "name": "LushZombie",
       "type": "mob",
       "sortid": 78,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "lush_zombie"
@@ -768,7 +768,7 @@
       "name": "IronFishBucketRightClickedOnBlock",
       "type": "procedure",
       "sortid": 77,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "iron_fish_bucket_right_clicked_on_block",
@@ -797,10 +797,66 @@
       "name": "IronFishBucket",
       "type": "item",
       "sortid": 77,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "iron_fish_bucket"
+    },
+    {
+      "name": "SpearRecipe",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spear_recipe"
+    },
+    {
+      "name": "GrapplingHookBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grappling_hook_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GrapplingHook",
+      "type": "gun",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grappling_hook"
+    },
+    {
+      "name": "GrappleHookRecipe",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grapple_hook_recipe"
     }
   ],
   "variable_elements": [],
@@ -813,12 +869,12 @@
       "item.minecraft_overhauled.ant_spawn_egg": "Ant Spawn Egg",
       "block.minecraft_overhauled.bushthorn_fence_gate": "Bushthorn Fence Gate",
       "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
-      "block.minecraft_overhauled.baobab_slab": "Baobab Slab",
       "block.minecraft_overhauled.bushthorn_log": "Bushthorn Log",
+      "block.minecraft_overhauled.baobab_slab": "Baobab Slab",
       "item.minecraft_overhauled.regfruit_slices": "Regfruit Slice",
       "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
-      "item.minecraft_overhauled.cooked_iron_fish": "Cooked Ironfish",
       "block.minecraft_overhauled.shorea_log": "Shorea Log",
+      "item.minecraft_overhauled.cooked_iron_fish": "Cooked Ironfish",
       "block.minecraft_overhauled.regfruit": "Regfruit",
       "entity.minecraft_overhauled.toad": "Toad",
       "block.minecraft_overhauled.bushthorn_leaves": "Bushthorn Leaves",
@@ -835,8 +891,8 @@
       "block.minecraft_overhauled.shorea_leaves": "Shorea Leaves",
       "block.minecraft_overhauled.bushthorn_slab": "Bushthorn Slab",
       "block.minecraft_overhauled.bushthorn_planks": "Bushthorn Planks",
-      "block.minecraft_overhauled.baobab_fence": "Baobab Fence",
       "entity.minecraft_overhauled.ant": "Ant",
+      "block.minecraft_overhauled.baobab_fence": "Baobab Fence",
       "item.minecraft_overhauled.iron_fish_bucket": "Ironfish Bucket",
       "block.minecraft_overhauled.baobab_trapdoor": "Baobab Trapdoor",
       "block.minecraft_overhauled.mud_block": "Mud Block",
@@ -848,6 +904,7 @@
       "block.minecraft_overhauled.bushthorn_stairs": "Bushthorn Stairs",
       "biome.minecraft_overhauled.rainforest": "Rainforest",
       "item.minecraft_overhauled.raw_iron_fish": "Raw Ironfish",
+      "item.minecraft_overhauled.grappling_hook": "Grappling Hook",
       "block.minecraft_overhauled.anthill_block": "Anthill Block",
       "block.minecraft_overhauled.shorea_stairs": "Shorea Stairs",
       "block.minecraft_overhauled.baobab_stairs": "Baobab Stairs",
