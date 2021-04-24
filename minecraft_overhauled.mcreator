@@ -652,7 +652,7 @@
       "name": "BaobobTrees3",
       "type": "structure",
       "sortid": 72,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "baobob_trees_3"
@@ -661,7 +661,7 @@
       "name": "BaobobTrees2",
       "type": "structure",
       "sortid": 71,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "baobob_trees_2"
@@ -670,7 +670,7 @@
       "name": "BaobobTrees",
       "type": "structure",
       "sortid": 70,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "baobob_trees"
@@ -679,7 +679,7 @@
       "name": "RainforestTab",
       "type": "tab",
       "sortid": 71,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "rainforest_tab"
@@ -697,7 +697,7 @@
       "name": "RawIronFish",
       "type": "food",
       "sortid": 72,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "raw_iron_fish"
@@ -724,7 +724,7 @@
       "name": "IronFish",
       "type": "mob",
       "sortid": 70,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "iron_fish"
@@ -733,7 +733,7 @@
       "name": "CookedIronFishFoodEaten",
       "type": "procedure",
       "sortid": 73,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "cooked_iron_fish_food_eaten",
