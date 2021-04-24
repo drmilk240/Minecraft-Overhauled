@@ -112,7 +112,7 @@ public class ToadEntity extends MinecraftOverhauledModElements.ModElement {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new SwimGoal(this));
 			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8));
-			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, AntEntity.CustomEntity.class, true, true));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, AntEntity.CustomEntity.class, false, false));
 			this.goalSelector.addGoal(4, new FollowMobGoal(this, (float) 1, 10, 5));
 			this.goalSelector.addGoal(6, new PanicGoal(this, 1.2));
 			this.goalSelector.addGoal(7, new RandomSwimmingGoal(this, 1, 40));
