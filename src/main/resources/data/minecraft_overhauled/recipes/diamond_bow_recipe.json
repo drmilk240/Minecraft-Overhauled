@@ -17,7 +17,7 @@
       "item": "minecraft:gold_ingot"
     },
     "4": {
-      "item": "minecraft_overhauled:unknown_element"
+      "item": "minecraft_overhauled:gold_bow"
     },
     "5": {
       "item": "minecraft:string"
@@ -30,7 +30,7 @@
     }
   },
   "result": {
-    "item": "minecraft_overhauled:unknown_element",
+    "item": "minecraft_overhauled:diamond_bow",
     "count": 1
   }
 }

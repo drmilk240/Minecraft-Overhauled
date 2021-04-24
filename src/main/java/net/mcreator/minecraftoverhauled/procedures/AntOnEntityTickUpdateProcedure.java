@@ -1,11 +1,19 @@
 package net.mcreator.minecraftoverhauled.procedures;
 
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
+
+import net.mcreator.minecraftoverhauled.block.BushBlock;
+import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
+
+import java.util.Map;
+
 @MinecraftOverhauledModElements.ModElement.Tag
 public class AntOnEntityTickUpdateProcedure extends MinecraftOverhauledModElements.ModElement {
-
 	public AntOnEntityTickUpdateProcedure(MinecraftOverhauledModElements instance) {
 		super(instance, 81);
-
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -34,13 +42,11 @@ public class AntOnEntityTickUpdateProcedure extends MinecraftOverhauledModElemen
 				System.err.println("Failed to load dependency world for procedure AntOnEntityTickUpdate!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		double VarX = 0;
 		double VarZ = 0;
 		double VarY = 0;
@@ -77,7 +83,5 @@ public class AntOnEntityTickUpdateProcedure extends MinecraftOverhauledModElemen
 			}
 			entity.getPersistentData().putDouble("checkBush", 100);
 		}
-
 	}
-
 }

@@ -22,6 +22,9 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
+import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.goal.BreakBlockGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
@@ -34,11 +37,8 @@ import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.block.material.Material;
 
-import net.mcreator.minecraftoverhauled.procedures.AntOnEntityTickUpdateProcedure;
+import net.mcreator.minecraftoverhauled.block.BushBlock;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
-
-import java.util.Map;
-import java.util.HashMap;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
@@ -109,6 +109,9 @@ public class AntEntity extends MinecraftOverhauledModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
+			this.goalSelector.addGoal(1, new BreakBlockGoal(BushBlock.block.getDefaultState().getBlock(), this, 1, (int) 3));
+			this.goalSelector.addGoal(2, new WaterAvoidingRandomWalkingGoal(this, 0.8));
+			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
 		}
 
 		@Override
@@ -131,24 +134,6 @@ public class AntEntity extends MinecraftOverhauledModElements.ModElement {
 			if (source == DamageSource.FALL)
 				return false;
 			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public void baseTick() {
-			super.baseTick();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				AntOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override
