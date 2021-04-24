@@ -2,10 +2,10 @@
   "_fv": 13,
   "_type": "mob",
   "definition": {
-    "mobName": "River Dolphin",
+    "mobName": "Capybara",
     "mobLabel": "",
-    "mobModelName": "Modelriver_dolphin",
-    "mobModelTexture": "riverdolphin.png",
+    "mobModelName": "Modelcapybara",
+    "mobModelTexture": "capybara.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -13,11 +13,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -16963,
+      "value": -13686250,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -4352876,
+      "value": -12772851,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -49,12 +49,12 @@
     "attackStrength": 3,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.3,
+    "movementSpeed": 0.19999999999999998,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "health": 20,
+    "health": 12,
     "xpAmount": 0,
-    "waterMob": true,
+    "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -72,19 +72,19 @@
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": ""
+      "value": "Items.LEATHER"
     },
     "livingSound": {
-      "value": "entity.dolphin.ambient"
+      "value": "entity.fox.ambient"
     },
     "hurtSound": {
-      "value": "entity.dolphin.hurt"
+      "value": "entity.fox.hurt"
     },
     "deathSound": {
-      "value": "entity.dolphin.death"
+      "value": "entity.fox.death"
     },
     "stepSound": {
-      "value": ""
+      "value": "entity.pig.step"
     },
     "spawnParticles": false,
     "particleToSpawn": {
@@ -94,8 +94,8 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasAI": true,
-    "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"follow_entity\"><field name=\"speed\">5</field><field name=\"maxrange\">20</field><field name=\"followarea\">10</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">CUSTOM:IronFish</field><field name=\"condition\">null,null</field><next><block type=\"swim\"><field name=\"speed\">5</field><field name=\"condition\">null,null</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aiBase": "Pig",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">2</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -106,13 +106,16 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 10,
-    "mobSpawningType": "waterCreature",
+    "spawningProbability": 20,
+    "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 11,
+    "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Rainforest"
+      },
+      {
+        "value": "jungle"
       }
     ],
     "spawnInDungeons": false

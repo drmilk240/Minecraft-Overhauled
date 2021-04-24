@@ -2,17 +2,17 @@
 // Exported for Minecraft version 1.15 - 1.16
 // Paste this class into your mod and generate all required imports
 
-public static class Modelcustom_model extends EntityModel<Entity> {
+public static class Modelriver_dolphin extends EntityModel<Entity> {
 	private final ModelRenderer RightFin;
 	private final ModelRenderer cube_r1;
 	private final ModelRenderer LeftFin;
 	private final ModelRenderer cube_r2;
-	private final ModelRenderer Tail;
-	private final ModelRenderer BackFin;
 	private final ModelRenderer Body;
 	private final ModelRenderer cube_r3;
+	private final ModelRenderer Tail;
+	private final ModelRenderer BackFin;
 
-	public Modelcustom_model() {
+	public Modelriver_dolphin() {
 		textureWidth = 128;
 		textureHeight = 128;
 
@@ -34,16 +34,6 @@ public static class Modelcustom_model extends EntityModel<Entity> {
 		setRotationAngle(cube_r2, 0.1745F, -0.3054F, 0.1745F);
 		cube_r2.setTextureOffset(40, 34).addBox(2.0F, -4.0F, -10.5F, 16.0F, 1.0F, 8.0F, 0.0F, false);
 
-		Tail = new ModelRenderer(this);
-		Tail.setRotationPoint(-5.0F, -4.0F, 14.0F);
-		LeftFin.addChild(Tail);
-		Tail.setTextureOffset(0, 42).addBox(-3.0F, -3.0F, 0.0F, 6.0F, 7.0F, 12.0F, 0.0F, false);
-
-		BackFin = new ModelRenderer(this);
-		BackFin.setRotationPoint(0.0F, 2.0F, 11.0F);
-		Tail.addChild(BackFin);
-		BackFin.setTextureOffset(43, 0).addBox(-7.0F, -1.0F, 0.0F, 14.0F, 1.0F, 8.0F, 0.0F, false);
-
 		Body = new ModelRenderer(this);
 		Body.setRotationPoint(1.0F, 20.0F, -5.0F);
 		Body.setTextureOffset(0, 0).addBox(-5.0F, -6.0F, -11.0F, 10.0F, 10.0F, 23.0F, 0.0F, false);
@@ -54,6 +44,16 @@ public static class Modelcustom_model extends EntityModel<Entity> {
 		Body.addChild(cube_r3);
 		setRotationAngle(cube_r3, -0.2618F, 0.0F, 0.0F);
 		cube_r3.setTextureOffset(0, 0).addBox(0.5F, -12.0F, -5.0F, 1.0F, 4.0F, 9.0F, 0.0F, false);
+
+		Tail = new ModelRenderer(this);
+		Tail.setRotationPoint(0.0F, -1.0F, 12.0F);
+		Body.addChild(Tail);
+		Tail.setTextureOffset(0, 42).addBox(-3.0F, -3.0F, 0.0F, 6.0F, 7.0F, 12.0F, 0.0F, false);
+
+		BackFin = new ModelRenderer(this);
+		BackFin.setRotationPoint(0.0F, 2.0F, 11.0F);
+		Tail.addChild(BackFin);
+		BackFin.setTextureOffset(43, 0).addBox(-7.0F, -1.0F, 0.0F, 14.0F, 1.0F, 8.0F, 0.0F, false);
 	}
 
 	@Override
@@ -72,9 +72,11 @@ public static class Modelcustom_model extends EntityModel<Entity> {
 
 	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity e) {
 		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
-		this.BackFin.rotateAngleY = MathHelper.cos(f * 0.6662F) * f1;
-		this.Tail.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+		this.LeftFin.rotateAngleZ = MathHelper.cos(f * 0.6662F) * f1;
+		this.BackFin.rotateAngleX = f2;
+		this.Tail.rotateAngleX = f3 / (180F / (float) Math.PI);
 		this.Body.rotateAngleY = f3 / (180F / (float) Math.PI);
 		this.Body.rotateAngleX = f4 / (180F / (float) Math.PI);
+		this.RightFin.rotateAngleZ = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 	}
 }
