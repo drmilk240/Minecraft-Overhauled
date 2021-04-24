@@ -31,7 +31,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Savanna"
+      "value": "CUSTOM:RainforestTab"
     },
     "destroyTool": "axe",
     "customDrop": {

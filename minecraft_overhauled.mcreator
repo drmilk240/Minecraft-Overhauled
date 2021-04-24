@@ -649,13 +649,13 @@
       "registry_name": "logs_minecraft"
     },
     {
-      "name": "BaobobTrees",
+      "name": "BaobobTrees3",
       "type": "structure",
-      "sortid": 70,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobob_trees"
+      "registry_name": "baobob_trees_3"
     },
     {
       "name": "BaobobTrees2",
@@ -667,13 +667,93 @@
       "registry_name": "baobob_trees_2"
     },
     {
-      "name": "BaobobTrees3",
+      "name": "BaobobTrees",
       "type": "structure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baobob_trees"
+    },
+    {
+      "name": "RainforestTab",
+      "type": "tab",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rainforest_tab"
+    },
+    {
+      "name": "SmokingIronFish",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smoking_iron_fish"
+    },
+    {
+      "name": "RawIronFish",
+      "type": "food",
       "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobob_trees_3"
+      "registry_name": "raw_iron_fish"
+    },
+    {
+      "name": "CookedIronFish",
+      "type": "food",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooked_iron_fish"
+    },
+    {
+      "name": "CampireIronFish",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "campire_iron_fish"
+    },
+    {
+      "name": "IronFish",
+      "type": "mob",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_fish"
+    },
+    {
+      "name": "CookedIronFishFoodEaten",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooked_iron_fish_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CookingIronFish",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooking_iron_fish"
     }
   ],
   "variable_elements": [],
@@ -696,6 +776,7 @@
       "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
       "itemGroup.tabsavanna": "Savanna",
       "block.minecraft_overhauled.shorea_log": "Shorea Log",
+      "item.minecraft_overhauled.cooked_iron_fish": "Cooked Ironfish",
       "block.minecraft_overhauled.bushthorn_stairs": "Bushthorn Stairs",
       "biome.minecraft_overhauled.rainforest": "Rainforest",
       "block.minecraft_overhauled.regfruit": "Regfruit",

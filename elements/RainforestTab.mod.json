@@ -1,0 +1,11 @@
+{
+  "_fv": 13,
+  "_type": "tab",
+  "definition": {
+    "name": "Rainforest",
+    "icon": {
+      "value": "Blocks.SAPLING#3"
+    },
+    "showSearch": false
+  }
+}

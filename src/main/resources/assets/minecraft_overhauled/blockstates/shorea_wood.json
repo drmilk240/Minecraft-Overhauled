@@ -1,7 +1,28 @@
 {
   "variants": {
-    "": {
+    "facing=south": {
       "model": "minecraft_overhauled:block/shorea_wood"
+    },
+    "facing=north": {
+      "model": "minecraft_overhauled:block/shorea_wood"
+    },
+    "facing=east": {
+      "model": "minecraft_overhauled:block/shorea_wood",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "minecraft_overhauled:block/shorea_wood",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "minecraft_overhauled:block/shorea_wood",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "minecraft_overhauled:block/shorea_wood",
+      "x": 90,
+      "y": 90
     }
   }
 }
