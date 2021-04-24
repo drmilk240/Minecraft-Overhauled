@@ -6,10 +6,19 @@
     "items": [],
     "blocks": [
       {
+        "value": "CUSTOM:BaobabLog"
+      },
+      {
+        "value": "CUSTOM:BaobabWood"
+      },
+      {
         "value": "CUSTOM:ShoreaLog"
       },
       {
-        "value": "CUSTOM:BaobabLog"
+        "value": "CUSTOM:ShoreaWood"
+      },
+      {
+        "value": "CUSTOM:BushthornWood"
       },
       {
         "value": "CUSTOM:BushthornLog"

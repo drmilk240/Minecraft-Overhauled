@@ -542,15 +542,6 @@
       "registry_name": "shorea_stick_recipe"
     },
     {
-      "name": "Logs",
-      "type": "tag",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "logs"
-    },
-    {
       "name": "Regfruit",
       "type": "block",
       "sortid": 63,
@@ -638,6 +629,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "flowers"
+    },
+    {
+      "name": "LogsMinecraft",
+      "type": "tag",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "logs_minecraft"
     }
   ],
   "variable_elements": [],
