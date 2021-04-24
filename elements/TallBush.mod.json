@@ -3,17 +3,17 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "bush",
-    "textureBottom": "",
+    "texture": "bushtop",
+    "textureBottom": "bush",
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
-    "plantType": "normal",
+    "plantType": "double",
     "staticPlantGenerationType": "Flower",
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
-    "doublePlantGenerationType": "Flower",
-    "name": "Bush",
+    "doublePlantGenerationType": "Grass",
+    "name": "Tall Bush",
     "specialInfo": [],
     "creativeTab": {
       "value": "DECORATIONS"
@@ -34,7 +34,7 @@
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,
-    "colorOnMap": "GRASS",
+    "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
     },
@@ -42,7 +42,7 @@
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,
-    "frequencyOnChunks": 5,
+    "frequencyOnChunks": 9,
     "spawnWorldTypes": [
       "Surface"
     ],

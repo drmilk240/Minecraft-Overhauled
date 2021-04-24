@@ -33,7 +33,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.FlowerBlock;
@@ -47,11 +46,11 @@ import java.util.List;
 import java.util.Collections;
 
 @MinecraftOverhauledModElements.ModElement.Tag
-public class BushBlock extends MinecraftOverhauledModElements.ModElement {
-	@ObjectHolder("minecraft_overhauled:bush")
+public class FlowerBushBlock extends MinecraftOverhauledModElements.ModElement {
+	@ObjectHolder("minecraft_overhauled:flower_bush")
 	public static final Block block = null;
-	public BushBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 42);
+	public FlowerBushBlock(MinecraftOverhauledModElements instance) {
+		super(instance, 91);
 	}
 
 	@Override
@@ -87,9 +86,11 @@ public class BushBlock extends MinecraftOverhauledModElements.ModElement {
 		};
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
 			boolean biomeCriteria = false;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("savanna")))
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("minecraft_overhauled:rainforest")))
 				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("savanna_plateau")))
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("jungle")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("flower_forest")))
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
@@ -97,14 +98,14 @@ public class BushBlock extends MinecraftOverhauledModElements.ModElement {
 					feature.withConfiguration(
 							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
 									.tries(64).build())
-							.withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(5))));
+							.withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(14))));
 		}
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS, MaterialColor.GRASS).doesNotBlockMovement().sound(SoundType.PLANT)
+			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).lightValue(0));
-			setRegistryName("bush");
+			setRegistryName("flower_bush");
 		}
 
 		@Override

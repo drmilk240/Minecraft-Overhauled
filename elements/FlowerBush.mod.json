@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "bush",
+    "texture": "flowerbush",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",
@@ -13,7 +13,7 @@
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
-    "name": "Bush",
+    "name": "Flower Bush",
     "specialInfo": [],
     "creativeTab": {
       "value": "DECORATIONS"
@@ -34,7 +34,7 @@
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,
-    "colorOnMap": "GRASS",
+    "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
     },
@@ -42,16 +42,19 @@
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,
-    "frequencyOnChunks": 5,
+    "frequencyOnChunks": 14,
     "spawnWorldTypes": [
       "Surface"
     ],
     "restrictionBiomes": [
       {
-        "value": "savanna"
+        "value": "CUSTOM:Rainforest"
       },
       {
-        "value": "savanna_rock"
+        "value": "jungle"
+      },
+      {
+        "value": "mutated_forest"
       }
     ]
   }

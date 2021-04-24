@@ -134,9 +134,9 @@ public class RiverDolphinEntity extends MinecraftOverhauledModElements.ModElemen
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new FollowMobGoal(this, (float) 5, 20, 10));
-			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, IronFishEntity.CustomEntity.class, false, false));
-			this.goalSelector.addGoal(3, new RandomSwimmingGoal(this, 5, 40));
+			this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 5, 40));
+			this.goalSelector.addGoal(2, new FollowMobGoal(this, (float) 5, 20, 10));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, IronFishEntity.CustomEntity.class, true, false));
 			this.goalSelector.addGoal(4, new PanicGoal(this, 1.2));
 			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
 		}

@@ -11,12 +11,11 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.FrequencyConfig;
-import net.minecraft.world.gen.feature.FlowersFeature;
-import net.minecraft.world.gen.feature.DefaultFlowersFeature;
+import net.minecraft.world.gen.placement.NoiseDependant;
+import net.minecraft.world.gen.feature.RandomPatchFeature;
 import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
-import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
+import net.minecraft.world.gen.blockplacer.DoublePlantBlockPlacer;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.dimension.DimensionType;
@@ -26,17 +25,17 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Direction;
-import net.minecraft.potion.Effects;
+import net.minecraft.state.properties.DoubleBlockHalf;
+import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.item.TallBlockItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
-import net.minecraft.item.BlockItem;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.FlowerBlock;
+import net.minecraft.block.DoublePlantBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -47,17 +46,18 @@ import java.util.List;
 import java.util.Collections;
 
 @MinecraftOverhauledModElements.ModElement.Tag
-public class BushBlock extends MinecraftOverhauledModElements.ModElement {
-	@ObjectHolder("minecraft_overhauled:bush")
+public class TallBushBlock extends MinecraftOverhauledModElements.ModElement {
+	@ObjectHolder("minecraft_overhauled:tall_bush")
 	public static final Block block = null;
-	public BushBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 42);
+	public TallBushBlock(MinecraftOverhauledModElements instance) {
+		super(instance, 90);
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new BlockCustomFlower());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
+		elements.items
+				.add(() -> new TallBlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
@@ -68,12 +68,7 @@ public class BushBlock extends MinecraftOverhauledModElements.ModElement {
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		FlowersFeature feature = new DefaultFlowersFeature(BlockClusterFeatureConfig::deserialize) {
-			@Override
-			public BlockState getFlowerToPlace(Random random, BlockPos bp, BlockClusterFeatureConfig fc) {
-				return block.getDefaultState();
-			}
-
+		RandomPatchFeature feature = new RandomPatchFeature(BlockClusterFeatureConfig::deserialize) {
 			@Override
 			public boolean place(IWorld world, ChunkGenerator generator, Random random, BlockPos pos, BlockClusterFeatureConfig config) {
 				DimensionType dimensionType = world.getDimension().getType();
@@ -93,18 +88,16 @@ public class BushBlock extends MinecraftOverhauledModElements.ModElement {
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
-			biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-					feature.withConfiguration(
-							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
-									.tries(64).build())
-							.withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(5))));
+			biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, feature.withConfiguration(
+					(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new DoublePlantBlockPlacer()))
+							.tries(64).build())
+					.withPlacement(Placement.NOISE_HEIGHTMAP_32.configure(new NoiseDependant(-0.8, 0, 9))));
 		}
 	}
-	public static class BlockCustomFlower extends FlowerBlock {
+	public static class BlockCustomFlower extends DoublePlantBlock {
 		public BlockCustomFlower() {
-			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS, MaterialColor.GRASS).doesNotBlockMovement().sound(SoundType.PLANT)
-					.hardnessAndResistance(0f, 0f).lightValue(0));
-			setRegistryName("bush");
+			super(Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT).hardnessAndResistance(0f, 0f).lightValue(0));
+			setRegistryName("tall_bush");
 		}
 
 		@Override
@@ -119,6 +112,8 @@ public class BushBlock extends MinecraftOverhauledModElements.ModElement {
 
 		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+			if (state.get(BlockStateProperties.DOUBLE_BLOCK_HALF) != DoubleBlockHalf.LOWER)
+				return Collections.emptyList();
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
