@@ -22,6 +22,7 @@ import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
 import net.minecraft.entity.ai.goal.PanicGoal;
@@ -71,7 +72,7 @@ public class ToadEntity extends MinecraftOverhauledModElements.ModElement {
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
-			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 7, 1, 4));
+			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 6, 1, 4));
 		}
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos,
@@ -109,11 +110,12 @@ public class ToadEntity extends MinecraftOverhauledModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new PanicGoal(this, 1.2));
-			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, AntEntity.CustomEntity.class, false, false));
+			this.goalSelector.addGoal(1, new SwimGoal(this));
+			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, AntEntity.CustomEntity.class, false, false));
 			this.goalSelector.addGoal(4, new FollowMobGoal(this, (float) 1, 10, 5));
-			this.goalSelector.addGoal(5, new RandomWalkingGoal(this, 0.8));
-			this.goalSelector.addGoal(6, new RandomSwimmingGoal(this, 1, 40));
+			this.goalSelector.addGoal(6, new PanicGoal(this, 1.2));
+			this.goalSelector.addGoal(7, new RandomSwimmingGoal(this, 1, 40));
 		}
 
 		@Override
