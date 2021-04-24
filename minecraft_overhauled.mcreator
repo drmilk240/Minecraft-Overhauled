@@ -857,6 +857,60 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "grapple_hook_recipe"
+    },
+    {
+      "name": "IronBow",
+      "type": "gun",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_bow"
+    },
+    {
+      "name": "GoldBow",
+      "type": "gun",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gold_bow"
+    },
+    {
+      "name": "DiamondBow",
+      "type": "gun",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_bow"
+    },
+    {
+      "name": "IronBowRecipe",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_bow_recipe"
+    },
+    {
+      "name": "GoldBowRecipe",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gold_bow_recipe"
+    },
+    {
+      "name": "DiamondBowRecipe",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_bow_recipe"
     }
   ],
   "variable_elements": [],
@@ -880,6 +934,7 @@
       "block.minecraft_overhauled.bushthorn_leaves": "Bushthorn Leaves",
       "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
       "block.minecraft_overhauled.baobab_leaves": "Baobab Leaves",
+      "item.minecraft_overhauled.iron_bow": "Iron Bow",
       "block.minecraft_overhauled.shorea_planks": "Shorea Planks",
       "entity.minecraft_overhauled.river_dolphin": "River Dolphin",
       "item.minecraft_overhauled.lush_zombie_spawn_egg": "Lush Zombie Spawn Egg",
@@ -898,8 +953,10 @@
       "block.minecraft_overhauled.mud_block": "Mud Block",
       "block.minecraft_overhauled.bushthorn_wood": "Bushthorn Wood",
       "item.minecraft_overhauled.spear_throwable": "Spear",
+      "item.minecraft_overhauled.gold_bow": "Gold Bow",
       "item.minecraft_overhauled.river_dolphin_spawn_egg": "River Dolphin Spawn Egg",
       "item.minecraft_overhauled.iron_fish_spawn_egg": "Ironfish Spawn Egg",
+      "item.minecraft_overhauled.diamond_bow": "Diamond Bow",
       "itemGroup.tabsavanna": "Savanna",
       "block.minecraft_overhauled.bushthorn_stairs": "Bushthorn Stairs",
       "biome.minecraft_overhauled.rainforest": "Rainforest",
