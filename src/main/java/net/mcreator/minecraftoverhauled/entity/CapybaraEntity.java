@@ -61,7 +61,7 @@ public class CapybaraEntity extends MinecraftOverhauledModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("capybara")
 						.setRegistryName("capybara");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -13686250, -12772851, new Item.Properties().group(ItemGroup.MISC))
+		elements.items.add(() -> new SpawnEggItem(entity, -13688042, -12772851, new Item.Properties().group(ItemGroup.MISC))
 				.setRegistryName("capybara_spawn_egg"));
 	}
 
