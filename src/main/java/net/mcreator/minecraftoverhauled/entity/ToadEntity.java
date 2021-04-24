@@ -87,7 +87,7 @@ public class ToadEntity extends MinecraftOverhauledModElements.ModElement {
 			return new MobRenderer(renderManager, new Modeltoad(), 0.5f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("minecraft_overhauled:textures/toad2.png");
+					return new ResourceLocation("minecraft_overhauled:textures/toad.png");
 				}
 			};
 		});

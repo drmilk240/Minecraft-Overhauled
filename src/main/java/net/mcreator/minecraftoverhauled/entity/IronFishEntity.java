@@ -249,7 +249,8 @@ public class IronFishEntity extends MinecraftOverhauledModElements.ModElement {
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
 			this.Head.rotateAngleY = f3 / (180F / (float) Math.PI);
 			this.Head.rotateAngleX = f4 / (180F / (float) Math.PI);
-			this.Tail.rotateAngleZ = MathHelper.cos(f * 0.6662F) * f1;
+			this.Tail.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+			this.Body.rotateAngleY = MathHelper.cos(f * 0.6662F) * f1;
 		}
 	}
 }

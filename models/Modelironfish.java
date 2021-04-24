@@ -59,6 +59,7 @@ public static class Modelironfish extends EntityModel<Entity> {
 		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
 		this.Head.rotateAngleY = f3 / (180F / (float) Math.PI);
 		this.Head.rotateAngleX = f4 / (180F / (float) Math.PI);
-		this.Tail.rotateAngleZ = MathHelper.cos(f * 0.6662F) * f1;
+		this.Tail.rotateAngleY = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+		this.Body.rotateAngleY = MathHelper.cos(f * 0.6662F) * f1;
 	}
 }
