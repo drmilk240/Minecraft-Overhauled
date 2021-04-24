@@ -24,6 +24,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.goal.BreakBlockGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
@@ -36,6 +37,7 @@ import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.block.material.Material;
 
+import net.mcreator.minecraftoverhauled.block.BushBlock;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
@@ -107,8 +109,9 @@ public class AntEntity extends MinecraftOverhauledModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new WaterAvoidingRandomWalkingGoal(this, 0.8));
-			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(1, new BreakBlockGoal(BushBlock.block.getDefaultState().getBlock(), this, 1, (int) 3));
+			this.goalSelector.addGoal(2, new WaterAvoidingRandomWalkingGoal(this, 0.8));
+			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
 		}
 
 		@Override

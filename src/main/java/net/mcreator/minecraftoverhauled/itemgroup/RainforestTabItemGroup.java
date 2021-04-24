@@ -1,17 +1,9 @@
 
 package net.mcreator.minecraftoverhauled.itemgroup;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.block.Blocks;
-
-import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
-
 @MinecraftOverhauledModElements.ModElement.Tag
 public class RainforestTabItemGroup extends MinecraftOverhauledModElements.ModElement {
+
 	public RainforestTabItemGroup(MinecraftOverhauledModElements instance) {
 		super(instance, 71);
 	}
@@ -31,5 +23,7 @@ public class RainforestTabItemGroup extends MinecraftOverhauledModElements.ModEl
 			}
 		};
 	}
+
 	public static ItemGroup tab;
+
 }

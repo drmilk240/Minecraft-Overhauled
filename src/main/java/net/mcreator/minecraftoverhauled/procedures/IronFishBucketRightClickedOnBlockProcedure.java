@@ -1,21 +1,11 @@
 package net.mcreator.minecraftoverhauled.procedures;
 
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.math.Vec3d;
-import net.minecraft.util.math.Vec2f;
-import net.minecraft.command.ICommandSource;
-import net.minecraft.command.CommandSource;
-
-import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
-
-import java.util.Map;
-
 @MinecraftOverhauledModElements.ModElement.Tag
 public class IronFishBucketRightClickedOnBlockProcedure extends MinecraftOverhauledModElements.ModElement {
+
 	public IronFishBucketRightClickedOnBlockProcedure(MinecraftOverhauledModElements instance) {
 		super(instance, 77);
+
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -39,10 +29,12 @@ public class IronFishBucketRightClickedOnBlockProcedure extends MinecraftOverhau
 				System.err.println("Failed to load dependency world for procedure IronFishBucketRightClickedOnBlock!");
 			return;
 		}
+
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 			world.getWorld().getServer().getCommandManager()
 					.handleCommand(
@@ -50,5 +42,7 @@ public class IronFishBucketRightClickedOnBlockProcedure extends MinecraftOverhau
 									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 							"summon minecraft_overhauled:ironfish");
 		}
+
 	}
+
 }

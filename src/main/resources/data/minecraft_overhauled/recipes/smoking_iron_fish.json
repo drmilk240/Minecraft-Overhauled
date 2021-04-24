@@ -4,9 +4,9 @@
   "experience": 1,
   "cookingtime": 100,
   "ingredient": {
-    "item": "minecraft_overhauled:raw_iron_fish"
+    "item": "minecraft_overhauled:unknown_element"
   },
   "result": {
-    "item": "minecraft_overhauled:cooked_iron_fish"
+    "item": "minecraft_overhauled:unknown_element"
   }
 }

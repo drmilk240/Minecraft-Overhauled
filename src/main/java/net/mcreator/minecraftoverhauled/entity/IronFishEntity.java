@@ -1,59 +1,16 @@
 
 package net.mcreator.minecraftoverhauled.entity;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.network.NetworkHooks;
-import net.minecraftforge.fml.network.FMLPlayMessages;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.World;
-import net.minecraft.world.IWorldReader;
-import net.minecraft.util.math.shapes.VoxelShapes;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.DamageSource;
-import net.minecraft.tags.FluidTags;
-import net.minecraft.pathfinding.SwimmerPathNavigator;
-import net.minecraft.network.IPacket;
-import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.entity.projectile.ArrowEntity;
-import net.minecraft.entity.passive.SquidEntity;
-import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
-import net.minecraft.entity.ai.goal.PanicGoal;
-import net.minecraft.entity.ai.goal.FollowMobGoal;
-import net.minecraft.entity.ai.goal.AvoidEntityGoal;
-import net.minecraft.entity.ai.controller.MovementController;
-import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntitySpawnPlacementRegistry;
-import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.CreatureEntity;
-import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.client.renderer.model.ModelRenderer;
-import net.minecraft.client.renderer.entity.model.EntityModel;
-import net.minecraft.client.renderer.entity.MobRenderer;
-
-import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
-
-import com.mojang.blaze3d.vertex.IVertexBuilder;
-import com.mojang.blaze3d.matrix.MatrixStack;
+import net.minecraft.block.material.Material;
 
 @MinecraftOverhauledModElements.ModElement.Tag
 public class IronFishEntity extends MinecraftOverhauledModElements.ModElement {
+
 	public static EntityType entity = null;
+
 	public IronFishEntity(MinecraftOverhauledModElements instance) {
 		super(instance, 70);
+
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -62,9 +19,12 @@ public class IronFishEntity extends MinecraftOverhauledModElements.ModElement {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.WATER_CREATURE)
 				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 				.size(0.6f, 1.8f)).build("iron_fish").setRegistryName("iron_fish");
+
 		elements.entities.add(() -> entity);
+
 		elements.items.add(() -> new SpawnEggItem(entity, -11913931, -12313572, new Item.Properties().group(ItemGroup.MISC))
 				.setRegistryName("iron_fish_spawn_egg"));
+
 	}
 
 	@Override
@@ -75,10 +35,13 @@ public class IronFishEntity extends MinecraftOverhauledModElements.ModElement {
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
+
 			biome.getSpawns(EntityClassification.WATER_CREATURE).add(new Biome.SpawnListEntry(entity, 40, 1, 16));
 		}
+
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
 				SquidEntity::func_223365_b);
+
 	}
 
 	@SubscribeEvent
@@ -86,14 +49,18 @@ public class IronFishEntity extends MinecraftOverhauledModElements.ModElement {
 	public void registerModels(ModelRegistryEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> {
 			return new MobRenderer(renderManager, new Modelironfish(), 0.5f) {
+
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
 					return new ResourceLocation("minecraft_overhauled:textures/ironfish.png");
 				}
 			};
 		});
+
 	}
+
 	public static class CustomEntity extends CreatureEntity {
+
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -102,11 +69,13 @@ public class IronFishEntity extends MinecraftOverhauledModElements.ModElement {
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
+
 			this.moveController = new MovementController(this) {
 				@Override
 				public void tick() {
 					if (CustomEntity.this.areEyesInFluid(FluidTags.WATER))
 						CustomEntity.this.setMotion(CustomEntity.this.getMotion().add(0, 0.005, 0));
+
 					if (this.action == MovementController.Action.MOVE_TO && !CustomEntity.this.getNavigator().noPath()) {
 						double dx = this.posX - CustomEntity.this.getPosX();
 						double dy = this.posY - CustomEntity.this.getPosY();
@@ -134,10 +103,12 @@ public class IronFishEntity extends MinecraftOverhauledModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
+
 			this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 1, 40));
 			this.goalSelector.addGoal(2, new FollowMobGoal(this, (float) 1, 10, 5));
 			this.goalSelector.addGoal(3, new PanicGoal(this, 1.2));
 			this.goalSelector.addGoal(4, new AvoidEntityGoal(this, RiverDolphinEntity.CustomEntity.class, (float) 6, 1, 1.2));
+
 		}
 
 		@Override
@@ -169,15 +140,20 @@ public class IronFishEntity extends MinecraftOverhauledModElements.ModElement {
 		@Override
 		protected void registerAttributes() {
 			super.registerAttributes();
+
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
+
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
 				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10);
+
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
 				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0);
+
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
+
 		}
 
 		@Override
@@ -194,18 +170,22 @@ public class IronFishEntity extends MinecraftOverhauledModElements.ModElement {
 		public boolean isPushedByWater() {
 			return false;
 		}
+
 	}
 
 	// Made with Blockbench 3.8.4
 	// Exported for Minecraft version 1.15 - 1.16
 	// Paste this class into your mod and generate all required imports
+
 	public static class Modelironfish extends EntityModel<Entity> {
 		private final ModelRenderer bb_main;
 		private final ModelRenderer cube_r1;
 		private final ModelRenderer cube_r2;
+
 		public Modelironfish() {
 			textureWidth = 32;
 			textureHeight = 32;
+
 			bb_main = new ModelRenderer(this);
 			bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
 			bb_main.setTextureOffset(0, 0).addBox(-2.0F, -3.0F, -6.0F, 4.0F, 3.0F, 7.0F, 0.0F, false);
@@ -214,11 +194,13 @@ public class IronFishEntity extends MinecraftOverhauledModElements.ModElement {
 			bb_main.setTextureOffset(0, 3).addBox(0.0F, -4.0F, -3.0F, 0.0F, 1.0F, 3.0F, 0.0F, false);
 			bb_main.setTextureOffset(0, 10).addBox(-2.0F, -2.25F, -8.0F, 4.0F, 2.0F, 2.0F, 0.0F, false);
 			bb_main.setTextureOffset(10, 10).addBox(-2.0F, -1.75F, -8.5F, 4.0F, 1.0F, 1.0F, 0.0F, false);
+
 			cube_r1 = new ModelRenderer(this);
 			cube_r1.setRotationPoint(0.0F, 0.0F, 0.0F);
 			bb_main.addChild(cube_r1);
 			setRotationAngle(cube_r1, 0.0F, -0.1745F, 0.0F);
 			cube_r1.setTextureOffset(0, 0).addBox(1.0F, -0.75F, -5.0F, 2.0F, 0.0F, 3.0F, 0.0F, false);
+
 			cube_r2 = new ModelRenderer(this);
 			cube_r2.setRotationPoint(0.0F, 0.0F, 0.0F);
 			bb_main.addChild(cube_r2);
@@ -239,6 +221,8 @@ public class IronFishEntity extends MinecraftOverhauledModElements.ModElement {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+
 		}
 	}
+
 }
