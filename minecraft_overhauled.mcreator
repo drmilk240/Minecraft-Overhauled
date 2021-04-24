@@ -665,6 +665,68 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "rainforest_tab"
+    },
+    {
+      "name": "RawIronFish",
+      "type": "food",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_iron_fish"
+    },
+    {
+      "name": "CookedIronFishFoodEaten",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooked_iron_fish_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CookedIronFish",
+      "type": "food",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooked_iron_fish"
+    },
+    {
+      "name": "CookingIronFish",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooking_iron_fish"
+    },
+    {
+      "name": "SmokingIronFish",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smoking_iron_fish"
+    },
+    {
+      "name": "CampireIronFish",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "campire_iron_fish"
     }
   ],
   "variable_elements": [],
@@ -672,27 +734,18 @@
   "language_map": {
     "en_us": {
       "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
-      "block.minecraft_overhauled.mud_block": "Mud Block",
       "block.minecraft_overhauled.baobab_door": "Baobab Door",
       "block.minecraft_overhauled.bush": "Bush",
-      "block.minecraft_overhauled.bushthorn_wood": "Bushthorn Wood",
       "item.minecraft_overhauled.ant_spawn_egg": "Ant Spawn Egg",
-      "item.minecraft_overhauled.spear_throwable": "Spear",
       "block.minecraft_overhauled.bushthorn_fence_gate": "Bushthorn Fence Gate",
       "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
-      "block.minecraft_overhauled.baobab_slab": "Baobab Slab",
       "block.minecraft_overhauled.bushthorn_log": "Bushthorn Log",
-      "item.minecraft_overhauled.river_dolphin_spawn_egg": "River Dolphin Spawn Egg",
-      "item.minecraft_overhauled.iron_fish_spawn_egg": "Ironfish Spawn Egg",
+      "block.minecraft_overhauled.baobab_slab": "Baobab Slab",
       "item.minecraft_overhauled.regfruit_slices": "Regfruit Slice",
       "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
-      "itemGroup.tabsavanna": "Savanna",
       "block.minecraft_overhauled.shorea_log": "Shorea Log",
-      "block.minecraft_overhauled.bushthorn_stairs": "Bushthorn Stairs",
-      "biome.minecraft_overhauled.rainforest": "Rainforest",
+      "item.minecraft_overhauled.cooked_iron_fish": "Cooked Ironfish",
       "block.minecraft_overhauled.regfruit": "Regfruit",
-      "block.minecraft_overhauled.anthill_block": "Anthill Block",
-      "block.minecraft_overhauled.shorea_stairs": "Shorea Stairs",
       "entity.minecraft_overhauled.toad": "Toad",
       "block.minecraft_overhauled.bushthorn_leaves": "Bushthorn Leaves",
       "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
@@ -705,16 +758,27 @@
       "block.minecraft_overhauled.baobab_log": "Baobab Log",
       "block.minecraft_overhauled.shorea_leaves": "Shorea Leaves",
       "block.minecraft_overhauled.bushthorn_slab": "Bushthorn Slab",
-      "block.minecraft_overhauled.baobab_stairs": "Baobab Stairs",
       "block.minecraft_overhauled.bushthorn_planks": "Bushthorn Planks",
-      "block.minecraft_overhauled.baobab_fence": "Baobab Fence",
       "entity.minecraft_overhauled.ant": "Ant",
+      "block.minecraft_overhauled.baobab_fence": "Baobab Fence",
+      "block.minecraft_overhauled.baobab_trapdoor": "Baobab Trapdoor",
+      "block.minecraft_overhauled.mud_block": "Mud Block",
+      "block.minecraft_overhauled.bushthorn_wood": "Bushthorn Wood",
+      "item.minecraft_overhauled.spear_throwable": "Spear",
+      "item.minecraft_overhauled.river_dolphin_spawn_egg": "River Dolphin Spawn Egg",
+      "item.minecraft_overhauled.iron_fish_spawn_egg": "Ironfish Spawn Egg",
+      "itemGroup.tabsavanna": "Savanna",
+      "block.minecraft_overhauled.bushthorn_stairs": "Bushthorn Stairs",
+      "biome.minecraft_overhauled.rainforest": "Rainforest",
+      "item.minecraft_overhauled.raw_iron_fish": "Raw Ironfish",
+      "block.minecraft_overhauled.anthill_block": "Anthill Block",
+      "block.minecraft_overhauled.shorea_stairs": "Shorea Stairs",
+      "block.minecraft_overhauled.baobab_stairs": "Baobab Stairs",
       "block.minecraft_overhauled.passion_flower": "Passion Flower",
       "block.minecraft_overhauled.shorea_wood": "Shorea Wood",
       "itemGroup.tabrainforest_tab": "Rainforest",
       "entity.minecraft_overhauled.iron_fish": "Ironfish",
       "block.minecraft_overhauled.dried_mud_block": "Dried Mud Block",
-      "block.minecraft_overhauled.baobab_trapdoor": "Baobab Trapdoor",
       "block.minecraft_overhauled.shorea_slab": "Shorea Slab",
       "block.minecraft_overhauled.baobab_fence_gate": "Baobab Fence Gate"
     }
