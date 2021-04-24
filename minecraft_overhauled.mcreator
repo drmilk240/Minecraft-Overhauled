@@ -652,7 +652,7 @@
       "name": "IronFish",
       "type": "mob",
       "sortid": 70,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "iron_fish"
@@ -732,7 +732,7 @@
       "name": "BaobobTrees3",
       "type": "structure",
       "sortid": 72,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "baobob_trees_3"
@@ -741,7 +741,7 @@
       "name": "BaobobTrees2",
       "type": "structure",
       "sortid": 71,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "baobob_trees_2"
@@ -750,7 +750,7 @@
       "name": "BaobobTrees",
       "type": "structure",
       "sortid": 70,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "baobob_trees"
