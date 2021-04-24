@@ -36,7 +36,7 @@ public class IronFishEntity extends MinecraftOverhauledModElements.ModElement {
 			if (!biomeCriteria)
 				continue;
 
-			biome.getSpawns(EntityClassification.WATER_CREATURE).add(new Biome.SpawnListEntry(entity, 20, 1, 7));
+			biome.getSpawns(EntityClassification.WATER_CREATURE).add(new Biome.SpawnListEntry(entity, 40, 1, 16));
 		}
 
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
