@@ -801,6 +801,77 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "iron_fish_bucket"
+    },
+    {
+      "name": "Anthillbase",
+      "type": "block",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "anthillbase"
+    },
+    {
+      "name": "AnthillBlockUpdateTick",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "anthill_block_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AntOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ant_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -834,6 +905,7 @@
       "block.minecraft_overhauled.baobab_log": "Baobab Log",
       "block.minecraft_overhauled.shorea_leaves": "Shorea Leaves",
       "block.minecraft_overhauled.bushthorn_slab": "Bushthorn Slab",
+      "block.minecraft_overhauled.anthillbase": "Anthill Block",
       "block.minecraft_overhauled.bushthorn_planks": "Bushthorn Planks",
       "entity.minecraft_overhauled.ant": "Ant",
       "block.minecraft_overhauled.baobab_fence": "Baobab Fence",
@@ -848,7 +920,7 @@
       "block.minecraft_overhauled.bushthorn_stairs": "Bushthorn Stairs",
       "biome.minecraft_overhauled.rainforest": "Rainforest",
       "item.minecraft_overhauled.raw_iron_fish": "Raw Ironfish",
-      "block.minecraft_overhauled.anthill_block": "Anthill Block",
+      "block.minecraft_overhauled.anthill_block": "Anthill Hive",
       "block.minecraft_overhauled.shorea_stairs": "Shorea Stairs",
       "block.minecraft_overhauled.baobab_stairs": "Baobab Stairs",
       "block.minecraft_overhauled.passion_flower": "Passion Flower",
