@@ -661,7 +661,7 @@
       "name": "RainforestTab",
       "type": "tab",
       "sortid": 71,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "rainforest_tab"
@@ -670,7 +670,7 @@
       "name": "RawIronFish",
       "type": "food",
       "sortid": 72,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "raw_iron_fish"
@@ -679,7 +679,7 @@
       "name": "CookedIronFishFoodEaten",
       "type": "procedure",
       "sortid": 73,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "cooked_iron_fish_food_eaten",
@@ -759,7 +759,7 @@
       "name": "LushZombie",
       "type": "mob",
       "sortid": 78,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "lush_zombie"
@@ -768,7 +768,7 @@
       "name": "IronFishBucketRightClickedOnBlock",
       "type": "procedure",
       "sortid": 77,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "iron_fish_bucket_right_clicked_on_block",
@@ -797,7 +797,7 @@
       "name": "IronFishBucket",
       "type": "item",
       "sortid": 77,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "iron_fish_bucket"
