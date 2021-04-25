@@ -2,8 +2,6 @@
 package net.mcreator.minecraftoverhauled.item;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
@@ -31,11 +29,6 @@ public class CopperHammerItem extends MinecraftOverhauledModElements.ModElement 
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemToolCustom() {
-			@Override
-			@OnlyIn(Dist.CLIENT)
-			public boolean hasEffect(ItemStack itemstack) {
-				return true;
-			}
 		}.setRegistryName("copper_hammer"));
 	}
 	private static class ItemToolCustom extends Item {

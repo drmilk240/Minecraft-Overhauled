@@ -35,7 +35,7 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:CopperIngot"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,

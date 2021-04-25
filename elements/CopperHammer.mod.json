@@ -18,7 +18,7 @@
     "damageVsEntity": 6.0,
     "usageCount": 370,
     "blocksAffected": [],
-    "hasGlow": true,
+    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:CopperIngot"
