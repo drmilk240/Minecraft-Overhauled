@@ -1,0 +1,30 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "hammer",
+    "customModelName": "Normal",
+    "name": "Copper Hammer",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Electricity"
+    },
+    "toolType": "MultiTool",
+    "harvestLevel": 3,
+    "efficiency": 6.5,
+    "attackSpeed": 0.9,
+    "enchantability": 0,
+    "damageVsEntity": 6.0,
+    "usageCount": 370,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "CUSTOM:CopperIngot"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

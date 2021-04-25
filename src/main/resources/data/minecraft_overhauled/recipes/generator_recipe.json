@@ -20,7 +20,7 @@
       "item": "minecraft_overhauled:copper_ingot"
     },
     "4": {
-      "item": "minecraft_overhauled:copper_ingot"
+      "item": "minecraft:diamond"
     },
     "5": {
       "item": "minecraft_overhauled:copper_ingot"
@@ -36,7 +36,7 @@
     }
   },
   "result": {
-    "item": "minecraft_overhauled:copper_block",
-    "count": 3
+    "item": "minecraft_overhauled:copper_generator",
+    "count": 1
   }
 }

@@ -5,7 +5,7 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 3,
+    "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
     "recipeSlots": [
@@ -22,7 +22,7 @@
         "value": "CUSTOM:CopperIngot"
       },
       {
-        "value": "CUSTOM:CopperIngot"
+        "value": "Items.DIAMOND"
       },
       {
         "value": "CUSTOM:CopperIngot"
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:CopperBlock"
+      "value": "CUSTOM:CopperGenerator"
     },
-    "name": "copper_ore_block_recipe",
+    "name": "generator_recipe",
     "namespace": "mod"
   }
 }
