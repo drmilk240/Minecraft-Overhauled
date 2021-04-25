@@ -1185,6 +1185,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "copper_hammer"
+    },
+    {
+      "name": "HammerRecipe",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hammer_recipe"
+    },
+    {
+      "name": "LightningRod",
+      "type": "block",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lightning_rod"
     }
   ],
   "variable_elements": [],
@@ -1199,6 +1217,7 @@
       "block.minecraft_overhauled.bushthorn_fence_gate": "Bushthorn Fence Gate",
       "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "item.minecraft_overhauled.copper_armor_chestplate": "Copper Chestplate",
+      "block.minecraft_overhauled.lightning_rod": "Lightning Rod",
       "block.minecraft_overhauled.baobab_slab": "Baobab Slab",
       "block.minecraft_overhauled.bushthorn_log": "Bushthorn Log",
       "item.minecraft_overhauled.regfruit_slices": "Regfruit Slice",

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft_overhauled:custom/lightning_rod",
+  "textures": {
+    "all": "minecraft_overhauled:blocks/lightning_rod",
+    "particle": "minecraft_overhauled:blocks/lightning_rod",
+    "texture": "minecraft_overhauled:blocks/lightning_rod"
+  }
+}
