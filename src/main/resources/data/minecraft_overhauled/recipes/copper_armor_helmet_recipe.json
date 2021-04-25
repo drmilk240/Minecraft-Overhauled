@@ -1,0 +1,29 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_overhauled:copper_ingot"
+    },
+    "1": {
+      "item": "minecraft_overhauled:copper_ingot"
+    },
+    "2": {
+      "item": "minecraft_overhauled:copper_ingot"
+    },
+    "3": {
+      "item": "minecraft_overhauled:copper_ingot"
+    },
+    "5": {
+      "item": "minecraft_overhauled:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:copper_armor_helmet",
+    "count": 1
+  }
+}

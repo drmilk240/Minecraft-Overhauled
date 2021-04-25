@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "texture": "lightning_rod"
+      },
+      "name": "default"
+    }
+  }
+}
