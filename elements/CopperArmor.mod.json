@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "copper_head",
+    "textureHelmet": "iron_helmet",
     "enableBody": true,
-    "textureBody": "copper_body",
+    "textureBody": "iron_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "copper_leggings",
+    "textureLeggings": "iron_leggings",
     "enableBoots": true,
-    "textureBoots": "copper_boots",
+    "textureBoots": "iron_boots",
     "creativeTab": {
       "value": "CUSTOM:Electricity"
     },

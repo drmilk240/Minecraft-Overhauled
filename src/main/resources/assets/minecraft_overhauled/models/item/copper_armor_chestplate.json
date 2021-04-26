@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "minecraft_overhauled:items/copper_body"
+    "layer0": "minecraft_overhauled:items/iron_chestplate"
   }
 }
