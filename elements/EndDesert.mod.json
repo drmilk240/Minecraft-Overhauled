@@ -36,7 +36,7 @@
     "baseHeight": 0.1,
     "heightVariation": 0.1,
     "biomeType": "DESERT",
-    "spawnBiome": true,
+    "spawnBiome": false,
     "biomeWeight": 20,
     "biomeDictionaryTypes": [
       "SANDY",

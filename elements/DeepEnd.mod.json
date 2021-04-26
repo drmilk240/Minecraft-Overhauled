@@ -8,6 +8,9 @@
       },
       {
         "value": "the_end"
+      },
+      {
+        "value": "CUSTOM:EndDesert"
       }
     ],
     "worldGenType": "End like gen",
