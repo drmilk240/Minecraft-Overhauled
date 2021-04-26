@@ -1302,15 +1302,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "bamboo_fence_gate_recipe"
-    },
-    {
-      "name": "BambooStickRecipe",
-      "type": "recipe",
-      "sortid": 135,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bamboo_stick_recipe"
     }
   ],
   "variable_elements": [],

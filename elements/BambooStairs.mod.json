@@ -40,7 +40,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Savanna"
+      "value": "CUSTOM:RainforestTab"
     },
     "destroyTool": "Not specified",
     "customDrop": {

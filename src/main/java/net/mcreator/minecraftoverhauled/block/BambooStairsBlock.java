@@ -16,7 +16,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.minecraftoverhauled.itemgroup.SavannaItemGroup;
+import net.mcreator.minecraftoverhauled.itemgroup.RainforestTabItemGroup;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 
 import java.util.List;
@@ -33,7 +33,8 @@ public class BambooStairsBlock extends MinecraftOverhauledModElements.ModElement
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(SavannaItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items
+				.add(() -> new BlockItem(block, new Item.Properties().group(RainforestTabItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
