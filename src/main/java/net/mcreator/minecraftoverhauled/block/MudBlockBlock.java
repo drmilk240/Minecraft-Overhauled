@@ -61,7 +61,7 @@ public class MudBlockBlock extends MinecraftOverhauledModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.EARTH).sound(SoundType.HONEY).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(1)
-					.harvestTool(ToolType.SHOVEL).setRequiresTool().slipperiness(0.8f));
+					.harvestTool(ToolType.SHOVEL).setRequiresTool().slipperiness(0.8f).speedFactor(0.5f).jumpFactor(0.6f));
 			setRegistryName("mud_block");
 		}
 

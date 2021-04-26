@@ -12,10 +12,14 @@
       },
       {
         "value": "CUSTOM:ShoreaPlanks"
+      },
+      {
+        "value": "CUSTOM:EndwoodPlanks"
       }
     ],
     "blocks": [],
     "functions": [],
+    "entities": [],
     "name": "planks",
     "namespace": "minecraft"
   }

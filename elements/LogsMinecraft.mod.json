@@ -22,9 +22,13 @@
       },
       {
         "value": "CUSTOM:BushthornLog"
+      },
+      {
+        "value": "CUSTOM:EndwoodLog"
       }
     ],
     "functions": [],
+    "entities": [],
     "name": "logs",
     "namespace": "minecraft"
   }

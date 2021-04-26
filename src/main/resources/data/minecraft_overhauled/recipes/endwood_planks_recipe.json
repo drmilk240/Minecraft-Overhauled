@@ -1,0 +1,13 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:endwood_log"
+    }
+  ],
+  "result": {
+    "item": "minecraft_overhauled:endwood_planks",
+    "count": 4
+  }
+}

@@ -1320,6 +1320,207 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "netherite_bow_recipe"
+    },
+    {
+      "name": "EndwoodWood",
+      "type": "block",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_wood"
+    },
+    {
+      "name": "EndwoodLog",
+      "type": "block",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_log"
+    },
+    {
+      "name": "EndwoodPlanks",
+      "type": "block",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_planks"
+    },
+    {
+      "name": "EndwoodLeaves",
+      "type": "block",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_leaves"
+    },
+    {
+      "name": "EndwoodStairs",
+      "type": "block",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_stairs"
+    },
+    {
+      "name": "EndwoodSlab",
+      "type": "block",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_slab"
+    },
+    {
+      "name": "EndwoodFence",
+      "type": "block",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_fence"
+    },
+    {
+      "name": "EndwoodFenceGate",
+      "type": "block",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_fence_gate"
+    },
+    {
+      "name": "EndwoodItemsTag",
+      "type": "tag",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_items_tag"
+    },
+    {
+      "name": "EndwoodWoodRecipe",
+      "type": "recipe",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_wood_recipe"
+    },
+    {
+      "name": "EndwoodPlanksRecipe",
+      "type": "recipe",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_planks_recipe"
+    },
+    {
+      "name": "EndwoodStairsRecipe",
+      "type": "recipe",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_stairs_recipe"
+    },
+    {
+      "name": "EndwoodSlabRecipe",
+      "type": "recipe",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_slab_recipe"
+    },
+    {
+      "name": "EndwoodFenceRecipe",
+      "type": "recipe",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_fence_recipe"
+    },
+    {
+      "name": "EndwoodFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_fence_gate_recipe"
+    },
+    {
+      "name": "EndwoodStickRecipe",
+      "type": "recipe",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwood_stick_recipe"
+    },
+    {
+      "name": "EndLoam",
+      "type": "block",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "end_loam"
+    },
+    {
+      "name": "Voidwoods",
+      "type": "biome",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "voidwoods"
+    },
+    {
+      "name": "DeepEnd",
+      "type": "dimension",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deep_end",
+      "metadata": {
+        "ep": false
+      }
+    },
+    {
+      "name": "Endsand",
+      "type": "block",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endsand"
+    },
+    {
+      "name": "EndDesert",
+      "type": "biome",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "end_desert"
+    },
+    {
+      "name": "DeepEndTab",
+      "type": "tab",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deep_end_tab"
     }
   ],
   "variable_elements": [],
@@ -1338,10 +1539,12 @@
       "block.minecraft_overhauled.lightning_rod": "Lightning Rod",
       "block.minecraft_overhauled.baobab_slab": "Baobab Slab",
       "block.minecraft_overhauled.bushthorn_log": "Bushthorn Log",
+      "block.minecraft_overhauled.endwood_fence_gate": "Endwood Fence Gate",
       "item.minecraft_overhauled.regfruit_slices": "Regfruit Slice",
       "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
       "item.minecraft_overhauled.copper_armor_boots": "Copper Boots",
       "block.minecraft_overhauled.bamboo_planks": "Bamboo Planks",
+      "block.minecraft_overhauled.endwood_slab": "Endwood Slab",
       "item.minecraft_overhauled.cooked_iron_fish": "Cooked Ironfish",
       "block.minecraft_overhauled.shorea_log": "Shorea Log",
       "block.minecraft_overhauled.regfruit": "Regfruit",
@@ -1356,6 +1559,7 @@
       "block.minecraft_overhauled.shorea_planks": "Shorea Planks",
       "entity.minecraft_overhauled.river_dolphin": "River Dolphin",
       "item.minecraft_overhauled.lush_zombie_spawn_egg": "Lush Zombie Spawn Egg",
+      "block.minecraft_overhauled.endsand": "Endsand",
       "entity.minecraft_overhauled.lush_zombie": "Lush Zombie",
       "block.minecraft_overhauled.orchid": "Orchid",
       "block.minecraft_overhauled.shorea_fence_gate": "Shorea Fence Gate",
@@ -1363,6 +1567,7 @@
       "entity.minecraft_overhauled.piranha": "Piranha",
       "block.minecraft_overhauled.baobab_log": "Baobab Log",
       "block.minecraft_overhauled.bamboo_slab": "Bamboo Slab",
+      "block.minecraft_overhauled.endwood_log": "Endwood Log",
       "block.minecraft_overhauled.shorea_leaves": "Shorea Leaves",
       "block.minecraft_overhauled.bamboo_stairs": "Bamboo Stairs",
       "block.minecraft_overhauled.bushthorn_slab": "Bushthorn Slab",
@@ -1370,12 +1575,18 @@
       "block.minecraft_overhauled.anthillbase": "Anthill Block",
       "entity.minecraft_overhauled.ant": "Ant",
       "block.minecraft_overhauled.baobab_fence": "Baobab Fence",
+      "block.minecraft_overhauled.endwood_wood": "Endwood Wood",
+      "itemGroup.tabdeep_end_tab": "Deep End",
       "item.minecraft_overhauled.iron_fish_bucket": "Ironfish Bucket",
       "block.minecraft_overhauled.copper_ore": "Copper Ore",
       "block.minecraft_overhauled.baobab_trapdoor": "Baobab Trapdoor",
       "block.minecraft_overhauled.copper_block": "Block of Copper",
+      "block.minecraft_overhauled.endwood_fence": "Endwood Fence",
       "item.minecraft_overhauled.copper_armor_leggings": "Copper Leggings",
       "block.minecraft_overhauled.mud_block": "Mud Block",
+      "item.minecraft_overhauled.deep_end": "Deep End Portal Igniter",
+      "block.minecraft_overhauled.end_loam": "End Loam",
+      "biome.minecraft_overhauled.voidwoods": "Voidwoods",
       "block.minecraft_overhauled.bushthorn_wood": "Bushthorn Wood",
       "item.minecraft_overhauled.spear_throwable": "Spear",
       "item.minecraft_overhauled.gold_bow": "Gold Bow",
@@ -1393,6 +1604,7 @@
       "item.minecraft_overhauled.grappling_hook": "Grappling Hook",
       "item.minecraft_overhauled.copper_armor_helmet": "Copper Helmet",
       "block.minecraft_overhauled.anthill_block": "Anthill Block",
+      "biome.minecraft_overhauled.end_desert": "End Desert",
       "block.minecraft_overhauled.shorea_stairs": "Shorea Stairs",
       "item.minecraft_overhauled.piranha_spawn_egg": "Piranha Spawn Egg",
       "block.minecraft_overhauled.baobab_stairs": "Baobab Stairs",
@@ -1400,10 +1612,13 @@
       "block.minecraft_overhauled.passion_flower": "Passion Flower",
       "block.minecraft_overhauled.shorea_wood": "Shorea Wood",
       "itemGroup.tabrainforest_tab": "Rainforest",
+      "block.minecraft_overhauled.endwood_leaves": "Endwood Leaves",
+      "block.minecraft_overhauled.endwood_planks": "Endwood Planks",
       "entity.minecraft_overhauled.iron_fish": "Ironfish",
       "item.minecraft_overhauled.copper_ingot": "Copper",
       "block.minecraft_overhauled.dried_mud_block": "Dried Mud Block",
       "block.minecraft_overhauled.shorea_slab": "Shorea Slab",
+      "block.minecraft_overhauled.endwood_stairs": "Endwood Stairs",
       "block.minecraft_overhauled.baobab_fence_gate": "Baobab Fence Gate",
       "block.minecraft_overhauled.bamboo_fence": "Bamboo Fence"
     }

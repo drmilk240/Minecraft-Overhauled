@@ -16,7 +16,7 @@
     "itemTexture": "",
     "particleTexture": "",
     "blockBase": "Leaves",
-    "tintType": "No tint",
+    "tintType": "Foliage",
     "isItemTinted": false,
     "hasTransparency": false,
     "connectedSides": false,

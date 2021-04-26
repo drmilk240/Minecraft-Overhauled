@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "minecraft_overhauled:blocks/endwood_planks",
+    "top": "minecraft_overhauled:blocks/endwood_planks",
+    "side": "minecraft_overhauled:blocks/endwood_planks"
+  }
+}

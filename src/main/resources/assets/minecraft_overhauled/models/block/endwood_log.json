@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_overhauled:blocks/endwood_log_top",
+    "up": "minecraft_overhauled:blocks/endwood_log_top",
+    "north": "minecraft_overhauled:blocks/warped_stem",
+    "east": "minecraft_overhauled:blocks/warped_stem",
+    "south": "minecraft_overhauled:blocks/warped_stem",
+    "west": "minecraft_overhauled:blocks/warped_stem",
+    "particle": "minecraft_overhauled:blocks/endwood_log_top"
+  }
+}

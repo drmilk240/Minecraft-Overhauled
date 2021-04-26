@@ -1,0 +1,115 @@
+{
+  "_fv": 18,
+  "_type": "biome",
+  "definition": {
+    "name": "Voidwoods",
+    "groundBlock": {
+      "value": "CUSTOM:EndLoam"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.END_STONE"
+    },
+    "grassColor": {
+      "value": -12890561,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -12890561,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -14139839,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -14139839,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "WARPED_SPORE"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "THEEND",
+    "parent": {
+      "value": "the_end"
+    },
+    "rainingPossibility": 0.0,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.4,
+    "biomeType": "COOL",
+    "spawnBiome": false,
+    "biomeWeight": 20,
+    "biomeDictionaryTypes": [
+      "DRY",
+      "END"
+    ],
+    "grassPerChunk": 4,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 7,
+    "vanillaTreeType": "Big trees",
+    "treeType": 1,
+    "minHeight": 7,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "CUSTOM:EndwoodLog"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:EndwoodLeaves"
+    },
+    "treeVines": {
+      "value": "CUSTOM:EndwoodLeaves"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "Fossils"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityEnderman"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "creature"
+      }
+    ]
+  }
+}

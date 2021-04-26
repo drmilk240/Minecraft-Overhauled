@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "minecraft_overhauled:blocks/endwood_planks",
+    "particle": "minecraft_overhauled:blocks/endwood_planks"
+  }
+}

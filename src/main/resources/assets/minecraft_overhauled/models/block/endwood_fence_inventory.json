@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "minecraft_overhauled:blocks/endwood_planks",
+    "particle": "minecraft_overhauled:blocks/endwood_planks"
+  }
+}
