@@ -5,6 +5,7 @@
   "block.minecraft_overhauled.copper_generator": "Copper Generator",
   "item.minecraft_overhauled.ant_spawn_egg": "Ant Spawn Egg",
   "block.minecraft_overhauled.bushthorn_fence_gate": "Bushthorn Fence Gate",
+  "block.minecraft_overhauled.bamboo_fence_gate": "Bamboo Fence Gate",
   "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
   "item.minecraft_overhauled.copper_armor_chestplate": "Copper Chestplate",
   "block.minecraft_overhauled.lightning_rod": "Lightning Rod",
@@ -13,6 +14,7 @@
   "item.minecraft_overhauled.regfruit_slices": "Regfruit Slice",
   "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
   "item.minecraft_overhauled.copper_armor_boots": "Copper Boots",
+  "block.minecraft_overhauled.bamboo_planks": "Bamboo Planks",
   "item.minecraft_overhauled.cooked_iron_fish": "Cooked Ironfish",
   "block.minecraft_overhauled.shorea_log": "Shorea Log",
   "block.minecraft_overhauled.regfruit": "Regfruit",
@@ -33,7 +35,9 @@
   "item.minecraft_overhauled.toad_spawn_egg": "Toad Spawn Egg",
   "entity.minecraft_overhauled.piranha": "Piranha",
   "block.minecraft_overhauled.baobab_log": "Baobab Log",
+  "block.minecraft_overhauled.bamboo_slab": "Bamboo Slab",
   "block.minecraft_overhauled.shorea_leaves": "Shorea Leaves",
+  "block.minecraft_overhauled.bamboo_stairs": "Bamboo Stairs",
   "block.minecraft_overhauled.bushthorn_slab": "Bushthorn Slab",
   "block.minecraft_overhauled.bushthorn_planks": "Bushthorn Planks",
   "block.minecraft_overhauled.anthillbase": "Anthill Block",
@@ -72,5 +76,6 @@
   "item.minecraft_overhauled.copper_ingot": "Copper",
   "block.minecraft_overhauled.dried_mud_block": "Dried Mud Block",
   "block.minecraft_overhauled.shorea_slab": "Shorea Slab",
-  "block.minecraft_overhauled.baobab_fence_gate": "Baobab Fence Gate"
+  "block.minecraft_overhauled.baobab_fence_gate": "Baobab Fence Gate",
+  "block.minecraft_overhauled.bamboo_fence": "Bamboo Fence"
 }

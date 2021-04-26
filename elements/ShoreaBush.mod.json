@@ -1,5 +1,5 @@
 {
-  "_fv": 13,
+  "_fv": 18,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -8,11 +8,16 @@
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
     "plantType": "growapable",
     "staticPlantGenerationType": "Flower",
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 8,
     "doublePlantGenerationType": "Flower",
+    "customBoundingBox": false,
+    "disableOffset": false,
+    "boundingBoxes": [],
     "name": "Shorea Bush",
     "specialInfo": [],
     "creativeTab": {
@@ -20,7 +25,7 @@
     },
     "hardness": 0.0,
     "resistance": 0.0,
-    "luminance": 0.0,
+    "luminance": 0,
     "unbreakable": false,
     "soundOnStep": {
       "value": "PLANT"
@@ -42,6 +47,9 @@
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [],
     "frequencyOnChunks": 40,
     "spawnWorldTypes": [
       "Surface"

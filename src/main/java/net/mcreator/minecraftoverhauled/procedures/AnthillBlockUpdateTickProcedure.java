@@ -1,5 +1,6 @@
 package net.mcreator.minecraftoverhauled.procedures;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
@@ -14,6 +15,7 @@ import net.minecraft.block.BlockState;
 
 import net.mcreator.minecraftoverhauled.entity.AntEntity;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
+import net.mcreator.minecraftoverhauled.MinecraftOverhauledMod;
 
 import java.util.function.Function;
 import java.util.Map;
@@ -28,22 +30,22 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure AnthillBlockUpdateTick!");
+				MinecraftOverhauledMod.LOGGER.warn("Failed to load dependency x for procedure AnthillBlockUpdateTick!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure AnthillBlockUpdateTick!");
+				MinecraftOverhauledMod.LOGGER.warn("Failed to load dependency y for procedure AnthillBlockUpdateTick!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure AnthillBlockUpdateTick!");
+				MinecraftOverhauledMod.LOGGER.warn("Failed to load dependency z for procedure AnthillBlockUpdateTick!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure AnthillBlockUpdateTick!");
+				MinecraftOverhauledMod.LOGGER.warn("Failed to load dependency world for procedure AnthillBlockUpdateTick!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
@@ -51,76 +53,81 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((new Object() {
-			public boolean getValue(BlockPos pos, String tag) {
+			public boolean getValue(IWorld world, BlockPos pos, String tag) {
 				TileEntity tileEntity = world.getTileEntity(pos);
 				if (tileEntity != null)
 					return tileEntity.getTileData().getBoolean(tag);
 				return false;
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "hasAnts")) != (true))) {
-			if (!world.getWorld().isRemote) {
+		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "hasAnts")) != (true))) {
+			if (!world.isRemote()) {
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				TileEntity _tileEntity = world.getTileEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_tileEntity != null)
 					_tileEntity.getTileData().putDouble("countAnts", (2 + Math.round((Math.random() * 3))));
-				world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
+				if (world instanceof World)
+					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
-			if (!world.getWorld().isRemote) {
+			if (!world.isRemote()) {
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				TileEntity _tileEntity = world.getTileEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_tileEntity != null)
 					_tileEntity.getTileData().putDouble("timeTillAntRelease", 0);
-				world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
+				if (world instanceof World)
+					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
-			if (!world.getWorld().isRemote) {
+			if (!world.isRemote()) {
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				TileEntity _tileEntity = world.getTileEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_tileEntity != null)
 					_tileEntity.getTileData().putBoolean("hasAnts", (true));
-				world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
+				if (world instanceof World)
+					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
 		}
-		if (!world.getWorld().isRemote) {
+		if (!world.isRemote()) {
 			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 			TileEntity _tileEntity = world.getTileEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_tileEntity != null)
 				_tileEntity.getTileData().putDouble("timeTillAntRelease", ((new Object() {
-					public double getValue(BlockPos pos, String tag) {
+					public double getValue(IWorld world, BlockPos pos, String tag) {
 						TileEntity tileEntity = world.getTileEntity(pos);
 						if (tileEntity != null)
 							return tileEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(new BlockPos((int) x, (int) y, (int) z), "timeTillAntRelease")) - 1));
-			world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "timeTillAntRelease")) - 1));
+			if (world instanceof World)
+				((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 		}
 		if (((new Object() {
-			public double getValue(BlockPos pos, String tag) {
+			public double getValue(IWorld world, BlockPos pos, String tag) {
 				TileEntity tileEntity = world.getTileEntity(pos);
 				if (tileEntity != null)
 					return tileEntity.getTileData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "timeTillAntRelease")) <= 0)) {
+		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "timeTillAntRelease")) <= 0)) {
 			if (((new Object() {
-				public double getValue(BlockPos pos, String tag) {
+				public double getValue(IWorld world, BlockPos pos, String tag) {
 					TileEntity tileEntity = world.getTileEntity(pos);
 					if (tileEntity != null)
 						return tileEntity.getTileData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(new BlockPos((int) x, (int) y, (int) z), "countAnts")) > 0)) {
+			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "countAnts")) > 0)) {
 				if ((!(world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z)).isSolid()))) {
-					if (world instanceof World && !world.getWorld().isRemote) {
-						Entity entityToSpawn = new AntEntity.CustomEntity(AntEntity.entity, world.getWorld());
+					if (world instanceof ServerWorld) {
+						Entity entityToSpawn = new AntEntity.CustomEntity(AntEntity.entity, (World) world);
 						entityToSpawn.setLocationAndAngles(x, (y + 1), z, world.getRandom().nextFloat() * 360F, 0);
 						if (entityToSpawn instanceof MobEntity)
-							((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
-									SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+							((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world,
+									world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null,
+									(CompoundNBT) null);
 						world.addEntity(entityToSpawn);
 					}
 					((Entity) world.getEntitiesWithinAABB(AntEntity.CustomEntity.class, new AxisAlignedBB(x - (0.1 / 2d), (y + 1) - (0.1 / 2d),
@@ -143,12 +150,13 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 							}.compareDistOf(x, (y + 1), z)).findFirst().orElse(null)).getPersistentData().putDouble("HomeZ", z);
 				} else {
 					if ((!(world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1))).isSolid()))) {
-						if (world instanceof World && !world.getWorld().isRemote) {
-							Entity entityToSpawn = new AntEntity.CustomEntity(AntEntity.entity, world.getWorld());
+						if (world instanceof ServerWorld) {
+							Entity entityToSpawn = new AntEntity.CustomEntity(AntEntity.entity, (World) world);
 							entityToSpawn.setLocationAndAngles(x, y, (z + 1), world.getRandom().nextFloat() * 360F, 0);
 							if (entityToSpawn instanceof MobEntity)
-								((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
-										SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+								((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world,
+										world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED,
+										(ILivingEntityData) null, (CompoundNBT) null);
 							world.addEntity(entityToSpawn);
 						}
 						((Entity) world
@@ -177,12 +185,13 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 								}.compareDistOf(x, y, (z + 1))).findFirst().orElse(null)).getPersistentData().putDouble("HomeZ", z);
 					} else {
 						if ((!(world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z)).isSolid()))) {
-							if (world instanceof World && !world.getWorld().isRemote) {
-								Entity entityToSpawn = new AntEntity.CustomEntity(AntEntity.entity, world.getWorld());
+							if (world instanceof ServerWorld) {
+								Entity entityToSpawn = new AntEntity.CustomEntity(AntEntity.entity, (World) world);
 								entityToSpawn.setLocationAndAngles((x + 1), y, z, world.getRandom().nextFloat() * 360F, 0);
 								if (entityToSpawn instanceof MobEntity)
-									((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
-											SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+									((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world,
+											world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED,
+											(ILivingEntityData) null, (CompoundNBT) null);
 								world.addEntity(entityToSpawn);
 							}
 							((Entity) world
@@ -211,12 +220,13 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 									}.compareDistOf((x + 1), y, z)).findFirst().orElse(null)).getPersistentData().putDouble("HomeZ", z);
 						} else {
 							if ((!(world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1))).isSolid()))) {
-								if (world instanceof World && !world.getWorld().isRemote) {
-									Entity entityToSpawn = new AntEntity.CustomEntity(AntEntity.entity, world.getWorld());
+								if (world instanceof ServerWorld) {
+									Entity entityToSpawn = new AntEntity.CustomEntity(AntEntity.entity, (World) world);
 									entityToSpawn.setLocationAndAngles(x, y, (z - 1), world.getRandom().nextFloat() * 360F, 0);
 									if (entityToSpawn instanceof MobEntity)
-										((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
-												SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+										((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world,
+												world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED,
+												(ILivingEntityData) null, (CompoundNBT) null);
 									world.addEntity(entityToSpawn);
 								}
 								((Entity) world
@@ -248,12 +258,12 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 										}.compareDistOf(x, y, (z - 1))).findFirst().orElse(null)).getPersistentData().putDouble("HomeZ", z);
 							} else {
 								if ((!(world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z)).isSolid()))) {
-									if (world instanceof World && !world.getWorld().isRemote) {
-										Entity entityToSpawn = new AntEntity.CustomEntity(AntEntity.entity, world.getWorld());
+									if (world instanceof ServerWorld) {
+										Entity entityToSpawn = new AntEntity.CustomEntity(AntEntity.entity, (World) world);
 										entityToSpawn.setLocationAndAngles((x - 1), y, z, world.getRandom().nextFloat() * 360F, 0);
 										if (entityToSpawn instanceof MobEntity)
-											((MobEntity) entityToSpawn).onInitialSpawn(world,
-													world.getDifficultyForLocation(new BlockPos(entityToSpawn)), SpawnReason.MOB_SUMMONED,
+											((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world,
+													world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED,
 													(ILivingEntityData) null, (CompoundNBT) null);
 										world.addEntity(entityToSpawn);
 									}
@@ -285,40 +295,42 @@ public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModEleme
 												}
 											}.compareDistOf((x - 1), y, z)).findFirst().orElse(null)).getPersistentData().putDouble("HomeZ", z);
 								} else {
-									if (!world.getWorld().isRemote) {
+									if (!world.isRemote()) {
 										BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 										TileEntity _tileEntity = world.getTileEntity(_bp);
 										BlockState _bs = world.getBlockState(_bp);
 										if (_tileEntity != null)
 											_tileEntity.getTileData().putDouble("countAnts", ((new Object() {
-												public double getValue(BlockPos pos, String tag) {
+												public double getValue(IWorld world, BlockPos pos, String tag) {
 													TileEntity tileEntity = world.getTileEntity(pos);
 													if (tileEntity != null)
 														return tileEntity.getTileData().getDouble(tag);
 													return -1;
 												}
-											}.getValue(new BlockPos((int) x, (int) y, (int) z), "countAnts")) + 1));
-										world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
+											}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "countAnts")) + 1));
+										if (world instanceof World)
+											((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 									}
 								}
 							}
 						}
 					}
 				}
-				if (!world.getWorld().isRemote) {
+				if (!world.isRemote()) {
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 					TileEntity _tileEntity = world.getTileEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_tileEntity != null)
 						_tileEntity.getTileData().putDouble("countAnts", ((new Object() {
-							public double getValue(BlockPos pos, String tag) {
+							public double getValue(IWorld world, BlockPos pos, String tag) {
 								TileEntity tileEntity = world.getTileEntity(pos);
 								if (tileEntity != null)
 									return tileEntity.getTileData().getDouble(tag);
 								return -1;
 							}
-						}.getValue(new BlockPos((int) x, (int) y, (int) z), "countAnts")) - 1));
-					world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
+						}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "countAnts")) - 1));
+					if (world instanceof World)
+						((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 				}
 			}
 		}

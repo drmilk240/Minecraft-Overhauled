@@ -1,0 +1,33 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_overhauled:bamboo_planks"
+    },
+    "3": {
+      "item": "minecraft_overhauled:bamboo_planks"
+    },
+    "4": {
+      "item": "minecraft_overhauled:bamboo_planks"
+    },
+    "6": {
+      "item": "minecraft_overhauled:bamboo_planks"
+    },
+    "7": {
+      "item": "minecraft_overhauled:bamboo_planks"
+    },
+    "8": {
+      "item": "minecraft_overhauled:bamboo_planks"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:bamboo_stairs",
+    "count": 4
+  }
+}

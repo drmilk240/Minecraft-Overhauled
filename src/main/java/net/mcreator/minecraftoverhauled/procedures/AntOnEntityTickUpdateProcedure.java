@@ -7,6 +7,7 @@ import net.minecraft.block.Blocks;
 
 import net.mcreator.minecraftoverhauled.block.BushBlock;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
+import net.mcreator.minecraftoverhauled.MinecraftOverhauledMod;
 
 import java.util.Map;
 
@@ -19,27 +20,27 @@ public class AntOnEntityTickUpdateProcedure extends MinecraftOverhauledModElemen
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure AntOnEntityTickUpdate!");
+				MinecraftOverhauledMod.LOGGER.warn("Failed to load dependency entity for procedure AntOnEntityTickUpdate!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure AntOnEntityTickUpdate!");
+				MinecraftOverhauledMod.LOGGER.warn("Failed to load dependency x for procedure AntOnEntityTickUpdate!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure AntOnEntityTickUpdate!");
+				MinecraftOverhauledMod.LOGGER.warn("Failed to load dependency y for procedure AntOnEntityTickUpdate!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure AntOnEntityTickUpdate!");
+				MinecraftOverhauledMod.LOGGER.warn("Failed to load dependency z for procedure AntOnEntityTickUpdate!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure AntOnEntityTickUpdate!");
+				MinecraftOverhauledMod.LOGGER.warn("Failed to load dependency world for procedure AntOnEntityTickUpdate!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

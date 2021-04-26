@@ -1,0 +1,22 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bamboo"
+    },
+    {
+      "item": "minecraft:bamboo"
+    },
+    {
+      "item": "minecraft:bamboo"
+    },
+    {
+      "item": "minecraft:bamboo"
+    }
+  ],
+  "result": {
+    "item": "minecraft_overhauled:bamboo_planks",
+    "count": 1
+  }
+}

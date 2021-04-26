@@ -175,7 +175,7 @@ public class DiamondBowItem extends MinecraftOverhauledModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			World world = this.world;
-			Entity entity = this.getShooter();
+			Entity entity = this.func_234616_v_();
 			if (this.inGround) {
 				this.remove();
 			}

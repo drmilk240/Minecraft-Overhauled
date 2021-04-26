@@ -16,7 +16,6 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.biome.Biome;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.tags.Tag;
 import net.minecraft.network.PacketBuffer;
@@ -42,7 +41,6 @@ public class MinecraftOverhauledModElements {
 	public final List<ModElement> elements = new ArrayList<>();
 	public final List<Supplier<Block>> blocks = new ArrayList<>();
 	public final List<Supplier<Item>> items = new ArrayList<>();
-	public final List<Supplier<Biome>> biomes = new ArrayList<>();
 	public final List<Supplier<EntityType<?>>> entities = new ArrayList<>();
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
@@ -85,10 +83,6 @@ public class MinecraftOverhauledModElements {
 
 	public List<Supplier<Item>> getItems() {
 		return items;
-	}
-
-	public List<Supplier<Biome>> getBiomes() {
-		return biomes;
 	}
 
 	public List<Supplier<EntityType<?>>> getEntities() {

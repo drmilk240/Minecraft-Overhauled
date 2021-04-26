@@ -30,10 +30,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.biome.Biome;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.entity.EntityType;
@@ -52,22 +49,16 @@ public class MinecraftOverhauledMod {
 	public MinecraftOverhauledModElements elements;
 	public MinecraftOverhauledMod() {
 		elements = new MinecraftOverhauledModElements();
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::init);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
-		MinecraftForge.EVENT_BUS.register(this);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::init);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientLoad);
+		MinecraftForge.EVENT_BUS.register(new MinecraftOverhauledModFMLBusEvents(this));
 	}
 
 	private void init(FMLCommonSetupEvent event) {
 		elements.getElements().forEach(element -> element.init(event));
 	}
 
-	@SubscribeEvent
-	public void serverLoad(FMLServerStartingEvent event) {
-		elements.getElements().forEach(element -> element.serverLoad(event));
-	}
-
-	@SubscribeEvent
-	@OnlyIn(Dist.CLIENT)
 	public void clientLoad(FMLClientSetupEvent event) {
 		elements.getElements().forEach(element -> element.clientLoad(event));
 	}
@@ -83,11 +74,6 @@ public class MinecraftOverhauledMod {
 	}
 
 	@SubscribeEvent
-	public void registerBiomes(RegistryEvent.Register<Biome> event) {
-		event.getRegistry().registerAll(elements.getBiomes().stream().map(Supplier::get).toArray(Biome[]::new));
-	}
-
-	@SubscribeEvent
 	public void registerEntities(RegistryEvent.Register<EntityType<?>> event) {
 		event.getRegistry().registerAll(elements.getEntities().stream().map(Supplier::get).toArray(EntityType[]::new));
 	}
@@ -100,5 +86,16 @@ public class MinecraftOverhauledMod {
 	@SubscribeEvent
 	public void registerSounds(RegistryEvent.Register<net.minecraft.util.SoundEvent> event) {
 		elements.registerSounds(event);
+	}
+	private static class MinecraftOverhauledModFMLBusEvents {
+		private final MinecraftOverhauledMod parent;
+		MinecraftOverhauledModFMLBusEvents(MinecraftOverhauledMod parent) {
+			this.parent = parent;
+		}
+
+		@SubscribeEvent
+		public void serverLoad(FMLServerStartingEvent event) {
+			this.parent.elements.getElements().forEach(element -> element.serverLoad(event));
+		}
 	}
 }

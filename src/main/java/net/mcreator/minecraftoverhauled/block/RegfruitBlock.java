@@ -4,7 +4,7 @@ package net.mcreator.minecraftoverhauled.block;
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.common.ToolType;
 
-import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -36,8 +36,8 @@ public class RegfruitBlock extends MinecraftOverhauledModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.PLANTS).sound(SoundType.WOOD).hardnessAndResistance(1.1500000000000001f, 10f).lightValue(3)
-					.harvestLevel(1).harvestTool(ToolType.AXE));
+			super(Block.Properties.create(Material.PLANTS).sound(SoundType.WOOD).hardnessAndResistance(1.1500000000000001f, 10f).setLightLevel(s -> 2)
+					.harvestLevel(1).harvestTool(ToolType.AXE).setRequiresTool());
 			setRegistryName("regfruit");
 		}
 

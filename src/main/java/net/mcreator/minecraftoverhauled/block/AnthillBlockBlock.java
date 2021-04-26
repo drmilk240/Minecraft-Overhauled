@@ -4,8 +4,7 @@ package net.mcreator.minecraftoverhauled.block;
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.common.ToolType;
 
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.IWorldReader;
+import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -35,14 +34,9 @@ public class AnthillBlockBlock extends MinecraftOverhauledModElements.ModElement
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.NETHER_WART).hardnessAndResistance(3f, 10f).lightValue(0).harvestLevel(1)
-					.harvestTool(ToolType.PICKAXE).tickRandomly());
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.NETHER_WART).hardnessAndResistance(3f, 10f).setLightLevel(s -> 0)
+					.harvestLevel(1).harvestTool(ToolType.PICKAXE).setRequiresTool().tickRandomly());
 			setRegistryName("anthill_block");
-		}
-
-		@Override
-		public int tickRate(IWorldReader world) {
-			return 1;
 		}
 
 		@Override

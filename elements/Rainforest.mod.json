@@ -1,5 +1,5 @@
 {
-  "_fv": 13,
+  "_fv": 18,
   "_type": "biome",
   "definition": {
     "name": "Rainforest",
@@ -8,22 +8,6 @@
     },
     "undergroundBlock": {
       "value": "Blocks.DIRT#0"
-    },
-    "treeType": 1,
-    "vanillaTreeType": "Default",
-    "minHeight": 16,
-    "spawnVines": true,
-    "treeVines": {
-      "value": "CUSTOM:ShoreaLeaves"
-    },
-    "treeStem": {
-      "value": "CUSTOM:ShoreaLog"
-    },
-    "treeBranch": {
-      "value": "CUSTOM:ShoreaLeaves"
-    },
-    "treeFruits": {
-      "value": "CUSTOM:Regfruit"
     },
     "airColor": {
       "value": -6881315,
@@ -45,26 +29,50 @@
       "value": -13423073,
       "falpha": 0.0
     },
-    "treesPerChunk": 14,
+    "moodSoundDelay": 0,
+    "spawnParticles": false,
+    "particlesProbability": 0.0,
+    "biomeCategory": "JUNGLE",
+    "parent": {
+      "value": "jungle"
+    },
+    "rainingPossibility": 1.0,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.4,
+    "biomeType": "WARM",
+    "spawnBiome": true,
+    "biomeWeight": 10,
+    "biomeDictionaryTypes": [
+      "JUNGLE",
+      "WET",
+      "LUSH"
+    ],
     "grassPerChunk": 33,
     "seagrassPerChunk": 100,
     "flowersPerChunk": 14,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
-    "sandPathcesPerChunk": 8,
+    "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 1,
     "reedsPerChunk": 49,
     "cactiPerChunk": 3,
-    "rainingPossibility": 1.0,
-    "temperature": 0.5,
-    "baseHeight": 0.1,
-    "heightVariation": 0.4,
-    "spawnBiome": true,
-    "biomeWeight": 10,
-    "biomeType": "WARM",
-    "biomeCategory": "JUNGLE",
-    "parent": {
-      "value": "jungle"
+    "treesPerChunk": 14,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 16,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "CUSTOM:ShoreaLog"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:ShoreaLeaves"
+    },
+    "treeVines": {
+      "value": "CUSTOM:ShoreaLeaves"
+    },
+    "treeFruits": {
+      "value": "CUSTOM:Regfruit"
     },
     "spawnStronghold": true,
     "spawnMineshaft": true,
@@ -77,16 +85,12 @@
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
-    "biomeDictionaryTypes": [
-      "JUNGLE",
-      "WET",
-      "LUSH"
-    ],
     "defaultFeatures": [
       "Caves",
       "MonsterRooms",
       "Structures",
-      "Ores"
+      "Ores",
+      "FrozenTopLayer"
     ],
     "spawnEntries": [
       {

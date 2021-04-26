@@ -4,6 +4,7 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
+import net.mcreator.minecraftoverhauled.MinecraftOverhauledMod;
 
 import java.util.Map;
 import java.util.Collections;
@@ -17,22 +18,22 @@ public class GrapplingHookBulletHitsBlockProcedure extends MinecraftOverhauledMo
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure GrapplingHookBulletHitsBlock!");
+				MinecraftOverhauledMod.LOGGER.warn("Failed to load dependency entity for procedure GrapplingHookBulletHitsBlock!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure GrapplingHookBulletHitsBlock!");
+				MinecraftOverhauledMod.LOGGER.warn("Failed to load dependency x for procedure GrapplingHookBulletHitsBlock!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure GrapplingHookBulletHitsBlock!");
+				MinecraftOverhauledMod.LOGGER.warn("Failed to load dependency y for procedure GrapplingHookBulletHitsBlock!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure GrapplingHookBulletHitsBlock!");
+				MinecraftOverhauledMod.LOGGER.warn("Failed to load dependency z for procedure GrapplingHookBulletHitsBlock!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
