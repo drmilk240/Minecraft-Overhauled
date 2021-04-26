@@ -1,0 +1,36 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    " 78"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "2": {
+      "item": "minecraft:string"
+    },
+    "3": {
+      "item": "minecraft:diamond"
+    },
+    "4": {
+      "item": "minecraft_overhauled:diamond_bow"
+    },
+    "5": {
+      "item": "minecraft:string"
+    },
+    "7": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "8": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:netherite_bow",
+    "count": 1
+  }
+}
