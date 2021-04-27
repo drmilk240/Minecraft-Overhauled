@@ -27,11 +27,11 @@
       "value": "Blocks.AIR"
     },
     "airColor": {
-      "value": -16576752,
+      "value": -16777216,
       "falpha": 0.0
     },
     "canRespawnHere": false,
-    "hasFog": false,
+    "hasFog": true,
     "isDark": false,
     "doesWaterVaporize": true,
     "sleepResult": "BED_EXPLODES",

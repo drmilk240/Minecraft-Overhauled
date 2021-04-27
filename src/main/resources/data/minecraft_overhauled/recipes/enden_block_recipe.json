@@ -1,0 +1,42 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_overhauled:enden_alloy"
+    },
+    "1": {
+      "item": "minecraft_overhauled:enden_alloy"
+    },
+    "2": {
+      "item": "minecraft_overhauled:enden_alloy"
+    },
+    "3": {
+      "item": "minecraft_overhauled:enden_alloy"
+    },
+    "4": {
+      "item": "minecraft_overhauled:enden_alloy"
+    },
+    "5": {
+      "item": "minecraft_overhauled:enden_alloy"
+    },
+    "6": {
+      "item": "minecraft_overhauled:enden_alloy"
+    },
+    "7": {
+      "item": "minecraft_overhauled:enden_alloy"
+    },
+    "8": {
+      "item": "minecraft_overhauled:enden_alloy"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:enden_block",
+    "count": 1
+  }
+}

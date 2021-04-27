@@ -51,12 +51,12 @@ public class DeepEndDimension extends MinecraftOverhauledModElements.ModElement 
 		DimensionRenderInfo customEffect = new DimensionRenderInfo(Float.NaN, true, DimensionRenderInfo.FogType.NONE, false, false) {
 			@Override
 			public Vector3d func_230494_a_(Vector3d color, float sunHeight) {
-				return new Vector3d(0.011764705882, 0.058823529412, 0.062745098039);
+				return new Vector3d(0, 0, 0);
 			}
 
 			@Override
 			public boolean func_230493_a_(int x, int y) {
-				return false;
+				return true;
 			}
 		};
 		DeferredWorkQueue.runLater(() -> {

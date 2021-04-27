@@ -52,7 +52,7 @@ public class EndDesertBiome extends MinecraftOverhauledModElements.ModElement {
 								.func_242731_b(4));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
-				DefaultBiomeFeatures.withFossils(biomeGenerationSettings);
+				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.THEEND).depth(0.1f).scale(0.1f)
 						.temperature(0.5f).downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())

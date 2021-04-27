@@ -45,6 +45,8 @@ public class MinecraftOverhauledModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public MinecraftOverhauledModElements() {
+		sounds.put(new ResourceLocation("minecraft_overhauled", "talldisc"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("minecraft_overhauled", "talldisc")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("minecraft_overhauled").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

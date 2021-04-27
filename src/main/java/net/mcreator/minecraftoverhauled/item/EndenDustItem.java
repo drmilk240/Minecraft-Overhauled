@@ -16,7 +16,7 @@ public class EndenDustItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:enden_dust")
 	public static final Item block = null;
 	public EndenDustItem(MinecraftOverhauledModElements instance) {
-		super(instance, 80);
+		super(instance, 40);
 	}
 
 	@Override

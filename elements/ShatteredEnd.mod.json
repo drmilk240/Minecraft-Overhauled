@@ -10,13 +10,13 @@
       "value": "Blocks.END_STONE"
     },
     "ambientSound": {
-      "value": "ambient.cave"
+      "value": ""
     },
     "additionsSound": {
       "value": ""
     },
     "music": {
-      "value": "entity.endermen.stare"
+      "value": ""
     },
     "moodSound": {
       "value": ""
@@ -83,7 +83,9 @@
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "FrozenTopLayer"
+      "Caves",
+      "Caves",
+      "Caves"
     ],
     "spawnEntries": []
   }

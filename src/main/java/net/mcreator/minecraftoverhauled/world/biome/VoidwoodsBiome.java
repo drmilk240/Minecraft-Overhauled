@@ -87,7 +87,7 @@ public class VoidwoodsBiome extends MinecraftOverhauledModElements.ModElement {
 						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(10, 0.1F, 1))));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
-				DefaultBiomeFeatures.withFossils(biomeGenerationSettings);
+				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(EntityType.ENDERMAN, 20, 4, 4));
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.THEEND).depth(0.1f).scale(0.4f)

@@ -13,6 +13,7 @@
   "item.minecraft_overhauled.enden_armor_helmet": "Enden Helmet",
   "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
   "entity.minecraft_overhauled.capybara": "Capybara",
+  "subtitles.talldisc": "Music Disc Plays (Tall)",
   "block.minecraft_overhauled.shorea_planks": "Shorea Planks",
   "item.minecraft_overhauled.enden_sword": "Enden Sword",
   "item.minecraft_overhauled.toad_spawn_egg": "Toad Spawn Egg",
@@ -46,6 +47,7 @@
   "item.minecraft_overhauled.enden_armor_chestplate": "Enden Chestplate",
   "block.minecraft_overhauled.dried_mud_block": "Dried Mud Block",
   "block.minecraft_overhauled.shorea_slab": "Shorea Slab",
+  "item.minecraft_overhauled.tall.desc": "Naps the Block - Tall",
   "block.minecraft_overhauled.baobab_fence_gate": "Baobab Fence Gate",
   "block.minecraft_overhauled.bamboo_fence": "Bamboo Fence",
   "block.minecraft_overhauled.bush": "Bush",
@@ -107,6 +109,7 @@
   "itemGroup.tabrainforest_tab": "Rainforest",
   "item.minecraft_overhauled.titanium_ingot": "Titanium",
   "item.minecraft_overhauled.enden_alloy": "Enden Alloy",
+  "item.minecraft_overhauled.tall": "Music Disc",
   "entity.minecraft_overhauled.iron_fish": "Ironfish",
   "item.minecraft_overhauled.copper_ingot": "Copper",
   "block.minecraft_overhauled.endwood_stairs": "Endwood Stairs"

@@ -1,1 +1,12 @@
-{}
+{
+  "talldisc": {
+    "category": "record",
+    "subtitle": "subtitles.talldisc",
+    "sounds": [
+      {
+        "name": "minecraft_overhauled:minecraft_ust-_tall_end_music_disc_concept",
+        "stream": true
+      }
+    ]
+  }
+}

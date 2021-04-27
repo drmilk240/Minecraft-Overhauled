@@ -1,7 +1,6 @@
 
 package net.mcreator.minecraftoverhauled.world.biome;
 
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -23,10 +22,8 @@ import net.minecraft.world.biome.BiomeAmbience;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.particles.ParticleTypes;
-import net.minecraft.client.audio.BackgroundMusicSelector;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
@@ -44,10 +41,6 @@ public class ShatteredEndBiome extends MinecraftOverhauledModElements.ModElement
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(4159204).setWaterFogColor(329011)
 						.withSkyColor(7972607).withFoliageColor(10387789).withGrassColor(9470285)
-						.setAmbientSound((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave")))
-						.setMusic(new BackgroundMusicSelector(
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.stare")),
-								12000, 24000, true))
 						.setParticle(new ParticleEffectAmbience(ParticleTypes.ASH, 0.005f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.END_STONE.getDefaultState(),
@@ -61,7 +54,9 @@ public class ShatteredEndBiome extends MinecraftOverhauledModElements.ModElement
 								.func_242731_b(4));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
-				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
+				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
+				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
+				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.EXTREME_HILLS).depth(0.9f).scale(2f)
 						.temperature(0.5f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
