@@ -1734,6 +1734,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "enden_armor_boots_recipe"
+    },
+    {
+      "name": "Endwoodtree1AdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endwoodtree_1_additional_generation_condition",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "y",
+            "type": "number"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1744,15 +1762,15 @@
       "block.minecraft_overhauled.baobab_door": "Baobab Door",
       "block.minecraft_overhauled.copper_generator": "Copper Generator",
       "block.minecraft_overhauled.bamboo_fence_gate": "Bamboo Fence Gate",
-      "item.minecraft_overhauled.copper_armor_chestplate": "Copper Chestplate",
       "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
+      "item.minecraft_overhauled.copper_armor_chestplate": "Copper Chestplate",
       "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
       "block.minecraft_overhauled.endwood_slab": "Endwood Slab",
       "block.minecraft_overhauled.shorea_bush": "Shorea Bush",
       "block.minecraft_overhauled.bushthorn_leaves": "Bushthorn Leaves",
       "item.minecraft_overhauled.enden_armor_helmet": "Enden Helmet",
-      "entity.minecraft_overhauled.capybara": "Capybara",
       "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
+      "entity.minecraft_overhauled.capybara": "Capybara",
       "block.minecraft_overhauled.shorea_planks": "Shorea Planks",
       "item.minecraft_overhauled.enden_sword": "Enden Sword",
       "item.minecraft_overhauled.toad_spawn_egg": "Toad Spawn Egg",

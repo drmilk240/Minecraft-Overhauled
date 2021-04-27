@@ -4,7 +4,7 @@
   "definition": {
     "structure": "endwood3",
     "randomlyRotateStructure": true,
-    "surfaceDetectionType": "First block",
+    "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 900000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
@@ -21,6 +21,9 @@
         "value": "CUSTOM:Voidwoods"
       }
     ],
-    "ignoreBlocks": "AIR"
+    "ignoreBlocks": "AIR",
+    "generateCondition": {
+      "name": "Endwoodtree1AdditionalGenerationCondition"
+    }
   }
 }

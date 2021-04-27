@@ -29,9 +29,12 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Mirror;
 
+import net.mcreator.minecraftoverhauled.procedures.Endwoodtree1AdditionalGenerationConditionProcedure;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 
 import java.util.Random;
+
+import com.google.common.collect.ImmutableMap;
 
 @MinecraftOverhauledModElements.ModElement.Tag
 public class LargeEndwoodtreeStructure extends MinecraftOverhauledModElements.ModElement {
@@ -61,7 +64,7 @@ public class LargeEndwoodtreeStructure extends MinecraftOverhauledModElements.Mo
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);
 							int k = ck + random.nextInt(16);
-							int j = world.getHeight(Heightmap.Type.WORLD_SURFACE_WG, i, k);
+							int j = world.getHeight(Heightmap.Type.OCEAN_FLOOR_WG, i, k);
 							j -= 1;
 							Rotation rotation = Rotation.values()[random.nextInt(3)];
 							Mirror mirror = Mirror.values()[random.nextInt(2)];
@@ -69,6 +72,8 @@ public class LargeEndwoodtreeStructure extends MinecraftOverhauledModElements.Mo
 							int x = spawnTo.getX();
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
+							if (!Endwoodtree1AdditionalGenerationConditionProcedure.executeProcedure(ImmutableMap.of("y", y)))
+								continue;
 							Template template = world.getWorld().getStructureTemplateManager()
 									.getTemplateDefaulted(new ResourceLocation("minecraft_overhauled", "endwood3"));
 							if (template == null)
