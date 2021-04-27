@@ -8,7 +8,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "anthill_block"
+      "registry_name": "anthill_block",
+      "path": "~/Savanna"
     },
     {
       "name": "Savanna",
@@ -17,7 +18,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "savanna"
+      "registry_name": "savanna",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabWood",
@@ -26,7 +28,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_wood"
+      "registry_name": "baobab_wood",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabLog",
@@ -35,7 +38,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_log"
+      "registry_name": "baobab_log",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabPlanks",
@@ -44,7 +48,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_planks"
+      "registry_name": "baobab_planks",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabLeaves",
@@ -53,7 +58,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_leaves"
+      "registry_name": "baobab_leaves",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabStairs",
@@ -62,7 +68,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_stairs"
+      "registry_name": "baobab_stairs",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabSlab",
@@ -71,7 +78,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_slab"
+      "registry_name": "baobab_slab",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabFence",
@@ -80,7 +88,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_fence"
+      "registry_name": "baobab_fence",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabFenceGate",
@@ -89,7 +98,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_fence_gate"
+      "registry_name": "baobab_fence_gate",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabItemsTag",
@@ -98,7 +108,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_items_tag"
+      "registry_name": "baobab_items_tag",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabWoodRecipe",
@@ -107,7 +118,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_wood_recipe"
+      "registry_name": "baobab_wood_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabPlanksRecipe",
@@ -116,7 +128,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_planks_recipe"
+      "registry_name": "baobab_planks_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabStairsRecipe",
@@ -125,7 +138,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_stairs_recipe"
+      "registry_name": "baobab_stairs_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabSlabRecipe",
@@ -134,7 +148,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_slab_recipe"
+      "registry_name": "baobab_slab_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabFenceRecipe",
@@ -143,7 +158,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_fence_recipe"
+      "registry_name": "baobab_fence_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabFenceGateRecipe",
@@ -152,7 +168,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_fence_gate_recipe"
+      "registry_name": "baobab_fence_gate_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabStickRecipe",
@@ -161,7 +178,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_stick_recipe"
+      "registry_name": "baobab_stick_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "SpearThrowable",
@@ -170,7 +188,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spear_throwable"
+      "registry_name": "spear_throwable",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornWood",
@@ -179,7 +198,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_wood"
+      "registry_name": "bushthorn_wood",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornLog",
@@ -188,7 +208,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_log"
+      "registry_name": "bushthorn_log",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornPlanks",
@@ -197,7 +218,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_planks"
+      "registry_name": "bushthorn_planks",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornLeaves",
@@ -206,7 +228,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_leaves"
+      "registry_name": "bushthorn_leaves",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornStairs",
@@ -215,7 +238,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_stairs"
+      "registry_name": "bushthorn_stairs",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornSlab",
@@ -224,7 +248,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_slab"
+      "registry_name": "bushthorn_slab",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornFence",
@@ -233,7 +258,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_fence"
+      "registry_name": "bushthorn_fence",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornFenceGate",
@@ -242,7 +268,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_fence_gate"
+      "registry_name": "bushthorn_fence_gate",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornItemsTag",
@@ -251,7 +278,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_items_tag"
+      "registry_name": "bushthorn_items_tag",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornWoodRecipe",
@@ -260,7 +288,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_wood_recipe"
+      "registry_name": "bushthorn_wood_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornPlanksRecipe",
@@ -269,7 +298,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_planks_recipe"
+      "registry_name": "bushthorn_planks_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornStairsRecipe",
@@ -278,7 +308,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_stairs_recipe"
+      "registry_name": "bushthorn_stairs_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornSlabRecipe",
@@ -287,7 +318,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_slab_recipe"
+      "registry_name": "bushthorn_slab_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornFenceRecipe",
@@ -296,7 +328,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_fence_recipe"
+      "registry_name": "bushthorn_fence_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornFenceGateRecipe",
@@ -305,7 +338,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_fence_gate_recipe"
+      "registry_name": "bushthorn_fence_gate_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "BushthornStickRecipe",
@@ -314,7 +348,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bushthorn_stick_recipe"
+      "registry_name": "bushthorn_stick_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "MudBlock",
@@ -323,7 +358,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "mud_block"
+      "registry_name": "mud_block",
+      "path": "~/Savanna"
     },
     {
       "name": "DriedMudBlock",
@@ -332,7 +368,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dried_mud_block"
+      "registry_name": "dried_mud_block",
+      "path": "~/Savanna"
     },
     {
       "name": "DriedMud",
@@ -341,7 +378,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dried_mud"
+      "registry_name": "dried_mud",
+      "path": "~/Savanna"
     },
     {
       "name": "Ant",
@@ -350,7 +388,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ant"
+      "registry_name": "ant",
+      "path": "~/Savanna"
     },
     {
       "name": "Toad",
@@ -359,7 +398,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "toad"
+      "registry_name": "toad",
+      "path": "~/Savanna"
     },
     {
       "name": "Bush",
@@ -368,7 +408,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bush"
+      "registry_name": "bush",
+      "path": "~/Savanna"
     },
     {
       "name": "Rainforest",
@@ -377,7 +418,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "rainforest"
+      "registry_name": "rainforest",
+      "path": "~/Jungle"
     },
     {
       "name": "Orchid",
@@ -386,7 +428,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "orchid"
+      "registry_name": "orchid",
+      "path": "~/Jungle"
     },
     {
       "name": "PassionFlower",
@@ -395,7 +438,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "passion_flower"
+      "registry_name": "passion_flower",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaWood",
@@ -404,7 +448,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_wood"
+      "registry_name": "shorea_wood",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaLog",
@@ -413,7 +458,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_log"
+      "registry_name": "shorea_log",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaPlanks",
@@ -422,7 +468,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_planks"
+      "registry_name": "shorea_planks",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaLeaves",
@@ -431,7 +478,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_leaves"
+      "registry_name": "shorea_leaves",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaStairs",
@@ -440,7 +488,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_stairs"
+      "registry_name": "shorea_stairs",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaSlab",
@@ -449,7 +498,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_slab"
+      "registry_name": "shorea_slab",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaFence",
@@ -458,7 +508,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_fence"
+      "registry_name": "shorea_fence",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaFenceGate",
@@ -467,7 +518,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_fence_gate"
+      "registry_name": "shorea_fence_gate",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaItemsTag",
@@ -476,7 +528,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_items_tag"
+      "registry_name": "shorea_items_tag",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaWoodRecipe",
@@ -485,7 +538,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_wood_recipe"
+      "registry_name": "shorea_wood_recipe",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaPlanksRecipe",
@@ -494,7 +548,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_planks_recipe"
+      "registry_name": "shorea_planks_recipe",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaStairsRecipe",
@@ -503,7 +558,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_stairs_recipe"
+      "registry_name": "shorea_stairs_recipe",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaSlabRecipe",
@@ -512,7 +568,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_slab_recipe"
+      "registry_name": "shorea_slab_recipe",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaFenceRecipe",
@@ -521,7 +578,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_fence_recipe"
+      "registry_name": "shorea_fence_recipe",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaFenceGateRecipe",
@@ -530,7 +588,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_fence_gate_recipe"
+      "registry_name": "shorea_fence_gate_recipe",
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaStickRecipe",
@@ -539,7 +598,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_stick_recipe"
+      "registry_name": "shorea_stick_recipe",
+      "path": "~/Jungle"
     },
     {
       "name": "Regfruit",
@@ -548,7 +608,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "regfruit"
+      "registry_name": "regfruit",
+      "path": "~/Jungle"
     },
     {
       "name": "RegfruitSlicesFoodEaten",
@@ -565,7 +626,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Jungle"
     },
     {
       "name": "RegfruitSlices",
@@ -574,7 +636,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "regfruit_slices"
+      "registry_name": "regfruit_slices",
+      "path": "~/Jungle"
     },
     {
       "name": "BaobabDoorRecipe",
@@ -583,7 +646,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_door_recipe"
+      "registry_name": "baobab_door_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "Planks",
@@ -592,7 +656,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "planks"
+      "registry_name": "planks",
+      "path": "~/General"
     },
     {
       "name": "BaobabDoor",
@@ -601,7 +666,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_door"
+      "registry_name": "baobab_door",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabTrapdoor",
@@ -610,7 +676,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_trapdoor"
+      "registry_name": "baobab_trapdoor",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobabTrapdoorR",
@@ -619,7 +686,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobab_trapdoor_r"
+      "registry_name": "baobab_trapdoor_r",
+      "path": "~/Savanna"
     },
     {
       "name": "Flowers",
@@ -628,7 +696,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "flowers"
+      "registry_name": "flowers",
+      "path": "~/General"
     },
     {
       "name": "RiverDolphin",
@@ -637,7 +706,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "river_dolphin"
+      "registry_name": "river_dolphin",
+      "path": "~/Jungle"
     },
     {
       "name": "LogsMinecraft",
@@ -646,7 +716,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "logs_minecraft"
+      "registry_name": "logs_minecraft",
+      "path": "~/General"
     },
     {
       "name": "IronFish",
@@ -655,7 +726,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "iron_fish"
+      "registry_name": "iron_fish",
+      "path": "~/Jungle"
     },
     {
       "name": "RainforestTab",
@@ -664,7 +736,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "rainforest_tab"
+      "registry_name": "rainforest_tab",
+      "path": "~/Jungle"
     },
     {
       "name": "RawIronFish",
@@ -673,7 +746,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "raw_iron_fish"
+      "registry_name": "raw_iron_fish",
+      "path": "~/Jungle"
     },
     {
       "name": "CookedIronFishFoodEaten",
@@ -690,7 +764,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Jungle"
     },
     {
       "name": "CookedIronFish",
@@ -699,7 +774,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cooked_iron_fish"
+      "registry_name": "cooked_iron_fish",
+      "path": "~/Jungle"
     },
     {
       "name": "CookingIronFish",
@@ -708,7 +784,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cooking_iron_fish"
+      "registry_name": "cooking_iron_fish",
+      "path": "~/Jungle"
     },
     {
       "name": "SmokingIronFish",
@@ -717,7 +794,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "smoking_iron_fish"
+      "registry_name": "smoking_iron_fish",
+      "path": "~/Jungle"
     },
     {
       "name": "CampireIronFish",
@@ -726,7 +804,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "campire_iron_fish"
+      "registry_name": "campire_iron_fish",
+      "path": "~/Jungle"
     },
     {
       "name": "BaobobTrees3",
@@ -735,7 +814,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobob_trees_3"
+      "registry_name": "baobob_trees_3",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobobTrees2",
@@ -744,7 +824,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobob_trees_2"
+      "registry_name": "baobob_trees_2",
+      "path": "~/Savanna"
     },
     {
       "name": "BaobobTrees",
@@ -753,7 +834,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baobob_trees"
+      "registry_name": "baobob_trees",
+      "path": "~/Savanna"
     },
     {
       "name": "LushZombie",
@@ -762,7 +844,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lush_zombie"
+      "registry_name": "lush_zombie",
+      "path": "~/Jungle"
     },
     {
       "name": "IronFishBucketRightClickedOnBlock",
@@ -791,7 +874,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Jungle"
     },
     {
       "name": "IronFishBucket",
@@ -800,7 +884,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "iron_fish_bucket"
+      "registry_name": "iron_fish_bucket",
+      "path": "~/Jungle"
     },
     {
       "name": "AnthillBlockUpdateTick",
@@ -829,7 +914,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Savanna"
     },
     {
       "name": "AntOnEntityTickUpdate",
@@ -862,7 +948,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Savanna"
     },
     {
       "name": "Anthillbase",
@@ -871,7 +958,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "anthillbase"
+      "registry_name": "anthillbase",
+      "path": "~/Savanna"
     },
     {
       "name": "DiamondBowRecipe",
@@ -880,7 +968,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "diamond_bow_recipe"
+      "registry_name": "diamond_bow_recipe",
+      "path": "~/Jungle"
     },
     {
       "name": "DiamondBow",
@@ -889,7 +978,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "diamond_bow"
+      "registry_name": "diamond_bow",
+      "path": "~/General"
     },
     {
       "name": "TallBush",
@@ -898,7 +988,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "tall_bush"
+      "registry_name": "tall_bush",
+      "path": "~/Jungle"
     },
     {
       "name": "Piranha",
@@ -907,7 +998,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "piranha"
+      "registry_name": "piranha",
+      "path": "~/Jungle"
     },
     {
       "name": "SpearRecipe",
@@ -916,7 +1008,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spear_recipe"
+      "registry_name": "spear_recipe",
+      "path": "~/Savanna"
     },
     {
       "name": "GoldBow",
@@ -925,7 +1018,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "gold_bow"
+      "registry_name": "gold_bow",
+      "path": "~/General"
     },
     {
       "name": "GrapplingHookBulletHitsBlock",
@@ -954,7 +1048,8 @@
             "type": "number"
           }
         ]
-      }
+      },
+      "path": "~/Jungle"
     },
     {
       "name": "GrapplingHook",
@@ -963,7 +1058,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "grappling_hook"
+      "registry_name": "grappling_hook",
+      "path": "~/Jungle"
     },
     {
       "name": "Capybara",
@@ -972,7 +1068,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "capybara"
+      "registry_name": "capybara",
+      "path": "~/Jungle"
     },
     {
       "name": "GrappleHookRecipe",
@@ -981,7 +1078,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "grapple_hook_recipe"
+      "registry_name": "grapple_hook_recipe",
+      "path": "~/Jungle"
     },
     {
       "name": "IronBowRecipe",
@@ -990,7 +1088,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "iron_bow_recipe"
+      "registry_name": "iron_bow_recipe",
+      "path": "~/General"
     },
     {
       "name": "GoldBowRecipe",
@@ -999,7 +1098,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "gold_bow_recipe"
+      "registry_name": "gold_bow_recipe",
+      "path": "~/General"
     },
     {
       "name": "FlowerBush",
@@ -1008,7 +1108,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "flower_bush"
+      "registry_name": "flower_bush",
+      "path": "~/Jungle"
     },
     {
       "name": "IronBow",
@@ -1017,7 +1118,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "iron_bow"
+      "registry_name": "iron_bow",
+      "path": "~/General"
     },
     {
       "name": "ShoreaBushMobplayerCollidesWithPlant",
@@ -1034,7 +1136,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Jungle"
     },
     {
       "name": "ShoreaBush",
@@ -1043,7 +1146,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shorea_bush"
+      "registry_name": "shorea_bush",
+      "path": "~/Jungle"
     },
     {
       "name": "CopperIngot",
@@ -1052,7 +1156,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "copper_ingot"
+      "registry_name": "copper_ingot",
+      "path": "~/Electricity"
     },
     {
       "name": "CopperOre",
@@ -1061,7 +1166,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "copper_ore"
+      "registry_name": "copper_ore",
+      "path": "~/Electricity"
     },
     {
       "name": "CopperBlock",
@@ -1070,7 +1176,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "copper_block"
+      "registry_name": "copper_block",
+      "path": "~/Electricity"
     },
     {
       "name": "CopperOreBlockRecipe",
@@ -1079,7 +1186,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "copper_ore_block_recipe"
+      "registry_name": "copper_ore_block_recipe",
+      "path": "~/Electricity"
     },
     {
       "name": "CopperBlockOreRecipe",
@@ -1088,7 +1196,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "copper_block_ore_recipe"
+      "registry_name": "copper_block_ore_recipe",
+      "path": "~/Electricity"
     },
     {
       "name": "CopperOreSmelting",
@@ -1097,7 +1206,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "copper_ore_smelting"
+      "registry_name": "copper_ore_smelting",
+      "path": "~/Electricity"
     },
     {
       "name": "CopperArmor",
@@ -1112,7 +1222,8 @@
         "el": true,
         "eb": true,
         "ec": true
-      }
+      },
+      "path": "~/Electricity"
     },
     {
       "name": "CopperArmorHelmetRecipe",
@@ -1121,7 +1232,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "copper_armor_helmet_recipe"
+      "registry_name": "copper_armor_helmet_recipe",
+      "path": "~/Electricity"
     },
     {
       "name": "CopperArmorBodyRecipe",
@@ -1130,7 +1242,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "copper_armor_body_recipe"
+      "registry_name": "copper_armor_body_recipe",
+      "path": "~/Electricity"
     },
     {
       "name": "CopperArmorLeggingsRecipe",
@@ -1139,7 +1252,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "copper_armor_leggings_recipe"
+      "registry_name": "copper_armor_leggings_recipe",
+      "path": "~/Electricity"
     },
     {
       "name": "CopperArmorBootsRecipe",
@@ -1148,7 +1262,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "copper_armor_boots_recipe"
+      "registry_name": "copper_armor_boots_recipe",
+      "path": "~/Electricity"
     },
     {
       "name": "Electricity",
@@ -1157,7 +1272,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "electricity"
+      "registry_name": "electricity",
+      "path": "~/Electricity"
     },
     {
       "name": "CopperGenerator",
@@ -1166,7 +1282,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "copper_generator"
+      "registry_name": "copper_generator",
+      "path": "~/Electricity"
     },
     {
       "name": "GeneratorRecipe",
@@ -1175,7 +1292,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "generator_recipe"
+      "registry_name": "generator_recipe",
+      "path": "~/Electricity"
     },
     {
       "name": "CopperHammer",
@@ -1184,7 +1302,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "copper_hammer"
+      "registry_name": "copper_hammer",
+      "path": "~/Electricity"
     },
     {
       "name": "HammerRecipe",
@@ -1193,7 +1312,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "hammer_recipe"
+      "registry_name": "hammer_recipe",
+      "path": "~/Electricity"
     },
     {
       "name": "LightningRod",
@@ -1202,7 +1322,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lightning_rod"
+      "registry_name": "lightning_rod",
+      "path": "~/Electricity"
     },
     {
       "name": "BambooPlanks",
@@ -1211,7 +1332,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_planks"
+      "registry_name": "bamboo_planks",
+      "path": "~/Jungle"
     },
     {
       "name": "BambooStairs",
@@ -1220,7 +1342,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_stairs"
+      "registry_name": "bamboo_stairs",
+      "path": "~/Jungle"
     },
     {
       "name": "BambooSlab",
@@ -1229,7 +1352,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_slab"
+      "registry_name": "bamboo_slab",
+      "path": "~/Jungle"
     },
     {
       "name": "BambooFence",
@@ -1238,7 +1362,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_fence"
+      "registry_name": "bamboo_fence",
+      "path": "~/Jungle"
     },
     {
       "name": "BambooFenceGate",
@@ -1247,7 +1372,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_fence_gate"
+      "registry_name": "bamboo_fence_gate",
+      "path": "~/Jungle"
     },
     {
       "name": "BambooItemsTag",
@@ -1256,7 +1382,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_items_tag"
+      "registry_name": "bamboo_items_tag",
+      "path": "~/Jungle"
     },
     {
       "name": "BambooPlanksRecipe",
@@ -1265,7 +1392,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_planks_recipe"
+      "registry_name": "bamboo_planks_recipe",
+      "path": "~/Jungle"
     },
     {
       "name": "BambooStairsRecipe",
@@ -1274,7 +1402,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_stairs_recipe"
+      "registry_name": "bamboo_stairs_recipe",
+      "path": "~/Jungle"
     },
     {
       "name": "BambooSlabRecipe",
@@ -1283,7 +1412,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_slab_recipe"
+      "registry_name": "bamboo_slab_recipe",
+      "path": "~/Jungle"
     },
     {
       "name": "BambooFenceRecipe",
@@ -1292,7 +1422,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_fence_recipe"
+      "registry_name": "bamboo_fence_recipe",
+      "path": "~/Jungle"
     },
     {
       "name": "BambooFenceGateRecipe",
@@ -1301,7 +1432,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_fence_gate_recipe"
+      "registry_name": "bamboo_fence_gate_recipe",
+      "path": "~/Jungle"
     },
     {
       "name": "NetheriteBow",
@@ -1310,7 +1442,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "netherite_bow"
+      "registry_name": "netherite_bow",
+      "path": "~/General"
     },
     {
       "name": "NetheriteBowRecipe",
@@ -1319,7 +1452,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "netherite_bow_recipe"
+      "registry_name": "netherite_bow_recipe",
+      "path": "~/General"
     },
     {
       "name": "EndwoodWood",
@@ -1328,7 +1462,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_wood"
+      "registry_name": "endwood_wood",
+      "path": "~/Deep End"
     },
     {
       "name": "EndwoodLog",
@@ -1337,7 +1472,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_log"
+      "registry_name": "endwood_log",
+      "path": "~/Deep End"
     },
     {
       "name": "EndwoodPlanks",
@@ -1346,7 +1482,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_planks"
+      "registry_name": "endwood_planks",
+      "path": "~/Deep End"
     },
     {
       "name": "EndwoodLeaves",
@@ -1355,7 +1492,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_leaves"
+      "registry_name": "endwood_leaves",
+      "path": "~/Deep End"
     },
     {
       "name": "EndwoodStairs",
@@ -1364,7 +1502,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_stairs"
+      "registry_name": "endwood_stairs",
+      "path": "~/Deep End"
     },
     {
       "name": "EndwoodSlab",
@@ -1373,7 +1512,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_slab"
+      "registry_name": "endwood_slab",
+      "path": "~/Deep End"
     },
     {
       "name": "EndwoodFence",
@@ -1382,7 +1522,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_fence"
+      "registry_name": "endwood_fence",
+      "path": "~/Deep End"
     },
     {
       "name": "EndwoodFenceGate",
@@ -1391,7 +1532,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_fence_gate"
+      "registry_name": "endwood_fence_gate",
+      "path": "~/Deep End"
     },
     {
       "name": "EndwoodItemsTag",
@@ -1400,7 +1542,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_items_tag"
+      "registry_name": "endwood_items_tag",
+      "path": "~/Deep End"
     },
     {
       "name": "EndwoodWoodRecipe",
@@ -1409,7 +1552,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_wood_recipe"
+      "registry_name": "endwood_wood_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndwoodPlanksRecipe",
@@ -1418,7 +1562,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_planks_recipe"
+      "registry_name": "endwood_planks_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndwoodStairsRecipe",
@@ -1427,7 +1572,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_stairs_recipe"
+      "registry_name": "endwood_stairs_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndwoodSlabRecipe",
@@ -1436,7 +1582,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_slab_recipe"
+      "registry_name": "endwood_slab_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndwoodFenceRecipe",
@@ -1445,7 +1592,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_fence_recipe"
+      "registry_name": "endwood_fence_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndwoodFenceGateRecipe",
@@ -1454,7 +1602,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_fence_gate_recipe"
+      "registry_name": "endwood_fence_gate_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndwoodStickRecipe",
@@ -1463,7 +1612,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwood_stick_recipe"
+      "registry_name": "endwood_stick_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndLoam",
@@ -1472,7 +1622,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "end_loam"
+      "registry_name": "end_loam",
+      "path": "~/Deep End"
     },
     {
       "name": "Voidwoods",
@@ -1481,7 +1632,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "voidwoods"
+      "registry_name": "voidwoods",
+      "path": "~/Deep End"
     },
     {
       "name": "DeepEnd",
@@ -1493,7 +1645,8 @@
       "registry_name": "deep_end",
       "metadata": {
         "ep": false
-      }
+      },
+      "path": "~/Deep End"
     },
     {
       "name": "Endsand",
@@ -1502,7 +1655,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endsand"
+      "registry_name": "endsand",
+      "path": "~/Deep End"
     },
     {
       "name": "EndDesert",
@@ -1511,7 +1665,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "end_desert"
+      "registry_name": "end_desert",
+      "path": "~/Deep End"
     },
     {
       "name": "DeepEndTab",
@@ -1520,7 +1675,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "deep_end_tab"
+      "registry_name": "deep_end_tab",
+      "path": "~/Deep End"
     },
     {
       "name": "ShatteredEnd",
@@ -1529,7 +1685,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shattered_end"
+      "registry_name": "shattered_end",
+      "path": "~/Deep End"
     },
     {
       "name": "Endwoodtree1",
@@ -1538,7 +1695,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwoodtree_1"
+      "registry_name": "endwoodtree_1",
+      "path": "~/Deep End"
     },
     {
       "name": "Endwoodtree2",
@@ -1547,7 +1705,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endwoodtree_2"
+      "registry_name": "endwoodtree_2",
+      "path": "~/Deep End"
     },
     {
       "name": "LargeEndwoodtree",
@@ -1556,7 +1715,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "large_endwoodtree"
+      "registry_name": "large_endwoodtree",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenDust",
@@ -1565,7 +1725,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_dust"
+      "registry_name": "enden_dust",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenOre",
@@ -1574,7 +1735,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_ore"
+      "registry_name": "enden_ore",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenAlloy",
@@ -1583,7 +1745,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_alloy"
+      "registry_name": "enden_alloy",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenAlloyRecipe",
@@ -1592,7 +1755,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_alloy_recipe"
+      "registry_name": "enden_alloy_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenPickaxe",
@@ -1601,7 +1765,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_pickaxe"
+      "registry_name": "enden_pickaxe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenAxe",
@@ -1610,7 +1775,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_axe"
+      "registry_name": "enden_axe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenSword",
@@ -1619,7 +1785,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_sword"
+      "registry_name": "enden_sword",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenShovel",
@@ -1628,7 +1795,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_shovel"
+      "registry_name": "enden_shovel",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenHoe",
@@ -1637,7 +1805,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_hoe"
+      "registry_name": "enden_hoe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenPickaxeRecipe",
@@ -1646,7 +1815,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_pickaxe_recipe"
+      "registry_name": "enden_pickaxe_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenAxeRecipe",
@@ -1655,7 +1825,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_axe_recipe"
+      "registry_name": "enden_axe_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenSwordRecipe",
@@ -1664,7 +1835,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_sword_recipe"
+      "registry_name": "enden_sword_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenShovelRecipe",
@@ -1673,7 +1845,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_shovel_recipe"
+      "registry_name": "enden_shovel_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenHoeRecipe",
@@ -1682,7 +1855,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_hoe_recipe"
+      "registry_name": "enden_hoe_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenArmor",
@@ -1697,7 +1871,8 @@
         "el": true,
         "eb": true,
         "ec": true
-      }
+      },
+      "path": "~/Deep End"
     },
     {
       "name": "EndenArmorHelmetRecipe",
@@ -1706,7 +1881,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_armor_helmet_recipe"
+      "registry_name": "enden_armor_helmet_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenArmorBodyRecipe",
@@ -1715,7 +1891,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_armor_body_recipe"
+      "registry_name": "enden_armor_body_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenArmorLeggingsRecipe",
@@ -1724,7 +1901,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_armor_leggings_recipe"
+      "registry_name": "enden_armor_leggings_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenArmorBootsRecipe",
@@ -1733,7 +1911,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_armor_boots_recipe"
+      "registry_name": "enden_armor_boots_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "Endwoodtree1AdditionalGenerationCondition",
@@ -1751,7 +1930,8 @@
             "type": "number"
           }
         ]
-      }
+      },
+      "path": "~/Deep End"
     },
     {
       "name": "Endsandglass",
@@ -1760,7 +1940,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "endsandglass"
+      "registry_name": "endsandglass",
+      "path": "~/Deep End"
     },
     {
       "name": "TitaniumIngot",
@@ -1769,7 +1950,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "titanium_ingot"
+      "registry_name": "titanium_ingot",
+      "path": "~/Deep End"
     },
     {
       "name": "TitaniumOre",
@@ -1778,7 +1960,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "titanium_ore"
+      "registry_name": "titanium_ore",
+      "path": "~/Deep End"
     },
     {
       "name": "TitaniumBlock",
@@ -1787,7 +1970,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "titanium_block"
+      "registry_name": "titanium_block",
+      "path": "~/Deep End"
     },
     {
       "name": "TitaniumOreBlockRecipe",
@@ -1796,7 +1980,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "titanium_ore_block_recipe"
+      "registry_name": "titanium_ore_block_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "TitaniumBlockOreRecipe",
@@ -1805,7 +1990,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "titanium_block_ore_recipe"
+      "registry_name": "titanium_block_ore_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "TitaniumOreSmelting",
@@ -1814,7 +2000,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "titanium_ore_smelting"
+      "registry_name": "titanium_ore_smelting",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenBlock",
@@ -1823,7 +2010,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_block"
+      "registry_name": "enden_block",
+      "path": "~/Deep End"
     },
     {
       "name": "EndenBlockRecipe",
@@ -1832,7 +2020,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enden_block_recipe"
+      "registry_name": "enden_block_recipe",
+      "path": "~/Deep End"
     },
     {
       "name": "Tall",
@@ -1897,7 +2086,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Electricity"
     },
     {
       "name": "NetheriteMagnet",
@@ -1906,7 +2096,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "netherite_magnet"
+      "registry_name": "netherite_magnet",
+      "path": "~/Electricity"
     },
     {
       "name": "NetheriteMagnetRecipe",
@@ -1915,7 +2106,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "netherite_magnet_recipe"
+      "registry_name": "netherite_magnet_recipe",
+      "path": "~/Electricity"
     }
   ],
   "variable_elements": [],
@@ -1960,15 +2152,15 @@
       "block.minecraft_overhauled.copper_generator": "Copper Generator",
       "block.minecraft_overhauled.enden_block": "Enden Block",
       "block.minecraft_overhauled.bamboo_fence_gate": "Bamboo Fence Gate",
-      "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "item.minecraft_overhauled.copper_armor_chestplate": "Copper Chestplate",
+      "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
       "block.minecraft_overhauled.endwood_slab": "Endwood Slab",
       "block.minecraft_overhauled.shorea_bush": "Shorea Bush",
       "block.minecraft_overhauled.bushthorn_leaves": "Bushthorn Leaves",
       "item.minecraft_overhauled.enden_armor_helmet": "Enden Helmet",
-      "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
       "entity.minecraft_overhauled.capybara": "Capybara",
+      "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
       "subtitles.talldisc": "Music Disc Plays (Tall)",
       "block.minecraft_overhauled.shorea_planks": "Shorea Planks",
       "subtitles.emberthreat": "Music Disc Plays (Ember Threat)",
@@ -2083,7 +2275,28 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "General",
+        "children": []
+      },
+      {
+        "name": "Electricity",
+        "children": []
+      },
+      {
+        "name": "Deep End",
+        "children": []
+      },
+      {
+        "name": "Jungle",
+        "children": []
+      },
+      {
+        "name": "Savanna",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "minecraft_overhauled",
