@@ -25,7 +25,7 @@ public class EndenDustItem extends MinecraftOverhauledModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(DeepEndTabItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(DeepEndTabItemGroup.tab).maxStackSize(64).isImmuneToFire().rarity(Rarity.COMMON));
 			setRegistryName("enden_dust");
 		}
 

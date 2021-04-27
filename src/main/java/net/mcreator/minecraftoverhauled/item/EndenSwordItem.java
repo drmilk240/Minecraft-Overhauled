@@ -46,7 +46,7 @@ public class EndenSwordItem extends MinecraftOverhauledModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(EndenAlloyItem.block, (int) (1)));
 			}
-		}, 3, -3f, new Item.Properties().group(ItemGroup.COMBAT)) {
+		}, 3, -3f, new Item.Properties().group(ItemGroup.COMBAT).isImmuneToFire()) {
 		}.setRegistryName("enden_sword"));
 	}
 }

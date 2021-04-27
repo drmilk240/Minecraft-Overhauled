@@ -46,7 +46,7 @@ public class EndenPickaxeItem extends MinecraftOverhauledModElements.ModElement 
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(EndenAlloyItem.block, (int) (1)));
 			}
-		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS).isImmuneToFire()) {
 		}.setRegistryName("enden_pickaxe"));
 	}
 }

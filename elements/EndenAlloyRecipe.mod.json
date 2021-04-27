@@ -10,16 +10,16 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:EndenDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:EndenDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:EndenDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:EndenDust"
       },
       {
         "value": "Items.NETHERITE_INGOT"
@@ -28,13 +28,13 @@
         "value": "CUSTOM:EndenDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:EndenDust"
       },
       {
         "value": "CUSTOM:EndenDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:EndenDust"
       }
     ],
     "recipeReturnStack": {
