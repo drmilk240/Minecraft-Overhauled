@@ -11,7 +11,7 @@
     "enableBoots": true,
     "textureBoots": "endenboots",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:DeepEndTab"
     },
     "armorTextureFile": "iron_",
     "helmetName": "Enden Helmet",

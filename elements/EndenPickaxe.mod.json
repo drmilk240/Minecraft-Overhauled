@@ -8,7 +8,7 @@
     "name": "Enden Pickaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:DeepEndTab"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 7,

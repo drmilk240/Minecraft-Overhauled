@@ -8,7 +8,7 @@
     "name": "Enden Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:DeepEndTab"
     },
     "toolType": "Spade",
     "harvestLevel": 7,

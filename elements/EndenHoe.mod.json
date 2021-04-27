@@ -8,7 +8,7 @@
     "name": "Enden Hoe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:DeepEndTab"
     },
     "toolType": "Hoe",
     "harvestLevel": 7,

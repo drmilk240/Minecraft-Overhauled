@@ -8,7 +8,7 @@
     "name": "Enden Axe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:DeepEndTab"
     },
     "toolType": "Axe",
     "harvestLevel": 7,

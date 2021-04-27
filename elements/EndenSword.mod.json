@@ -8,7 +8,7 @@
     "name": "Enden Sword",
     "specialInfo": [],
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:DeepEndTab"
     },
     "toolType": "Sword",
     "harvestLevel": 7,
