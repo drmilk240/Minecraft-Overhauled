@@ -18,6 +18,7 @@ import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledMod;
 
 import java.util.Map;
+import java.util.Collections;
 
 @MinecraftOverhauledModElements.ModElement.Tag
 public class EndDeepgateOnBlockRightClickedProcedure extends MinecraftOverhauledModElements.ModElement {
@@ -48,6 +49,13 @@ public class EndDeepgateOnBlockRightClickedProcedure extends MinecraftOverhauled
 					}
 					((ServerPlayerEntity) _ent).connection.sendPacket(new SPlaySoundEventPacket(1032, BlockPos.ZERO, 0, false));
 				}
+			}
+		}
+		{
+			Entity _ent = entity;
+			_ent.setPositionAndUpdate(0, 65, 0);
+			if (_ent instanceof ServerPlayerEntity) {
+				((ServerPlayerEntity) _ent).connection.setPlayerLocation(0, 65, 0, _ent.rotationYaw, _ent.rotationPitch, Collections.emptySet());
 			}
 		}
 	}
