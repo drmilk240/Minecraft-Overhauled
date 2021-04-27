@@ -27,7 +27,7 @@ public class BushthornPlanksBlock extends MinecraftOverhauledModElements.ModElem
 	@ObjectHolder("minecraft_overhauled:bushthorn_planks")
 	public static final Block block = null;
 	public BushthornPlanksBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 23);
+		super(instance, 14);
 	}
 
 	@Override

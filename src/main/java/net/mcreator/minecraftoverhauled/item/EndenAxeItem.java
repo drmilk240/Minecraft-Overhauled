@@ -17,7 +17,7 @@ public class EndenAxeItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:enden_axe")
 	public static final Item block = null;
 	public EndenAxeItem(MinecraftOverhauledModElements instance) {
-		super(instance, 83);
+		super(instance, 45);
 	}
 
 	@Override

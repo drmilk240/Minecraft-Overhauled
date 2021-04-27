@@ -17,7 +17,7 @@ public class EndenShovelItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:enden_shovel")
 	public static final Item block = null;
 	public EndenShovelItem(MinecraftOverhauledModElements instance) {
-		super(instance, 84);
+		super(instance, 46);
 	}
 
 	@Override

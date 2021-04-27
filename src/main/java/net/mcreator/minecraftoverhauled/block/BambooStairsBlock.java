@@ -27,7 +27,7 @@ public class BambooStairsBlock extends MinecraftOverhauledModElements.ModElement
 	@ObjectHolder("minecraft_overhauled:bamboo_stairs")
 	public static final Block block = null;
 	public BambooStairsBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 124);
+		super(instance, 72);
 	}
 
 	@Override

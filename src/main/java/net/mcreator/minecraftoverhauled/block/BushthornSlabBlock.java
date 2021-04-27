@@ -28,7 +28,7 @@ public class BushthornSlabBlock extends MinecraftOverhauledModElements.ModElemen
 	@ObjectHolder("minecraft_overhauled:bushthorn_slab")
 	public static final Block block = null;
 	public BushthornSlabBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 26);
+		super(instance, 17);
 	}
 
 	@Override

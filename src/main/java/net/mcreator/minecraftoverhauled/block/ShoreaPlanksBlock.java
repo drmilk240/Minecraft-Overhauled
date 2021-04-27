@@ -27,7 +27,7 @@ public class ShoreaPlanksBlock extends MinecraftOverhauledModElements.ModElement
 	@ObjectHolder("minecraft_overhauled:shorea_planks")
 	public static final Block block = null;
 	public ShoreaPlanksBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 48);
+		super(instance, 64);
 	}
 
 	@Override

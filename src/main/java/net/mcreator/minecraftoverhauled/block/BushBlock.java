@@ -59,7 +59,7 @@ public class BushBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:bush")
 	public static final Block block = null;
 	public BushBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 42);
+		super(instance, 56);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());

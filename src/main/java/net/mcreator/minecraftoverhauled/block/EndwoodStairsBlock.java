@@ -27,7 +27,7 @@ public class EndwoodStairsBlock extends MinecraftOverhauledModElements.ModElemen
 	@ObjectHolder("minecraft_overhauled:endwood_stairs")
 	public static final Block block = null;
 	public EndwoodStairsBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 141);
+		super(instance, 33);
 	}
 
 	@Override

@@ -59,7 +59,7 @@ public class CopperBlockBlock extends MinecraftOverhauledModElements.ModElement 
 	@ObjectHolder("minecraft_overhauled:copper_block")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public CopperBlockBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 95);
+		super(instance, 82);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

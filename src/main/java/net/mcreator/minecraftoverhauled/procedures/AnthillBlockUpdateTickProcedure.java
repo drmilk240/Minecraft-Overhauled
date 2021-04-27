@@ -24,7 +24,7 @@ import java.util.Comparator;
 @MinecraftOverhauledModElements.ModElement.Tag
 public class AnthillBlockUpdateTickProcedure extends MinecraftOverhauledModElements.ModElement {
 	public AnthillBlockUpdateTickProcedure(MinecraftOverhauledModElements instance) {
-		super(instance, 80);
+		super(instance, 129);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

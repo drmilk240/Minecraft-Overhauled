@@ -16,7 +16,7 @@ public class EndenAlloyItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:enden_alloy")
 	public static final Item block = null;
 	public EndenAlloyItem(MinecraftOverhauledModElements instance) {
-		super(instance, 79);
+		super(instance, 41);
 	}
 
 	@Override

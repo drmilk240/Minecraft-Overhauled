@@ -45,7 +45,7 @@ import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 public class CapybaraEntity extends MinecraftOverhauledModElements.ModElement {
 	public static EntityType entity = null;
 	public CapybaraEntity(MinecraftOverhauledModElements instance) {
-		super(instance, 88);
+		super(instance, 54);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new CapybaraRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

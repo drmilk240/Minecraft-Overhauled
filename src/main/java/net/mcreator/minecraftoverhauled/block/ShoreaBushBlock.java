@@ -61,7 +61,7 @@ public class ShoreaBushBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:shorea_bush")
 	public static final Block block = null;
 	public ShoreaBushBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 92);
+		super(instance, 61);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());

@@ -13,7 +13,7 @@ import java.util.Map;
 @MinecraftOverhauledModElements.ModElement.Tag
 public class ShoreaBushMobplayerCollidesWithPlantProcedure extends MinecraftOverhauledModElements.ModElement {
 	public ShoreaBushMobplayerCollidesWithPlantProcedure(MinecraftOverhauledModElements instance) {
-		super(instance, 92);
+		super(instance, 137);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

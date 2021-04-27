@@ -33,7 +33,7 @@ public class BaobabLogBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:baobab_log")
 	public static final Block block = null;
 	public BaobabLogBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 4);
+		super(instance, 3);
 	}
 
 	@Override

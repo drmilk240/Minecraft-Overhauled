@@ -48,7 +48,7 @@ public class MudBlockBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:mud_block")
 	public static final Block block = null;
 	public MudBlockBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 37);
+		super(instance, 20);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

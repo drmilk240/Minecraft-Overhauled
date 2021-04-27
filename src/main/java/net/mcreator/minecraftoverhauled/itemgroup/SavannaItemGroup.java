@@ -13,7 +13,7 @@ import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 @MinecraftOverhauledModElements.ModElement.Tag
 public class SavannaItemGroup extends MinecraftOverhauledModElements.ModElement {
 	public SavannaItemGroup(MinecraftOverhauledModElements instance) {
-		super(instance, 2);
+		super(instance, 87);
 	}
 
 	@Override

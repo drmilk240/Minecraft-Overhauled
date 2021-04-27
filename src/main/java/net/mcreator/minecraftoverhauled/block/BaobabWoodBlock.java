@@ -28,7 +28,7 @@ public class BaobabWoodBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:baobab_wood")
 	public static final Block block = null;
 	public BaobabWoodBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 3);
+		super(instance, 2);
 	}
 
 	@Override

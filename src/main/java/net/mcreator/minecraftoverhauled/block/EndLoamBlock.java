@@ -49,7 +49,7 @@ public class EndLoamBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:end_loam")
 	public static final Block block = null;
 	public EndLoamBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 77);
+		super(instance, 37);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

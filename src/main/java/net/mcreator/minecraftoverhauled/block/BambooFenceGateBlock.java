@@ -27,7 +27,7 @@ public class BambooFenceGateBlock extends MinecraftOverhauledModElements.ModElem
 	@ObjectHolder("minecraft_overhauled:bamboo_fence_gate")
 	public static final Block block = null;
 	public BambooFenceGateBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 127);
+		super(instance, 75);
 	}
 
 	@Override

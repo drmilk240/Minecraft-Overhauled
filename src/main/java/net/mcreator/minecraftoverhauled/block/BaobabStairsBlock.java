@@ -27,7 +27,7 @@ public class BaobabStairsBlock extends MinecraftOverhauledModElements.ModElement
 	@ObjectHolder("minecraft_overhauled:baobab_stairs")
 	public static final Block block = null;
 	public BaobabStairsBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 7);
+		super(instance, 6);
 	}
 
 	@Override

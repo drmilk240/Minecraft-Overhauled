@@ -17,7 +17,7 @@ import java.util.Map;
 @MinecraftOverhauledModElements.ModElement.Tag
 public class IronFishBucketRightClickedOnBlockProcedure extends MinecraftOverhauledModElements.ModElement {
 	public IronFishBucketRightClickedOnBlockProcedure(MinecraftOverhauledModElements instance) {
-		super(instance, 77);
+		super(instance, 128);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

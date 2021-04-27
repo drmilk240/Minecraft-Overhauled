@@ -53,7 +53,7 @@ public class SpearThrowableItem extends MinecraftOverhauledModElements.ModElemen
 	@ObjectHolder("minecraft_overhauled:entitybulletspear_throwable")
 	public static final EntityType arrow = null;
 	public SpearThrowableItem(MinecraftOverhauledModElements instance) {
-		super(instance, 20);
+		super(instance, 27);
 	}
 
 	@Override

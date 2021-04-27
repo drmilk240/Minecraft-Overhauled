@@ -49,7 +49,7 @@ import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 public class RiverDolphinEntity extends MinecraftOverhauledModElements.ModElement {
 	public static EntityType entity = null;
 	public RiverDolphinEntity(MinecraftOverhauledModElements instance) {
-		super(instance, 69);
+		super(instance, 51);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new RiverDolphinRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

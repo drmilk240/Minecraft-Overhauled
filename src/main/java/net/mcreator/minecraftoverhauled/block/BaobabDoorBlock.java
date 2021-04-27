@@ -33,7 +33,7 @@ public class BaobabDoorBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:baobab_door")
 	public static final Block block = null;
 	public BaobabDoorBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 66);
+		super(instance, 9);
 	}
 
 	@Override

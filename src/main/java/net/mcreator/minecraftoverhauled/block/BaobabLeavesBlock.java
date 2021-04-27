@@ -34,7 +34,7 @@ public class BaobabLeavesBlock extends MinecraftOverhauledModElements.ModElement
 	@ObjectHolder("minecraft_overhauled:baobab_leaves")
 	public static final Block block = null;
 	public BaobabLeavesBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 6);
+		super(instance, 5);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
 	}
 

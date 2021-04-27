@@ -55,7 +55,7 @@ public class PassionFlowerBlock extends MinecraftOverhauledModElements.ModElemen
 	@ObjectHolder("minecraft_overhauled:passion_flower")
 	public static final Block block = null;
 	public PassionFlowerBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 45);
+		super(instance, 58);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

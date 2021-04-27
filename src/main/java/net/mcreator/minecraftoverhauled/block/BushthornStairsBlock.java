@@ -27,7 +27,7 @@ public class BushthornStairsBlock extends MinecraftOverhauledModElements.ModElem
 	@ObjectHolder("minecraft_overhauled:bushthorn_stairs")
 	public static final Block block = null;
 	public BushthornStairsBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 25);
+		super(instance, 16);
 	}
 
 	@Override

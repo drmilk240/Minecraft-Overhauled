@@ -34,7 +34,7 @@ public class ShoreaLeavesBlock extends MinecraftOverhauledModElements.ModElement
 	@ObjectHolder("minecraft_overhauled:shorea_leaves")
 	public static final Block block = null;
 	public ShoreaLeavesBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 49);
+		super(instance, 65);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
 	}
 

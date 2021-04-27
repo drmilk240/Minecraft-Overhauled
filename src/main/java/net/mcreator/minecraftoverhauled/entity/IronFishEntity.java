@@ -49,7 +49,7 @@ import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 public class IronFishEntity extends MinecraftOverhauledModElements.ModElement {
 	public static EntityType entity = null;
 	public IronFishEntity(MinecraftOverhauledModElements instance) {
-		super(instance, 70);
+		super(instance, 52);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new IronFishRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

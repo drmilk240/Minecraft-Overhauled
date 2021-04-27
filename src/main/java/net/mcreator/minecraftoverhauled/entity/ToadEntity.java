@@ -43,7 +43,7 @@ import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 public class ToadEntity extends MinecraftOverhauledModElements.ModElement {
 	public static EntityType entity = null;
 	public ToadEntity(MinecraftOverhauledModElements instance) {
-		super(instance, 41);
+		super(instance, 50);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ToadRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

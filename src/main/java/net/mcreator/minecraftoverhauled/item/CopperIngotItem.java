@@ -16,7 +16,7 @@ public class CopperIngotItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:copper_ingot")
 	public static final Item block = null;
 	public CopperIngotItem(MinecraftOverhauledModElements instance) {
-		super(instance, 93);
+		super(instance, 79);
 	}
 
 	@Override

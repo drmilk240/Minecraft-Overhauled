@@ -71,7 +71,7 @@ public class CopperGeneratorBlock extends MinecraftOverhauledModElements.ModElem
 	@ObjectHolder("minecraft_overhauled:copper_generator")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public CopperGeneratorBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 115);
+		super(instance, 84);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

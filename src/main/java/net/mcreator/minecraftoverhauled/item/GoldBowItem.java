@@ -46,7 +46,7 @@ public class GoldBowItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:entitybulletgold_bow")
 	public static final EntityType arrow = null;
 	public GoldBowItem(MinecraftOverhauledModElements instance) {
-		super(instance, 83);
+		super(instance, 24);
 	}
 
 	@Override
