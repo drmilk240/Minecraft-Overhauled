@@ -27,7 +27,7 @@ public class BushthornFenceGateBlock extends MinecraftOverhauledModElements.ModE
 	@ObjectHolder("minecraft_overhauled:bushthorn_fence_gate")
 	public static final Block block = null;
 	public BushthornFenceGateBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 28);
+		super(instance, 19);
 	}
 
 	@Override

@@ -30,7 +30,7 @@ public class BushthornWoodBlock extends MinecraftOverhauledModElements.ModElemen
 	@ObjectHolder("minecraft_overhauled:bushthorn_wood")
 	public static final Block block = null;
 	public BushthornWoodBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 21);
+		super(instance, 12);
 	}
 
 	@Override

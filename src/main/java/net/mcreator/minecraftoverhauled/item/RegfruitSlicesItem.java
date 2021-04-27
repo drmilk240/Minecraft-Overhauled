@@ -23,7 +23,7 @@ public class RegfruitSlicesItem extends MinecraftOverhauledModElements.ModElemen
 	@ObjectHolder("minecraft_overhauled:regfruit_slices")
 	public static final Item block = null;
 	public RegfruitSlicesItem(MinecraftOverhauledModElements instance) {
-		super(instance, 64);
+		super(instance, 76);
 	}
 
 	@Override

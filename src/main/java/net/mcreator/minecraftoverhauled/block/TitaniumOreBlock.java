@@ -79,7 +79,7 @@ public class TitaniumOreBlock extends MinecraftOverhauledModElements.ModElement 
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
+			if (blockAt.getBlock() == Blocks.END_STONE.getDefaultState().getBlock())
 				blockCriteria = true;
 			return blockCriteria;
 		}
@@ -99,7 +99,9 @@ public class TitaniumOreBlock extends MinecraftOverhauledModElements.ModElement 
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
 					boolean dimensionCriteria = false;
-					if (dimensionType == World.OVERWORLD)
+					if (dimensionType == World.THE_END)
+						dimensionCriteria = true;
+					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("minecraft_overhauled:deep_end")))
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
@@ -107,7 +109,7 @@ public class TitaniumOreBlock extends MinecraftOverhauledModElements.ModElement 
 				}
 			};
 			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 32)).range(63)
-					.square().func_242731_b(11);
+					.square().func_242731_b(5);
 			event.getRegistry().register(feature.setRegistryName("titanium_ore"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("minecraft_overhauled:titanium_ore"), configuredFeature);
 		}

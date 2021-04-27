@@ -24,7 +24,7 @@ public class DriedMudBlockBlock extends MinecraftOverhauledModElements.ModElemen
 	@ObjectHolder("minecraft_overhauled:dried_mud_block")
 	public static final Block block = null;
 	public DriedMudBlockBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 38);
+		super(instance, 21);
 	}
 
 	@Override

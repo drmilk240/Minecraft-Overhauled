@@ -17,7 +17,7 @@ public class EndenPickaxeItem extends MinecraftOverhauledModElements.ModElement 
 	@ObjectHolder("minecraft_overhauled:enden_pickaxe")
 	public static final Item block = null;
 	public EndenPickaxeItem(MinecraftOverhauledModElements instance) {
-		super(instance, 82);
+		super(instance, 44);
 	}
 
 	@Override

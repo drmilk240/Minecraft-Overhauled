@@ -40,7 +40,7 @@ public class BaobobTrees2Structure extends MinecraftOverhauledModElements.ModEle
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	public BaobobTrees2Structure(MinecraftOverhauledModElements instance) {
-		super(instance, 71);
+		super(instance, 126);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

@@ -58,7 +58,7 @@ public class FlowerBushBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:flower_bush")
 	public static final Block block = null;
 	public FlowerBushBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 91);
+		super(instance, 60);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());

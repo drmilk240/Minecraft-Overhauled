@@ -28,7 +28,7 @@ public class EndwoodFenceBlock extends MinecraftOverhauledModElements.ModElement
 	@ObjectHolder("minecraft_overhauled:endwood_fence")
 	public static final Block block = null;
 	public EndwoodFenceBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 143);
+		super(instance, 35);
 	}
 
 	@Override

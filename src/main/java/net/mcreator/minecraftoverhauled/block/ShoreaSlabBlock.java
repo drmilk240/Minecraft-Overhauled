@@ -28,7 +28,7 @@ public class ShoreaSlabBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:shorea_slab")
 	public static final Block block = null;
 	public ShoreaSlabBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 51);
+		super(instance, 67);
 	}
 
 	@Override

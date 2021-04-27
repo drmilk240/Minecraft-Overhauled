@@ -24,7 +24,7 @@ public class AnthillbaseBlock extends MinecraftOverhauledModElements.ModElement 
 	@ObjectHolder("minecraft_overhauled:anthillbase")
 	public static final Block block = null;
 	public AnthillbaseBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 79);
+		super(instance, 22);
 	}
 
 	@Override

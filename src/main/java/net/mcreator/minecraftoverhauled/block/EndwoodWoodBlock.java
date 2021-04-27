@@ -33,7 +33,7 @@ public class EndwoodWoodBlock extends MinecraftOverhauledModElements.ModElement 
 	@ObjectHolder("minecraft_overhauled:endwood_wood")
 	public static final Block block = null;
 	public EndwoodWoodBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 137);
+		super(instance, 29);
 	}
 
 	@Override

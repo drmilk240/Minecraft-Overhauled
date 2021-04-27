@@ -37,6 +37,9 @@
     "sleepResult": "BED_EXPLODES",
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
+    "onPlayerEntersDimension": {
+      "name": "DeepEndPlayerEntersDimension"
+    },
     "portalFrame": {
       "value": ""
     },

@@ -56,7 +56,7 @@ public class GrapplingHookItem extends MinecraftOverhauledModElements.ModElement
 	@ObjectHolder("minecraft_overhauled:entitybulletgrappling_hook")
 	public static final EntityType arrow = null;
 	public GrapplingHookItem(MinecraftOverhauledModElements instance) {
-		super(instance, 80);
+		super(instance, 28);
 	}
 
 	@Override

@@ -60,7 +60,7 @@ public class TallBushBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:tall_bush")
 	public static final Block block = null;
 	public TallBushBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 90);
+		super(instance, 59);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());

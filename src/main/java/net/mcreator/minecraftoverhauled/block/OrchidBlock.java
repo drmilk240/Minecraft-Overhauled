@@ -55,7 +55,7 @@ public class OrchidBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:orchid")
 	public static final Block block = null;
 	public OrchidBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 44);
+		super(instance, 57);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

@@ -13,7 +13,7 @@ import java.util.Map;
 @MinecraftOverhauledModElements.ModElement.Tag
 public class RegfruitSlicesFoodEatenProcedure extends MinecraftOverhauledModElements.ModElement {
 	public RegfruitSlicesFoodEatenProcedure(MinecraftOverhauledModElements instance) {
-		super(instance, 64);
+		super(instance, 114);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -33,7 +33,7 @@ public class ShoreaWoodBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:shorea_wood")
 	public static final Block block = null;
 	public ShoreaWoodBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 46);
+		super(instance, 62);
 	}
 
 	@Override

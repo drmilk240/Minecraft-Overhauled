@@ -26,7 +26,7 @@ public class IronFishBucketItem extends MinecraftOverhauledModElements.ModElemen
 	@ObjectHolder("minecraft_overhauled:iron_fish_bucket")
 	public static final Item block = null;
 	public IronFishBucketItem(MinecraftOverhauledModElements instance) {
-		super(instance, 77);
+		super(instance, 48);
 	}
 
 	@Override

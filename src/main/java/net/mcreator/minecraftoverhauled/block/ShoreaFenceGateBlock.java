@@ -27,7 +27,7 @@ public class ShoreaFenceGateBlock extends MinecraftOverhauledModElements.ModElem
 	@ObjectHolder("minecraft_overhauled:shorea_fence_gate")
 	public static final Block block = null;
 	public ShoreaFenceGateBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 53);
+		super(instance, 69);
 	}
 
 	@Override

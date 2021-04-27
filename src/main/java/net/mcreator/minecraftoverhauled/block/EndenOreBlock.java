@@ -47,7 +47,7 @@ public class EndenOreBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:enden_ore")
 	public static final Block block = null;
 	public EndenOreBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 81);
+		super(instance, 39);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

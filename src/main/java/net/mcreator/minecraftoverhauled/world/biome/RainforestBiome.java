@@ -66,7 +66,7 @@ import com.google.common.collect.ImmutableList;
 public class RainforestBiome extends MinecraftOverhauledModElements.ModElement {
 	public static Biome biome;
 	public RainforestBiome(MinecraftOverhauledModElements instance) {
-		super(instance, 43);
+		super(instance, 105);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

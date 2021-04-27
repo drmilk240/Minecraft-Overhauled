@@ -31,7 +31,7 @@ public class BaobabTrapdoorBlock extends MinecraftOverhauledModElements.ModEleme
 	@ObjectHolder("minecraft_overhauled:baobab_trapdoor")
 	public static final Block block = null;
 	public BaobabTrapdoorBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 46);
+		super(instance, 8);
 	}
 
 	@Override

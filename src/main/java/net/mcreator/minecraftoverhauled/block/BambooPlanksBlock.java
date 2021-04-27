@@ -27,7 +27,7 @@ public class BambooPlanksBlock extends MinecraftOverhauledModElements.ModElement
 	@ObjectHolder("minecraft_overhauled:bamboo_planks")
 	public static final Block block = null;
 	public BambooPlanksBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 122);
+		super(instance, 71);
 	}
 
 	@Override

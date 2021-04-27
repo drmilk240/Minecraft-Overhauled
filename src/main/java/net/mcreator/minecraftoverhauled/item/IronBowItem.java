@@ -46,7 +46,7 @@ public class IronBowItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:entitybulletiron_bow")
 	public static final EntityType arrow = null;
 	public IronBowItem(MinecraftOverhauledModElements instance) {
-		super(instance, 82);
+		super(instance, 23);
 	}
 
 	@Override

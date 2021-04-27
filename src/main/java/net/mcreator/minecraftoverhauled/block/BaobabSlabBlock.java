@@ -28,7 +28,7 @@ public class BaobabSlabBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:baobab_slab")
 	public static final Block block = null;
 	public BaobabSlabBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 8);
+		super(instance, 7);
 	}
 
 	@Override
