@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "regfruit",
+    "texture": "melon_slice",
     "customModelName": "Normal",
     "name": "Regfruit Slice",
     "rarity": "UNCOMMON",

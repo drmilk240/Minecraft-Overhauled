@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "minecraft_overhauled:items/cookedironfish"
+    "layer0": "minecraft_overhauled:items/cooked_cod"
   }
 }

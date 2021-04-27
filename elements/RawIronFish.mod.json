@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "rawironfish",
+    "texture": "cod",
     "customModelName": "Normal",
     "name": "Raw Ironfish",
     "rarity": "COMMON",

@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "cookedironfish",
+    "texture": "cooked_cod",
     "customModelName": "Normal",
     "name": "Cooked Ironfish",
     "rarity": "COMMON",

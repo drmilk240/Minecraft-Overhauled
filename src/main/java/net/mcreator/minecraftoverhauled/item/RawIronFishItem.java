@@ -17,7 +17,7 @@ public class RawIronFishItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:raw_iron_fish")
 	public static final Item block = null;
 	public RawIronFishItem(MinecraftOverhauledModElements instance) {
-		super(instance, 72);
+		super(instance, 77);
 	}
 
 	@Override

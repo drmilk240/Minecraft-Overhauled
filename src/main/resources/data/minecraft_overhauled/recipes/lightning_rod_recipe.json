@@ -1,0 +1,24 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_overhauled:copper_ingot"
+    },
+    "1": {
+      "item": "minecraft_overhauled:copper_ingot"
+    },
+    "2": {
+      "item": "minecraft_overhauled:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:lightning_rod",
+    "count": 1
+  }
+}
