@@ -27,7 +27,7 @@ public class BushthornLeavesBlock extends MinecraftOverhauledModElements.ModElem
 	@ObjectHolder("minecraft_overhauled:bushthorn_leaves")
 	public static final Block block = null;
 	public BushthornLeavesBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 24);
+		super(instance, 15);
 	}
 
 	@Override

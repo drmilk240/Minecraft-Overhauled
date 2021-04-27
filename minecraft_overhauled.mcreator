@@ -76,7 +76,7 @@
     {
       "name": "BaobabFence",
       "type": "block",
-      "sortid": 8,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -85,7 +85,7 @@
     {
       "name": "BaobabFenceGate",
       "type": "block",
-      "sortid": 9,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -175,7 +175,7 @@
     {
       "name": "BushthornWood",
       "type": "block",
-      "sortid": 10,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -184,7 +184,7 @@
     {
       "name": "BushthornLog",
       "type": "block",
-      "sortid": 11,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -193,7 +193,7 @@
     {
       "name": "BushthornPlanks",
       "type": "block",
-      "sortid": 12,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -202,7 +202,7 @@
     {
       "name": "BushthornLeaves",
       "type": "block",
-      "sortid": 13,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -211,7 +211,7 @@
     {
       "name": "BushthornStairs",
       "type": "block",
-      "sortid": 14,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -220,7 +220,7 @@
     {
       "name": "BushthornSlab",
       "type": "block",
-      "sortid": 15,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -229,7 +229,7 @@
     {
       "name": "BushthornFence",
       "type": "block",
-      "sortid": 16,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -238,7 +238,7 @@
     {
       "name": "BushthornFenceGate",
       "type": "block",
-      "sortid": 17,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -319,7 +319,7 @@
     {
       "name": "MudBlock",
       "type": "block",
-      "sortid": 18,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -328,7 +328,7 @@
     {
       "name": "DriedMudBlock",
       "type": "block",
-      "sortid": 19,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -346,7 +346,7 @@
     {
       "name": "Ant",
       "type": "mob",
-      "sortid": 32,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -355,7 +355,7 @@
     {
       "name": "Toad",
       "type": "mob",
-      "sortid": 33,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -364,7 +364,7 @@
     {
       "name": "Bush",
       "type": "plant",
-      "sortid": 39,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -382,7 +382,7 @@
     {
       "name": "Orchid",
       "type": "plant",
-      "sortid": 40,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -391,7 +391,7 @@
     {
       "name": "PassionFlower",
       "type": "plant",
-      "sortid": 41,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -400,7 +400,7 @@
     {
       "name": "ShoreaWood",
       "type": "block",
-      "sortid": 45,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -409,7 +409,7 @@
     {
       "name": "ShoreaLog",
       "type": "block",
-      "sortid": 46,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -418,7 +418,7 @@
     {
       "name": "ShoreaPlanks",
       "type": "block",
-      "sortid": 47,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -427,7 +427,7 @@
     {
       "name": "ShoreaLeaves",
       "type": "block",
-      "sortid": 48,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -436,7 +436,7 @@
     {
       "name": "ShoreaStairs",
       "type": "block",
-      "sortid": 49,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -445,7 +445,7 @@
     {
       "name": "ShoreaSlab",
       "type": "block",
-      "sortid": 50,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -454,7 +454,7 @@
     {
       "name": "ShoreaFence",
       "type": "block",
-      "sortid": 51,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -463,7 +463,7 @@
     {
       "name": "ShoreaFenceGate",
       "type": "block",
-      "sortid": 52,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -544,7 +544,7 @@
     {
       "name": "Regfruit",
       "type": "block",
-      "sortid": 53,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -570,7 +570,7 @@
     {
       "name": "RegfruitSlices",
       "type": "food",
-      "sortid": 59,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -597,7 +597,7 @@
     {
       "name": "BaobabDoor",
       "type": "block",
-      "sortid": 21,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -606,7 +606,7 @@
     {
       "name": "BaobabTrapdoor",
       "type": "block",
-      "sortid": 20,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -633,7 +633,7 @@
     {
       "name": "RiverDolphin",
       "type": "mob",
-      "sortid": 34,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -651,7 +651,7 @@
     {
       "name": "IronFish",
       "type": "mob",
-      "sortid": 35,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -669,7 +669,7 @@
     {
       "name": "RawIronFish",
       "type": "food",
-      "sortid": 60,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -695,7 +695,7 @@
     {
       "name": "CookedIronFish",
       "type": "food",
-      "sortid": 61,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -758,7 +758,7 @@
     {
       "name": "LushZombie",
       "type": "mob",
-      "sortid": 36,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -796,7 +796,7 @@
     {
       "name": "IronFishBucket",
       "type": "item",
-      "sortid": 31,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -894,7 +894,7 @@
     {
       "name": "TallBush",
       "type": "plant",
-      "sortid": 42,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -903,7 +903,7 @@
     {
       "name": "Piranha",
       "type": "mob",
-      "sortid": 38,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -968,7 +968,7 @@
     {
       "name": "Capybara",
       "type": "mob",
-      "sortid": 37,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1004,7 +1004,7 @@
     {
       "name": "FlowerBush",
       "type": "plant",
-      "sortid": 43,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1039,7 +1039,7 @@
     {
       "name": "ShoreaBush",
       "type": "plant",
-      "sortid": 44,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1048,7 +1048,7 @@
     {
       "name": "CopperIngot",
       "type": "item",
-      "sortid": 62,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1057,7 +1057,7 @@
     {
       "name": "CopperOre",
       "type": "block",
-      "sortid": 68,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1066,7 +1066,7 @@
     {
       "name": "CopperBlock",
       "type": "block",
-      "sortid": 65,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1102,7 +1102,7 @@
     {
       "name": "CopperArmor",
       "type": "armor",
-      "sortid": 63,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1162,7 +1162,7 @@
     {
       "name": "CopperGenerator",
       "type": "block",
-      "sortid": 67,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1180,7 +1180,7 @@
     {
       "name": "CopperHammer",
       "type": "tool",
-      "sortid": 64,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1198,7 +1198,7 @@
     {
       "name": "LightningRod",
       "type": "block",
-      "sortid": 66,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1207,7 +1207,7 @@
     {
       "name": "BambooPlanks",
       "type": "block",
-      "sortid": 54,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1216,7 +1216,7 @@
     {
       "name": "BambooStairs",
       "type": "block",
-      "sortid": 55,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1225,7 +1225,7 @@
     {
       "name": "BambooSlab",
       "type": "block",
-      "sortid": 56,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1234,7 +1234,7 @@
     {
       "name": "BambooFence",
       "type": "block",
-      "sortid": 57,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1243,7 +1243,7 @@
     {
       "name": "BambooFenceGate",
       "type": "block",
-      "sortid": 58,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1324,7 +1324,7 @@
     {
       "name": "EndwoodWood",
       "type": "block",
-      "sortid": 69,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1333,7 +1333,7 @@
     {
       "name": "EndwoodLog",
       "type": "block",
-      "sortid": 70,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1342,7 +1342,7 @@
     {
       "name": "EndwoodPlanks",
       "type": "block",
-      "sortid": 71,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1351,7 +1351,7 @@
     {
       "name": "EndwoodLeaves",
       "type": "block",
-      "sortid": 72,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1360,7 +1360,7 @@
     {
       "name": "EndwoodStairs",
       "type": "block",
-      "sortid": 73,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1369,7 +1369,7 @@
     {
       "name": "EndwoodSlab",
       "type": "block",
-      "sortid": 74,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1378,7 +1378,7 @@
     {
       "name": "EndwoodFence",
       "type": "block",
-      "sortid": 75,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1387,7 +1387,7 @@
     {
       "name": "EndwoodFenceGate",
       "type": "block",
-      "sortid": 76,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1468,7 +1468,7 @@
     {
       "name": "EndLoam",
       "type": "block",
-      "sortid": 77,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1498,7 +1498,7 @@
     {
       "name": "Endsand",
       "type": "block",
-      "sortid": 78,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1561,7 +1561,7 @@
     {
       "name": "EndenDust",
       "type": "item",
-      "sortid": 80,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1570,7 +1570,7 @@
     {
       "name": "EndenOre",
       "type": "block",
-      "sortid": 81,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1579,7 +1579,7 @@
     {
       "name": "EndenAlloy",
       "type": "item",
-      "sortid": 79,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1597,7 +1597,7 @@
     {
       "name": "EndenPickaxe",
       "type": "tool",
-      "sortid": 82,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1606,7 +1606,7 @@
     {
       "name": "EndenAxe",
       "type": "tool",
-      "sortid": 83,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1615,7 +1615,7 @@
     {
       "name": "EndenSword",
       "type": "tool",
-      "sortid": 29,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1624,7 +1624,7 @@
     {
       "name": "EndenShovel",
       "type": "tool",
-      "sortid": 84,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1633,7 +1633,7 @@
     {
       "name": "EndenHoe",
       "type": "tool",
-      "sortid": 85,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1687,7 +1687,7 @@
     {
       "name": "EndenArmor",
       "type": "armor",
-      "sortid": 30,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1752,6 +1752,78 @@
           }
         ]
       }
+    },
+    {
+      "name": "Endsandglass",
+      "type": "recipe",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endsandglass"
+    },
+    {
+      "name": "TitaniumIngot",
+      "type": "item",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanium_ingot"
+    },
+    {
+      "name": "TitaniumOre",
+      "type": "block",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanium_ore"
+    },
+    {
+      "name": "TitaniumBlock",
+      "type": "block",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanium_block"
+    },
+    {
+      "name": "TitaniumOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanium_ore_block_recipe"
+    },
+    {
+      "name": "TitaniumBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanium_block_ore_recipe"
+    },
+    {
+      "name": "TitaniumOreSmelting",
+      "type": "recipe",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanium_ore_smelting"
+    },
+    {
+      "name": "EndenBlock",
+      "type": "block",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enden_block"
     }
   ],
   "variable_elements": [],
@@ -1761,16 +1833,17 @@
       "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
       "block.minecraft_overhauled.baobab_door": "Baobab Door",
       "block.minecraft_overhauled.copper_generator": "Copper Generator",
+      "block.minecraft_overhauled.enden_block": "Enden Block",
       "block.minecraft_overhauled.bamboo_fence_gate": "Bamboo Fence Gate",
-      "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "item.minecraft_overhauled.copper_armor_chestplate": "Copper Chestplate",
+      "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
       "block.minecraft_overhauled.endwood_slab": "Endwood Slab",
       "block.minecraft_overhauled.shorea_bush": "Shorea Bush",
       "block.minecraft_overhauled.bushthorn_leaves": "Bushthorn Leaves",
       "item.minecraft_overhauled.enden_armor_helmet": "Enden Helmet",
-      "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
       "entity.minecraft_overhauled.capybara": "Capybara",
+      "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
       "block.minecraft_overhauled.shorea_planks": "Shorea Planks",
       "item.minecraft_overhauled.enden_sword": "Enden Sword",
       "item.minecraft_overhauled.toad_spawn_egg": "Toad Spawn Egg",
@@ -1841,6 +1914,7 @@
       "entity.minecraft_overhauled.ant": "Ant",
       "block.minecraft_overhauled.endwood_wood": "Endwood Wood",
       "itemGroup.tabdeep_end_tab": "Deep End",
+      "block.minecraft_overhauled.titanium_ore": "Titanium Ore",
       "block.minecraft_overhauled.baobab_trapdoor": "Baobab Trapdoor",
       "item.minecraft_overhauled.copper_armor_leggings": "Copper Leggings",
       "item.minecraft_overhauled.enden_axe": "Enden Axe",
@@ -1859,8 +1933,10 @@
       "item.minecraft_overhauled.enden_armor_boots": "Enden Boots",
       "item.minecraft_overhauled.piranha_spawn_egg": "Piranha Spawn Egg",
       "block.minecraft_overhauled.passion_flower": "Passion Flower",
+      "block.minecraft_overhauled.titanium_block": "Block of Titanium",
       "block.minecraft_overhauled.shorea_wood": "Shorea Wood",
       "itemGroup.tabrainforest_tab": "Rainforest",
+      "item.minecraft_overhauled.titanium_ingot": "Titanium",
       "item.minecraft_overhauled.enden_alloy": "Enden Alloy",
       "entity.minecraft_overhauled.iron_fish": "Ironfish",
       "item.minecraft_overhauled.copper_ingot": "Copper",

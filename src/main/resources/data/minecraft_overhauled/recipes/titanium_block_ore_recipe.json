@@ -1,0 +1,13 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_overhauled:titanium_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft_overhauled:titanium_ingot",
+    "count": 4
+  }
+}

@@ -2,20 +2,19 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "baobabplanks",
+    "texture": "titaniumore",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Fence",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -33,18 +32,18 @@
         "subtract": false
       }
     ],
-    "name": "Baobab Fence",
+    "name": "Titanium Ore",
     "specialInfo": [],
-    "hardness": 2.0,
-    "resistance": 3.0,
+    "hardness": 3.0,
+    "resistance": 5.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Savanna"
+      "value": "CUSTOM:DeepEndTab"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:TitaniumOre"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -53,7 +52,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "WOOD"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -64,7 +63,7 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 5,
+    "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
@@ -73,11 +72,11 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "STONE"
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 2,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -102,16 +101,18 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "Surface"
+    ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "frequencyPerChunks": 11,
+    "frequencyOnChunk": 7,
+    "minGenerateHeight": 1,
+    "maxGenerateHeight": 63
   }
 }

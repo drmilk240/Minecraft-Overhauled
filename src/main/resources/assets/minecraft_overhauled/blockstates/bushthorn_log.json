@@ -1,16 +1,13 @@
 {
   "multipart": [
     {
-      "when": {
-        "up": "true"
-      },
       "apply": {
         "model": "minecraft_overhauled:block/bushthorn_log_post"
       }
     },
     {
       "when": {
-        "north": "low"
+        "north": "true"
       },
       "apply": {
         "model": "minecraft_overhauled:block/bushthorn_log",
@@ -19,17 +16,7 @@
     },
     {
       "when": {
-        "east": "low"
-      },
-      "apply": {
-        "model": "minecraft_overhauled:block/bushthorn_log",
-        "y": 90,
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "south": "low"
+        "south": "true"
       },
       "apply": {
         "model": "minecraft_overhauled:block/bushthorn_log",
@@ -39,7 +26,7 @@
     },
     {
       "when": {
-        "west": "low"
+        "west": "true"
       },
       "apply": {
         "model": "minecraft_overhauled:block/bushthorn_log",
@@ -49,40 +36,11 @@
     },
     {
       "when": {
-        "north": "tall"
+        "east": "true"
       },
       "apply": {
-        "model": "minecraft_overhauled:block/bushthorn_log_side_tall",
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "east": "tall"
-      },
-      "apply": {
-        "model": "minecraft_overhauled:block/bushthorn_log_side_tall",
+        "model": "minecraft_overhauled:block/bushthorn_log",
         "y": 90,
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "south": "tall"
-      },
-      "apply": {
-        "model": "minecraft_overhauled:block/bushthorn_log_side_tall",
-        "y": 180,
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "west": "tall"
-      },
-      "apply": {
-        "model": "minecraft_overhauled:block/bushthorn_log_side_tall",
-        "y": 270,
         "uvlock": true
       }
     }

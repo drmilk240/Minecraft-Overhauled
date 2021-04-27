@@ -28,7 +28,7 @@ public class BaobabFenceBlock extends MinecraftOverhauledModElements.ModElement 
 	@ObjectHolder("minecraft_overhauled:baobab_fence")
 	public static final Block block = null;
 	public BaobabFenceBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 9);
+		super(instance, 10);
 	}
 
 	@Override

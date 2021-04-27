@@ -1,7 +1,7 @@
 {
   "parent": "block/fence_post",
   "textures": {
-    "texture": "minecraft_overhauled:blocks/baobab_log_side",
-    "particle": "minecraft_overhauled:blocks/baobab_log_side"
+    "texture": "minecraft_overhauled:blocks/baobabplanks",
+    "particle": "minecraft_overhauled:blocks/baobabplanks"
   }
 }

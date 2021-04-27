@@ -15,7 +15,7 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Wall",
+    "blockBase": "Fence",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,

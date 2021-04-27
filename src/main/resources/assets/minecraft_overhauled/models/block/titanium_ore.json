@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "minecraft_overhauled:blocks/titaniumore",
+    "particle": "minecraft_overhauled:blocks/titaniumore"
+  }
+}
