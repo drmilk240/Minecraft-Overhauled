@@ -29,7 +29,7 @@ public class EndenArmorItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:enden_armor_boots")
 	public static final Item boots = null;
 	public EndenArmorItem(MinecraftOverhauledModElements instance) {
-		super(instance, 30);
+		super(instance, 42);
 	}
 
 	@Override
