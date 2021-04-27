@@ -1,0 +1,29 @@
+{
+  "_fv": 18,
+  "_type": "structure",
+  "definition": {
+    "structure": "endhouse1",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 10000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": -1,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:DeepEnd"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:EndLoam"
+      },
+      {
+        "value": "Blocks.END_STONE"
+      }
+    ],
+    "restrictionBiomes": [],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}

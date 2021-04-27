@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "structure",
+  "definition": {
+    "structure": "buildtower",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 10000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:DeepEnd",
+      "End"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.END_STONE"
+      },
+      {
+        "value": "CUSTOM:Endsand"
+      },
+      {
+        "value": "CUSTOM:EndLoam"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Voidwoods"
+      },
+      {
+        "value": "the_end"
+      },
+      {
+        "value": "end_highlands"
+      },
+      {
+        "value": "end_barrens"
+      }
+    ],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}
