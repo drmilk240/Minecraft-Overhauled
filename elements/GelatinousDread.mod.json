@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "gelatinousdisc",
+    "name": "Music Disc",
+    "description": "Redstonerblast - Gelatinous Dread",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:gelatinousdisc"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

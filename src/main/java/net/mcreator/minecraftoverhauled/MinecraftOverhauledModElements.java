@@ -47,6 +47,12 @@ public class MinecraftOverhauledModElements {
 	public MinecraftOverhauledModElements() {
 		sounds.put(new ResourceLocation("minecraft_overhauled", "talldisc"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("minecraft_overhauled", "talldisc")));
+		sounds.put(new ResourceLocation("minecraft_overhauled", "scopophobiadisc"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("minecraft_overhauled", "scopophobiadisc")));
+		sounds.put(new ResourceLocation("minecraft_overhauled", "emberthreat"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("minecraft_overhauled", "emberthreat")));
+		sounds.put(new ResourceLocation("minecraft_overhauled", "gelatinousdisc"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("minecraft_overhauled", "gelatinousdisc")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("minecraft_overhauled").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

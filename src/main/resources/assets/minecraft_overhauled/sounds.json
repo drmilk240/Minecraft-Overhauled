@@ -8,5 +8,35 @@
         "stream": true
       }
     ]
+  },
+  "scopophobiadisc": {
+    "category": "record",
+    "subtitle": "subtitles.scopophobiadisc",
+    "sounds": [
+      {
+        "name": "minecraft_overhauled:scopophobia_custom_minecraft_end_music_disc",
+        "stream": true
+      }
+    ]
+  },
+  "emberthreat": {
+    "category": "record",
+    "subtitle": "subtitles.emberthreat",
+    "sounds": [
+      {
+        "name": "minecraft_overhauled:the_travelling_tinker_-_an_ember_threat",
+        "stream": true
+      }
+    ]
+  },
+  "gelatinousdisc": {
+    "category": "record",
+    "subtitle": "subtitles.gelatinousdisc",
+    "sounds": [
+      {
+        "name": "minecraft_overhauled:the_travelling_tinker_-_gelatinous_dread",
+        "stream": true
+      }
+    ]
   }
 }

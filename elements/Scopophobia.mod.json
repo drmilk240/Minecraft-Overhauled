@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "scopophobiadisc",
+    "name": "Music Disc",
+    "description": "mango unit - Scopophobia",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:scopophobiadisc"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}
