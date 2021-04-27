@@ -8,7 +8,6 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.IPlantable;
 
 import net.minecraft.world.gen.feature.template.RuleTest;
 import net.minecraft.world.gen.feature.template.IRuleTestType;
@@ -20,24 +19,23 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.World;
 import net.minecraft.world.ISeedReader;
-import net.minecraft.world.IBlockReader;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
-import net.minecraft.util.Direction;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
-import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.minecraftoverhauled.itemgroup.DeepEndTabItemGroup;
+import net.mcreator.minecraftoverhauled.item.EndenDustItem;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 
 import java.util.Random;
@@ -45,11 +43,11 @@ import java.util.List;
 import java.util.Collections;
 
 @MinecraftOverhauledModElements.ModElement.Tag
-public class EndLoamBlock extends MinecraftOverhauledModElements.ModElement {
-	@ObjectHolder("minecraft_overhauled:end_loam")
+public class EndenOreBlock extends MinecraftOverhauledModElements.ModElement {
+	@ObjectHolder("minecraft_overhauled:enden_ore")
 	public static final Block block = null;
-	public EndLoamBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 77);
+	public EndenOreBlock(MinecraftOverhauledModElements instance) {
+		super(instance, 81);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -61,19 +59,9 @@ public class EndLoamBlock extends MinecraftOverhauledModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.EARTH).sound(SoundType.SHROOMLIGHT).hardnessAndResistance(3f, 9f).setLightLevel(s -> 5)
-					.harvestLevel(1).harvestTool(ToolType.PICKAXE).setRequiresTool());
-			setRegistryName("end_loam");
-		}
-
-		@Override
-		public MaterialColor getMaterialColor() {
-			return MaterialColor.CYAN;
-		}
-
-		@Override
-		public boolean canSustainPlant(BlockState state, IBlockReader world, BlockPos pos, Direction direction, IPlantable plantable) {
-			return true;
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(3f, 5f).setLightLevel(s -> 0).harvestLevel(2)
+					.harvestTool(ToolType.PICKAXE).setRequiresTool());
+			setRegistryName("enden_ore");
 		}
 
 		@Override
@@ -81,7 +69,7 @@ public class EndLoamBlock extends MinecraftOverhauledModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(EndenDustItem.block, (int) (3)));
 		}
 	}
 	private static Feature<OreFeatureConfig> feature = null;
@@ -92,6 +80,8 @@ public class EndLoamBlock extends MinecraftOverhauledModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
+			if (blockAt.getBlock() == Blocks.END_STONE.getDefaultState().getBlock())
+				blockCriteria = true;
 			return blockCriteria;
 		}
 
@@ -103,24 +93,24 @@ public class EndLoamBlock extends MinecraftOverhauledModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("minecraft_overhauled:end_loam_match"),
+			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("minecraft_overhauled:enden_ore_match"),
 					() -> CustomRuleTest.codec);
 			feature = new OreFeature(OreFeatureConfig.CODEC) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
 					boolean dimensionCriteria = false;
-					if (dimensionType == World.THE_END)
+					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("minecraft_overhauled:deep_end")))
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(64)
-					.square().func_242731_b(10);
-			event.getRegistry().register(feature.setRegistryName("end_loam"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("minecraft_overhauled:end_loam"), configuredFeature);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 3)).range(21)
+					.square().func_242731_b(7);
+			event.getRegistry().register(feature.setRegistryName("enden_ore"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("minecraft_overhauled:enden_ore"), configuredFeature);
 		}
 	}
 	@SubscribeEvent

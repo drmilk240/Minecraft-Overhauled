@@ -13,7 +13,7 @@ import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 @MinecraftOverhauledModElements.ModElement.Tag
 public class DeepEndTabItemGroup extends MinecraftOverhauledModElements.ModElement {
 	public DeepEndTabItemGroup(MinecraftOverhauledModElements instance) {
-		super(instance, 157);
+		super(instance, 165);
 	}
 
 	@Override

@@ -1,0 +1,19 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "minecraft_overhauled:enden_dust"
+    },
+    {
+      "item": "minecraft_overhauled:enden_dust"
+    }
+  ],
+  "result": {
+    "item": "minecraft_overhauled:enden_alloy",
+    "count": 1
+  }
+}

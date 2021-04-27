@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_boots"
+  },
+  "addition": {
+    "item": "minecraft_overhauled:enden_alloy"
+  },
+  "result": {
+    "item": "minecraft_overhauled:enden_armor_boots"
+  }
+}

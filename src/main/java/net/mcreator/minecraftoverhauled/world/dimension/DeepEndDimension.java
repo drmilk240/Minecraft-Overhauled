@@ -26,7 +26,7 @@ import com.google.common.collect.ImmutableSet;
 @MinecraftOverhauledModElements.ModElement.Tag
 public class DeepEndDimension extends MinecraftOverhauledModElements.ModElement {
 	public DeepEndDimension(MinecraftOverhauledModElements instance) {
-		super(instance, 155);
+		super(instance, 86);
 	}
 
 	@Override

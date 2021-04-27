@@ -2,37 +2,21 @@
   "_fv": 18,
   "_type": "biome",
   "definition": {
-    "name": "Voidwoods",
+    "name": "Shattered End",
     "groundBlock": {
-      "value": "CUSTOM:EndLoam"
+      "value": "Blocks.END_STONE"
     },
     "undergroundBlock": {
       "value": "Blocks.END_STONE"
     },
-    "grassColor": {
-      "value": -12890561,
-      "falpha": 0.0
-    },
-    "foliageColor": {
-      "value": -12890561,
-      "falpha": 0.0
-    },
-    "waterColor": {
-      "value": -14139839,
-      "falpha": 0.0
-    },
-    "waterFogColor": {
-      "value": -14139839,
-      "falpha": 0.0
-    },
     "ambientSound": {
-      "value": ""
+      "value": "ambient.cave"
     },
     "additionsSound": {
       "value": ""
     },
     "music": {
-      "value": ""
+      "value": "entity.endermen.stare"
     },
     "moodSound": {
       "value": ""
@@ -40,49 +24,50 @@
     "moodSoundDelay": 6000,
     "spawnParticles": true,
     "particleToSpawn": {
-      "value": "WARPED_SPORE"
+      "value": "ASH"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "THEEND",
+    "biomeCategory": "EXTREME_HILLS",
     "parent": {
       "value": "the_end"
     },
-    "rainingPossibility": 0.0,
+    "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 0.1,
-    "heightVariation": 0.4,
+    "baseHeight": 0.9,
+    "heightVariation": 2.0,
     "biomeType": "COOL",
     "spawnBiome": false,
     "biomeWeight": 20,
     "biomeDictionaryTypes": [
+      "MOUNTAIN",
       "DRY",
       "END"
     ],
-    "grassPerChunk": 0,
+    "grassPerChunk": 4,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 0,
+    "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 10,
-    "vanillaTreeType": "Mega pine trees",
-    "treeType": 1,
+    "treesPerChunk": 0,
+    "vanillaTreeType": "Default",
+    "treeType": 0,
     "minHeight": 7,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": "CUSTOM:EndwoodLog"
+      "value": ""
     },
     "treeBranch": {
-      "value": "CUSTOM:EndwoodLeaves"
+      "value": ""
     },
     "treeVines": {
-      "value": "CUSTOM:EndwoodLeaves"
+      "value": ""
     },
     "treeFruits": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
@@ -98,18 +83,8 @@
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "Fossils"
+      "FrozenTopLayer"
     ],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntityEnderman"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      }
-    ]
+    "spawnEntries": []
   }
 }

@@ -8,7 +8,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.BiomeDictionary;
 
-import net.minecraft.world.gen.trunkplacer.MegaJungleTrunkPlacer;
+import net.minecraft.world.gen.trunkplacer.GiantTrunkPlacer;
 import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.minecraft.world.gen.treedecorator.LeaveVineTreeDecorator;
@@ -16,9 +16,8 @@ import net.minecraft.world.gen.treedecorator.CocoaTreeDecorator;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.NoiseDependant;
 import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.foliageplacer.JungleFoliagePlacer;
+import net.minecraft.world.gen.foliageplacer.MegaPineFoliagePlacer;
 import net.minecraft.world.gen.feature.TwoLayerFeature;
 import net.minecraft.world.gen.feature.Features;
 import net.minecraft.world.gen.feature.FeatureSpread;
@@ -62,7 +61,7 @@ import com.google.common.collect.ImmutableList;
 public class VoidwoodsBiome extends MinecraftOverhauledModElements.ModElement {
 	public static Biome biome;
 	public VoidwoodsBiome(MinecraftOverhauledModElements instance) {
-		super(instance, 154);
+		super(instance, 163);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {
@@ -78,16 +77,14 @@ public class VoidwoodsBiome extends MinecraftOverhauledModElements.ModElement {
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
 						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(EndwoodLogBlock.block.getDefaultState()),
 								new SimpleBlockStateProvider(EndwoodLeavesBlock.block.getDefaultState()),
-								new JungleFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 2),
-								new MegaJungleTrunkPlacer(7, 2, 19), new TwoLayerFeature(1, 1, 2)))
+								new MegaPineFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0),
+										FeatureSpread.func_242253_a(3, 4)),
+								new GiantTrunkPlacer(7, 2, 14), new TwoLayerFeature(1, 1, 2)))
 										.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance, CustomTrunkVineTreeDecorator.instance,
 												new CustomCocoaTreeDecorator()))
 										.setMaxWaterDepth(0).build())
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(7, 0.1F, 1))));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.RANDOM_PATCH.withConfiguration(Features.Configs.GRASS_PATCH_CONFIG).withPlacement(Features.Placements.PATCH_PLACEMENT)
-								.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8D, 5, 4))));
+						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(10, 0.1F, 1))));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withFossils(biomeGenerationSettings);

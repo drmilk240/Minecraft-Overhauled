@@ -1,0 +1,23 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.NETHERITE_AXE"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:EndenAlloy"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:EndenAxe"
+    },
+    "name": "enden_axe_recipe",
+    "namespace": "mod"
+  }
+}

@@ -11,6 +11,9 @@
       },
       {
         "value": "CUSTOM:EndDesert"
+      },
+      {
+        "value": "CUSTOM:ShatteredEnd"
       }
     ],
     "worldGenType": "End like gen",
