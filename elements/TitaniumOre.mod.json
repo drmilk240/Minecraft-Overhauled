@@ -102,15 +102,16 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "spawnWorldTypes": [
-      "Surface"
+      "End",
+      "CUSTOM:DeepEnd"
     ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE"
+        "value": "Blocks.END_STONE"
       }
     ],
-    "frequencyPerChunks": 11,
+    "frequencyPerChunks": 10,
     "frequencyOnChunk": 32,
     "minGenerateHeight": 1,
     "maxGenerateHeight": 63
