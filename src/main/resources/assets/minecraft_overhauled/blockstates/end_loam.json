@@ -1,7 +1,21 @@
 {
   "variants": {
-    "": {
-      "model": "minecraft_overhauled:block/end_loam"
-    }
+    "": [
+      {
+        "model": "minecraft_overhauled:block/end_loam"
+      },
+      {
+        "model": "minecraft_overhauled:block/end_loam",
+        "y": 90
+      },
+      {
+        "model": "minecraft_overhauled:block/end_loam",
+        "y": 180
+      },
+      {
+        "model": "minecraft_overhauled:block/end_loam",
+        "y": 270
+      }
+    ]
   }
 }
