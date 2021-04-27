@@ -2202,6 +2202,26 @@
       "ids": {},
       "registry_name": "endhouse_1",
       "path": "~/Deep End"
+    },
+    {
+      "name": "EndModel",
+      "type": "structure",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "end_model",
+      "path": "~/Deep End"
+    },
+    {
+      "name": "TreeShrine",
+      "type": "structure",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_shrine",
+      "path": "~/Deep End"
     }
   ],
   "variable_elements": [],
@@ -2242,20 +2262,20 @@
   "language_map": {
     "en_us": {
       "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
-      "block.minecraft_overhauled.baobab_door": "Baobab Door",
       "block.minecraft_overhauled.end_deepgate": "End Deepgate",
+      "block.minecraft_overhauled.baobab_door": "Baobab Door",
       "block.minecraft_overhauled.copper_generator": "Copper Generator",
       "block.minecraft_overhauled.enden_block": "Enden Block",
       "block.minecraft_overhauled.bamboo_fence_gate": "Bamboo Fence Gate",
-      "item.minecraft_overhauled.copper_armor_chestplate": "Copper Chestplate",
       "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
+      "item.minecraft_overhauled.copper_armor_chestplate": "Copper Chestplate",
       "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
       "block.minecraft_overhauled.endwood_slab": "Endwood Slab",
       "block.minecraft_overhauled.shorea_bush": "Shorea Bush",
       "block.minecraft_overhauled.bushthorn_leaves": "Bushthorn Leaves",
       "item.minecraft_overhauled.enden_armor_helmet": "Enden Helmet",
-      "entity.minecraft_overhauled.capybara": "Capybara",
       "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
+      "entity.minecraft_overhauled.capybara": "Capybara",
       "subtitles.talldisc": "Music Disc Plays (Tall)",
       "block.minecraft_overhauled.shorea_planks": "Shorea Planks",
       "subtitles.emberthreat": "Music Disc Plays (Ember Threat)",
