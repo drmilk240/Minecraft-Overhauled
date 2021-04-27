@@ -2,11 +2,11 @@
   "parent": "block/cube",
   "textures": {
     "down": "minecraft_overhauled:blocks/endstone",
-    "up": "minecraft_overhauled:blocks/endgrass",
-    "north": "minecraft_overhauled:blocks/endstonegrassside",
-    "east": "minecraft_overhauled:blocks/endstonegrassside",
-    "south": "minecraft_overhauled:blocks/endstonegrassside",
-    "west": "minecraft_overhauled:blocks/endstonegrassside",
+    "up": "minecraft_overhauled:blocks/endgrasstop",
+    "north": "minecraft_overhauled:blocks/end_stone",
+    "east": "minecraft_overhauled:blocks/end_stone",
+    "south": "minecraft_overhauled:blocks/end_stone",
+    "west": "minecraft_overhauled:blocks/end_stone",
     "particle": "minecraft_overhauled:blocks/endstone"
   }
 }

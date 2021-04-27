@@ -15,7 +15,11 @@
     "spawnWorldTypes": [
       "CUSTOM:DeepEnd"
     ],
-    "restrictionBlocks": [],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:EndLoam"
+      }
+    ],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Voidwoods"
