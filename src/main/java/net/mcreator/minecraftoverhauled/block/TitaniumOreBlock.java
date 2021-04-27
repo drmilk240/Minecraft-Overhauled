@@ -109,7 +109,7 @@ public class TitaniumOreBlock extends MinecraftOverhauledModElements.ModElement 
 				}
 			};
 			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 32)).range(63)
-					.square().func_242731_b(10);
+					.square().func_242731_b(5);
 			event.getRegistry().register(feature.setRegistryName("titanium_ore"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("minecraft_overhauled:titanium_ore"), configuredFeature);
 		}

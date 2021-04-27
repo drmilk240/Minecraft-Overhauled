@@ -111,7 +111,7 @@
         "value": "Blocks.END_STONE"
       }
     ],
-    "frequencyPerChunks": 10,
+    "frequencyPerChunks": 5,
     "frequencyOnChunk": 32,
     "minGenerateHeight": 1,
     "maxGenerateHeight": 63
