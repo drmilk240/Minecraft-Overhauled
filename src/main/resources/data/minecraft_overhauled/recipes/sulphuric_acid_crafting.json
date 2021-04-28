@@ -1,0 +1,16 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_overhauled:sulphur_dust"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "result": {
+    "item": "minecraft_overhauled:sulphuric_acid",
+    "count": 1
+  }
+}
