@@ -9,7 +9,7 @@
     "minCountPerChunk": 1,
     "maxCountPerChunk": 5,
     "spawnLocation": "Underground",
-    "spawnHeightOffset": 0,
+    "spawnHeightOffset": -5,
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
