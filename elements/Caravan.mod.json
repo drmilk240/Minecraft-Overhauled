@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "caravandisc",
+    "name": "Music Disc",
+    "description": " the bling-bling cheese 64 - Caravan",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:caravandisc"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

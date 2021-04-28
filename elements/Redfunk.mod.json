@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "redfunkdisc",
+    "name": "Music Disc",
+    "description": "Epicuras - Redfunk",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:redfunkdisc"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

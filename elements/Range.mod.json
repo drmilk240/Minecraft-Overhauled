@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "rangedisc",
+    "name": "Music Disc",
+    "description": "Firch - Range",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:rangedisc"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

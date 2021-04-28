@@ -38,5 +38,45 @@
         "stream": true
       }
     ]
+  },
+  "redfunkdisc": {
+    "category": "record",
+    "subtitle": "subtitles.redfunkdisc",
+    "sounds": [
+      {
+        "name": "minecraft_overhauled:redfunk_-_fanmade_minecraft_music_disc",
+        "stream": true
+      }
+    ]
+  },
+  "rangedisc": {
+    "category": "record",
+    "subtitle": "subtitles.rangedisc",
+    "sounds": [
+      {
+        "name": "minecraft_overhauled:minecraft_ust_-_range_desertbadlands_music_disc_concept",
+        "stream": true
+      }
+    ]
+  },
+  "vengefuldisc": {
+    "category": "record",
+    "subtitle": "subtitles.vengefuldisc",
+    "sounds": [
+      {
+        "name": "minecraft_overhauled:nether_fortress_disc_concept_vengeful_minecraft",
+        "stream": true
+      }
+    ]
+  },
+  "caravandisc": {
+    "category": "record",
+    "subtitle": "subtitles.caravandisc",
+    "sounds": [
+      {
+        "name": "minecraft_overhauled:fanmade_music_disc_-_caravan_remade",
+        "stream": true
+      }
+    ]
   }
 }

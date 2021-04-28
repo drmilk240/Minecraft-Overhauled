@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "vengefuldisc",
+    "name": "Music Disc",
+    "description": "Doom_On_A_Spoon - Vengeful",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:vengefuldisc"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}
