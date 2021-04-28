@@ -2,22 +2,22 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "charredrock2",
-    "textureTop": "geysertop",
-    "textureLeft": "charredgeyserside",
-    "textureFront": "charredgeyserside",
-    "textureRight": "charredgeyserside",
-    "textureBack": "charredgeyserside",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "nethercoal",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Geyser",
+    "name": "Nether Coal Ore",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -50,7 +50,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 0,
+    "lightOpacity": 255,
     "material": {
       "value": "ROCK"
     },
@@ -72,18 +72,18 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "BASALT"
+      "value": "NETHER_ORE"
     },
-    "luminance": 12,
+    "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "spawnParticles": true,
     "particleToSpawn": {
-      "value": "FLAME"
+      "value": "ASH"
     },
-    "particleSpawningShape": "Tube",
-    "particleSpawningRadious": 0.5000000014901161,
-    "particleAmount": 6,
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
@@ -101,16 +101,19 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "Nether",
+      "CUSTOM:DeepNether"
+    ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE"
+        "value": "Blocks.NETHERRACK"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "frequencyPerChunks": 19,
+    "frequencyOnChunk": 19,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 80
   }
 }

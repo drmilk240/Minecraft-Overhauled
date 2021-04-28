@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "minecraft_overhauled:block/nether_coal_ore"
+    }
+  }
+}

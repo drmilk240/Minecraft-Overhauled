@@ -80,10 +80,10 @@ public class GeyserBlock extends MinecraftOverhauledModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 			if (true)
-				for (int l = 0; l < 4; ++l) {
-					double d0 = (x + 0.5) + (random.nextFloat() - 0.5) * 0.5D;
-					double d1 = ((y + 0.7) + (random.nextFloat() - 0.5) * 0.5D * 100) + 0.5;
-					double d2 = (z + 0.5) + (random.nextFloat() - 0.5) * 0.5D;
+				for (int l = 0; l < 6; ++l) {
+					double d0 = (x + 0.5) + (random.nextFloat() - 0.5) * 0.5000000014901161D;
+					double d1 = ((y + 0.7) + (random.nextFloat() - 0.5) * 0.5000000014901161D * 100) + 0.5;
+					double d2 = (z + 0.5) + (random.nextFloat() - 0.5) * 0.5000000014901161D;
 					world.addParticle(ParticleTypes.FLAME, d0, d1, d2, 0, 0, 0);
 				}
 		}
