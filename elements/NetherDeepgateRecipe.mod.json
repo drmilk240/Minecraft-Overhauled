@@ -2,42 +2,19 @@
   "_fv": 18,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Crafting",
+    "recipeType": "Smithing",
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
-    "recipeSlots": [
-      {
-        "value": "Blocks.NETHER_BRICK"
-      },
-      {
-        "value": "Blocks.NETHER_BRICK"
-      },
-      {
-        "value": "Blocks.NETHER_BRICK"
-      },
-      {
-        "value": "Blocks.NETHER_BRICK"
-      },
-      {
-        "value": "CUSTOM:EyeOfFire"
-      },
-      {
-        "value": "Blocks.NETHER_BRICK"
-      },
-      {
-        "value": "Blocks.NETHER_BRICK"
-      },
-      {
-        "value": "Blocks.NETHER_BRICK"
-      },
-      {
-        "value": "Blocks.NETHER_BRICK"
-      }
-    ],
-    "recipeReturnStack": {
+    "smithingInputStack": {
+      "value": "CUSTOM:EndDeepgate"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:EyeOfFire"
+    },
+    "smithingReturnStack": {
       "value": "CUSTOM:NetherDeepgate"
     },
     "name": "nether_deepgate_recipe",
