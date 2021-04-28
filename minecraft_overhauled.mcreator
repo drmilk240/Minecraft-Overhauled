@@ -14,7 +14,7 @@
     {
       "name": "Savanna",
       "type": "tab",
-      "sortid": 87,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -104,7 +104,7 @@
     {
       "name": "BaobabItemsTag",
       "type": "tag",
-      "sortid": 88,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -114,7 +114,7 @@
     {
       "name": "BaobabWoodRecipe",
       "type": "recipe",
-      "sortid": 89,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -124,7 +124,7 @@
     {
       "name": "BaobabPlanksRecipe",
       "type": "recipe",
-      "sortid": 90,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -134,7 +134,7 @@
     {
       "name": "BaobabStairsRecipe",
       "type": "recipe",
-      "sortid": 91,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -144,7 +144,7 @@
     {
       "name": "BaobabSlabRecipe",
       "type": "recipe",
-      "sortid": 92,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -154,7 +154,7 @@
     {
       "name": "BaobabFenceRecipe",
       "type": "recipe",
-      "sortid": 93,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -164,7 +164,7 @@
     {
       "name": "BaobabFenceGateRecipe",
       "type": "recipe",
-      "sortid": 94,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -174,7 +174,7 @@
     {
       "name": "BaobabStickRecipe",
       "type": "recipe",
-      "sortid": 95,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -184,7 +184,7 @@
     {
       "name": "SpearThrowable",
       "type": "gun",
-      "sortid": 27,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -274,7 +274,7 @@
     {
       "name": "BushthornItemsTag",
       "type": "tag",
-      "sortid": 96,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -284,7 +284,7 @@
     {
       "name": "BushthornWoodRecipe",
       "type": "recipe",
-      "sortid": 97,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -294,7 +294,7 @@
     {
       "name": "BushthornPlanksRecipe",
       "type": "recipe",
-      "sortid": 98,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -304,7 +304,7 @@
     {
       "name": "BushthornStairsRecipe",
       "type": "recipe",
-      "sortid": 99,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -314,7 +314,7 @@
     {
       "name": "BushthornSlabRecipe",
       "type": "recipe",
-      "sortid": 100,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -324,7 +324,7 @@
     {
       "name": "BushthornFenceRecipe",
       "type": "recipe",
-      "sortid": 101,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -334,7 +334,7 @@
     {
       "name": "BushthornFenceGateRecipe",
       "type": "recipe",
-      "sortid": 102,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -344,7 +344,7 @@
     {
       "name": "BushthornStickRecipe",
       "type": "recipe",
-      "sortid": 103,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -374,7 +374,7 @@
     {
       "name": "DriedMud",
       "type": "recipe",
-      "sortid": 104,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -384,7 +384,7 @@
     {
       "name": "Ant",
       "type": "mob",
-      "sortid": 49,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -394,7 +394,7 @@
     {
       "name": "Toad",
       "type": "mob",
-      "sortid": 50,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -404,7 +404,7 @@
     {
       "name": "Bush",
       "type": "plant",
-      "sortid": 56,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -414,7 +414,7 @@
     {
       "name": "Rainforest",
       "type": "biome",
-      "sortid": 105,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -424,7 +424,7 @@
     {
       "name": "Orchid",
       "type": "plant",
-      "sortid": 57,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -434,7 +434,7 @@
     {
       "name": "PassionFlower",
       "type": "plant",
-      "sortid": 58,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -444,7 +444,7 @@
     {
       "name": "ShoreaWood",
       "type": "block",
-      "sortid": 62,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -454,7 +454,7 @@
     {
       "name": "ShoreaLog",
       "type": "block",
-      "sortid": 63,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -464,7 +464,7 @@
     {
       "name": "ShoreaPlanks",
       "type": "block",
-      "sortid": 64,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -474,7 +474,7 @@
     {
       "name": "ShoreaLeaves",
       "type": "block",
-      "sortid": 65,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -484,7 +484,7 @@
     {
       "name": "ShoreaStairs",
       "type": "block",
-      "sortid": 66,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -494,7 +494,7 @@
     {
       "name": "ShoreaSlab",
       "type": "block",
-      "sortid": 67,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -504,7 +504,7 @@
     {
       "name": "ShoreaFence",
       "type": "block",
-      "sortid": 68,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -514,7 +514,7 @@
     {
       "name": "ShoreaFenceGate",
       "type": "block",
-      "sortid": 69,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -524,7 +524,7 @@
     {
       "name": "ShoreaItemsTag",
       "type": "tag",
-      "sortid": 106,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -534,7 +534,7 @@
     {
       "name": "ShoreaWoodRecipe",
       "type": "recipe",
-      "sortid": 107,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -544,7 +544,7 @@
     {
       "name": "ShoreaPlanksRecipe",
       "type": "recipe",
-      "sortid": 108,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -554,7 +554,7 @@
     {
       "name": "ShoreaStairsRecipe",
       "type": "recipe",
-      "sortid": 109,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -564,7 +564,7 @@
     {
       "name": "ShoreaSlabRecipe",
       "type": "recipe",
-      "sortid": 110,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -574,7 +574,7 @@
     {
       "name": "ShoreaFenceRecipe",
       "type": "recipe",
-      "sortid": 111,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -584,7 +584,7 @@
     {
       "name": "ShoreaFenceGateRecipe",
       "type": "recipe",
-      "sortid": 112,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -594,7 +594,7 @@
     {
       "name": "ShoreaStickRecipe",
       "type": "recipe",
-      "sortid": 113,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -604,7 +604,7 @@
     {
       "name": "Regfruit",
       "type": "block",
-      "sortid": 70,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -614,7 +614,7 @@
     {
       "name": "RegfruitSlicesFoodEaten",
       "type": "procedure",
-      "sortid": 114,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -632,7 +632,7 @@
     {
       "name": "RegfruitSlices",
       "type": "food",
-      "sortid": 76,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -642,7 +642,7 @@
     {
       "name": "BaobabDoorRecipe",
       "type": "recipe",
-      "sortid": 115,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -652,7 +652,7 @@
     {
       "name": "Planks",
       "type": "tag",
-      "sortid": 116,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -682,7 +682,7 @@
     {
       "name": "BaobabTrapdoorR",
       "type": "recipe",
-      "sortid": 117,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -692,7 +692,7 @@
     {
       "name": "Flowers",
       "type": "tag",
-      "sortid": 118,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -702,7 +702,7 @@
     {
       "name": "RiverDolphin",
       "type": "mob",
-      "sortid": 51,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -712,7 +712,7 @@
     {
       "name": "LogsMinecraft",
       "type": "tag",
-      "sortid": 119,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -722,7 +722,7 @@
     {
       "name": "IronFish",
       "type": "mob",
-      "sortid": 52,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -732,7 +732,7 @@
     {
       "name": "RainforestTab",
       "type": "tab",
-      "sortid": 120,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -742,7 +742,7 @@
     {
       "name": "RawIronFish",
       "type": "food",
-      "sortid": 77,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -752,7 +752,7 @@
     {
       "name": "CookedIronFishFoodEaten",
       "type": "procedure",
-      "sortid": 121,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -770,7 +770,7 @@
     {
       "name": "CookedIronFish",
       "type": "food",
-      "sortid": 78,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -780,7 +780,7 @@
     {
       "name": "CookingIronFish",
       "type": "recipe",
-      "sortid": 122,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -790,7 +790,7 @@
     {
       "name": "SmokingIronFish",
       "type": "recipe",
-      "sortid": 123,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -800,7 +800,7 @@
     {
       "name": "CampireIronFish",
       "type": "recipe",
-      "sortid": 124,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -810,7 +810,7 @@
     {
       "name": "BaobobTrees3",
       "type": "structure",
-      "sortid": 125,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -820,7 +820,7 @@
     {
       "name": "BaobobTrees2",
       "type": "structure",
-      "sortid": 126,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -830,7 +830,7 @@
     {
       "name": "BaobobTrees",
       "type": "structure",
-      "sortid": 127,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -840,7 +840,7 @@
     {
       "name": "LushZombie",
       "type": "mob",
-      "sortid": 53,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -850,7 +850,7 @@
     {
       "name": "IronFishBucketRightClickedOnBlock",
       "type": "procedure",
-      "sortid": 128,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -880,7 +880,7 @@
     {
       "name": "IronFishBucket",
       "type": "item",
-      "sortid": 48,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -890,7 +890,7 @@
     {
       "name": "AnthillBlockUpdateTick",
       "type": "procedure",
-      "sortid": 129,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -920,7 +920,7 @@
     {
       "name": "AntOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 130,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -964,7 +964,7 @@
     {
       "name": "DiamondBowRecipe",
       "type": "recipe",
-      "sortid": 131,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -974,7 +974,7 @@
     {
       "name": "DiamondBow",
       "type": "gun",
-      "sortid": 25,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -984,7 +984,7 @@
     {
       "name": "TallBush",
       "type": "plant",
-      "sortid": 59,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -994,7 +994,7 @@
     {
       "name": "Piranha",
       "type": "mob",
-      "sortid": 55,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1004,7 +1004,7 @@
     {
       "name": "SpearRecipe",
       "type": "recipe",
-      "sortid": 132,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1014,7 +1014,7 @@
     {
       "name": "GoldBow",
       "type": "gun",
-      "sortid": 24,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1024,7 +1024,7 @@
     {
       "name": "GrapplingHookBulletHitsBlock",
       "type": "procedure",
-      "sortid": 133,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1054,7 +1054,7 @@
     {
       "name": "GrapplingHook",
       "type": "gun",
-      "sortid": 28,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1064,7 +1064,7 @@
     {
       "name": "Capybara",
       "type": "mob",
-      "sortid": 54,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1074,7 +1074,7 @@
     {
       "name": "GrappleHookRecipe",
       "type": "recipe",
-      "sortid": 134,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1084,7 +1084,7 @@
     {
       "name": "IronBowRecipe",
       "type": "recipe",
-      "sortid": 135,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1094,7 +1094,7 @@
     {
       "name": "GoldBowRecipe",
       "type": "recipe",
-      "sortid": 136,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1104,7 +1104,7 @@
     {
       "name": "FlowerBush",
       "type": "plant",
-      "sortid": 60,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1114,7 +1114,7 @@
     {
       "name": "IronBow",
       "type": "gun",
-      "sortid": 23,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1124,7 +1124,7 @@
     {
       "name": "ShoreaBushMobplayerCollidesWithPlant",
       "type": "procedure",
-      "sortid": 137,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1142,7 +1142,7 @@
     {
       "name": "ShoreaBush",
       "type": "plant",
-      "sortid": 61,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1152,7 +1152,7 @@
     {
       "name": "CopperIngot",
       "type": "item",
-      "sortid": 79,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1162,7 +1162,7 @@
     {
       "name": "CopperOre",
       "type": "block",
-      "sortid": 85,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1172,7 +1172,7 @@
     {
       "name": "CopperBlock",
       "type": "block",
-      "sortid": 82,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1182,7 +1182,7 @@
     {
       "name": "CopperOreBlockRecipe",
       "type": "recipe",
-      "sortid": 138,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1192,7 +1192,7 @@
     {
       "name": "CopperBlockOreRecipe",
       "type": "recipe",
-      "sortid": 139,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1202,7 +1202,7 @@
     {
       "name": "CopperOreSmelting",
       "type": "recipe",
-      "sortid": 140,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1212,7 +1212,7 @@
     {
       "name": "CopperArmor",
       "type": "armor",
-      "sortid": 80,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1228,7 +1228,7 @@
     {
       "name": "CopperArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 141,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1238,7 +1238,7 @@
     {
       "name": "CopperArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 142,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1248,7 +1248,7 @@
     {
       "name": "CopperArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 143,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1258,7 +1258,7 @@
     {
       "name": "CopperArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 144,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1268,7 +1268,7 @@
     {
       "name": "Electricity",
       "type": "tab",
-      "sortid": 145,
+      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1278,7 +1278,7 @@
     {
       "name": "CopperGenerator",
       "type": "block",
-      "sortid": 84,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1288,7 +1288,7 @@
     {
       "name": "GeneratorRecipe",
       "type": "recipe",
-      "sortid": 146,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1298,7 +1298,7 @@
     {
       "name": "CopperHammer",
       "type": "tool",
-      "sortid": 81,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1308,7 +1308,7 @@
     {
       "name": "HammerRecipe",
       "type": "recipe",
-      "sortid": 147,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1318,7 +1318,7 @@
     {
       "name": "LightningRod",
       "type": "block",
-      "sortid": 83,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1328,7 +1328,7 @@
     {
       "name": "BambooPlanks",
       "type": "block",
-      "sortid": 71,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1338,7 +1338,7 @@
     {
       "name": "BambooStairs",
       "type": "block",
-      "sortid": 72,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1348,7 +1348,7 @@
     {
       "name": "BambooSlab",
       "type": "block",
-      "sortid": 73,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1358,7 +1358,7 @@
     {
       "name": "BambooFence",
       "type": "block",
-      "sortid": 74,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1368,7 +1368,7 @@
     {
       "name": "BambooFenceGate",
       "type": "block",
-      "sortid": 75,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1378,7 +1378,7 @@
     {
       "name": "BambooItemsTag",
       "type": "tag",
-      "sortid": 148,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1388,7 +1388,7 @@
     {
       "name": "BambooPlanksRecipe",
       "type": "recipe",
-      "sortid": 149,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1398,7 +1398,7 @@
     {
       "name": "BambooStairsRecipe",
       "type": "recipe",
-      "sortid": 150,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1408,7 +1408,7 @@
     {
       "name": "BambooSlabRecipe",
       "type": "recipe",
-      "sortid": 151,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1418,7 +1418,7 @@
     {
       "name": "BambooFenceRecipe",
       "type": "recipe",
-      "sortid": 152,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1428,7 +1428,7 @@
     {
       "name": "BambooFenceGateRecipe",
       "type": "recipe",
-      "sortid": 153,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1438,7 +1438,7 @@
     {
       "name": "NetheriteBow",
       "type": "gun",
-      "sortid": 26,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1448,7 +1448,7 @@
     {
       "name": "NetheriteBowRecipe",
       "type": "recipe",
-      "sortid": 154,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1458,7 +1458,7 @@
     {
       "name": "EndwoodWood",
       "type": "block",
-      "sortid": 29,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1468,7 +1468,7 @@
     {
       "name": "EndwoodLog",
       "type": "block",
-      "sortid": 30,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1478,7 +1478,7 @@
     {
       "name": "EndwoodPlanks",
       "type": "block",
-      "sortid": 31,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1488,7 +1488,7 @@
     {
       "name": "EndwoodLeaves",
       "type": "block",
-      "sortid": 32,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1498,7 +1498,7 @@
     {
       "name": "EndwoodStairs",
       "type": "block",
-      "sortid": 33,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1508,7 +1508,7 @@
     {
       "name": "EndwoodSlab",
       "type": "block",
-      "sortid": 34,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1518,7 +1518,7 @@
     {
       "name": "EndwoodFence",
       "type": "block",
-      "sortid": 35,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1528,7 +1528,7 @@
     {
       "name": "EndwoodFenceGate",
       "type": "block",
-      "sortid": 36,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1538,7 +1538,7 @@
     {
       "name": "EndwoodItemsTag",
       "type": "tag",
-      "sortid": 155,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1548,7 +1548,7 @@
     {
       "name": "EndwoodWoodRecipe",
       "type": "recipe",
-      "sortid": 156,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1558,7 +1558,7 @@
     {
       "name": "EndwoodPlanksRecipe",
       "type": "recipe",
-      "sortid": 157,
+      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1568,7 +1568,7 @@
     {
       "name": "EndwoodStairsRecipe",
       "type": "recipe",
-      "sortid": 158,
+      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1578,7 +1578,7 @@
     {
       "name": "EndwoodSlabRecipe",
       "type": "recipe",
-      "sortid": 159,
+      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1588,7 +1588,7 @@
     {
       "name": "EndwoodFenceRecipe",
       "type": "recipe",
-      "sortid": 160,
+      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1598,7 +1598,7 @@
     {
       "name": "EndwoodFenceGateRecipe",
       "type": "recipe",
-      "sortid": 161,
+      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1608,7 +1608,7 @@
     {
       "name": "EndwoodStickRecipe",
       "type": "recipe",
-      "sortid": 162,
+      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1618,9 +1618,9 @@
     {
       "name": "EndLoam",
       "type": "block",
-      "sortid": 37,
-      "compiles": false,
-      "locked_code": true,
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
       "ids": {},
       "registry_name": "end_loam",
       "path": "~/Deep End"
@@ -1628,7 +1628,7 @@
     {
       "name": "Voidwoods",
       "type": "biome",
-      "sortid": 163,
+      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1638,7 +1638,7 @@
     {
       "name": "DeepEnd",
       "type": "dimension",
-      "sortid": 86,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1651,7 +1651,7 @@
     {
       "name": "Endsand",
       "type": "block",
-      "sortid": 38,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1661,7 +1661,7 @@
     {
       "name": "EndDesert",
       "type": "biome",
-      "sortid": 164,
+      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1671,7 +1671,7 @@
     {
       "name": "DeepEndTab",
       "type": "tab",
-      "sortid": 165,
+      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1681,7 +1681,7 @@
     {
       "name": "ShatteredEnd",
       "type": "biome",
-      "sortid": 166,
+      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1691,7 +1691,7 @@
     {
       "name": "Endwoodtree1",
       "type": "structure",
-      "sortid": 167,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1701,7 +1701,7 @@
     {
       "name": "Endwoodtree2",
       "type": "structure",
-      "sortid": 168,
+      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1711,7 +1711,7 @@
     {
       "name": "LargeEndwoodtree",
       "type": "structure",
-      "sortid": 169,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1721,7 +1721,7 @@
     {
       "name": "EndenDust",
       "type": "item",
-      "sortid": 40,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1731,7 +1731,7 @@
     {
       "name": "EndenOre",
       "type": "block",
-      "sortid": 39,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1741,7 +1741,7 @@
     {
       "name": "EndenAlloy",
       "type": "item",
-      "sortid": 41,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1751,7 +1751,7 @@
     {
       "name": "EndenAlloyRecipe",
       "type": "recipe",
-      "sortid": 170,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1761,7 +1761,7 @@
     {
       "name": "EndenPickaxe",
       "type": "tool",
-      "sortid": 44,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1771,7 +1771,7 @@
     {
       "name": "EndenAxe",
       "type": "tool",
-      "sortid": 45,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1781,7 +1781,7 @@
     {
       "name": "EndenSword",
       "type": "tool",
-      "sortid": 43,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1791,7 +1791,7 @@
     {
       "name": "EndenShovel",
       "type": "tool",
-      "sortid": 46,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1801,7 +1801,7 @@
     {
       "name": "EndenHoe",
       "type": "tool",
-      "sortid": 47,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1811,7 +1811,7 @@
     {
       "name": "EndenPickaxeRecipe",
       "type": "recipe",
-      "sortid": 171,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1821,7 +1821,7 @@
     {
       "name": "EndenAxeRecipe",
       "type": "recipe",
-      "sortid": 172,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1831,7 +1831,7 @@
     {
       "name": "EndenSwordRecipe",
       "type": "recipe",
-      "sortid": 173,
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1841,7 +1841,7 @@
     {
       "name": "EndenShovelRecipe",
       "type": "recipe",
-      "sortid": 174,
+      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1851,7 +1851,7 @@
     {
       "name": "EndenHoeRecipe",
       "type": "recipe",
-      "sortid": 175,
+      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1861,7 +1861,7 @@
     {
       "name": "EndenArmor",
       "type": "armor",
-      "sortid": 42,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1877,7 +1877,7 @@
     {
       "name": "EndenArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 176,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1887,7 +1887,7 @@
     {
       "name": "EndenArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 177,
+      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1897,7 +1897,7 @@
     {
       "name": "EndenArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 178,
+      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1907,7 +1907,7 @@
     {
       "name": "EndenArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 179,
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1917,7 +1917,7 @@
     {
       "name": "Endwoodtree1AdditionalGenerationCondition",
       "type": "procedure",
-      "sortid": 180,
+      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1936,7 +1936,7 @@
     {
       "name": "Endsandglass",
       "type": "recipe",
-      "sortid": 181,
+      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1946,7 +1946,7 @@
     {
       "name": "TitaniumIngot",
       "type": "item",
-      "sortid": 182,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1956,7 +1956,7 @@
     {
       "name": "TitaniumOre",
       "type": "block",
-      "sortid": 183,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1966,7 +1966,7 @@
     {
       "name": "TitaniumBlock",
       "type": "block",
-      "sortid": 184,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1976,7 +1976,7 @@
     {
       "name": "TitaniumOreBlockRecipe",
       "type": "recipe",
-      "sortid": 185,
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1986,7 +1986,7 @@
     {
       "name": "TitaniumBlockOreRecipe",
       "type": "recipe",
-      "sortid": 186,
+      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1996,7 +1996,7 @@
     {
       "name": "TitaniumOreSmelting",
       "type": "recipe",
-      "sortid": 187,
+      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2006,7 +2006,7 @@
     {
       "name": "EndenBlock",
       "type": "block",
-      "sortid": 188,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2016,7 +2016,7 @@
     {
       "name": "EndenBlockRecipe",
       "type": "recipe",
-      "sortid": 189,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2026,7 +2026,7 @@
     {
       "name": "Tall",
       "type": "musicdisc",
-      "sortid": 190,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2035,7 +2035,7 @@
     {
       "name": "Scopophobia",
       "type": "musicdisc",
-      "sortid": 191,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2044,7 +2044,7 @@
     {
       "name": "EmberThreat",
       "type": "musicdisc",
-      "sortid": 192,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2053,7 +2053,7 @@
     {
       "name": "GelatinousDread",
       "type": "musicdisc",
-      "sortid": 193,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2062,7 +2062,7 @@
     {
       "name": "LightningRodUpdateTick",
       "type": "procedure",
-      "sortid": 194,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2092,7 +2092,7 @@
     {
       "name": "NetheriteMagnet",
       "type": "block",
-      "sortid": 195,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2102,7 +2102,7 @@
     {
       "name": "NetheriteMagnetRecipe",
       "type": "recipe",
-      "sortid": 196,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2112,7 +2112,7 @@
     {
       "name": "LightningRodRecipe",
       "type": "recipe",
-      "sortid": 197,
+      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2122,7 +2122,7 @@
     {
       "name": "EndDeepgate",
       "type": "block",
-      "sortid": 198,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2222,6 +2222,16 @@
       "ids": {},
       "registry_name": "tree_shrine",
       "path": "~/Deep End"
+    },
+    {
+      "name": "Claypot",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "claypot",
+      "path": "~/General"
     }
   ],
   "variable_elements": [],
@@ -2262,20 +2272,20 @@
   "language_map": {
     "en_us": {
       "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
-      "block.minecraft_overhauled.end_deepgate": "End Deepgate",
       "block.minecraft_overhauled.baobab_door": "Baobab Door",
+      "block.minecraft_overhauled.end_deepgate": "End Deepgate",
       "block.minecraft_overhauled.copper_generator": "Copper Generator",
       "block.minecraft_overhauled.enden_block": "Enden Block",
       "block.minecraft_overhauled.bamboo_fence_gate": "Bamboo Fence Gate",
-      "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "item.minecraft_overhauled.copper_armor_chestplate": "Copper Chestplate",
+      "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
       "block.minecraft_overhauled.endwood_slab": "Endwood Slab",
       "block.minecraft_overhauled.shorea_bush": "Shorea Bush",
       "block.minecraft_overhauled.bushthorn_leaves": "Bushthorn Leaves",
       "item.minecraft_overhauled.enden_armor_helmet": "Enden Helmet",
-      "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
       "entity.minecraft_overhauled.capybara": "Capybara",
+      "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
       "subtitles.talldisc": "Music Disc Plays (Tall)",
       "block.minecraft_overhauled.shorea_planks": "Shorea Planks",
       "subtitles.emberthreat": "Music Disc Plays (Ember Threat)",
@@ -2362,6 +2372,7 @@
       "block.minecraft_overhauled.bushthorn_wood": "Bushthorn Wood",
       "item.minecraft_overhauled.spear_throwable": "Spear",
       "item.minecraft_overhauled.gold_bow": "Gold Bow",
+      "block.minecraft_overhauled.claypot": "Claypot",
       "item.minecraft_overhauled.river_dolphin_spawn_egg": "River Dolphin Spawn Egg",
       "item.minecraft_overhauled.diamond_bow": "Diamond Bow",
       "itemGroup.tabsavanna": "Savanna",
@@ -2415,9 +2426,9 @@
   },
   "workspaceSettings": {
     "modid": "minecraft_overhauled",
-    "modName": "Minecraft_Overhauled",
+    "modName": "Minecraft Overhauled",
     "version": "1.0.0",
-    "author": "ThatThingTwo, MCreator",
+    "author": "Dr.Milk, Redstonerblast",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
     "disableForgeVersionCheck": true,

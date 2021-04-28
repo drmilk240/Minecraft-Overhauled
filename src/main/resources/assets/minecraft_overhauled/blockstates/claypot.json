@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "minecraft_overhauled:block/claypot"
+    },
+    "facing=east": {
+      "model": "minecraft_overhauled:block/claypot",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minecraft_overhauled:block/claypot",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minecraft_overhauled:block/claypot",
+      "y": 270
+    }
+  }
+}

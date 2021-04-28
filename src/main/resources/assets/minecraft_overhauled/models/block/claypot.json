@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft_overhauled:custom/clay_pot",
+  "textures": {
+    "all": "minecraft_overhauled:blocks/claypot",
+    "particle": "minecraft_overhauled:blocks/claypot",
+    "0": "minecraft_overhauled:blocks/texture",
+    "1": "minecraft_overhauled:blocks/texture2",
+    "2": "minecraft_overhauled:blocks/texture3"
+  }
+}

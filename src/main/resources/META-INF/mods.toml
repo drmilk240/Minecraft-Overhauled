@@ -5,10 +5,10 @@ license="Not specified"
 [[mods]]
 modId="minecraft_overhauled"
 version="1.0.0"
-displayName="Minecraft_Overhauled"
+displayName="Minecraft Overhauled"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="ThatThingTwo, MCreator"
+authors="Dr.Milk, Redstonerblast"
 
 [[dependencies.minecraft_overhauled]]
     modId="minecraft"
