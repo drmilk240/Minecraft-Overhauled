@@ -2749,6 +2749,16 @@
           }
         ]
       }
+    },
+    {
+      "name": "Geyser",
+      "type": "block",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "geyser",
+      "path": "~/Nether"
     }
   ],
   "variable_elements": [],
@@ -2791,8 +2801,8 @@
       "block.minecraft_overhauled.charred_soil": "Charred Soil",
       "item.minecraft.lingering_potion.effect.haste_potion": "Lingering Haste Potion",
       "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
-      "block.minecraft_overhauled.end_deepgate": "End Deepgate",
       "block.minecraft_overhauled.baobab_door": "Baobab Door",
+      "block.minecraft_overhauled.end_deepgate": "End Deepgate",
       "block.minecraft_overhauled.copper_generator": "Copper Generator",
       "block.minecraft_overhauled.enden_block": "Enden Block",
       "block.minecraft_overhauled.bamboo_fence_gate": "Bamboo Fence Gate",
@@ -2806,9 +2816,9 @@
       "effect.levitation_potion": "Levitation",
       "block.minecraft_overhauled.bushthorn_leaves": "Bushthorn Leaves",
       "item.minecraft_overhauled.enden_armor_helmet": "Enden Helmet",
-      "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
-      "entity.minecraft_overhauled.capybara": "Capybara",
       "block.minecraft_overhauled.charred_rock": "Charred Rock",
+      "entity.minecraft_overhauled.capybara": "Capybara",
+      "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
       "advancements.sus_advancement.descr": "Obtain Suspicious Stew",
       "subtitles.talldisc": "Music Disc Plays (Tall)",
       "block.minecraft_overhauled.shorea_planks": "Shorea Planks",
@@ -2946,6 +2956,7 @@
       "item.minecraft_overhauled.enden_alloy": "Enden Alloy",
       "item.minecraft_overhauled.tall": "Music Disc",
       "entity.minecraft_overhauled.iron_fish": "Ironfish",
+      "block.minecraft_overhauled.geyser": "Geyser",
       "block.minecraft_overhauled.netherite_magnet": "Netherite Magnet",
       "item.minecraft_overhauled.copper_ingot": "Copper",
       "item.minecraft_overhauled.scopophobia.desc": "mango unit - Scopophobia",

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_overhauled:blocks/charredrock2",
+    "up": "minecraft_overhauled:blocks/geysertop",
+    "north": "minecraft_overhauled:blocks/charredgeyserside",
+    "east": "minecraft_overhauled:blocks/charredgeyserside",
+    "south": "minecraft_overhauled:blocks/charredgeyserside",
+    "west": "minecraft_overhauled:blocks/charredgeyserside",
+    "particle": "minecraft_overhauled:blocks/charredrock2"
+  }
+}
