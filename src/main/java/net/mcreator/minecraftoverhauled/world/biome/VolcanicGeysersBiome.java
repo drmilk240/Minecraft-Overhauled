@@ -23,7 +23,6 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.particles.ParticleTypes;
-import net.minecraft.block.Blocks;
 
 import net.mcreator.minecraftoverhauled.block.CharredRockBlock;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
@@ -51,7 +50,7 @@ public class VolcanicGeysersBiome extends MinecraftOverhauledModElements.ModElem
 						.setParticle(new ParticleEffectAmbience(ParticleTypes.ASH, 0.005f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(CharredRockBlock.block.getDefaultState(),
-								Blocks.NETHERRACK.getDefaultState(), Blocks.NETHERRACK.getDefaultState())));
+								CharredRockBlock.block.getDefaultState(), CharredRockBlock.block.getDefaultState())));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);

@@ -10,7 +10,6 @@ import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
@@ -52,7 +51,7 @@ public class LightningRodBlock extends MinecraftOverhauledModElements.ModElement
 	@ObjectHolder("minecraft_overhauled:lightning_rod")
 	public static final Block block = null;
 	public LightningRodBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 83);
+		super(instance, 93);
 	}
 
 	@Override
@@ -83,8 +82,7 @@ public class LightningRodBlock extends MinecraftOverhauledModElements.ModElement
 
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
-			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 4, 16, 4)).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.empty();
 		}
 
 		@Override

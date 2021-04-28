@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "minecraft_overhauled:blocks/charredrock",
-    "particle": "minecraft_overhauled:blocks/charredrock"
+    "all": "minecraft_overhauled:blocks/charredrock2",
+    "particle": "minecraft_overhauled:blocks/charredrock2"
   }
 }
