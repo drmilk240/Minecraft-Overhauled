@@ -1,0 +1,22 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:crimson_roots"
+    },
+    "1": {
+      "item": "minecraft:crimson_roots"
+    },
+    "2": {
+      "item": "minecraft:crimson_roots"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:crimson_bread",
+    "count": 1
+  }
+}

@@ -2242,6 +2242,298 @@
       "ids": {},
       "registry_name": "claypot_recipe",
       "path": "~/General"
+    },
+    {
+      "name": "NetherTab",
+      "type": "tab",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_tab",
+      "path": "~/Nether"
+    },
+    {
+      "name": "CrimsonBreadFoodEaten",
+      "type": "procedure",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_bread_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CrimsonBread",
+      "type": "food",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_bread",
+      "path": "~/Nether"
+    },
+    {
+      "name": "WarpedBreadFoodEaten",
+      "type": "procedure",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_bread_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WarpedBread",
+      "type": "food",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_bread",
+      "path": "~/Nether"
+    },
+    {
+      "name": "CrimsonBreadRecipe",
+      "type": "recipe",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_bread_recipe",
+      "path": "~/Nether"
+    },
+    {
+      "name": "WarpedBreadRecipe",
+      "type": "recipe",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_bread_recipe",
+      "path": "~/Nether"
+    },
+    {
+      "name": "PorkSkewer",
+      "type": "food",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pork_skewer",
+      "path": "~/Nether"
+    },
+    {
+      "name": "PorkSkewerRecipe",
+      "type": "recipe",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pork_skewer_recipe",
+      "path": "~/Nether"
+    },
+    {
+      "name": "FungalBrothFoodEaten",
+      "type": "procedure",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fungal_broth_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FungalBroth",
+      "type": "food",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fungal_broth",
+      "path": "~/Nether"
+    },
+    {
+      "name": "FungalBrothRecipe",
+      "type": "recipe",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fungal_broth_recipe",
+      "path": "~/Nether"
+    },
+    {
+      "name": "GildedPotato",
+      "type": "item",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gilded_potato",
+      "path": "~/Nether"
+    },
+    {
+      "name": "GildedPotatoRecipe",
+      "type": "recipe",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gilded_potato_recipe",
+      "path": "~/Nether"
+    },
+    {
+      "name": "BlueNetherWart",
+      "type": "item",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_nether_wart",
+      "path": "~/Nether/BlueNetherWart"
+    },
+    {
+      "name": "BluWart0",
+      "type": "block",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blu_wart_0",
+      "path": "~/Nether/BlueNetherWart"
+    },
+    {
+      "name": "BluWart1",
+      "type": "block",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blu_wart_1",
+      "path": "~/Nether/BlueNetherWart"
+    },
+    {
+      "name": "BluWart2",
+      "type": "block",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blu_wart_2",
+      "path": "~/Nether/BlueNetherWart"
+    },
+    {
+      "name": "BlueNetherWartRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_nether_wart_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BluWartBlockDestroyedByExplosion",
+      "type": "procedure",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blu_wart_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BluWartUpdateTick",
+      "type": "procedure",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blu_wart_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2282,20 +2574,21 @@
   "language_map": {
     "en_us": {
       "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
-      "block.minecraft_overhauled.end_deepgate": "End Deepgate",
       "block.minecraft_overhauled.baobab_door": "Baobab Door",
+      "block.minecraft_overhauled.end_deepgate": "End Deepgate",
       "block.minecraft_overhauled.copper_generator": "Copper Generator",
       "block.minecraft_overhauled.enden_block": "Enden Block",
       "block.minecraft_overhauled.bamboo_fence_gate": "Bamboo Fence Gate",
-      "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "item.minecraft_overhauled.copper_armor_chestplate": "Copper Chestplate",
+      "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
       "block.minecraft_overhauled.endwood_slab": "Endwood Slab",
       "block.minecraft_overhauled.shorea_bush": "Shorea Bush",
+      "item.minecraft_overhauled.pork_skewer": "Pork Skewer",
       "block.minecraft_overhauled.bushthorn_leaves": "Bushthorn Leaves",
       "item.minecraft_overhauled.enden_armor_helmet": "Enden Helmet",
-      "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
       "entity.minecraft_overhauled.capybara": "Capybara",
+      "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
       "subtitles.talldisc": "Music Disc Plays (Tall)",
       "block.minecraft_overhauled.shorea_planks": "Shorea Planks",
       "subtitles.emberthreat": "Music Disc Plays (Ember Threat)",
@@ -2306,6 +2599,7 @@
       "block.minecraft_overhauled.bamboo_stairs": "Bamboo Stairs",
       "item.minecraft_overhauled.scopophobia": "Music Disc",
       "block.minecraft_overhauled.baobab_fence": "Baobab Fence",
+      "item.minecraft_overhauled.gilded_potato": "Gilded Potato",
       "item.minecraft_overhauled.enden_pickaxe": "Enden Pickaxe",
       "subtitles.gelatinousdisc": "Music Disc Plays (Gelatinous Dread)",
       "item.minecraft_overhauled.iron_fish_bucket": "Ironfish Bucket",
@@ -2326,6 +2620,9 @@
       "item.minecraft_overhauled.copper_armor_helmet": "Copper Helmet",
       "biome.minecraft_overhauled.end_desert": "End Desert",
       "item.minecraft_overhauled.enden_armor_leggings": "Enden Leggings",
+      "block.minecraft_overhauled.blu_wart_2": "Blu Wart 2",
+      "block.minecraft_overhauled.blu_wart_1": "Blu Wart 1",
+      "block.minecraft_overhauled.blu_wart_0": "BlueWart0",
       "block.minecraft_overhauled.baobab_stairs": "Baobab Stairs",
       "item.minecraft_overhauled.capybara_spawn_egg": "Capybara Spawn Egg",
       "item.minecraft_overhauled.gelatinous_dread.desc": "Redstonerblast - Gelatinous Dread",
@@ -2333,6 +2630,7 @@
       "block.minecraft_overhauled.endwood_planks": "Endwood Planks",
       "item.minecraft_overhauled.enden_armor_chestplate": "Enden Chestplate",
       "block.minecraft_overhauled.dried_mud_block": "Dried Mud Block",
+      "item.minecraft_overhauled.crimson_bread": "Crimson Bread",
       "block.minecraft_overhauled.shorea_slab": "Shorea Slab",
       "item.minecraft_overhauled.tall.desc": "Naps the Block - Tall",
       "block.minecraft_overhauled.baobab_fence_gate": "Baobab Fence Gate",
@@ -2377,6 +2675,7 @@
       "block.minecraft_overhauled.baobab_trapdoor": "Baobab Trapdoor",
       "item.minecraft_overhauled.copper_armor_leggings": "Copper Leggings",
       "item.minecraft_overhauled.enden_axe": "Enden Axe",
+      "item.minecraft_overhauled.warped_bread": "Warped Bread",
       "block.minecraft_overhauled.mud_block": "Mud Block",
       "biome.minecraft_overhauled.voidwoods": "Voidwoods",
       "block.minecraft_overhauled.bushthorn_wood": "Bushthorn Wood",
@@ -2388,12 +2687,14 @@
       "itemGroup.tabsavanna": "Savanna",
       "item.minecraft_overhauled.grappling_hook": "Grappling Hook",
       "block.minecraft_overhauled.anthill_block": "Anthill Block",
+      "item.minecraft_overhauled.fungal_broth": "Fungal Broth",
       "item.minecraft_overhauled.enden_shovel": "Enden Shovel",
       "block.minecraft_overhauled.shorea_stairs": "Shorea Stairs",
       "item.minecraft_overhauled.gelatinous_dread": "Music Disc",
       "item.minecraft_overhauled.enden_armor_boots": "Enden Boots",
       "item.minecraft_overhauled.piranha_spawn_egg": "Piranha Spawn Egg",
       "item.minecraft_overhauled.ember_threat.desc": "Redstonerblast - Ember Threat",
+      "item.minecraft_overhauled.blue_nether_wart": "Blue Nether Wart",
       "block.minecraft_overhauled.passion_flower": "Passion Flower",
       "block.minecraft_overhauled.titanium_block": "Block of Titanium",
       "block.minecraft_overhauled.shorea_wood": "Shorea Wood",
@@ -2406,6 +2707,7 @@
       "block.minecraft_overhauled.netherite_magnet": "Netherite Magnet",
       "item.minecraft_overhauled.copper_ingot": "Copper",
       "item.minecraft_overhauled.scopophobia.desc": "mango unit - Scopophobia",
+      "itemGroup.tabnether_tab": "Nether",
       "block.minecraft_overhauled.endwood_stairs": "Endwood Stairs"
     }
   },
@@ -2431,6 +2733,15 @@
       {
         "name": "Savanna",
         "children": []
+      },
+      {
+        "name": "Nether",
+        "children": [
+          {
+            "name": "BlueNetherWart",
+            "children": []
+          }
+        ]
       }
     ]
   },

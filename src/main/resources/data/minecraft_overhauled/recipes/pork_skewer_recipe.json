@@ -1,0 +1,24 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:crimson_fungus"
+    },
+    "1": {
+      "item": "minecraft:cooked_porkchop"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:pork_skewer",
+    "count": 1
+  }
+}

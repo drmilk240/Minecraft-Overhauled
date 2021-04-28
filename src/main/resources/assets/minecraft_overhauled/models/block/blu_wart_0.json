@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "minecraft_overhauled:blocks/nether_wart_stage0",
+    "particle": "minecraft_overhauled:blocks/nether_wart_stage0"
+  }
+}

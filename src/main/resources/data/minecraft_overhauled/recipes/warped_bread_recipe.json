@@ -1,0 +1,22 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:warped_roots"
+    },
+    "1": {
+      "item": "minecraft:warped_roots"
+    },
+    "2": {
+      "item": "minecraft:warped_roots"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:warped_bread",
+    "count": 1
+  }
+}
