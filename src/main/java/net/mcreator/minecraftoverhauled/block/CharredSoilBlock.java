@@ -110,8 +110,8 @@ public class CharredSoilBlock extends MinecraftOverhauledModElements.ModElement 
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(231)
-					.square().func_242731_b(32);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 25)).range(231)
+					.square().func_242731_b(40);
 			event.getRegistry().register(feature.setRegistryName("charred_soil"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("minecraft_overhauled:charred_soil"), configuredFeature);
 		}

@@ -5,7 +5,7 @@
     "structure": "geyser2",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 20000,
+    "spawnProbability": 200000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Underground",

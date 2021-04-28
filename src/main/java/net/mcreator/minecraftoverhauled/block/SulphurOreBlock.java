@@ -107,7 +107,7 @@ public class SulphurOreBlock extends MinecraftOverhauledModElements.ModElement {
 				}
 			};
 			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 2)).range(140)
-					.square().func_242731_b(16);
+					.square().func_242731_b(20);
 			event.getRegistry().register(feature.setRegistryName("sulphur_ore"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("minecraft_overhauled:sulphur_ore"), configuredFeature);
 		}

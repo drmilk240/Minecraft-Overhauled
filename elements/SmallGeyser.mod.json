@@ -5,7 +5,7 @@
     "structure": "smallgeyser",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 30000,
+    "spawnProbability": 300000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 5,
     "spawnLocation": "Underground",
