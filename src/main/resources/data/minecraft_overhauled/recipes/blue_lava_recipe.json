@@ -1,0 +1,20 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_overhauled:sulphur_dust"
+    },
+    "1": {
+      "item": "minecraft:lava_bucket"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:blue_lava",
+    "count": 1
+  }
+}
