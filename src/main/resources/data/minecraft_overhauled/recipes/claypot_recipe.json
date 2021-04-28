@@ -1,0 +1,36 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:clay_ball"
+    },
+    "3": {
+      "item": "minecraft:clay_ball"
+    },
+    "4": {
+      "item": "minecraft:clay_ball"
+    },
+    "5": {
+      "item": "minecraft:clay_ball"
+    },
+    "6": {
+      "item": "minecraft:clay_ball"
+    },
+    "7": {
+      "item": "minecraft:clay_ball"
+    },
+    "8": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:claypot",
+    "count": 1
+  }
+}

@@ -2232,6 +2232,16 @@
       "ids": {},
       "registry_name": "claypot",
       "path": "~/General"
+    },
+    {
+      "name": "ClaypotRecipe",
+      "type": "recipe",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "claypot_recipe",
+      "path": "~/General"
     }
   ],
   "variable_elements": [],

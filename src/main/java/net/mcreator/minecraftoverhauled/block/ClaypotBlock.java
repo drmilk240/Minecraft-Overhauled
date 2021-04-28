@@ -75,13 +75,13 @@ public class ClaypotBlock extends MinecraftOverhauledModElements.ModElement {
 			switch ((Direction) state.get(FACING)) {
 				case SOUTH :
 				default :
-					return VoxelShapes.or(makeCuboidShape(15, 0, 15, 2, 16, 2)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(15, 0, 15, 1, 16, 1)).withOffset(offset.x, offset.y, offset.z);
 				case NORTH :
-					return VoxelShapes.or(makeCuboidShape(1, 0, 1, 14, 16, 14)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(1, 0, 1, 15, 16, 15)).withOffset(offset.x, offset.y, offset.z);
 				case EAST :
-					return VoxelShapes.or(makeCuboidShape(15, 0, 1, 2, 16, 14)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(15, 0, 1, 1, 16, 15)).withOffset(offset.x, offset.y, offset.z);
 				case WEST :
-					return VoxelShapes.or(makeCuboidShape(1, 0, 15, 14, 16, 2)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(1, 0, 15, 15, 16, 1)).withOffset(offset.x, offset.y, offset.z);
 			}
 		}
 
