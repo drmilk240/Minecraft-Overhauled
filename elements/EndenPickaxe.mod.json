@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "enden_pickaxe",
+    "texture": "iron_pickaxe",
     "customModelName": "Normal",
     "name": "Enden Pickaxe",
     "specialInfo": [],

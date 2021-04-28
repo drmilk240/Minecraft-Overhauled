@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "enden_axe",
+    "texture": "iron_axe",
     "customModelName": "Normal",
     "name": "Enden Axe",
     "specialInfo": [],

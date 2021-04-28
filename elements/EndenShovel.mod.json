@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "enden_shovel",
+    "texture": "iron_shovel",
     "customModelName": "Normal",
     "name": "Enden Shovel",
     "specialInfo": [],

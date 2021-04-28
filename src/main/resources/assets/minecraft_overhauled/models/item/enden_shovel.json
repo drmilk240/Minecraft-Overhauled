@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "minecraft_overhauled:items/enden_shovel"
+    "layer0": "minecraft_overhauled:items/iron_shovel"
   }
 }

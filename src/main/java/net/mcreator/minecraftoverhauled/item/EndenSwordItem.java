@@ -17,7 +17,7 @@ public class EndenSwordItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:enden_sword")
 	public static final Item block = null;
 	public EndenSwordItem(MinecraftOverhauledModElements instance) {
-		super(instance, 43);
+		super(instance, 46);
 	}
 
 	@Override

@@ -17,7 +17,7 @@ public class EndenHoeItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:enden_hoe")
 	public static final Item block = null;
 	public EndenHoeItem(MinecraftOverhauledModElements instance) {
-		super(instance, 47);
+		super(instance, 50);
 	}
 
 	@Override

@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "enden_sword",
+    "texture": "iron_sword",
     "customModelName": "Normal",
     "name": "Enden Sword",
     "specialInfo": [],
