@@ -1,5 +1,8 @@
 package net.mcreator.minecraftoverhauled.procedures;
 
+import net.minecraft.potion.Effects;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
@@ -20,10 +23,9 @@ public class EndenArmorBootsTickEventProcedure extends MinecraftOverhauledModEle
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (((!(entity.isOnGround())) && (!(entity.isSneaking())))) {
-			entity.setNoGravity((true));
-		} else if (((entity.isOnGround()) || (entity.isSneaking()))) {
-			entity.setNoGravity((false));
+		if ((entity.isSneaking())) {
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.LEVITATION, (int) 2, (int) 1, (true), (false)));
 		}
 	}
 }
