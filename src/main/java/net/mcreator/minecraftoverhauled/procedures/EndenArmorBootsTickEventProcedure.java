@@ -20,9 +20,9 @@ public class EndenArmorBootsTickEventProcedure extends MinecraftOverhauledModEle
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((entity.isSneaking())) {
+		if (((!(entity.isOnGround())) && (!(entity.isSneaking())))) {
 			entity.setNoGravity((true));
-		} else if ((!(entity.isSneaking()))) {
+		} else if (((entity.isOnGround()) || (entity.isSneaking()))) {
 			entity.setNoGravity((false));
 		}
 	}
