@@ -4,6 +4,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.state.Property;
+import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
@@ -92,8 +94,35 @@ public class BluWartUpdateTickProcedure extends MinecraftOverhauledModElements.M
 				randomGrowth = (double) Math.random();
 				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BluWart0Block.block.getDefaultState().getBlock())) {
 					if (((randomGrowth) >= 0.33)) {
-						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
-						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BluWart1Block.block.getDefaultState(), 3);
+						{
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							BlockState _bs = BluWart1Block.block.getDefaultState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+								if (_property != null && _bs.get(_property) != null)
+									try {
+										_bs = _bs.with(_property, (Comparable) entry.getValue());
+									} catch (Exception e) {
+									}
+							}
+							TileEntity _te = world.getTileEntity(_bp);
+							CompoundNBT _bnbt = null;
+							if (_te != null) {
+								_bnbt = _te.write(new CompoundNBT());
+								_te.remove();
+							}
+							world.setBlockState(_bp, _bs, 3);
+							if (_bnbt != null) {
+								_te = world.getTileEntity(_bp);
+								if (_te != null) {
+									try {
+										_te.read(_bso, _bnbt);
+									} catch (Exception ignored) {
+									}
+								}
+							}
+						}
 					}
 					if (!world.isRemote()) {
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
@@ -107,8 +136,35 @@ public class BluWartUpdateTickProcedure extends MinecraftOverhauledModElements.M
 				} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BluWart1Block.block.getDefaultState()
 						.getBlock())) {
 					if (((randomGrowth) >= 0.33)) {
-						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
-						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BluWart2Block.block.getDefaultState(), 3);
+						{
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							BlockState _bs = BluWart2Block.block.getDefaultState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+								if (_property != null && _bs.get(_property) != null)
+									try {
+										_bs = _bs.with(_property, (Comparable) entry.getValue());
+									} catch (Exception e) {
+									}
+							}
+							TileEntity _te = world.getTileEntity(_bp);
+							CompoundNBT _bnbt = null;
+							if (_te != null) {
+								_bnbt = _te.write(new CompoundNBT());
+								_te.remove();
+							}
+							world.setBlockState(_bp, _bs, 3);
+							if (_bnbt != null) {
+								_te = world.getTileEntity(_bp);
+								if (_te != null) {
+									try {
+										_te.read(_bso, _bnbt);
+									} catch (Exception ignored) {
+									}
+								}
+							}
+						}
 					}
 					if (!world.isRemote()) {
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);

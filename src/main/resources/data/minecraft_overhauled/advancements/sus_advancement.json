@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:suspicious_stew"
+    },
+    "title": {
+      "translate": "advancements.sus_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.sus_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sus_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:suspicious_stew",
+            "count": {
+              "min": 1,
+              "max": 99999
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "minecraft:adventure/root"
+}
