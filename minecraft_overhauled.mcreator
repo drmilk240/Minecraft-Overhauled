@@ -2669,6 +2669,46 @@
           }
         ]
       }
+    },
+    {
+      "name": "PigIronOre",
+      "type": "block",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pig_iron_ore",
+      "path": "~/Nether"
+    },
+    {
+      "name": "CharredRock",
+      "type": "block",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "charred_rock",
+      "path": "~/Nether"
+    },
+    {
+      "name": "VolcanicGeysers",
+      "type": "biome",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "volcanic_geysers",
+      "path": "~/Nether"
+    },
+    {
+      "name": "CharredSoil",
+      "type": "block",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "charred_soil",
+      "path": "~/Nether"
     }
   ],
   "variable_elements": [],
@@ -2708,10 +2748,11 @@
   ],
   "language_map": {
     "en_us": {
-      "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
+      "block.minecraft_overhauled.charred_soil": "Charred Soil",
       "item.minecraft.lingering_potion.effect.haste_potion": "Lingering Haste Potion",
-      "block.minecraft_overhauled.baobab_door": "Baobab Door",
+      "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
       "block.minecraft_overhauled.end_deepgate": "End Deepgate",
+      "block.minecraft_overhauled.baobab_door": "Baobab Door",
       "block.minecraft_overhauled.copper_generator": "Copper Generator",
       "block.minecraft_overhauled.enden_block": "Enden Block",
       "block.minecraft_overhauled.bamboo_fence_gate": "Bamboo Fence Gate",
@@ -2725,8 +2766,9 @@
       "effect.levitation_potion": "Levitation",
       "block.minecraft_overhauled.bushthorn_leaves": "Bushthorn Leaves",
       "item.minecraft_overhauled.enden_armor_helmet": "Enden Helmet",
-      "entity.minecraft_overhauled.capybara": "Capybara",
       "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
+      "entity.minecraft_overhauled.capybara": "Capybara",
+      "block.minecraft_overhauled.charred_rock": "Charred Rock",
       "advancements.sus_advancement.descr": "Obtain Suspicious Stew",
       "subtitles.talldisc": "Music Disc Plays (Tall)",
       "block.minecraft_overhauled.shorea_planks": "Shorea Planks",
@@ -2738,6 +2780,7 @@
       "block.minecraft_overhauled.endwood_log": "Endwood Log",
       "block.minecraft_overhauled.bamboo_stairs": "Bamboo Stairs",
       "item.minecraft_overhauled.scopophobia": "Music Disc",
+      "block.minecraft_overhauled.pig_iron_ore": "Pig Iron Ore",
       "block.minecraft_overhauled.baobab_fence": "Baobab Fence",
       "item.minecraft_overhauled.gilded_potato": "Gilded Potato",
       "item.minecraft_overhauled.enden_pickaxe": "Enden Pickaxe",
@@ -2812,6 +2855,7 @@
       "block.minecraft_overhauled.orchid": "Orchid",
       "block.minecraft_overhauled.shorea_fence_gate": "Shorea Fence Gate",
       "item.minecraft_overhauled.enden_dust": "Enden Dust",
+      "biome.minecraft_overhauled.volcanic_geysers": "Volcanic Geysers",
       "entity.minecraft_overhauled.piranha": "Piranha",
       "block.minecraft_overhauled.baobab_log": "Baobab Log",
       "block.minecraft_overhauled.shorea_leaves": "Shorea Leaves",
