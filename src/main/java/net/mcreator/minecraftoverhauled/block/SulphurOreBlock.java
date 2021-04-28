@@ -33,7 +33,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.minecraftoverhauled.itemgroup.SavannaItemGroup;
+import net.mcreator.minecraftoverhauled.itemgroup.NetherTabItemGroup;
 import net.mcreator.minecraftoverhauled.item.SulphurDustItem;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 
@@ -54,7 +54,7 @@ public class SulphurOreBlock extends MinecraftOverhauledModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(SavannaItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(NetherTabItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
