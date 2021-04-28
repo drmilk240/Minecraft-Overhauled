@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "prototype",
+    "texture": "sulphurore",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -32,20 +32,20 @@
         "subtract": false
       }
     ],
-    "name": "End Deepgate",
+    "name": "Sulphur Ore",
     "specialInfo": [],
     "hardness": 3.0,
-    "resistance": 10.0,
+    "resistance": 5.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:DeepEndTab"
+      "value": "CUSTOM:Savanna"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:SulphurDust"
     },
-    "dropAmount": 1,
+    "dropAmount": 3,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -72,11 +72,11 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "LODESTONE"
+      "value": "STONE"
     },
-    "luminance": 15,
+    "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 2,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -101,19 +101,18 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "EndDeepgateOnBlockRightClicked"
-    },
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "CUSTOM:DeepNether"
+    ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE"
+        "value": "CUSTOM:CharredRock"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "frequencyPerChunks": 16,
+    "frequencyOnChunk": 2,
+    "minGenerateHeight": 1,
+    "maxGenerateHeight": 140
   }
 }

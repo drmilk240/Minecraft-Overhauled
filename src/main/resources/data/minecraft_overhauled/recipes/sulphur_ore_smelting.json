@@ -1,0 +1,12 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "minecraft_overhauled:sulphur_ore"
+  },
+  "result": {
+    "item": "minecraft_overhauled:sulphur_dust"
+  }
+}

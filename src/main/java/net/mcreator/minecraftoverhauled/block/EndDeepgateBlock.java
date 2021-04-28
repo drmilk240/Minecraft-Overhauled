@@ -33,7 +33,7 @@ public class EndDeepgateBlock extends MinecraftOverhauledModElements.ModElement 
 	@ObjectHolder("minecraft_overhauled:end_deepgate")
 	public static final Block block = null;
 	public EndDeepgateBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 198);
+		super(instance, 30);
 	}
 
 	@Override
@@ -43,7 +43,7 @@ public class EndDeepgateBlock extends MinecraftOverhauledModElements.ModElement 
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.LODESTONE).hardnessAndResistance(-1, 3600000).setLightLevel(s -> 15));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.LODESTONE).hardnessAndResistance(3f, 10f).setLightLevel(s -> 15));
 			setRegistryName("end_deepgate");
 		}
 

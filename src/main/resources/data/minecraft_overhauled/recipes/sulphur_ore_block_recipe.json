@@ -1,0 +1,42 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_overhauled:sulphur_dust"
+    },
+    "1": {
+      "item": "minecraft_overhauled:sulphur_dust"
+    },
+    "2": {
+      "item": "minecraft_overhauled:sulphur_dust"
+    },
+    "3": {
+      "item": "minecraft_overhauled:sulphur_dust"
+    },
+    "4": {
+      "item": "minecraft_overhauled:sulphur_dust"
+    },
+    "5": {
+      "item": "minecraft_overhauled:sulphur_dust"
+    },
+    "6": {
+      "item": "minecraft_overhauled:sulphur_dust"
+    },
+    "7": {
+      "item": "minecraft_overhauled:sulphur_dust"
+    },
+    "8": {
+      "item": "minecraft_overhauled:sulphur_dust"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:sulphur_block",
+    "count": 1
+  }
+}

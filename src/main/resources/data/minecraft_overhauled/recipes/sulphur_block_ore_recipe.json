@@ -1,0 +1,13 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_overhauled:sulphur_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft_overhauled:sulphur_dust",
+    "count": 9
+  }
+}

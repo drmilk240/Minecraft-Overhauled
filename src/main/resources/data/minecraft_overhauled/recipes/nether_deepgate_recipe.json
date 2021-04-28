@@ -1,0 +1,42 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:nether_bricks"
+    },
+    "1": {
+      "item": "minecraft:nether_bricks"
+    },
+    "2": {
+      "item": "minecraft:nether_bricks"
+    },
+    "3": {
+      "item": "minecraft:nether_bricks"
+    },
+    "4": {
+      "item": "minecraft_overhauled:eye_of_fire"
+    },
+    "5": {
+      "item": "minecraft:nether_bricks"
+    },
+    "6": {
+      "item": "minecraft:nether_bricks"
+    },
+    "7": {
+      "item": "minecraft:nether_bricks"
+    },
+    "8": {
+      "item": "minecraft:nether_bricks"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:nether_deepgate",
+    "count": 1
+  }
+}

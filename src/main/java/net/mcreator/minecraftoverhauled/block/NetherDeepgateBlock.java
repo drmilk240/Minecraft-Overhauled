@@ -43,7 +43,7 @@ public class NetherDeepgateBlock extends MinecraftOverhauledModElements.ModEleme
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.NETHER_BRICK).hardnessAndResistance(-1, 3600000).setLightLevel(s -> 0));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.NETHER_BRICK).hardnessAndResistance(3f, 10f).setLightLevel(s -> 0));
 			setRegistryName("nether_deepgate");
 		}
 
