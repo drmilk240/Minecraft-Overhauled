@@ -5,10 +5,19 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 9,
     "group": "",
     "recipeShapeless": false,
     "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
       {
         "value": ""
       },
@@ -22,25 +31,16 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:CopperNugget"
-      },
-      {
         "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CopperNugget"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:LightningRod"
+      "value": "CUSTOM:CopperNugget"
     },
-    "name": "lightning_rod_recipe",
+    "name": "copper_nugget_recipe",
     "namespace": "mod"
   }
 }

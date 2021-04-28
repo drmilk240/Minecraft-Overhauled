@@ -1,0 +1,16 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_overhauled:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:copper_nugget",
+    "count": 9
+  }
+}

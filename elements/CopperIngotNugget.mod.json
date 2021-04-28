@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CopperIngot"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "CUSTOM:CopperNugget"
       },
       {
         "value": "CUSTOM:CopperNugget"
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "CUSTOM:CopperNugget"
       },
       {
         "value": "CUSTOM:CopperNugget"
       },
       {
-        "value": ""
+        "value": "CUSTOM:CopperNugget"
+      },
+      {
+        "value": "CUSTOM:CopperNugget"
+      },
+      {
+        "value": "CUSTOM:CopperNugget"
+      },
+      {
+        "value": "CUSTOM:CopperNugget"
+      },
+      {
+        "value": "CUSTOM:CopperNugget"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:LightningRod"
+      "value": "CUSTOM:CopperIngot"
     },
-    "name": "lightning_rod_recipe",
+    "name": "copper_ingot_nugget",
     "namespace": "mod"
   }
 }
