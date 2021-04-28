@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "coarse_dirt",
+    "texture": "netherdeepgate",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Charred Soil",
+    "name": "Nether Deepgate",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -41,7 +41,7 @@
     "creativeTab": {
       "value": "CUSTOM:NetherTab"
     },
-    "destroyTool": "shovel",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -52,7 +52,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "EARTH"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -72,10 +72,10 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "NETHER_BRICK"
     },
     "luminance": 0,
-    "unbreakable": false,
+    "unbreakable": true,
     "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
@@ -101,26 +101,19 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "Nether",
-      "CUSTOM:DeepNether"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:VolcanicGeysers"
-      }
-    ],
+    "onRightClicked": {
+      "name": "NetherDeepgateOnBlockRightClicked"
+    },
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "CUSTOM:CharredRock"
-      },
-      {
-        "value": "Blocks.NETHERRACK"
+        "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 32,
+    "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 231
+    "maxGenerateHeight": 64
   }
 }

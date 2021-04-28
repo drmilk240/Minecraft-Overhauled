@@ -102,7 +102,8 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "spawnWorldTypes": [
-      "Nether"
+      "Nether",
+      "CUSTOM:DeepNether"
     ],
     "restrictionBiomes": [],
     "blocksToReplace": [

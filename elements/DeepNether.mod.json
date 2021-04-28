@@ -1,0 +1,61 @@
+{
+  "_fv": 18,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:VolcanicGeysers"
+      },
+      {
+        "value": "basalt_deltas"
+      },
+      {
+        "value": "warped_forest"
+      },
+      {
+        "value": "crimson_forest"
+      },
+      {
+        "value": "soul_sand_valley"
+      },
+      {
+        "value": "nether"
+      }
+    ],
+    "worldGenType": "Nether like gen",
+    "mainFillerBlock": {
+      "value": "Blocks.NETHERRACK"
+    },
+    "fluidBlock": {
+      "value": "Blocks.LAVA"
+    },
+    "airColor": {
+      "value": -12511468,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": true,
+    "isDark": false,
+    "doesWaterVaporize": true,
+    "sleepResult": "BED_EXPLODES",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": ""
+    },
+    "portalParticles": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Deep Nether Portal Igniter",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "",
+    "portalTexture": "",
+    "enablePortal": false
+  }
+}

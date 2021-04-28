@@ -2709,6 +2709,46 @@
       "ids": {},
       "registry_name": "charred_soil",
       "path": "~/Nether"
+    },
+    {
+      "name": "NetherDeepgate",
+      "type": "block",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_deepgate",
+      "path": "~/Nether"
+    },
+    {
+      "name": "DeepNether",
+      "type": "dimension",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deep_nether",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/Nether"
+    },
+    {
+      "name": "NetherDeepgateOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_deepgate_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2751,8 +2791,8 @@
       "block.minecraft_overhauled.charred_soil": "Charred Soil",
       "item.minecraft.lingering_potion.effect.haste_potion": "Lingering Haste Potion",
       "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
-      "block.minecraft_overhauled.end_deepgate": "End Deepgate",
       "block.minecraft_overhauled.baobab_door": "Baobab Door",
+      "block.minecraft_overhauled.end_deepgate": "End Deepgate",
       "block.minecraft_overhauled.copper_generator": "Copper Generator",
       "block.minecraft_overhauled.enden_block": "Enden Block",
       "block.minecraft_overhauled.bamboo_fence_gate": "Bamboo Fence Gate",
@@ -2766,9 +2806,9 @@
       "effect.levitation_potion": "Levitation",
       "block.minecraft_overhauled.bushthorn_leaves": "Bushthorn Leaves",
       "item.minecraft_overhauled.enden_armor_helmet": "Enden Helmet",
-      "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
-      "entity.minecraft_overhauled.capybara": "Capybara",
       "block.minecraft_overhauled.charred_rock": "Charred Rock",
+      "entity.minecraft_overhauled.capybara": "Capybara",
+      "block.minecraft_overhauled.shorea_fence": "Shorea Fence",
       "advancements.sus_advancement.descr": "Obtain Suspicious Stew",
       "subtitles.talldisc": "Music Disc Plays (Tall)",
       "block.minecraft_overhauled.shorea_planks": "Shorea Planks",
@@ -2869,11 +2909,13 @@
       "itemGroup.tabdeep_end_tab": "Deep End",
       "block.minecraft_overhauled.titanium_ore": "Titanium Ore",
       "block.minecraft_overhauled.baobab_trapdoor": "Baobab Trapdoor",
+      "item.minecraft_overhauled.deep_nether": "Deep Nether Portal Igniter",
       "item.minecraft.tipped_arrow.effect.haste_potion": "Arrow of Haste Potion",
       "item.minecraft_overhauled.copper_armor_leggings": "Copper Leggings",
       "item.minecraft_overhauled.enden_axe": "Enden Axe",
       "item.minecraft.splash_potion.effect.levitation_potion": "Splash Levitation Potion",
       "item.minecraft_overhauled.warped_bread": "Warped Bread",
+      "block.minecraft_overhauled.nether_deepgate": "Nether Deepgate",
       "block.minecraft_overhauled.mud_block": "Mud Block",
       "biome.minecraft_overhauled.voidwoods": "Voidwoods",
       "block.minecraft_overhauled.bushthorn_wood": "Bushthorn Wood",

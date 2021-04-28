@@ -103,6 +103,8 @@ public class CharredSoilBlock extends MinecraftOverhauledModElements.ModElement 
 					boolean dimensionCriteria = false;
 					if (dimensionType == World.THE_NETHER)
 						dimensionCriteria = true;
+					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("minecraft_overhauled:deep_nether")))
+						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
 					return super.generate(world, generator, rand, pos, config);

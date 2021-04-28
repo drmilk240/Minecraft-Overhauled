@@ -5,7 +5,7 @@
     "structure": "endhouse1",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 10000,
+    "spawnProbability": 5000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -24,6 +24,6 @@
       }
     ],
     "restrictionBiomes": [],
-    "ignoreBlocks": "STRUCTURE_BLOCK"
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
   }
 }
