@@ -1,0 +1,22 @@
+{
+  "_fv": 18,
+  "_type": "potion",
+  "definition": {
+    "name": "Haste Potion",
+    "effectName": "Haste",
+    "icon": "haste.png",
+    "color": {
+      "value": -2378721,
+      "falpha": 0.0
+    },
+    "isInstant": true,
+    "isBad": false,
+    "isBenefitical": true,
+    "registerPotionType": true,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onStarted": {
+      "name": "HastePotionPotionStartedapplied"
+    }
+  }
+}

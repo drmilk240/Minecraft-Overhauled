@@ -10,12 +10,12 @@ import net.minecraft.util.ActionResultType;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.minecraftoverhauled.procedures.BlueNetherWartRightClickedOnBlockProcedure;
+import net.mcreator.minecraftoverhauled.itemgroup.NetherTabItemGroup;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 
 import java.util.Map;
@@ -35,7 +35,7 @@ public class BlueNetherWartItem extends MinecraftOverhauledModElements.ModElemen
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.BREWING).maxStackSize(64).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(NetherTabItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("blue_nether_wart");
 		}
 

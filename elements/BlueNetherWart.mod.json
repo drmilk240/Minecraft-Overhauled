@@ -8,7 +8,7 @@
     "name": "Blue Nether Wart",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "BREWING"
+      "value": "CUSTOM:NetherTab"
     },
     "stackSize": 64,
     "enchantability": 0,

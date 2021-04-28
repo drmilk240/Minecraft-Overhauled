@@ -6,6 +6,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ItemStack;
@@ -13,10 +14,15 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.minecraftoverhauled.procedures.EndenArmorBootsTickEventProcedure;
 import net.mcreator.minecraftoverhauled.itemgroup.DeepEndTabItemGroup;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @MinecraftOverhauledModElements.ModElement.Tag
 public class EndenArmorItem extends MinecraftOverhauledModElements.ModElement {
@@ -98,6 +104,18 @@ public class EndenArmorItem extends MinecraftOverhauledModElements.ModElement {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "minecraft_overhauled:textures/models/armor/iron__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+			}
+
+			@Override
+			public void onArmorTick(ItemStack itemstack, World world, PlayerEntity entity) {
+				double x = entity.getPosX();
+				double y = entity.getPosY();
+				double z = entity.getPosZ();
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					EndenArmorBootsTickEventProcedure.executeProcedure($_dependencies);
+				}
 			}
 		}.setRegistryName("enden_armor_boots"));
 	}

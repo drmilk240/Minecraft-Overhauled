@@ -1,0 +1,22 @@
+{
+  "_fv": 18,
+  "_type": "potion",
+  "definition": {
+    "name": "Blindness Potion",
+    "effectName": "Blindness",
+    "icon": "blindness.png",
+    "color": {
+      "value": -16448484,
+      "falpha": 0.0
+    },
+    "isInstant": true,
+    "isBad": false,
+    "isBenefitical": true,
+    "registerPotionType": true,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onStarted": {
+      "name": "BlindnessPotionPotionStartedapplied"
+    }
+  }
+}

@@ -10,6 +10,9 @@
     "textureLeggings": "endenleggings",
     "enableBoots": true,
     "textureBoots": "endenboots",
+    "onBootsTick": {
+      "name": "EndenArmorBootsTickEvent"
+    },
     "creativeTab": {
       "value": "CUSTOM:DeepEndTab"
     },
