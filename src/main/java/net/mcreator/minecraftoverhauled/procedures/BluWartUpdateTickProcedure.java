@@ -77,7 +77,7 @@ public class BluWartUpdateTickProcedure extends MinecraftOverhauledModElements.M
 								return tileEntity.getTileData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "growthTimer")) + 0.005));
+					}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "growthTimer")) + 0.05));
 				if (world instanceof World)
 					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
@@ -88,7 +88,7 @@ public class BluWartUpdateTickProcedure extends MinecraftOverhauledModElements.M
 						return tileEntity.getTileData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "growthTimer")) >= 20)) {
+			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "growthTimer")) >= 40)) {
 				randomGrowth = (double) Math.random();
 				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BluWart0Block.block.getDefaultState().getBlock())) {
 					if (((randomGrowth) >= 0.33)) {
