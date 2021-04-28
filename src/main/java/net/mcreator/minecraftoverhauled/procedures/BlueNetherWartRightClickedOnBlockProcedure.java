@@ -60,10 +60,8 @@ public class BlueNetherWartRightClickedOnBlockProcedure extends MinecraftOverhau
 		if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 				.getItem() == new ItemStack(BlueNetherWartItem.block, (int) (1)).getItem())
 				&& (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.SOUL_SAND.getDefaultState().getBlock())
-						&& (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState()
-								.getBlock())
-								|| ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.CAVE_AIR
-										.getDefaultState().getBlock()))))) {
+						&& ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState()
+								.getBlock())))) {
 			world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), Blocks.AIR.getDefaultState(), 3);
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BluWart0Block.block.getDefaultState(), 3);
 			if ((!(new Object() {
