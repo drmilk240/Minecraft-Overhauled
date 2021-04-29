@@ -1,5 +1,5 @@
 {
-  "parent": "block/tinted_cross",
+  "parent": "block/cross",
   "textures": {
     "cross": "minecraft_overhauled:blocks/flowerbush",
     "particle": "minecraft_overhauled:blocks/flowerbush"

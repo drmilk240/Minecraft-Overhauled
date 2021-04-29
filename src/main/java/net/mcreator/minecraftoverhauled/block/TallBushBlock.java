@@ -9,7 +9,6 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.PlantType;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -23,11 +22,9 @@ import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.blockplacer.DoublePlantBlockPlacer;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
-import net.minecraft.world.biome.BiomeColors;
 import net.minecraft.world.World;
 import net.minecraft.world.ISeedReader;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.world.FoliageColors;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.BlockPos;
@@ -60,8 +57,7 @@ public class TallBushBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:tall_bush")
 	public static final Block block = null;
 	public TallBushBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 59);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
+		super(instance, 69);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -77,15 +73,6 @@ public class TallBushBlock extends MinecraftOverhauledModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
-	}
-	private static class BlockColorRegisterHandler {
-		@OnlyIn(Dist.CLIENT)
-		@SubscribeEvent
-		public void blockColorLoad(ColorHandlerEvent.Block event) {
-			event.getBlockColors().register((bs, world, pos, index) -> {
-				return world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefault();
-			}, block);
-		}
 	}
 	private static Feature<BlockClusterFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
@@ -107,7 +94,7 @@ public class TallBushBlock extends MinecraftOverhauledModElements.ModElement {
 			configuredFeature = feature.withConfiguration(
 					(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new DoublePlantBlockPlacer()))
 							.tries(64).build())
-					.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8, 0, 9)));
+					.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8, 0, 4)));
 			event.getRegistry().register(feature.setRegistryName("tall_bush"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("minecraft_overhauled:tall_bush"), configuredFeature);
 		}

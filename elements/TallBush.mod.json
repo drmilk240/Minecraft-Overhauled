@@ -2,13 +2,13 @@
   "_fv": 18,
   "_type": "plant",
   "definition": {
-    "renderType": 120,
+    "renderType": 12,
     "texture": "bushtop",
     "textureBottom": "bush",
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
-    "tintType": "Foliage",
+    "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "double",
     "staticPlantGenerationType": "Flower",
@@ -50,7 +50,7 @@
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
-    "frequencyOnChunks": 9,
+    "frequencyOnChunks": 4,
     "spawnWorldTypes": [
       "Surface"
     ],
