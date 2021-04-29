@@ -1,7 +1,7 @@
 {
   "parent": "block/door_top",
   "textures": {
-    "bottom": "minecraft_overhauled:blocks/baobabdoorbottom",
-    "top": "minecraft_overhauled:blocks/baobabdoortop"
+    "bottom": "minecraft_overhauled:blocks/acacia_door_bottom",
+    "top": "minecraft_overhauled:blocks/acacia_door_top"
   }
 }

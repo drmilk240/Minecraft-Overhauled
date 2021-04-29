@@ -2,8 +2,8 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "baobabdoorbottom",
-    "textureTop": "baobabdoortop",
+    "texture": "acacia_door_bottom",
+    "textureTop": "acacia_door_top",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
