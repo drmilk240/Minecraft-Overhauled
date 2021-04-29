@@ -2,7 +2,7 @@
   "parent": "block/cube",
   "textures": {
     "down": "minecraft_overhauled:blocks/oak_planks",
-    "up": "minecraft_overhauled:blocks/oak_planks",
+    "up": "minecraft_overhauled:blocks/baobabplanks_south",
     "north": "minecraft_overhauled:blocks/oak_planks",
     "east": "minecraft_overhauled:blocks/baobabplanks_eastwest",
     "south": "minecraft_overhauled:blocks/baobabplanks_south",

@@ -3,7 +3,7 @@
   "_type": "block",
   "definition": {
     "texture": "oak_planks",
-    "textureTop": "oak_planks",
+    "textureTop": "baobabplanks_south",
     "textureLeft": "baobabplanks_eastwest",
     "textureFront": "oak_planks",
     "textureRight": "baobabplanks_eastwest",

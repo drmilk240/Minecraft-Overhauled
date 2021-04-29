@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "minecraft_overhauled:blocks/oak_planks",
     "top": "minecraft_overhauled:blocks/oak_planks",
-    "side": "minecraft_overhauled:blocks/oak_planks"
+    "side": "minecraft_overhauled:blocks/baobabplanks_south"
   }
 }
