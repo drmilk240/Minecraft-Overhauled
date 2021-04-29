@@ -2020,7 +2020,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "tall"
+      "registry_name": "tall",
+      "path": "~/Discs"
     },
     {
       "name": "Scopophobia",
@@ -2029,7 +2030,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "scopophobia"
+      "registry_name": "scopophobia",
+      "path": "~/Discs"
     },
     {
       "name": "EmberThreat",
@@ -2038,7 +2040,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ember_threat"
+      "registry_name": "ember_threat",
+      "path": "~/Discs"
     },
     {
       "name": "GelatinousDread",
@@ -2047,7 +2050,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "gelatinous_dread"
+      "registry_name": "gelatinous_dread",
+      "path": "~/Discs"
     },
     {
       "name": "LightningRodUpdateTick",
@@ -2134,7 +2138,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Deep End"
     },
     {
       "name": "DeepEndPlayerEntersDimension",
@@ -2151,7 +2156,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Deep End"
     },
     {
       "name": "DeepEndShrine",
@@ -2258,7 +2264,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Nether"
     },
     {
       "name": "CrimsonBread",
@@ -2285,7 +2292,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Nether"
     },
     {
       "name": "WarpedBread",
@@ -2352,7 +2360,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Nether"
     },
     {
       "name": "FungalBroth",
@@ -2465,7 +2474,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Nether"
     },
     {
       "name": "BluWartBlockDestroyedByExplosion",
@@ -2494,7 +2504,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Nether"
     },
     {
       "name": "BluWartUpdateTick",
@@ -2523,7 +2534,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Nether"
     },
     {
       "name": "SusAdvancement",
@@ -2658,7 +2670,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Deep End"
     },
     {
       "name": "PigIronOre",
@@ -2738,7 +2751,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Nether"
     },
     {
       "name": "Geyser",
@@ -2907,7 +2921,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "redfunk"
+      "registry_name": "redfunk",
+      "path": "~/Discs"
     },
     {
       "name": "Range",
@@ -2916,7 +2931,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "range"
+      "registry_name": "range",
+      "path": "~/Discs"
     },
     {
       "name": "Caravan",
@@ -2925,7 +2941,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "caravan"
+      "registry_name": "caravan",
+      "path": "~/Discs"
     },
     {
       "name": "Vengeful",
@@ -2934,7 +2951,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "vengeful"
+      "registry_name": "vengeful",
+      "path": "~/Nether"
     },
     {
       "name": "NetherCoalOre",
@@ -2985,23 +3003,6 @@
       "ids": {},
       "registry_name": "gunpowder_sulphur",
       "path": "~/Nether"
-    },
-    {
-      "name": "SulphuricAcidMobplayerCollidesBlock",
-      "type": "procedure",
-      "sortid": 262,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sulphuric_acid_mobplayer_collides_block",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
     },
     {
       "name": "SulphurBonemeal",
@@ -3086,16 +3087,16 @@
       "block.minecraft_overhauled.charred_soil": "Charred Soil",
       "item.minecraft.lingering_potion.effect.haste_potion": "Lingering Haste Potion",
       "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
-      "block.minecraft_overhauled.end_deepgate": "End Deepgate",
       "block.minecraft_overhauled.baobab_door": "Baobab Door",
+      "block.minecraft_overhauled.end_deepgate": "End Deepgate",
       "block.minecraft_overhauled.copper_generator": "Copper Generator",
       "block.minecraft_overhauled.sulphur_block": "Block of Sulphur",
       "block.minecraft_overhauled.enden_block": "Enden Block",
       "block.minecraft_overhauled.bamboo_fence_gate": "Bamboo Fence Gate",
       "effect.haste_potion": "Haste",
-      "item.minecraft_overhauled.copper_nugget": "Copper Nugget",
-      "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "item.minecraft_overhauled.copper_armor_chestplate": "Copper Chestplate",
+      "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
+      "item.minecraft_overhauled.copper_nugget": "Copper Nugget",
       "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
       "block.minecraft_overhauled.endwood_slab": "Endwood Slab",
       "item.minecraft_overhauled.eye_of_fire": "Eye Of Fire",
@@ -3301,7 +3302,7 @@
         ]
       },
       {
-        "name": "Caves",
+        "name": "Discs",
         "children": []
       }
     ]
