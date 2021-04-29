@@ -39,16 +39,6 @@
       }
     ]
   },
-  "redfunkdisc": {
-    "category": "record",
-    "subtitle": "subtitles.redfunkdisc",
-    "sounds": [
-      {
-        "name": "minecraft_overhauled:redfunk_-_fanmade_minecraft_music_disc",
-        "stream": true
-      }
-    ]
-  },
   "rangedisc": {
     "category": "record",
     "subtitle": "subtitles.rangedisc",
@@ -65,6 +55,16 @@
     "sounds": [
       {
         "name": "minecraft_overhauled:nether_fortress_disc_concept_vengeful_minecraft",
+        "stream": true
+      }
+    ]
+  },
+  "redfunkdisc": {
+    "category": "record",
+    "subtitle": "subtitles.redfunkdisc",
+    "sounds": [
+      {
+        "name": "minecraft_overhauled:redfunk_-_fanmade_minecraft_music_disc",
         "stream": true
       }
     ]

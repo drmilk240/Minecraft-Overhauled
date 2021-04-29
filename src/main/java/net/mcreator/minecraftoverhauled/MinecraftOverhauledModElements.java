@@ -53,12 +53,12 @@ public class MinecraftOverhauledModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("minecraft_overhauled", "emberthreat")));
 		sounds.put(new ResourceLocation("minecraft_overhauled", "gelatinousdisc"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("minecraft_overhauled", "gelatinousdisc")));
-		sounds.put(new ResourceLocation("minecraft_overhauled", "redfunkdisc"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("minecraft_overhauled", "redfunkdisc")));
 		sounds.put(new ResourceLocation("minecraft_overhauled", "rangedisc"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("minecraft_overhauled", "rangedisc")));
 		sounds.put(new ResourceLocation("minecraft_overhauled", "vengefuldisc"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("minecraft_overhauled", "vengefuldisc")));
+		sounds.put(new ResourceLocation("minecraft_overhauled", "redfunkdisc"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("minecraft_overhauled", "redfunkdisc")));
 		sounds.put(new ResourceLocation("minecraft_overhauled", "caravandisc"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("minecraft_overhauled", "caravandisc")));
 		try {

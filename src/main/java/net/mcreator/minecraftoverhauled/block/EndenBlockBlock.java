@@ -23,7 +23,7 @@ public class EndenBlockBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:enden_block")
 	public static final Block block = null;
 	public EndenBlockBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 188);
+		super(instance, 44);
 	}
 
 	@Override

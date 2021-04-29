@@ -808,16 +808,6 @@
       "path": "~/Jungle"
     },
     {
-      "name": "BaobobTrees3",
-      "type": "structure",
-      "sortid": 136,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "baobob_trees_3",
-      "path": "~/Savanna"
-    },
-    {
       "name": "BaobobTrees2",
       "type": "structure",
       "sortid": 137,
@@ -3059,14 +3049,6 @@
       "subtitle": "Music Disc Plays (Gelatinous Dread)"
     },
     {
-      "name": "redfunkdisc",
-      "files": [
-        "redfunk_-_fanmade_minecraft_music_disc"
-      ],
-      "category": "record",
-      "subtitle": "Music Disc Plays (Redfunk)"
-    },
-    {
       "name": "rangedisc",
       "files": [
         "minecraft_ust_-_range_desertbadlands_music_disc_concept"
@@ -3083,6 +3065,14 @@
       "subtitle": "Music Disc Plays (Vengeful)"
     },
     {
+      "name": "redfunkdisc",
+      "files": [
+        "redfunk_-_fanmade_minecraft_music_disc"
+      ],
+      "category": "record",
+      "subtitle": "Music Disc Plays (Redfunk)"
+    },
+    {
       "name": "caravandisc",
       "files": [
         "fanmade_music_disc_-_caravan_remade"
@@ -3096,16 +3086,16 @@
       "block.minecraft_overhauled.charred_soil": "Charred Soil",
       "item.minecraft.lingering_potion.effect.haste_potion": "Lingering Haste Potion",
       "block.minecraft_overhauled.baobab_planks": "Baobab Planks",
-      "block.minecraft_overhauled.baobab_door": "Baobab Door",
       "block.minecraft_overhauled.end_deepgate": "End Deepgate",
+      "block.minecraft_overhauled.baobab_door": "Baobab Door",
       "block.minecraft_overhauled.copper_generator": "Copper Generator",
       "block.minecraft_overhauled.sulphur_block": "Block of Sulphur",
       "block.minecraft_overhauled.enden_block": "Enden Block",
       "block.minecraft_overhauled.bamboo_fence_gate": "Bamboo Fence Gate",
       "effect.haste_potion": "Haste",
-      "item.minecraft_overhauled.copper_armor_chestplate": "Copper Chestplate",
-      "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "item.minecraft_overhauled.copper_nugget": "Copper Nugget",
+      "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
+      "item.minecraft_overhauled.copper_armor_chestplate": "Copper Chestplate",
       "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
       "block.minecraft_overhauled.endwood_slab": "Endwood Slab",
       "item.minecraft_overhauled.eye_of_fire": "Eye Of Fire",

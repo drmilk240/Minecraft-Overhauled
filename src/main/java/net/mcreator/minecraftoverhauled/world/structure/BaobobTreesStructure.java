@@ -40,7 +40,7 @@ public class BaobobTreesStructure extends MinecraftOverhauledModElements.ModElem
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	public BaobobTreesStructure(MinecraftOverhauledModElements instance) {
-		super(instance, 127);
+		super(instance, 138);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -78,7 +78,7 @@ public class BaobobTreesStructure extends MinecraftOverhauledModElements.ModElem
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("minecraft_overhauled", "baobobtree1"));
+									.getTemplateDefaulted(new ResourceLocation("minecraft_overhauled", "baobabnew1"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
