@@ -3,9 +3,9 @@
   "_type": "block",
   "definition": {
     "texture": "oak_planks",
-    "textureTop": "oak_planks",
+    "textureTop": "baobabplanks_south",
     "textureLeft": "",
-    "textureFront": "baobabplanks_south",
+    "textureFront": "oak_planks",
     "textureRight": "",
     "textureBack": "",
     "renderType": 10,

@@ -2,7 +2,7 @@
   "parent": "block/stairs",
   "textures": {
     "bottom": "minecraft_overhauled:blocks/oak_planks",
-    "top": "minecraft_overhauled:blocks/oak_planks",
-    "side": "minecraft_overhauled:blocks/baobabplanks_south"
+    "top": "minecraft_overhauled:blocks/baobabplanks_south",
+    "side": "minecraft_overhauled:blocks/oak_planks"
   }
 }
