@@ -46,7 +46,7 @@ public class CopperOreBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:copper_ore")
 	public static final Block block = null;
 	public CopperOreBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 85);
+		super(instance, 96);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

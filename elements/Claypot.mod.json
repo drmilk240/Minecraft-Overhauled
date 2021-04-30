@@ -13,7 +13,7 @@
     "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "claypotitem",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,

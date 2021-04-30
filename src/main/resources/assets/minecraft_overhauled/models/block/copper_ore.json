@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "minecraft_overhauled:blocks/copperore",
-    "particle": "minecraft_overhauled:blocks/copperore"
+    "all": "minecraft_overhauled:blocks/copper_ore",
+    "particle": "minecraft_overhauled:blocks/copper_ore"
   }
 }
