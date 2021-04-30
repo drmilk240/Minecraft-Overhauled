@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_overhauled:blocks/anvil",
+    "up": "minecraft_overhauled:blocks/anvil",
+    "north": "minecraft_overhauled:blocks/anvil",
+    "east": "minecraft_overhauled:blocks/anvil",
+    "south": "minecraft_overhauled:blocks/anvil",
+    "west": "minecraft_overhauled:blocks/anvil",
+    "particle": "minecraft_overhauled:blocks/anvil"
+  }
+}

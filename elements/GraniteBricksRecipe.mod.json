@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.STONE#2"
+      },
+      {
+        "value": "Blocks.STONE#2"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STONE#2"
+      },
+      {
+        "value": "Blocks.STONE#2"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GraniteBricks"
+    },
+    "name": "granite_bricks_recipe",
+    "namespace": "mod"
+  }
+}
