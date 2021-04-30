@@ -3127,6 +3127,16 @@
       "ids": {},
       "registry_name": "mycelium_path",
       "path": "~/Block Variants"
+    },
+    {
+      "name": "Corrupter",
+      "type": "mob",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "corrupter",
+      "path": "~/Nether"
     }
   ],
   "variable_elements": [],
@@ -3218,6 +3228,7 @@
       "item.minecraft_overhauled.eye_of_fire": "Eye Of Fire",
       "block.minecraft_overhauled.shorea_bush": "Shorea Bush",
       "item.minecraft_overhauled.pork_skewer": "Pork Skewer",
+      "item.minecraft_overhauled.corrupter_spawn_egg": "Corrupter Spawn Egg",
       "effect.levitation_potion": "Levitation",
       "block.minecraft_overhauled.bushthorn_leaves": "Bushthorn Leaves",
       "item.minecraft_overhauled.enden_armor_helmet": "Enden Helmet",
@@ -3283,6 +3294,7 @@
       "block.minecraft_overhauled.endwood_leaves": "Endwood Leaves",
       "block.minecraft_overhauled.endwood_planks": "Endwood Planks",
       "item.minecraft_overhauled.enden_armor_chestplate": "Enden Chestplate",
+      "entity.minecraft_overhauled.corrupter": "Corrupter",
       "item.minecraft.potion.effect.levitation_potion": "Levitation Potion",
       "item.minecraft.tipped_arrow.effect.levitation_potion": "Arrow of Levitation Potion",
       "block.minecraft_overhauled.dried_mud_block": "Dried Mud Block",
