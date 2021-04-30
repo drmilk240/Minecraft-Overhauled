@@ -1,0 +1,9 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "minecraft_overhauled:copper_block"
+  },
+  "result": "minecraft_overhauled:cut_copper_block"
+}

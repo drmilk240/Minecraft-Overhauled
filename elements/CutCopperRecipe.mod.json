@@ -1,0 +1,20 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:CopperBlock"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:CutCopperBlock"
+    },
+    "name": "cut_copper_recipe",
+    "namespace": "mod"
+  }
+}

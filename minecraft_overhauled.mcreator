@@ -3027,6 +3027,16 @@
       "ids": {},
       "registry_name": "cut_copper_block",
       "path": "~/Electricity"
+    },
+    {
+      "name": "CutCopperRecipe",
+      "type": "recipe",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cut_copper_recipe",
+      "path": "~/Electricity"
     }
   ],
   "variable_elements": [],
@@ -3109,9 +3119,9 @@
       "block.minecraft_overhauled.enden_block": "Enden Block",
       "block.minecraft_overhauled.bamboo_fence_gate": "Bamboo Fence Gate",
       "effect.haste_potion": "Haste",
-      "item.minecraft_overhauled.copper_armor_chestplate": "Copper Chestplate",
-      "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
       "item.minecraft_overhauled.copper_nugget": "Copper Nugget",
+      "block.minecraft_overhauled.baobab_wood": "Baobab Wood",
+      "item.minecraft_overhauled.copper_armor_chestplate": "Copper Chestplate",
       "block.minecraft_overhauled.bushthorn_fence": "Bushthorn Fence",
       "block.minecraft_overhauled.endwood_slab": "Endwood Slab",
       "item.minecraft_overhauled.eye_of_fire": "Eye Of Fire",
