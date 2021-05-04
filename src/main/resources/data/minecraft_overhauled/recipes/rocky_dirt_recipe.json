@@ -1,0 +1,16 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:cobblestone"
+    }
+  ],
+  "result": {
+    "item": "minecraft_overhauled:rocky_dirt",
+    "count": 2
+  }
+}

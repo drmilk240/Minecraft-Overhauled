@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft_overhauled:custom/pathbase",
-  "textures": {
-    "all": "minecraft_overhauled:blocks/myceliumpath2",
-    "particle": "minecraft_overhauled:blocks/myceliumpath2",
-    "missing": "minecraft_overhauled:blocks/pathtexture"
-  }
-}

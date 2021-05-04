@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft_overhauled:block/mycelium_path",
+  "parent": "minecraft_overhauled:block/rocky_dirt",
   "display": {
     "thirdperson": {
       "rotation": [
