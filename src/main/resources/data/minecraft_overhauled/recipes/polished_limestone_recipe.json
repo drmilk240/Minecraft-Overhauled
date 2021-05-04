@@ -1,0 +1,26 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_overhauled:limestone"
+    },
+    "1": {
+      "item": "minecraft_overhauled:limestone"
+    },
+    "2": {
+      "item": "minecraft_overhauled:limestone"
+    },
+    "3": {
+      "item": "minecraft_overhauled:limestone"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:polished_limestone",
+    "count": 4
+  }
+}
