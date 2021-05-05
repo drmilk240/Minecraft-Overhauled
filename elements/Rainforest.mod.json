@@ -29,8 +29,23 @@
       "value": -13423073,
       "falpha": 0.0
     },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
     "moodSoundDelay": 0,
     "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
     "particlesProbability": 0.0,
     "biomeCategory": "JUNGLE",
     "parent": {
@@ -42,7 +57,7 @@
     "heightVariation": 0.4,
     "biomeType": "WARM",
     "spawnBiome": true,
-    "biomeWeight": 10,
+    "biomeWeight": 5,
     "biomeDictionaryTypes": [
       "JUNGLE",
       "WET",

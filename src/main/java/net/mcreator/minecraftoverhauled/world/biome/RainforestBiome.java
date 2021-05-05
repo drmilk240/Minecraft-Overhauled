@@ -66,7 +66,7 @@ import com.google.common.collect.ImmutableList;
 public class RainforestBiome extends MinecraftOverhauledModElements.ModElement {
 	public static Biome biome;
 	public RainforestBiome(MinecraftOverhauledModElements instance) {
-		super(instance, 105);
+		super(instance, 116);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {
@@ -135,7 +135,7 @@ public class RainforestBiome extends MinecraftOverhauledModElements.ModElement {
 		BiomeDictionary.addTypes(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), BiomeDictionary.Type.JUNGLE,
 				BiomeDictionary.Type.WET, BiomeDictionary.Type.LUSH);
 		BiomeManager.addBiome(BiomeManager.BiomeType.WARM,
-				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 10));
+				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 5));
 	}
 	private static class CustomLeaveVineTreeDecorator extends LeaveVineTreeDecorator {
 		public static final CustomLeaveVineTreeDecorator instance = new CustomLeaveVineTreeDecorator();
