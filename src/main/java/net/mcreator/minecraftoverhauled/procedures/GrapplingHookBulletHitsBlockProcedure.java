@@ -12,7 +12,7 @@ import java.util.Collections;
 @MinecraftOverhauledModElements.ModElement.Tag
 public class GrapplingHookBulletHitsBlockProcedure extends MinecraftOverhauledModElements.ModElement {
 	public GrapplingHookBulletHitsBlockProcedure(MinecraftOverhauledModElements instance) {
-		super(instance, 133);
+		super(instance, 144);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

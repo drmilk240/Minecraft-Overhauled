@@ -43,7 +43,7 @@ public class LargeEndwoodtreeStructure extends MinecraftOverhauledModElements.Mo
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	public LargeEndwoodtreeStructure(MinecraftOverhauledModElements instance) {
-		super(instance, 169);
+		super(instance, 180);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

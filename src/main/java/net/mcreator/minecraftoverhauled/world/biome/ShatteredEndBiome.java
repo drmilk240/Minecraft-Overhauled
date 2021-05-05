@@ -32,7 +32,7 @@ import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 public class ShatteredEndBiome extends MinecraftOverhauledModElements.ModElement {
 	public static Biome biome;
 	public ShatteredEndBiome(MinecraftOverhauledModElements instance) {
-		super(instance, 166);
+		super(instance, 177);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

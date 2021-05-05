@@ -43,7 +43,7 @@ public class Endwoodtree2Structure extends MinecraftOverhauledModElements.ModEle
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	public Endwoodtree2Structure(MinecraftOverhauledModElements instance) {
-		super(instance, 168);
+		super(instance, 179);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

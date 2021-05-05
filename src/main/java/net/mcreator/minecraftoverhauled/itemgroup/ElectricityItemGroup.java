@@ -13,7 +13,7 @@ import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 @MinecraftOverhauledModElements.ModElement.Tag
 public class ElectricityItemGroup extends MinecraftOverhauledModElements.ModElement {
 	public ElectricityItemGroup(MinecraftOverhauledModElements instance) {
-		super(instance, 145);
+		super(instance, 156);
 	}
 
 	@Override

@@ -33,7 +33,7 @@ public class EndwoodLogBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:endwood_log")
 	public static final Block block = null;
 	public EndwoodLogBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 30);
+		super(instance, 32);
 	}
 
 	@Override

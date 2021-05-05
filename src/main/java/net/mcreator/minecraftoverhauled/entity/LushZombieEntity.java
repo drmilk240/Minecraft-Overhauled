@@ -45,7 +45,7 @@ import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 public class LushZombieEntity extends MinecraftOverhauledModElements.ModElement {
 	public static EntityType entity = null;
 	public LushZombieEntity(MinecraftOverhauledModElements instance) {
-		super(instance, 53);
+		super(instance, 59);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new LushZombieRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

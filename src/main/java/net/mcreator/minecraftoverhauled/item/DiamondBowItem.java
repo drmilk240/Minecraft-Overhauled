@@ -46,7 +46,7 @@ public class DiamondBowItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:entitybulletdiamond_bow")
 	public static final EntityType arrow = null;
 	public DiamondBowItem(MinecraftOverhauledModElements instance) {
-		super(instance, 25);
+		super(instance, 26);
 	}
 
 	@Override

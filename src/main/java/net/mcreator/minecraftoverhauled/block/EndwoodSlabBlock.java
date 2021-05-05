@@ -28,7 +28,7 @@ public class EndwoodSlabBlock extends MinecraftOverhauledModElements.ModElement 
 	@ObjectHolder("minecraft_overhauled:endwood_slab")
 	public static final Block block = null;
 	public EndwoodSlabBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 34);
+		super(instance, 36);
 	}
 
 	@Override

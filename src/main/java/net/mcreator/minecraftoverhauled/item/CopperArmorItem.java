@@ -29,7 +29,7 @@ public class CopperArmorItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:copper_armor_boots")
 	public static final Item boots = null;
 	public CopperArmorItem(MinecraftOverhauledModElements instance) {
-		super(instance, 80);
+		super(instance, 90);
 	}
 
 	@Override

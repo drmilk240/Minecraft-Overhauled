@@ -31,7 +31,7 @@ import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 public class EndDesertBiome extends MinecraftOverhauledModElements.ModElement {
 	public static Biome biome;
 	public EndDesertBiome(MinecraftOverhauledModElements instance) {
-		super(instance, 164);
+		super(instance, 175);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

@@ -25,7 +25,7 @@ public class EndsandBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:endsand")
 	public static final Block block = null;
 	public EndsandBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 38);
+		super(instance, 40);
 	}
 
 	@Override

@@ -16,7 +16,7 @@ public class ScopophobiaItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:scopophobia")
 	public static final Item block = null;
 	public ScopophobiaItem(MinecraftOverhauledModElements instance) {
-		super(instance, 191);
+		super(instance, 63);
 	}
 
 	@Override

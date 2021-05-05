@@ -16,7 +16,7 @@ public class EmberThreatItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:ember_threat")
 	public static final Item block = null;
 	public EmberThreatItem(MinecraftOverhauledModElements instance) {
-		super(instance, 192);
+		super(instance, 64);
 	}
 
 	@Override

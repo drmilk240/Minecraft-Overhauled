@@ -36,7 +36,7 @@ import com.google.common.collect.ImmutableSet;
 @MinecraftOverhauledModElements.ModElement.Tag
 public class DeepEndDimension extends MinecraftOverhauledModElements.ModElement {
 	public DeepEndDimension(MinecraftOverhauledModElements instance) {
-		super(instance, 86);
+		super(instance, 97);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

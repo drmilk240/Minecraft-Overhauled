@@ -31,7 +31,7 @@ public class NetheriteMagnetBlock extends MinecraftOverhauledModElements.ModElem
 	@ObjectHolder("minecraft_overhauled:netherite_magnet")
 	public static final Block block = null;
 	public NetheriteMagnetBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 195);
+		super(instance, 95);
 	}
 
 	@Override

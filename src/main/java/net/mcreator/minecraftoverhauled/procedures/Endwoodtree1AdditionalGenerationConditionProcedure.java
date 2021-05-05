@@ -8,7 +8,7 @@ import java.util.Map;
 @MinecraftOverhauledModElements.ModElement.Tag
 public class Endwoodtree1AdditionalGenerationConditionProcedure extends MinecraftOverhauledModElements.ModElement {
 	public Endwoodtree1AdditionalGenerationConditionProcedure(MinecraftOverhauledModElements instance) {
-		super(instance, 180);
+		super(instance, 191);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

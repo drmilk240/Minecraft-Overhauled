@@ -46,7 +46,7 @@ public class TitaniumOreBlock extends MinecraftOverhauledModElements.ModElement 
 	@ObjectHolder("minecraft_overhauled:titanium_ore")
 	public static final Block block = null;
 	public TitaniumOreBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 183);
+		super(instance, 51);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

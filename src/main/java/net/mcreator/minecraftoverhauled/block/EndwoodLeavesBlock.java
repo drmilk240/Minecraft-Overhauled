@@ -27,7 +27,7 @@ public class EndwoodLeavesBlock extends MinecraftOverhauledModElements.ModElemen
 	@ObjectHolder("minecraft_overhauled:endwood_leaves")
 	public static final Block block = null;
 	public EndwoodLeavesBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 32);
+		super(instance, 34);
 	}
 
 	@Override

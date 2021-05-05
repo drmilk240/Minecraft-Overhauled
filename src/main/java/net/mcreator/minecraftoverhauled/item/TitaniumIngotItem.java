@@ -16,7 +16,7 @@ public class TitaniumIngotItem extends MinecraftOverhauledModElements.ModElement
 	@ObjectHolder("minecraft_overhauled:titanium_ingot")
 	public static final Item block = null;
 	public TitaniumIngotItem(MinecraftOverhauledModElements instance) {
-		super(instance, 182);
+		super(instance, 52);
 	}
 
 	@Override

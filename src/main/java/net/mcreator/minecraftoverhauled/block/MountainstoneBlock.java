@@ -6,7 +6,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.ToolType;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.gen.feature.template.RuleTest;
@@ -26,6 +25,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
@@ -34,8 +34,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.minecraftoverhauled.itemgroup.DeepEndTabItemGroup;
-import net.mcreator.minecraftoverhauled.item.EndenDustItem;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 
 import java.util.Random;
@@ -43,11 +41,11 @@ import java.util.List;
 import java.util.Collections;
 
 @MinecraftOverhauledModElements.ModElement.Tag
-public class EndenOreBlock extends MinecraftOverhauledModElements.ModElement {
-	@ObjectHolder("minecraft_overhauled:enden_ore")
+public class MountainstoneBlock extends MinecraftOverhauledModElements.ModElement {
+	@ObjectHolder("minecraft_overhauled:mountainstone")
 	public static final Block block = null;
-	public EndenOreBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 41);
+	public MountainstoneBlock(MinecraftOverhauledModElements instance) {
+		super(instance, 294);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -55,13 +53,14 @@ public class EndenOreBlock extends MinecraftOverhauledModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(DeepEndTabItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items
+				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(3f, 5f).setLightLevel(s -> 0).harvestLevel(2)
-					.harvestTool(ToolType.PICKAXE).setRequiresTool());
-			setRegistryName("enden_ore");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(4f, 10f).setLightLevel(s -> 0)
+					.slipperiness(0.7000000000000001f).speedFactor(0.9f));
+			setRegistryName("mountainstone");
 		}
 
 		@Override
@@ -69,7 +68,7 @@ public class EndenOreBlock extends MinecraftOverhauledModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(EndenDustItem.block, (int) (3)));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
 	private static Feature<OreFeatureConfig> feature = null;
@@ -80,7 +79,13 @@ public class EndenOreBlock extends MinecraftOverhauledModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == Blocks.END_STONE.getDefaultState().getBlock())
+			if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
+				blockCriteria = true;
+			if (blockAt.getBlock() == Blocks.DIORITE.getDefaultState().getBlock())
+				blockCriteria = true;
+			if (blockAt.getBlock() == Blocks.ANDESITE.getDefaultState().getBlock())
+				blockCriteria = true;
+			if (blockAt.getBlock() == Blocks.GRANITE.getDefaultState().getBlock())
 				blockCriteria = true;
 			return blockCriteria;
 		}
@@ -93,28 +98,41 @@ public class EndenOreBlock extends MinecraftOverhauledModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("minecraft_overhauled:enden_ore_match"),
+			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("minecraft_overhauled:mountainstone_match"),
 					() -> CustomRuleTest.codec);
 			feature = new OreFeature(OreFeatureConfig.CODEC) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
 					boolean dimensionCriteria = false;
-					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("minecraft_overhauled:deep_end")))
+					if (dimensionType == World.OVERWORLD)
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 22)).range(15)
-					.square().func_242731_b(22);
-			event.getRegistry().register(feature.setRegistryName("enden_ore"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("minecraft_overhauled:enden_ore"), configuredFeature);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 64)).range(256)
+					.square().func_242731_b(64);
+			event.getRegistry().register(feature.setRegistryName("mountainstone"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("minecraft_overhauled:mountainstone"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("minecraft_overhauled:mountains_plus").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("mountains").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("snowy_mountains").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("mountain_edge").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("gravelly_mountains").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES).add(() -> configuredFeature);
 	}
 }

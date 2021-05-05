@@ -47,7 +47,7 @@ import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 public class PiranhaEntity extends MinecraftOverhauledModElements.ModElement {
 	public static EntityType entity = null;
 	public PiranhaEntity(MinecraftOverhauledModElements instance) {
-		super(instance, 55);
+		super(instance, 61);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new PiranhaRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

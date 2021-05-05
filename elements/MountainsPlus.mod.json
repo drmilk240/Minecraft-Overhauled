@@ -7,7 +7,7 @@
       "value": "Blocks.SNOW"
     },
     "undergroundBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "CUSTOM:Mountainstone"
     },
     "ambientSound": {
       "value": ""
@@ -33,7 +33,7 @@
     },
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 2.3000000000000003,
+    "baseHeight": 3.5,
     "heightVariation": 2.0,
     "biomeType": "ICY",
     "spawnBiome": true,
@@ -51,22 +51,22 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 0,
+    "treesPerChunk": 3,
     "vanillaTreeType": "Default",
-    "treeType": 0,
-    "minHeight": 7,
+    "treeType": 1,
+    "minHeight": 5,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": ""
+      "value": "CUSTOM:Mountainstone"
     },
     "treeBranch": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "treeVines": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "spawnStronghold": false,
     "spawnMineshaft": true,

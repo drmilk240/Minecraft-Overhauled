@@ -33,7 +33,7 @@ public class ShoreaLogBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:shorea_log")
 	public static final Block block = null;
 	public ShoreaLogBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 63);
+		super(instance, 73);
 	}
 
 	@Override

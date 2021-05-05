@@ -13,7 +13,7 @@ import java.util.Map;
 @MinecraftOverhauledModElements.ModElement.Tag
 public class CookedIronFishFoodEatenProcedure extends MinecraftOverhauledModElements.ModElement {
 	public CookedIronFishFoodEatenProcedure(MinecraftOverhauledModElements instance) {
-		super(instance, 121);
+		super(instance, 132);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

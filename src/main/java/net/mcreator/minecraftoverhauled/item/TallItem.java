@@ -16,7 +16,7 @@ public class TallItem extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:tall")
 	public static final Item block = null;
 	public TallItem(MinecraftOverhauledModElements instance) {
-		super(instance, 190);
+		super(instance, 62);
 	}
 
 	@Override

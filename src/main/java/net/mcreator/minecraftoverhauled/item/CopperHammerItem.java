@@ -25,7 +25,7 @@ public class CopperHammerItem extends MinecraftOverhauledModElements.ModElement 
 	@ObjectHolder("minecraft_overhauled:copper_hammer")
 	public static final Item block = null;
 	public CopperHammerItem(MinecraftOverhauledModElements instance) {
-		super(instance, 81);
+		super(instance, 91);
 	}
 
 	@Override

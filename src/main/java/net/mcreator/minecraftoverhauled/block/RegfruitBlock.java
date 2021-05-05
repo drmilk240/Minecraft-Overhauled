@@ -25,7 +25,7 @@ public class RegfruitBlock extends MinecraftOverhauledModElements.ModElement {
 	@ObjectHolder("minecraft_overhauled:regfruit")
 	public static final Block block = null;
 	public RegfruitBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 70);
+		super(instance, 80);
 	}
 
 	@Override

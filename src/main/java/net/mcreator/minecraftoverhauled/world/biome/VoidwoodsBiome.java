@@ -61,7 +61,7 @@ import com.google.common.collect.ImmutableList;
 public class VoidwoodsBiome extends MinecraftOverhauledModElements.ModElement {
 	public static Biome biome;
 	public VoidwoodsBiome(MinecraftOverhauledModElements instance) {
-		super(instance, 163);
+		super(instance, 174);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

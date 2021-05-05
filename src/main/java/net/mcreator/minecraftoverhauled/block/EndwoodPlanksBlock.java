@@ -27,7 +27,7 @@ public class EndwoodPlanksBlock extends MinecraftOverhauledModElements.ModElemen
 	@ObjectHolder("minecraft_overhauled:endwood_planks")
 	public static final Block block = null;
 	public EndwoodPlanksBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 31);
+		super(instance, 33);
 	}
 
 	@Override

@@ -41,7 +41,7 @@ import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 public class AntEntity extends MinecraftOverhauledModElements.ModElement {
 	public static EntityType entity = null;
 	public AntEntity(MinecraftOverhauledModElements instance) {
-		super(instance, 49);
+		super(instance, 55);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new AntRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

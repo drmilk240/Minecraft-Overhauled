@@ -16,7 +16,7 @@ import java.util.Map;
 @MinecraftOverhauledModElements.ModElement.Tag
 public class LightningRodUpdateTickProcedure extends MinecraftOverhauledModElements.ModElement {
 	public LightningRodUpdateTickProcedure(MinecraftOverhauledModElements instance) {
-		super(instance, 194);
+		super(instance, 197);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

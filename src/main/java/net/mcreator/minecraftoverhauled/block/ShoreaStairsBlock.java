@@ -27,7 +27,7 @@ public class ShoreaStairsBlock extends MinecraftOverhauledModElements.ModElement
 	@ObjectHolder("minecraft_overhauled:shorea_stairs")
 	public static final Block block = null;
 	public ShoreaStairsBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 66);
+		super(instance, 76);
 	}
 
 	@Override

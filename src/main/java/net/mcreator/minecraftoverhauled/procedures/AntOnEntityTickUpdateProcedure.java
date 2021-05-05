@@ -14,7 +14,7 @@ import java.util.Map;
 @MinecraftOverhauledModElements.ModElement.Tag
 public class AntOnEntityTickUpdateProcedure extends MinecraftOverhauledModElements.ModElement {
 	public AntOnEntityTickUpdateProcedure(MinecraftOverhauledModElements instance) {
-		super(instance, 130);
+		super(instance, 141);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -13,7 +13,7 @@ import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 @MinecraftOverhauledModElements.ModElement.Tag
 public class RainforestTabItemGroup extends MinecraftOverhauledModElements.ModElement {
 	public RainforestTabItemGroup(MinecraftOverhauledModElements instance) {
-		super(instance, 120);
+		super(instance, 131);
 	}
 
 	@Override

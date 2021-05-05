@@ -16,7 +16,7 @@ public class GelatinousDreadItem extends MinecraftOverhauledModElements.ModEleme
 	@ObjectHolder("minecraft_overhauled:gelatinous_dread")
 	public static final Item block = null;
 	public GelatinousDreadItem(MinecraftOverhauledModElements instance) {
-		super(instance, 193);
+		super(instance, 65);
 	}
 
 	@Override

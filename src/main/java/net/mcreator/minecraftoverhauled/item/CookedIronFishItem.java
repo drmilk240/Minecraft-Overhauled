@@ -23,7 +23,7 @@ public class CookedIronFishItem extends MinecraftOverhauledModElements.ModElemen
 	@ObjectHolder("minecraft_overhauled:cooked_iron_fish")
 	public static final Item block = null;
 	public CookedIronFishItem(MinecraftOverhauledModElements instance) {
-		super(instance, 78);
+		super(instance, 88);
 	}
 
 	@Override

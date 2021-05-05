@@ -47,7 +47,7 @@ public class NetheriteBowItem extends MinecraftOverhauledModElements.ModElement 
 	@ObjectHolder("minecraft_overhauled:entitybulletnetherite_bow")
 	public static final EntityType arrow = null;
 	public NetheriteBowItem(MinecraftOverhauledModElements instance) {
-		super(instance, 26);
+		super(instance, 27);
 	}
 
 	@Override
