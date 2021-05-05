@@ -2,10 +2,11 @@ package net.mcreator.minecraftoverhauled.procedures;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
+import net.minecraft.potion.Effects;
+import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -77,7 +78,8 @@ public class FreezingOnPotionActiveTickProcedure extends MinecraftOverhauledModE
 					((PlayerEntity) entity).addExhaustion((float) 0.1);
 				}
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 0.1);
-				entity.setMotionMultiplier(null, new Vector3d(0.25D, (double) 0.05F, 0.25D));
+				if (entity instanceof LivingEntity)
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 1, (int) 3, (true), (false)));
 			}
 		}
 	}
