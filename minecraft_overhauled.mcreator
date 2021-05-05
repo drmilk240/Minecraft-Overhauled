@@ -3237,6 +3237,36 @@
       "ids": {},
       "registry_name": "polished_dacite_recipe",
       "path": "~/General"
+    },
+    {
+      "name": "LushPrismarineBricks",
+      "type": "block",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lush_prismarine_bricks",
+      "path": "~/Block Variants"
+    },
+    {
+      "name": "LushBricks",
+      "type": "block",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lush_bricks",
+      "path": "~/Block Variants"
+    },
+    {
+      "name": "ChorusedEndstoneBricks",
+      "type": "block",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorused_endstone_bricks",
+      "path": "~/Block Variants"
     }
   ],
   "variable_elements": [],
@@ -3341,6 +3371,7 @@
       "item.minecraft_overhauled.range.desc": "Firch - Range",
       "biome.minecraft_overhauled.end_desert": "End Desert",
       "block.minecraft_overhauled.polished_dacite": "Polished Dacite",
+      "block.minecraft_overhauled.lush_bricks": "Lush Bricks",
       "item.minecraft_overhauled.enden_armor_leggings": "Enden Leggings",
       "item.minecraft.tipped_arrow.effect.glowing_potion": "Arrow of Glowing Potion",
       "item.minecraft.splash_potion.effect.blindness_potion": "Splash Blindness Potion",
@@ -3445,6 +3476,7 @@
       "item.minecraft_overhauled.copper_hammer": "Copper Hammer",
       "biome.minecraft_overhauled.rainforest": "Rainforest",
       "item.minecraft_overhauled.copper_armor_helmet": "Copper Helmet",
+      "block.minecraft_overhauled.lush_prismarine_bricks": "Lush Prismarine Bricks",
       "block.minecraft_overhauled.nether_coal_ore": "Nether Coal Ore",
       "block.minecraft_overhauled.blu_wart_2": "Blu Wart 2",
       "block.minecraft_overhauled.aplite": "Aplite",
@@ -3470,6 +3502,7 @@
       "block.minecraft_overhauled.granite_bricks": "Granite Bricks",
       "item.minecraft_overhauled.range": "Music Disc",
       "block.minecraft_overhauled.polished_aplite": "Polished Aplite",
+      "block.minecraft_overhauled.chorused_endstone_bricks": "Chorused Endstone Bricks",
       "entity.minecraft_overhauled.river_dolphin": "River Dolphin",
       "entity.minecraft_overhauled.lush_zombie": "Lush Zombie",
       "block.minecraft_overhauled.orchid": "Orchid",

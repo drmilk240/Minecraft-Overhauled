@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_overhauled:blocks/end_stone_bricks",
+    "up": "minecraft_overhauled:blocks/end_stone_bricks",
+    "north": "minecraft_overhauled:blocks/end_stone_bricks",
+    "east": "minecraft_overhauled:blocks/end_stone_bricks",
+    "south": "minecraft_overhauled:blocks/end_stone_bricks",
+    "west": "minecraft_overhauled:blocks/end_stone_bricks",
+    "particle": "minecraft_overhauled:blocks/end_stone_bricks"
+  }
+}

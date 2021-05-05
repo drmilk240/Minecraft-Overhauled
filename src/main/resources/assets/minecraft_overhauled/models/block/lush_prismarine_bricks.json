@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_overhauled:blocks/prismarine_bricks",
+    "up": "minecraft_overhauled:blocks/prismarine_bricks",
+    "north": "minecraft_overhauled:blocks/prismarine_bricks",
+    "east": "minecraft_overhauled:blocks/prismarine_bricks",
+    "south": "minecraft_overhauled:blocks/prismarine_bricks",
+    "west": "minecraft_overhauled:blocks/prismarine_bricks",
+    "particle": "minecraft_overhauled:blocks/prismarine_bricks"
+  }
+}
