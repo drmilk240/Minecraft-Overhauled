@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_overhauled:blocks/slatetop",
+    "up": "minecraft_overhauled:blocks/slatetop",
+    "north": "minecraft_overhauled:blocks/slateside",
+    "east": "minecraft_overhauled:blocks/slateside",
+    "south": "minecraft_overhauled:blocks/slateside",
+    "west": "minecraft_overhauled:blocks/slateside",
+    "particle": "minecraft_overhauled:blocks/slatetop"
+  }
+}
