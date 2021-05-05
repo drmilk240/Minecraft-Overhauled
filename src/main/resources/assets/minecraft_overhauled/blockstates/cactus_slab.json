@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraft_overhauled:block/cactus_slab"
+    },
+    "type=top": {
+      "model": "minecraft_overhauled:block/cactus_slab_top"
+    },
+    "type=double": {
+      "model": "minecraft_overhauled:block/cactus_slab_full"
+    }
+  }
+}

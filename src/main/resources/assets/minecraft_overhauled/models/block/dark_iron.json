@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "minecraft_overhauled:blocks/anvil",
-    "up": "minecraft_overhauled:blocks/anvil",
-    "north": "minecraft_overhauled:blocks/anvil",
-    "east": "minecraft_overhauled:blocks/anvil",
-    "south": "minecraft_overhauled:blocks/anvil",
-    "west": "minecraft_overhauled:blocks/anvil",
-    "particle": "minecraft_overhauled:blocks/anvil"
+    "down": "minecraft_overhauled:blocks/smithing_table_top",
+    "up": "minecraft_overhauled:blocks/smithing_table_top",
+    "north": "minecraft_overhauled:blocks/smithing_table_top",
+    "east": "minecraft_overhauled:blocks/smithing_table_top",
+    "south": "minecraft_overhauled:blocks/smithing_table_top",
+    "west": "minecraft_overhauled:blocks/smithing_table_top",
+    "particle": "minecraft_overhauled:blocks/smithing_table_top"
   }
 }

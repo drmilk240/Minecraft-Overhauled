@@ -1,0 +1,13 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cactus"
+    }
+  ],
+  "result": {
+    "item": "minecraft_overhauled:cactus_planks",
+    "count": 4
+  }
+}

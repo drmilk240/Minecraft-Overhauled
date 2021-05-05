@@ -2,10 +2,10 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "smithing_table_top",
-    "textureTop": "",
+    "texture": "beehive_end",
+    "textureTop": "beehive_end",
     "textureLeft": "",
-    "textureFront": "",
+    "textureFront": "beehive_end",
     "textureRight": "",
     "textureBack": "",
     "renderType": 10,
@@ -15,6 +15,7 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
+    "blockBase": "Stairs",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -32,14 +33,14 @@
         "subtract": false
       }
     ],
-    "name": "Wrought Iron",
+    "name": "Cactus Stairs",
     "specialInfo": [],
-    "hardness": 5.0,
-    "resistance": 10.0,
+    "hardness": 2.4000000000000004,
+    "resistance": 1.6,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:Savanna"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -52,7 +53,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "IRON"
+      "value": "WOOD"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -63,7 +64,7 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 0,
+    "flammability": 4,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
@@ -72,11 +73,11 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "WOOD"
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
