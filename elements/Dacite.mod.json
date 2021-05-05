@@ -140,6 +140,12 @@
       },
       {
         "value": "mutated_taiga_cold"
+      },
+      {
+        "value": "CUSTOM:MountainsPlus"
+      },
+      {
+        "value": "CUSTOM:SmoothMountains"
       }
     ],
     "blocksToReplace": [
@@ -147,8 +153,8 @@
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "frequencyPerChunks": 64,
+    "frequencyOnChunk": 64,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64
   }

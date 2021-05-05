@@ -50,28 +50,28 @@ public class SnowMonkeyRenderer {
 			textureWidth = 64;
 			textureHeight = 64;
 			Body = new ModelRenderer(this);
-			Body.setRotationPoint(0.0F, 24.0F, 0.0F);
+			Body.setRotationPoint(0.0F, 8.0F, -1.0F);
 			cube_r1 = new ModelRenderer(this);
-			cube_r1.setRotationPoint(0.0F, 0.0F, 0.0F);
+			cube_r1.setRotationPoint(0.0F, 16.0F, 1.0F);
 			Body.addChild(cube_r1);
 			setRotationAngle(cube_r1, 0.1309F, 0.0F, 0.0F);
 			cube_r1.setTextureOffset(0, 14).addBox(-4.0F, -21.0F, -1.0F, 8.0F, 12.0F, 4.0F, 0.0F, false);
 			RightLeg = new ModelRenderer(this);
-			RightLeg.setRotationPoint(0.0F, 24.0F, 0.0F);
-			RightLeg.setTextureOffset(0, 30).addBox(-4.0F, -10.0F, -2.0F, 3.0F, 10.0F, 3.0F, 0.0F, false);
+			RightLeg.setRotationPoint(-2.0F, 15.0F, 0.0F);
+			RightLeg.setTextureOffset(0, 30).addBox(-2.0F, -1.0F, -2.0F, 3.0F, 10.0F, 3.0F, 0.0F, false);
 			LeftLeg = new ModelRenderer(this);
-			LeftLeg.setRotationPoint(0.0F, 24.0F, 0.0F);
-			LeftLeg.setTextureOffset(28, 0).addBox(1.0F, -10.0F, -2.0F, 3.0F, 10.0F, 3.0F, 0.0F, false);
+			LeftLeg.setRotationPoint(2.0F, 15.0F, 0.0F);
+			LeftLeg.setTextureOffset(28, 0).addBox(-1.0F, -1.0F, -2.0F, 3.0F, 10.0F, 3.0F, 0.0F, false);
 			RightArm = new ModelRenderer(this);
-			RightArm.setRotationPoint(0.0F, 24.0F, 0.0F);
-			RightArm.setTextureOffset(21, 27).addBox(-7.0F, -20.0F, -3.0F, 3.0F, 10.0F, 3.0F, 0.0F, false);
+			RightArm.setRotationPoint(-4.0F, 5.0F, -1.0F);
+			RightArm.setTextureOffset(21, 27).addBox(-3.0F, -1.0F, -2.0F, 3.0F, 10.0F, 3.0F, 0.0F, false);
 			LeftArm = new ModelRenderer(this);
-			LeftArm.setRotationPoint(0.0F, 24.0F, 0.0F);
-			LeftArm.setTextureOffset(24, 14).addBox(4.0F, -20.0F, -3.0F, 3.0F, 10.0F, 3.0F, 0.0F, false);
+			LeftArm.setRotationPoint(4.0F, 5.0F, -1.0F);
+			LeftArm.setTextureOffset(24, 14).addBox(0.0F, -1.0F, -2.0F, 3.0F, 10.0F, 3.0F, 0.0F, false);
 			Head = new ModelRenderer(this);
-			Head.setRotationPoint(0.0F, 24.0F, 0.0F);
-			Head.setTextureOffset(0, 0).addBox(-3.5F, -27.0F, -6.0F, 7.0F, 7.0F, 7.0F, 0.0F, false);
-			Head.setTextureOffset(33, 27).addBox(-2.5F, -26.0F, -7.0F, 5.0F, 6.0F, 1.0F, 0.0F, false);
+			Head.setRotationPoint(0.0F, 4.0F, -2.0F);
+			Head.setTextureOffset(0, 0).addBox(-3.5F, -7.0F, -4.0F, 7.0F, 7.0F, 7.0F, 0.0F, false);
+			Head.setTextureOffset(33, 27).addBox(-2.5F, -6.0F, -5.0F, 5.0F, 6.0F, 1.0F, 0.0F, false);
 		}
 
 		@Override

@@ -105,8 +105,8 @@ public class DaciteBlock extends MinecraftOverhauledModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(64)
-					.square().func_242731_b(10);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 64)).range(64)
+					.square().func_242731_b(64);
 			event.getRegistry().register(feature.setRegistryName("dacite"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("minecraft_overhauled:dacite"), configuredFeature);
 		}
@@ -137,6 +137,10 @@ public class DaciteBlock extends MinecraftOverhauledModElements.ModElement {
 		if (new ResourceLocation("taiga_mountains").equals(event.getName()))
 			biomeCriteria = true;
 		if (new ResourceLocation("snowy_taiga_mountains").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("minecraft_overhauled:mountains_plus").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("minecraft_overhauled:smooth_mountains").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;

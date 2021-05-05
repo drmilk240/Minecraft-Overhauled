@@ -1,0 +1,33 @@
+{
+  "_fv": 18,
+  "_type": "structure",
+  "definition": {
+    "structure": "monkehotsprings",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 10000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 6,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": -3,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.SNOW"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:SmoothMountains"
+      },
+      {
+        "value": "snowy_tundra"
+      }
+    ],
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
+  }
+}
