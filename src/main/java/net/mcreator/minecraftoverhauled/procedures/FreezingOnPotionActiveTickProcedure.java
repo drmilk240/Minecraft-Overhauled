@@ -10,7 +10,6 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
@@ -74,9 +73,6 @@ public class FreezingOnPotionActiveTickProcedure extends MinecraftOverhauledModE
 									? ((LivingEntity) entity)
 											.getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
 									: ItemStack.EMPTY).getItem() == new ItemStack(Items.LEATHER_HELMET, (int) (1)).getItem()))))) {
-				if (entity instanceof PlayerEntity) {
-					((PlayerEntity) entity).addExhaustion((float) 0.1);
-				}
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 0.1);
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 1, (int) 3, (true), (false)));
