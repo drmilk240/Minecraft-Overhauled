@@ -9,7 +9,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.common.BiomeDictionary;
 
-import net.minecraft.world.gen.trunkplacer.MegaJungleTrunkPlacer;
+import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
 import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.minecraft.world.gen.treedecorator.LeaveVineTreeDecorator;
@@ -18,7 +18,7 @@ import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.foliageplacer.JungleFoliagePlacer;
+import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
 import net.minecraft.world.gen.feature.structure.StructureFeatures;
 import net.minecraft.world.gen.feature.TwoLayerFeature;
 import net.minecraft.world.gen.feature.Features;
@@ -72,13 +72,14 @@ public class SmoothMountainsBiome extends MinecraftOverhauledModElements.ModElem
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.SNOW_BLOCK.getDefaultState(),
 								MountainstoneBlock.block.getDefaultState(), MountainstoneBlock.block.getDefaultState())));
 				biomeGenerationSettings.withStructure(StructureFeatures.PILLAGER_OUTPOST);
+				biomeGenerationSettings.withStructure(StructureFeatures.VILLAGE_SNOWY);
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.TREE
 								.withConfiguration(
 										(new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(MountainstoneBlock.block.getDefaultState()),
 												new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()),
-												new JungleFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 2),
-												new MegaJungleTrunkPlacer(12, 2, 19), new TwoLayerFeature(1, 1, 2)))
+												new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
+												new StraightTrunkPlacer(12, 2, 0), new TwoLayerFeature(1, 0, 1)))
 														.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance,
 																CustomTrunkVineTreeDecorator.instance, new CustomCocoaTreeDecorator()))
 														.setMaxWaterDepth(0).build())
@@ -91,7 +92,7 @@ public class SmoothMountainsBiome extends MinecraftOverhauledModElements.ModElem
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withInfestedStone(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.EXTREME_HILLS).depth(3.3000000000000003f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.EXTREME_HILLS).depth(4.3999999999999995f)
 						.scale(0.1f).temperature(0.5f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("minecraft_overhauled:smooth_mountains"));
