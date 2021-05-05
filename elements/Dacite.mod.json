@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "andesite",
+    "texture": "dacite",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -32,14 +32,14 @@
         "subtract": false
       }
     ],
-    "name": "Limestone",
+    "name": "Dacite",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:RainforestTab"
+      "value": "BUILDING_BLOCKS"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -106,25 +106,40 @@
     ],
     "restrictionBiomes": [
       {
-        "value": "bamboo_jungle"
+        "value": "taiga"
       },
       {
-        "value": "jungle"
+        "value": "snowy_tundra"
       },
       {
-        "value": "jungle_hills"
+        "value": "taiga_hills"
       },
       {
-        "value": "jungle_edge"
+        "value": "cold_beach"
       },
       {
-        "value": "mutated_jungle"
+        "value": "roofed_forest"
       },
       {
-        "value": "CUSTOM:Rainforest"
+        "value": "taiga_cold"
       },
       {
-        "value": "bamboo_jungle_hills"
+        "value": "taiga_cold_hills"
+      },
+      {
+        "value": "redwood_taiga"
+      },
+      {
+        "value": "redwood_taiga_hills"
+      },
+      {
+        "value": "extreme_hills_with_trees"
+      },
+      {
+        "value": "mutated_taiga"
+      },
+      {
+        "value": "mutated_taiga_cold"
       }
     ],
     "blocksToReplace": [
@@ -132,9 +147,9 @@
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 64,
-    "frequencyOnChunk": 64,
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 256
+    "maxGenerateHeight": 64
   }
 }

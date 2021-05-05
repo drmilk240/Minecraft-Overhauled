@@ -33,7 +33,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.minecraftoverhauled.itemgroup.RainforestTabItemGroup;
+import net.mcreator.minecraftoverhauled.itemgroup.SavannaItemGroup;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 
 import java.util.Random;
@@ -41,11 +41,11 @@ import java.util.List;
 import java.util.Collections;
 
 @MinecraftOverhauledModElements.ModElement.Tag
-public class LimestoneBlock extends MinecraftOverhauledModElements.ModElement {
-	@ObjectHolder("minecraft_overhauled:limestone")
+public class ApliteBlock extends MinecraftOverhauledModElements.ModElement {
+	@ObjectHolder("minecraft_overhauled:aplite")
 	public static final Block block = null;
-	public LimestoneBlock(MinecraftOverhauledModElements instance) {
-		super(instance, 279);
+	public ApliteBlock(MinecraftOverhauledModElements instance) {
+		super(instance, 282);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -53,13 +53,12 @@ public class LimestoneBlock extends MinecraftOverhauledModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(RainforestTabItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(SavannaItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
-			setRegistryName("limestone");
+			setRegistryName("aplite");
 		}
 
 		@Override
@@ -91,7 +90,7 @@ public class LimestoneBlock extends MinecraftOverhauledModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("minecraft_overhauled:limestone_match"),
+			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("minecraft_overhauled:aplite_match"),
 					() -> CustomRuleTest.codec);
 			feature = new OreFeature(OreFeatureConfig.CODEC) {
 				@Override
@@ -107,26 +106,32 @@ public class LimestoneBlock extends MinecraftOverhauledModElements.ModElement {
 			};
 			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 64)).range(256)
 					.square().func_242731_b(64);
-			event.getRegistry().register(feature.setRegistryName("limestone"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("minecraft_overhauled:limestone"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("aplite"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("minecraft_overhauled:aplite"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
-		if (new ResourceLocation("bamboo_jungle").equals(event.getName()))
+		if (new ResourceLocation("savanna").equals(event.getName()))
 			biomeCriteria = true;
-		if (new ResourceLocation("jungle").equals(event.getName()))
+		if (new ResourceLocation("savanna_plateau").equals(event.getName()))
 			biomeCriteria = true;
-		if (new ResourceLocation("jungle_hills").equals(event.getName()))
+		if (new ResourceLocation("badlands").equals(event.getName()))
 			biomeCriteria = true;
-		if (new ResourceLocation("jungle_edge").equals(event.getName()))
+		if (new ResourceLocation("wooded_badlands_plateau").equals(event.getName()))
 			biomeCriteria = true;
-		if (new ResourceLocation("modified_jungle").equals(event.getName()))
+		if (new ResourceLocation("badlands_plateau").equals(event.getName()))
 			biomeCriteria = true;
-		if (new ResourceLocation("minecraft_overhauled:rainforest").equals(event.getName()))
+		if (new ResourceLocation("shattered_savanna").equals(event.getName()))
 			biomeCriteria = true;
-		if (new ResourceLocation("bamboo_jungle_hills").equals(event.getName()))
+		if (new ResourceLocation("shattered_savanna_plateau").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("eroded_badlands").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("modified_wooded_badlands_plateau").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("modified_badlands_plateau").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;

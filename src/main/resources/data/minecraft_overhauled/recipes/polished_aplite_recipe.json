@@ -1,0 +1,26 @@
+{
+  "group": "minecraft_overhauled",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_overhauled:aplite"
+    },
+    "1": {
+      "item": "minecraft_overhauled:aplite"
+    },
+    "2": {
+      "item": "minecraft_overhauled:aplite"
+    },
+    "3": {
+      "item": "minecraft_overhauled:aplite"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhauled:polished_aplite",
+    "count": 4
+  }
+}

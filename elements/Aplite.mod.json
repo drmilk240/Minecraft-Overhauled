@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "andesite",
+    "texture": "granite",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -32,14 +32,14 @@
         "subtract": false
       }
     ],
-    "name": "Limestone",
+    "name": "Aplite",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:RainforestTab"
+      "value": "CUSTOM:Savanna"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -106,25 +106,34 @@
     ],
     "restrictionBiomes": [
       {
-        "value": "bamboo_jungle"
+        "value": "savanna"
       },
       {
-        "value": "jungle"
+        "value": "savanna_rock"
       },
       {
-        "value": "jungle_hills"
+        "value": "badlands"
       },
       {
-        "value": "jungle_edge"
+        "value": "wooded_badlands_plateau"
       },
       {
-        "value": "mutated_jungle"
+        "value": "badlands_plateau"
       },
       {
-        "value": "CUSTOM:Rainforest"
+        "value": "mutated_savanna"
       },
       {
-        "value": "bamboo_jungle_hills"
+        "value": "mutated_savanna_rock"
+      },
+      {
+        "value": "mutated_mesa"
+      },
+      {
+        "value": "mutated_mesa_rock"
+      },
+      {
+        "value": "mutated_mesa_clear_rock"
       }
     ],
     "blocksToReplace": [

@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "andesite",
+    "texture": "polishedaplite",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -32,14 +32,14 @@
         "subtract": false
       }
     ],
-    "name": "Limestone",
+    "name": "Polished Aplite",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:RainforestTab"
+      "value": "CUSTOM:Savanna"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -101,40 +101,16 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "Surface"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "bamboo_jungle"
-      },
-      {
-        "value": "jungle"
-      },
-      {
-        "value": "jungle_hills"
-      },
-      {
-        "value": "jungle_edge"
-      },
-      {
-        "value": "mutated_jungle"
-      },
-      {
-        "value": "CUSTOM:Rainforest"
-      },
-      {
-        "value": "bamboo_jungle_hills"
-      }
-    ],
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 64,
-    "frequencyOnChunk": 64,
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 256
+    "maxGenerateHeight": 64
   }
 }
