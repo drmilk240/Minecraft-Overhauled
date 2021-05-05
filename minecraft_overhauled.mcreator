@@ -3307,6 +3307,83 @@
       "ids": {},
       "registry_name": "mountainstone",
       "path": "~/Mountains"
+    },
+    {
+      "name": "FreezingOnPotionActiveTick",
+      "type": "procedure",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freezing_on_potion_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Freezing",
+      "type": "potion",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freezing",
+      "path": "~/Mountains"
+    },
+    {
+      "name": "FreezingApply",
+      "type": "procedure",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freezing_apply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mountains"
     }
   ],
   "variable_elements": [],
@@ -3395,6 +3472,7 @@
       "item.minecraft_overhauled.enden_sword": "Enden Sword",
       "item.minecraft.potion.effect.glowing_potion": "Glowing Potion",
       "item.minecraft_overhauled.toad_spawn_egg": "Toad Spawn Egg",
+      "item.minecraft.lingering_potion.effect.freezing": "Lingering Freezing",
       "block.minecraft_overhauled.pig_iron_ore": "Pig Iron Ore",
       "block.minecraft_overhauled.rocky_dirt": "Rocky Dirt",
       "item.minecraft_overhauled.enden_pickaxe": "Enden Pickaxe",
@@ -3407,8 +3485,8 @@
       "item.minecraft_overhauled.netherite_bow": "Netherite Bow",
       "item.minecraft.potion.effect.haste_potion": "Haste Potion",
       "item.minecraft.tipped_arrow.effect.blindness_potion": "Arrow of Blindness Potion",
-      "item.minecraft_overhauled.raw_iron_fish": "Raw Ironfish",
       "block.minecraft_overhauled.bushthorn_stairs": "Bushthorn Stairs",
+      "item.minecraft_overhauled.raw_iron_fish": "Raw Ironfish",
       "item.minecraft_overhauled.range.desc": "Firch - Range",
       "biome.minecraft_overhauled.end_desert": "End Desert",
       "block.minecraft_overhauled.polished_dacite": "Polished Dacite",
@@ -3420,8 +3498,8 @@
       "item.minecraft_overhauled.redfunk.desc": "Epicuras - Redfunk",
       "item.minecraft.splash_potion.effect.haste_potion": "Splash Haste Potion",
       "block.minecraft_overhauled.endwood_leaves": "Endwood Leaves",
-      "entity.minecraft_overhauled.corrupter": "Corrupter",
       "item.minecraft_overhauled.enden_armor_chestplate": "Enden Chestplate",
+      "entity.minecraft_overhauled.corrupter": "Corrupter",
       "item.minecraft.potion.effect.levitation_potion": "Levitation Potion",
       "item.minecraft.tipped_arrow.effect.levitation_potion": "Arrow of Levitation Potion",
       "block.minecraft_overhauled.dried_mud_block": "Dried Mud Block",
@@ -3444,10 +3522,10 @@
       "block.minecraft_overhauled.baobab_leaves": "Baobab Leaves",
       "item.minecraft_overhauled.iron_bow": "Iron Bow",
       "item.minecraft_overhauled.caravan": "Music Disc",
-      "block.minecraft_overhauled.endsand": "Endsand",
       "item.minecraft_overhauled.lush_zombie_spawn_egg": "Lush Zombie Spawn Egg",
-      "item.minecraft_overhauled.enden_dust": "Enden Dust",
+      "block.minecraft_overhauled.endsand": "Endsand",
       "block.minecraft_overhauled.shorea_fence_gate": "Shorea Fence Gate",
+      "item.minecraft_overhauled.enden_dust": "Enden Dust",
       "biome.minecraft_overhauled.volcanic_geysers": "Volcanic Geysers",
       "block.minecraft_overhauled.baobab_log": "Baobab Log",
       "block.minecraft_overhauled.shorea_leaves": "Shorea Leaves",
@@ -3457,11 +3535,12 @@
       "itemGroup.tabdeep_end_tab": "Deep End",
       "block.minecraft_overhauled.mountainstone": "Mountainstone",
       "item.minecraft.tipped_arrow.effect.haste_potion": "Arrow of Haste Potion",
-      "item.minecraft.splash_potion.effect.levitation_potion": "Splash Levitation Potion",
       "item.minecraft_overhauled.copper_armor_leggings": "Copper Leggings",
+      "item.minecraft.splash_potion.effect.levitation_potion": "Splash Levitation Potion",
       "item.minecraft_overhauled.warped_bread": "Warped Bread",
       "item.minecraft_overhauled.gold_bow": "Gold Bow",
       "item.minecraft_overhauled.river_dolphin_spawn_egg": "River Dolphin Spawn Egg",
+      "effect.freezing": "Freezing",
       "item.minecraft_overhauled.grappling_hook": "Grappling Hook",
       "block.minecraft_overhauled.anthill_block": "Anthill Block",
       "item.minecraft_overhauled.fungal_broth": "Fungal Broth",
@@ -3472,6 +3551,7 @@
       "item.minecraft_overhauled.piranha_spawn_egg": "Piranha Spawn Egg",
       "item.minecraft_overhauled.ember_threat.desc": "Redstonerblast - Ember Threat",
       "subtitles.caravandisc": "Music Disc Plays (Caravan)",
+      "item.minecraft.tipped_arrow.effect.freezing": "Arrow of Freezing",
       "item.minecraft_overhauled.blue_nether_wart": "Blue Nether Wart",
       "block.minecraft_overhauled.titanium_block": "Block of Titanium",
       "item.minecraft_overhauled.enden_alloy": "Enden Alloy",
@@ -3545,6 +3625,7 @@
       "block.minecraft_overhauled.regfruit": "Regfruit",
       "block.minecraft_overhauled.granite_bricks": "Granite Bricks",
       "item.minecraft_overhauled.range": "Music Disc",
+      "item.minecraft.potion.effect.freezing": "Freezing",
       "block.minecraft_overhauled.polished_aplite": "Polished Aplite",
       "block.minecraft_overhauled.chorused_endstone_bricks": "Chorused Endstone Bricks",
       "entity.minecraft_overhauled.river_dolphin": "River Dolphin",
@@ -3569,6 +3650,7 @@
       "item.minecraft_overhauled.diamond_bow": "Diamond Bow",
       "item.minecraft.splash_potion.effect.glowing_potion": "Splash Glowing Potion",
       "itemGroup.tabsavanna": "Savanna",
+      "item.minecraft.splash_potion.effect.freezing": "Splash Freezing",
       "item.minecraft.lingering_potion.effect.levitation_potion": "Lingering Levitation Potion",
       "block.minecraft_overhauled.polished_limestone": "Polished Limestone",
       "item.minecraft_overhauled.redfunk": "Music Disc",
