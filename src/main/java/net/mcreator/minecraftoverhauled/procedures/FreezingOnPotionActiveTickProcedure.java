@@ -64,15 +64,15 @@ public class FreezingOnPotionActiveTickProcedure extends MinecraftOverhauledModE
 					: ItemStack.EMPTY).getItem() == new ItemStack(Items.LEATHER_BOOTS, (int) (1)).getItem())
 					&& (((entity instanceof LivingEntity)
 							? ((LivingEntity) entity)
-									.getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 0))
+									.getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 1))
 							: ItemStack.EMPTY).getItem() == new ItemStack(Items.LEATHER_LEGGINGS, (int) (1)).getItem()))
 					&& ((((entity instanceof LivingEntity)
 							? ((LivingEntity) entity)
-									.getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 0))
+									.getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 2))
 							: ItemStack.EMPTY).getItem() == new ItemStack(Items.LEATHER_CHESTPLATE, (int) (1)).getItem())
 							&& (((entity instanceof LivingEntity)
 									? ((LivingEntity) entity)
-											.getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 0))
+											.getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
 									: ItemStack.EMPTY).getItem() == new ItemStack(Items.LEATHER_HELMET, (int) (1)).getItem()))))) {
 				if (entity instanceof PlayerEntity) {
 					((PlayerEntity) entity).addExhaustion((float) 0.1);
