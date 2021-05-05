@@ -61,12 +61,9 @@ public class FreezingApplyProcedure extends MinecraftOverhauledModElements.ModEl
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+		if ((world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
 				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
-						.equals(new ResourceLocation("minecraft_overhauled:mountains_plus")))
-				|| (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-						&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
-								.equals(new ResourceLocation("minecraft_overhauled:smooth_mountains"))))) {
+						.equals(new ResourceLocation("minecraft_overhauled:mountains_plus")))) {
 			if ((!(((((entity instanceof LivingEntity)
 					? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 0))
 					: ItemStack.EMPTY).getItem() == new ItemStack(Items.LEATHER_BOOTS, (int) (1)).getItem())

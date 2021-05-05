@@ -46,7 +46,7 @@
     "particleToSpawn": {
       "value": "CLOUD"
     },
-    "particlesProbability": 5.0,
+    "particlesProbability": 3.0,
     "biomeCategory": "EXTREME_HILLS",
     "parent": {
       "value": "mountains"

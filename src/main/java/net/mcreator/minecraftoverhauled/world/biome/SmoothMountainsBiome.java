@@ -54,7 +54,7 @@ public class SmoothMountainsBiome extends MinecraftOverhauledModElements.ModElem
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-1).setWaterColor(-10046538).setWaterFogColor(-1).withSkyColor(-1)
-						.withFoliageColor(-1).withGrassColor(-1).setParticle(new ParticleEffectAmbience(ParticleTypes.CLOUD, 0.05f)).build();
+						.withFoliageColor(-1).withGrassColor(-1).setParticle(new ParticleEffectAmbience(ParticleTypes.CLOUD, 0.03f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.SNOW_BLOCK.getDefaultState(),
 								Blocks.SNOW_BLOCK.getDefaultState(), Blocks.SNOW_BLOCK.getDefaultState())));
