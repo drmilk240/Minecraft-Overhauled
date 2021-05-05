@@ -54,7 +54,7 @@ public class MountainsPlusBiome extends MinecraftOverhauledModElements.ModElemen
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-1).setWaterColor(-10046538).setWaterFogColor(-1).withSkyColor(-1)
-						.withFoliageColor(-1).withGrassColor(-1).setParticle(new ParticleEffectAmbience(ParticleTypes.CLOUD, 0.08f)).build();
+						.withFoliageColor(-1).withGrassColor(-1).setParticle(new ParticleEffectAmbience(ParticleTypes.CLOUD, 0.05f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.SNOW_BLOCK.getDefaultState(),
 								Blocks.SNOW_BLOCK.getDefaultState(), Blocks.SNOW_BLOCK.getDefaultState())));
@@ -67,8 +67,8 @@ public class MountainsPlusBiome extends MinecraftOverhauledModElements.ModElemen
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withInfestedStone(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.EXTREME_HILLS).depth(2.1999999999999997f)
-						.scale(1.5999999999999999f).temperature(0.5f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
+				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.EXTREME_HILLS).depth(3.2f).scale(0.6f)
+						.temperature(0.5f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("minecraft_overhauled:mountains_plus"));
 			}

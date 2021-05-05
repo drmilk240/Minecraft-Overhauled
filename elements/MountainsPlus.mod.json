@@ -46,15 +46,15 @@
     "particleToSpawn": {
       "value": "CLOUD"
     },
-    "particlesProbability": 8.0,
+    "particlesProbability": 5.0,
     "biomeCategory": "EXTREME_HILLS",
     "parent": {
       "value": "mountains"
     },
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 2.1999999999999997,
-    "heightVariation": 1.5999999999999999,
+    "baseHeight": 3.2,
+    "heightVariation": 0.6,
     "biomeType": "ICY",
     "spawnBiome": true,
     "biomeWeight": 7,
