@@ -26,15 +26,15 @@
     "particleToSpawn": {
       "value": "CLOUD"
     },
-    "particlesProbability": 2.2,
+    "particlesProbability": 5.5,
     "biomeCategory": "EXTREME_HILLS",
     "parent": {
       "value": "mountains"
     },
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 3.5,
-    "heightVariation": 2.0,
+    "baseHeight": 2.1999999999999997,
+    "heightVariation": 1.5999999999999999,
     "biomeType": "ICY",
     "spawnBiome": true,
     "biomeWeight": 7,
@@ -83,7 +83,9 @@
       "Caves",
       "Ores",
       "FrozenTopLayer",
-      "ExtraEmeraldOre"
+      "ExtraEmeraldOre",
+      "Caves",
+      "InfestedStone"
     ],
     "spawnEntries": []
   }

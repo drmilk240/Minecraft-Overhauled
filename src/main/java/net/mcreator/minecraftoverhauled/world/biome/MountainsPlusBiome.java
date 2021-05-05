@@ -68,7 +68,7 @@ public class MountainsPlusBiome extends MinecraftOverhauledModElements.ModElemen
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(4159204).setWaterFogColor(329011)
 						.withSkyColor(7972607).withFoliageColor(10387789).withGrassColor(9470285)
-						.setParticle(new ParticleEffectAmbience(ParticleTypes.CLOUD, 0.022f)).build();
+						.setParticle(new ParticleEffectAmbience(ParticleTypes.CLOUD, 0.055f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.SNOW_BLOCK.getDefaultState(),
 								MountainstoneBlock.block.getDefaultState(), MountainstoneBlock.block.getDefaultState())));
@@ -90,9 +90,11 @@ public class MountainsPlusBiome extends MinecraftOverhauledModElements.ModElemen
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
 				DefaultBiomeFeatures.withEmeraldOre(biomeGenerationSettings);
+				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
+				DefaultBiomeFeatures.withInfestedStone(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.EXTREME_HILLS).depth(3.5f).scale(2f)
-						.temperature(0.5f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
+				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.EXTREME_HILLS).depth(2.1999999999999997f)
+						.scale(1.5999999999999999f).temperature(0.5f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("minecraft_overhauled:mountains_plus"));
 			}
