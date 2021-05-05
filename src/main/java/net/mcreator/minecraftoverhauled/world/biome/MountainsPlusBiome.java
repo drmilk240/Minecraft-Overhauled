@@ -9,7 +9,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.common.BiomeDictionary;
 
-import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
+import net.minecraft.world.gen.trunkplacer.MegaJungleTrunkPlacer;
 import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.minecraft.world.gen.treedecorator.LeaveVineTreeDecorator;
@@ -18,7 +18,7 @@ import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliageplacer.JungleFoliagePlacer;
 import net.minecraft.world.gen.feature.structure.StructureFeatures;
 import net.minecraft.world.gen.feature.TwoLayerFeature;
 import net.minecraft.world.gen.feature.Features;
@@ -66,9 +66,8 @@ public class MountainsPlusBiome extends MinecraftOverhauledModElements.ModElemen
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(4159204).setWaterFogColor(329011)
-						.withSkyColor(7972607).withFoliageColor(10387789).withGrassColor(9470285)
-						.setParticle(new ParticleEffectAmbience(ParticleTypes.CLOUD, 0.055f)).build();
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-1).setWaterColor(-10046538).setWaterFogColor(-1).withSkyColor(-1)
+						.withFoliageColor(-1).withGrassColor(-1).setParticle(new ParticleEffectAmbience(ParticleTypes.CLOUD, 0.08f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.SNOW_BLOCK.getDefaultState(),
 								MountainstoneBlock.block.getDefaultState(), MountainstoneBlock.block.getDefaultState())));
@@ -79,13 +78,13 @@ public class MountainsPlusBiome extends MinecraftOverhauledModElements.ModElemen
 								.withConfiguration(
 										(new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(MountainstoneBlock.block.getDefaultState()),
 												new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()),
-												new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
-												new StraightTrunkPlacer(5, 2, 0), new TwoLayerFeature(1, 0, 1)))
+												new JungleFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 2),
+												new MegaJungleTrunkPlacer(12, 2, 19), new TwoLayerFeature(1, 1, 2)))
 														.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance,
 																CustomTrunkVineTreeDecorator.instance, new CustomCocoaTreeDecorator()))
 														.setMaxWaterDepth(0).build())
 								.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-								.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
+								.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(11, 0.1F, 1))));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);

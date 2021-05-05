@@ -123,14 +123,6 @@ public class MountainstoneBlock extends MinecraftOverhauledModElements.ModElemen
 		boolean biomeCriteria = false;
 		if (new ResourceLocation("minecraft_overhauled:mountains_plus").equals(event.getName()))
 			biomeCriteria = true;
-		if (new ResourceLocation("mountains").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("snowy_mountains").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("mountain_edge").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("gravelly_mountains").equals(event.getName()))
-			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES).add(() -> configuredFeature);

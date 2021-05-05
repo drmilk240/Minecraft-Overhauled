@@ -3,7 +3,7 @@
   "_type": "block",
   "definition": {
     "texture": "slatetop",
-    "textureTop": "slatetop",
+    "textureTop": "snow",
     "textureLeft": "ancient_debris_side",
     "textureFront": "ancient_debris_side",
     "textureRight": "ancient_debris_side",
@@ -107,18 +107,6 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:MountainsPlus"
-      },
-      {
-        "value": "mountains"
-      },
-      {
-        "value": "snowy_mountains"
-      },
-      {
-        "value": "smaller_extreme_hills"
-      },
-      {
-        "value": "mutated_extreme_hills"
       }
     ],
     "blocksToReplace": [

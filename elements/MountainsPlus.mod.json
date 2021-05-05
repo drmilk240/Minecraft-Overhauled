@@ -9,6 +9,26 @@
     "undergroundBlock": {
       "value": "CUSTOM:Mountainstone"
     },
+    "airColor": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -10046538,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -1,
+      "falpha": 0.0
+    },
     "ambientSound": {
       "value": ""
     },
@@ -26,7 +46,7 @@
     "particleToSpawn": {
       "value": "CLOUD"
     },
-    "particlesProbability": 5.5,
+    "particlesProbability": 8.0,
     "biomeCategory": "EXTREME_HILLS",
     "parent": {
       "value": "mountains"
@@ -51,10 +71,10 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 3,
-    "vanillaTreeType": "Default",
+    "treesPerChunk": 11,
+    "vanillaTreeType": "Big trees",
     "treeType": 1,
-    "minHeight": 5,
+    "minHeight": 12,
     "maxWaterDepth": 0,
     "treeStem": {
       "value": "CUSTOM:Mountainstone"

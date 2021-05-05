@@ -2,7 +2,7 @@
   "parent": "block/cube",
   "textures": {
     "down": "minecraft_overhauled:blocks/slatetop",
-    "up": "minecraft_overhauled:blocks/slatetop",
+    "up": "minecraft_overhauled:blocks/snow",
     "north": "minecraft_overhauled:blocks/ancient_debris_side",
     "east": "minecraft_overhauled:blocks/ancient_debris_side",
     "south": "minecraft_overhauled:blocks/ancient_debris_side",
