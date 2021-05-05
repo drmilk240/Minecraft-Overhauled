@@ -7,7 +7,7 @@
       "value": "Blocks.SNOW"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:Mountainstone"
+      "value": "Blocks.SNOW"
     },
     "airColor": {
       "value": -1,
@@ -71,13 +71,13 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 11,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Default",
     "treeType": 1,
     "minHeight": 12,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": "CUSTOM:Mountainstone"
+      "value": "Blocks.AIR"
     },
     "treeBranch": {
       "value": "Blocks.AIR"

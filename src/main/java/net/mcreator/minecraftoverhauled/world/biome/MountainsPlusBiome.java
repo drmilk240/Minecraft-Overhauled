@@ -9,24 +9,14 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.common.BiomeDictionary;
 
-import net.minecraft.world.gen.trunkplacer.MegaJungleTrunkPlacer;
 import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.minecraft.world.gen.treedecorator.LeaveVineTreeDecorator;
 import net.minecraft.world.gen.treedecorator.CocoaTreeDecorator;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.foliageplacer.JungleFoliagePlacer;
 import net.minecraft.world.gen.feature.structure.StructureFeatures;
-import net.minecraft.world.gen.feature.TwoLayerFeature;
-import net.minecraft.world.gen.feature.Features;
-import net.minecraft.world.gen.feature.FeatureSpread;
 import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
-import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
-import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.ParticleEffectAmbience;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
@@ -46,14 +36,11 @@ import net.minecraft.particles.ParticleTypes;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.minecraftoverhauled.block.MountainstoneBlock;
 import net.mcreator.minecraftoverhauled.MinecraftOverhauledModElements;
 
 import java.util.Set;
 import java.util.Random;
 import java.util.List;
-
-import com.google.common.collect.ImmutableList;
 
 @MinecraftOverhauledModElements.ModElement.Tag
 public class MountainsPlusBiome extends MinecraftOverhauledModElements.ModElement {
@@ -70,21 +57,9 @@ public class MountainsPlusBiome extends MinecraftOverhauledModElements.ModElemen
 						.withFoliageColor(-1).withGrassColor(-1).setParticle(new ParticleEffectAmbience(ParticleTypes.CLOUD, 0.08f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.SNOW_BLOCK.getDefaultState(),
-								MountainstoneBlock.block.getDefaultState(), MountainstoneBlock.block.getDefaultState())));
+								Blocks.SNOW_BLOCK.getDefaultState(), Blocks.SNOW_BLOCK.getDefaultState())));
 				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
 				biomeGenerationSettings.withStructure(StructureFeatures.PILLAGER_OUTPOST);
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.TREE
-								.withConfiguration(
-										(new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(MountainstoneBlock.block.getDefaultState()),
-												new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()),
-												new JungleFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 2),
-												new MegaJungleTrunkPlacer(12, 2, 19), new TwoLayerFeature(1, 1, 2)))
-														.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance,
-																CustomTrunkVineTreeDecorator.instance, new CustomCocoaTreeDecorator()))
-														.setMaxWaterDepth(0).build())
-								.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-								.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(11, 0.1F, 1))));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
