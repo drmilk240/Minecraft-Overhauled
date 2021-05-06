@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "biome",
   "definition": {
-    "name": "Mountains Plus",
+    "name": "Snow Monkey Village",
     "groundBlock": {
       "value": "Blocks.SNOW"
     },
@@ -22,7 +22,7 @@
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -10046538,
+      "value": -11625310,
       "falpha": 0.0
     },
     "waterFogColor": {
@@ -42,26 +42,23 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CLOUD"
+      "value": "EXPLOSION_NORMAL"
     },
-    "particlesProbability": 3.0,
-    "biomeCategory": "EXTREME_HILLS",
+    "particlesProbability": 0.5,
+    "biomeCategory": "ICY",
     "parent": {
-      "value": "mountains"
+      "value": "CUSTOM:SmoothMountains"
     },
     "rainingPossibility": 0.5,
     "temperature": 0.0,
-    "baseHeight": 4.3999999999999995,
+    "baseHeight": 4.4,
     "heightVariation": 0.1,
     "biomeType": "ICY",
     "spawnBiome": true,
-    "biomeWeight": 7,
-    "biomeDictionaryTypes": [
-      "MOUNTAIN",
-      "COLD"
-    ],
+    "biomeWeight": 5,
+    "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
@@ -73,25 +70,25 @@
     "cactiPerChunk": 0,
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",
-    "treeType": 1,
-    "minHeight": 12,
+    "treeType": 0,
+    "minHeight": 7,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "treeBranch": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "treeVines": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "treeFruits": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
-    "spawnStronghold": false,
-    "spawnMineshaft": false,
-    "spawnPillagerOutpost": true,
-    "villageType": "snowy",
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
@@ -102,11 +99,7 @@
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "FrozenTopLayer",
-      "ExtraEmeraldOre",
-      "Caves",
-      "Caves",
-      "Caves"
+      "FrozenTopLayer"
     ],
     "spawnEntries": []
   }
