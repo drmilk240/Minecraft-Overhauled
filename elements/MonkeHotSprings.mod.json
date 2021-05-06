@@ -5,7 +5,7 @@
     "structure": "monkehotsprings",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First block",
-    "spawnProbability": 10000,
+    "spawnProbability": 20000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 6,
     "spawnLocation": "Ground",
@@ -26,6 +26,9 @@
       },
       {
         "value": "snowy_tundra"
+      },
+      {
+        "value": "CUSTOM:SnowMonkeyVillage"
       }
     ],
     "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
