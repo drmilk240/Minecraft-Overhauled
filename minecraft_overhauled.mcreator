@@ -3572,7 +3572,8 @@
             "type": "number"
           }
         ]
-      }
+      },
+      "path": "~/General"
     },
     {
       "name": "DeepCreeper",
@@ -3582,6 +3583,56 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "deep_creeper",
+      "path": "~/General"
+    },
+    {
+      "name": "GiantShorea",
+      "type": "structure",
+      "sortid": 320,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "giant_shorea",
+      "path": "~/Jungle"
+    },
+    {
+      "name": "GiantOak",
+      "type": "structure",
+      "sortid": 321,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "giant_oak",
+      "path": "~/General"
+    },
+    {
+      "name": "RiverRock",
+      "type": "structure",
+      "sortid": 322,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "river_rock",
+      "path": "~/General"
+    },
+    {
+      "name": "RaisedTerrain1",
+      "type": "structure",
+      "sortid": 323,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raised_terrain_1",
+      "path": "~/General"
+    },
+    {
+      "name": "RaisedTerrain2",
+      "type": "structure",
+      "sortid": 324,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raised_terrain_2",
       "path": "~/General"
     }
   ],
@@ -3684,9 +3735,9 @@
       "item.minecraft_overhauled.netherite_bow": "Netherite Bow",
       "item.minecraft.potion.effect.haste_potion": "Haste Potion",
       "item.minecraft.tipped_arrow.effect.blindness_potion": "Arrow of Blindness Potion",
-      "block.minecraft_overhauled.bushthorn_stairs": "Bushthorn Stairs",
-      "item.minecraft_overhauled.raw_iron_fish": "Raw Ironfish",
       "block.minecraft_overhauled.cactus_stairs": "Cactus Stairs",
+      "item.minecraft_overhauled.raw_iron_fish": "Raw Ironfish",
+      "block.minecraft_overhauled.bushthorn_stairs": "Bushthorn Stairs",
       "item.minecraft_overhauled.snow_monkey_spawn_egg": "Snow Monkey Spawn Egg",
       "item.minecraft_overhauled.range.desc": "Firch - Range",
       "biome.minecraft_overhauled.end_desert": "End Desert",
@@ -3700,8 +3751,8 @@
       "item.minecraft.splash_potion.effect.haste_potion": "Splash Haste Potion",
       "block.minecraft_overhauled.cactus_fence": "Cactus Fence",
       "block.minecraft_overhauled.endwood_leaves": "Endwood Leaves",
-      "item.minecraft_overhauled.enden_armor_chestplate": "Enden Chestplate",
       "entity.minecraft_overhauled.corrupter": "Corrupter",
+      "item.minecraft_overhauled.enden_armor_chestplate": "Enden Chestplate",
       "item.minecraft.potion.effect.levitation_potion": "Levitation Potion",
       "item.minecraft.tipped_arrow.effect.levitation_potion": "Arrow of Levitation Potion",
       "block.minecraft_overhauled.dried_mud_block": "Dried Mud Block",
@@ -3724,10 +3775,10 @@
       "block.minecraft_overhauled.baobab_leaves": "Baobab Leaves",
       "item.minecraft_overhauled.iron_bow": "Iron Bow",
       "item.minecraft_overhauled.caravan": "Music Disc",
-      "item.minecraft_overhauled.lush_zombie_spawn_egg": "Lush Zombie Spawn Egg",
       "block.minecraft_overhauled.endsand": "Endsand",
-      "block.minecraft_overhauled.shorea_fence_gate": "Shorea Fence Gate",
+      "item.minecraft_overhauled.lush_zombie_spawn_egg": "Lush Zombie Spawn Egg",
       "item.minecraft_overhauled.enden_dust": "Enden Dust",
+      "block.minecraft_overhauled.shorea_fence_gate": "Shorea Fence Gate",
       "biome.minecraft_overhauled.volcanic_geysers": "Volcanic Geysers",
       "block.minecraft_overhauled.baobab_log": "Baobab Log",
       "entity.minecraft_overhauled.snow_monkey": "Snow Monkey",

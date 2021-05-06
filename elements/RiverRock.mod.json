@@ -1,0 +1,36 @@
+{
+  "_fv": 18,
+  "_type": "structure",
+  "definition": {
+    "structure": "riverrock",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 10000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": -4,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.WATER"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "river"
+      },
+      {
+        "value": "swamp"
+      },
+      {
+        "value": "cold_beach"
+      }
+    ],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}
