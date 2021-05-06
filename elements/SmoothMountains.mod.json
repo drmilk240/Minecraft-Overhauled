@@ -52,7 +52,7 @@
       "value": "mountains"
     },
     "rainingPossibility": 0.5,
-    "temperature": 0.0,
+    "temperature": 0.5,
     "baseHeight": 4.3999999999999995,
     "heightVariation": 0.1,
     "biomeType": "ICY",

@@ -44,7 +44,7 @@ public class SnowMonkeyVillageBiome extends MinecraftOverhauledModElements.ModEl
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.SNOW).category(Biome.Category.ICY).depth(4.4f).scale(0f).temperature(0f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.ICY).depth(4.4f).scale(0f).temperature(0.5f)
 						.downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("minecraft_overhauled:snow_monkey_village"));
