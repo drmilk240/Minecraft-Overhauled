@@ -3555,6 +3555,34 @@
       "ids": {},
       "registry_name": "cactus_stick_recipe",
       "path": "~/Block Variants"
+    },
+    {
+      "name": "DeepCreeperNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "sortid": 319,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deep_creeper_natural_entity_spawning_condition",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "y",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DeepCreeper",
+      "type": "mob",
+      "sortid": 319,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deep_creeper",
+      "path": "~/General"
     }
   ],
   "variable_elements": [],
@@ -3706,6 +3734,7 @@
       "block.minecraft_overhauled.shorea_leaves": "Shorea Leaves",
       "biome.minecraft_overhauled.shattered_end": "Shattered End",
       "block.minecraft_overhauled.bushthorn_planks": "Bushthorn Planks",
+      "entity.minecraft_overhauled.deep_creeper": "Deep Creeper",
       "block.minecraft_overhauled.endwood_wood": "Endwood Wood",
       "itemGroup.tabdeep_end_tab": "Deep End",
       "item.minecraft.tipped_arrow.effect.haste_potion": "Arrow of Haste Potion",
@@ -3761,6 +3790,7 @@
       "block.minecraft_overhauled.cactus_slab": "Cactus Slab",
       "subtitles.emberthreat": "Music Disc Plays (Ember Threat)",
       "subtitles.rangedisc": "Music Disc Plays (Range)",
+      "item.minecraft_overhauled.deep_creeper_spawn_egg": "Deep Creeper Spawn Egg",
       "block.minecraft_overhauled.bamboo_slab": "Bamboo Slab",
       "block.minecraft_overhauled.endwood_log": "Endwood Log",
       "block.minecraft_overhauled.bamboo_stairs": "Bamboo Stairs",
